@@ -3,6 +3,8 @@ part of 'timeline_screen.dart';
 mixin _TimelineScreenPreferences on State<TimelineScreen> {
   TimeLabelMode get _labelMode;
   set _labelMode(TimeLabelMode value);
+  BiologyColumnMode get _biologyColumnMode;
+  set _biologyColumnMode(BiologyColumnMode value);
   CladeViewMode get _cladeViewMode;
   set _cladeViewMode(CladeViewMode value);
   CladeLabelMode get _cladeLabelMode;
@@ -27,6 +29,7 @@ mixin _TimelineScreenPreferences on State<TimelineScreen> {
       final prefs = await SharedPreferences.getInstance();
       final stored = prefs.getString(_labelModeKey);
       final storedScale = prefs.getDouble(_timelineScaleKey);
+      final storedBiologyColumnMode = prefs.getString(_biologyColumnModeKey);
       final storedCladeView = prefs.getString(_cladeViewModeKey);
       final storedCladeCategory = prefs.getString(_cladeCategoryKey);
       final storedCladeLabelMode = prefs.getString(_cladeLabelModeKey);
@@ -41,6 +44,7 @@ mixin _TimelineScreenPreferences on State<TimelineScreen> {
       }
       setState(() {
         _labelMode = parseTimeLabelMode(stored);
+        _biologyColumnMode = parseBiologyColumnMode(storedBiologyColumnMode);
         _cladeViewMode = parseCladeViewMode(storedCladeView);
         _cladeLabelMode = parseCladeLabelMode(storedCladeLabelMode);
         if (storedCladeCategory != null && storedCladeCategory.isNotEmpty) {

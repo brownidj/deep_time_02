@@ -1,5 +1,4 @@
 part of 'timeline_vertical_columns.dart';
-const double _standardVerticalEventBarWidth = 24.0;
 Widget _buildVerticalTrack({
   required TimelineTrack track,
   required double Function(TimelineTrack) scaledWidth,
@@ -15,17 +14,21 @@ Widget _buildVerticalTrack({
   required TimelineMarkerCatalog markers,
   required ScrollController scrollController,
   required List<Clade> clades,
+  required BiologyColumnMode biologyColumnMode,
   required CladeViewMode cladeViewMode,
   required String cladeCategoryId,
   required CladeLabelMode cladeLabelMode,
   required List<String> cladeRepresentativeIds,
-  required String cladeSearchQuery, required String? cladeSpotlightId, required String? activeCladeRootId,
+  required String cladeSearchQuery, required String? cladeSpotlightId,
+  required String? activeCladeRootId,
   required Map<String, List<Clade>> childrenByParentId,
   required ValueChanged<Clade> onCladeSpotlight,
   required ValueChanged<String?> onCladeRootChanged,
   required List<PaleoEcologyEntry> paleoEcology,
-  required List<double> stageHeightsForPaleo, required List<double> eonHeightsForClades,
-  required List<double> eraHeightsForClades, required List<double> periodHeightsForClades,
+  required List<double> stageHeightsForPaleo,
+  required List<double> eonHeightsForClades,
+  required List<double> eraHeightsForClades,
+  required List<double> periodHeightsForClades,
   required List<double> epochHeightsForClades,
 }) {
   switch (track) {
@@ -261,42 +264,37 @@ Widget _buildVerticalTrack({
         extinctions: markers.extinctions,
       );
     case TimelineTrack.events:
-      return _VerticalEventsColumn(
+      return _buildEventsTrack(
         width: scaledWidth(TimelineTrack.events),
         height: columnHeight,
-        events: layout.eventSegments,
-        totalUnits: metrics.periodUnits,
+        layout: layout,
+        metrics: metrics,
         palette: palette,
-        fixedLaneWidth: _standardVerticalEventBarWidth,
       );
     case TimelineTrack.clades:
-      return _VerticalCladeColumn(
+      return _buildBiologyTrack(
         width: scaledWidth(TimelineTrack.clades),
         height: columnHeight,
         layout: layout,
-        totalUnits: metrics.periodUnits,
+        metrics: metrics,
         scrollController: scrollController,
         clades: clades,
-        stageSegments: layout.stageSegments,
-        stageHeights: stageHeightsForPaleo,
-        epochSegments: layout.epochSegments,
-        epochHeights: epochHeightsForClades,
-        periodSegments: layout.periodSegments,
-        periodHeights: periodHeightsForClades,
-        eraSegments: layout.eraSegments,
-        eraHeights: eraHeightsForClades,
-        eonSegments: layout.eonSegments,
-        eonHeights: eonHeightsForClades,
-        viewMode: cladeViewMode,
-        displayGroupId: cladeCategoryId,
-        labelMode: cladeLabelMode,
-        representativeIds: cladeRepresentativeIds,
-        searchQuery: cladeSearchQuery,
-        spotlightId: cladeSpotlightId,
+        biologyColumnMode: biologyColumnMode,
+        cladeViewMode: cladeViewMode,
+        cladeCategoryId: cladeCategoryId,
+        cladeLabelMode: cladeLabelMode,
+        cladeRepresentativeIds: cladeRepresentativeIds,
+        cladeSearchQuery: cladeSearchQuery,
+        cladeSpotlightId: cladeSpotlightId,
         activeCladeRootId: activeCladeRootId,
         childrenByParentId: childrenByParentId,
-        onSpotlight: onCladeSpotlight,
+        onCladeSpotlight: onCladeSpotlight,
         onCladeRootChanged: onCladeRootChanged,
+        stageHeightsForPaleo: stageHeightsForPaleo,
+        epochHeightsForClades: epochHeightsForClades,
+        periodHeightsForClades: periodHeightsForClades,
+        eraHeightsForClades: eraHeightsForClades,
+        eonHeightsForClades: eonHeightsForClades,
       );
   }
 }

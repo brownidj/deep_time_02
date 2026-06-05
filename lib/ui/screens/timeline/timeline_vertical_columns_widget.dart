@@ -11,6 +11,7 @@ class TimelineVerticalColumns extends StatelessWidget {
     required this.onSelect,
     required this.scrollController,
     required this.clades,
+    this.biologyColumnMode = BiologyColumnMode.cladistic,
     required this.cladeViewMode,
     required this.cladeCategoryId,
     required this.cladeLabelMode,
@@ -33,6 +34,7 @@ class TimelineVerticalColumns extends StatelessWidget {
   final ValueChanged<TimelineRowSegment> onSelect;
   final ScrollController scrollController;
   final List<Clade> clades;
+  final BiologyColumnMode biologyColumnMode;
   final CladeViewMode cladeViewMode;
   final String cladeCategoryId;
   final CladeLabelMode cladeLabelMode;
@@ -219,6 +221,7 @@ class TimelineVerticalColumns extends StatelessWidget {
                 markers: markers,
                 scrollController: scrollController,
                 clades: clades,
+                biologyColumnMode: biologyColumnMode,
                 cladeViewMode: cladeViewMode,
                 cladeCategoryId: cladeCategoryId,
                 cladeLabelMode: cladeLabelMode,

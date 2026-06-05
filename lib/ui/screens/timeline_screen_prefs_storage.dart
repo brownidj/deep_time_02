@@ -47,6 +47,29 @@ extension _TimelineScreenPreferencesStorage on _TimelineScreenPreferences {
     }
   }
 
+  Future<void> _saveBiologyColumnMode(BiologyColumnMode mode) async {
+    if (!widget.enablePreferences) {
+      return;
+    }
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_biologyColumnModeKey, mode.id);
+    } on PlatformException catch (error, stackTrace) {
+      _scheduleLabelModeRetry(error);
+      AppDebug.log(
+        'Failed to save biology column mode',
+        error: error,
+        stackTrace: stackTrace,
+      );
+    } catch (error, stackTrace) {
+      AppDebug.log(
+        'Failed to save biology column mode',
+        error: error,
+        stackTrace: stackTrace,
+      );
+    }
+  }
+
   Future<void> _saveCladeViewMode(CladeViewMode mode) async {
     if (!widget.enablePreferences) {
       return;

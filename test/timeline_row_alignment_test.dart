@@ -20,7 +20,7 @@ void main() {
   testWidgets('Timeline shows top column headers and vertical columns', (
     tester,
   ) async {
-    await _setLargeSurface(tester);
+    await setLargeSurface(tester);
     final palette = testPalette();
     final layout = singleSpanLayout();
     const markers = TimelineMarkerCatalog(events: [], extinctions: []);
@@ -79,7 +79,7 @@ void main() {
   testWidgets('Vertical mode renders clade bars and taps spotlight callback', (
     tester,
   ) async {
-    await _setLargeSurface(tester);
+    await setLargeSurface(tester);
     final palette = testPalette();
     final layout = splitPeriodLayout();
     const markers = TimelineMarkerCatalog(events: [], extinctions: []);
@@ -210,7 +210,7 @@ void main() {
   testWidgets('Vertical mode clade bars map to vertical time span', (
     tester,
   ) async {
-    await _setLargeSurface(tester);
+    await setLargeSurface(tester);
     final palette = testPalette();
     final layout = splitPeriodLayout();
     const markers = TimelineMarkerCatalog(events: [], extinctions: []);
@@ -277,7 +277,7 @@ void main() {
   });
 
   testWidgets('Clades header shows active root context', (tester) async {
-    await _setLargeSurface(tester);
+    await setLargeSurface(tester);
     final palette = testPalette();
     final layout = splitPeriodLayout();
     const markers = TimelineMarkerCatalog(events: [], extinctions: []);
@@ -337,7 +337,7 @@ void main() {
   });
 }
 
-Future<void> _setLargeSurface(WidgetTester tester) async {
+Future<void> setLargeSurface(WidgetTester tester) async {
   await tester.binding.setSurfaceSize(const Size(2000, 1200));
   addTearDown(() async {
     await tester.binding.setSurfaceSize(null);

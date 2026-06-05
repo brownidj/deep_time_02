@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/theme/deep_time_palette.dart';
 
 class TimelineHeader extends StatelessWidget {
@@ -9,6 +10,8 @@ class TimelineHeader extends StatelessWidget {
     required this.onScaleChanged,
     required this.minScale,
     required this.maxScale,
+    required this.biologyColumnMode,
+    required this.onBiologyColumnModeChanged,
   });
 
   final VoidCallback onSettings;
@@ -16,6 +19,8 @@ class TimelineHeader extends StatelessWidget {
   final ValueChanged<double> onScaleChanged;
   final double minScale;
   final double maxScale;
+  final BiologyColumnMode biologyColumnMode;
+  final ValueChanged<BiologyColumnMode> onBiologyColumnModeChanged;
 
   String _scaleLabel() {
     final offset = minScale - 1.0;
@@ -45,6 +50,40 @@ class TimelineHeader extends StatelessWidget {
                 color: DeepTimePalette.panelText,
               ),
             ),
+          ),
+          const SizedBox(width: 12),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SegmentedButton<BiologyColumnMode>(
+                showSelectedIcon: false,
+                segments: const [
+                  ButtonSegment(
+                    value: BiologyColumnMode.cladistic,
+                    label: Text('Clades'),
+                  ),
+                  ButtonSegment(
+                    value: BiologyColumnMode.taxonomic,
+                    label: Text('Taxonomy'),
+                  ),
+                ],
+                style: ButtonStyle(
+                  foregroundColor: WidgetStateProperty.resolveWith((states) {
+                    if (states.contains(WidgetState.selected)) {
+                      return Colors.black;
+                    }
+                    return Colors.white;
+                  }),
+                ),
+                selected: {biologyColumnMode},
+                onSelectionChanged: (selection) {
+                  final nextMode = selection.first;
+                  if (nextMode != biologyColumnMode) {
+                    onBiologyColumnModeChanged(nextMode);
+                  }
+                },
+              ),
+            ],
           ),
           const SizedBox(width: 12),
           SizedBox(

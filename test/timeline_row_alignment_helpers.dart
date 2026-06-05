@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:deep_time_2/application/services/timeline_layout_models.dart';
 import 'package:deep_time_2/domain/models/geologic_rank.dart';
 import 'package:deep_time_2/domain/models/timeline_palette.dart';
 import 'package:deep_time_2/ui/theme/deep_time_palette.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 DeepTimePalette testPalette() {
   return DeepTimePalette(
@@ -17,6 +19,13 @@ DeepTimePalette testPalette() {
       },
     ),
   );
+}
+
+Future<void> setLargeSurface(WidgetTester tester) async {
+  await tester.binding.setSurfaceSize(const Size(2000, 1200));
+  addTearDown(() async {
+    await tester.binding.setSurfaceSize(null);
+  });
 }
 
 TimelineLayoutSnapshot singleSpanLayout({

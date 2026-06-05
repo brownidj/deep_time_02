@@ -5,6 +5,7 @@ import 'package:deep_time_2/application/services/timeline_layout_models.dart';
 import 'package:deep_time_2/domain/models/clade.dart';
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
 import 'package:deep_time_2/domain/models/timeline_marker_catalog.dart';
+import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/models/time_label_mode.dart';
@@ -27,6 +28,7 @@ class TimelineBodyContent extends StatelessWidget {
     required this.onSelect,
     required this.metrics,
     required this.clades,
+    this.biologyColumnMode = BiologyColumnMode.cladistic,
     required this.cladeViewMode,
     required this.cladeCategoryId,
     required this.cladeLabelMode,
@@ -50,6 +52,7 @@ class TimelineBodyContent extends StatelessWidget {
   final ValueChanged<TimelineRowSegment> onSelect;
   final TimelineBodyMetrics metrics;
   final List<Clade> clades;
+  final BiologyColumnMode biologyColumnMode;
   final CladeViewMode cladeViewMode;
   final String cladeCategoryId;
   final CladeLabelMode cladeLabelMode;
@@ -79,6 +82,9 @@ class TimelineBodyContent extends StatelessWidget {
   }
 
   String _cladeHeaderText() {
+    if (biologyColumnMode == BiologyColumnMode.taxonomic) {
+      return 'Taxonomy';
+    }
     final rootId = activeCladeRootId?.trim();
     if (rootId == null || rootId.isEmpty) {
       return 'Clades';
@@ -111,6 +117,7 @@ class TimelineBodyContent extends StatelessWidget {
                 onSelect: onSelect,
                 scrollController: scrollController,
                 clades: clades,
+                biologyColumnMode: biologyColumnMode,
                 cladeViewMode: cladeViewMode,
                 cladeCategoryId: cladeCategoryId,
                 cladeLabelMode: cladeLabelMode,

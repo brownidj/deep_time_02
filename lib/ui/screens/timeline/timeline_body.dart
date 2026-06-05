@@ -5,6 +5,7 @@ import 'package:deep_time_2/application/services/timeline_layout_models.dart';
 import 'package:deep_time_2/domain/models/clade.dart';
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
 import 'package:deep_time_2/domain/models/timeline_marker_catalog.dart';
+import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/models/time_label_mode.dart';
@@ -26,6 +27,7 @@ class TimelineBody extends StatelessWidget {
     required this.onBandSelect,
     required this.onSelect,
     required this.clades,
+    this.biologyColumnMode = BiologyColumnMode.cladistic,
     required this.cladeViewMode,
     required this.cladeCategoryId,
     this.cladeLabelMode = CladeLabelMode.common,
@@ -49,6 +51,7 @@ class TimelineBody extends StatelessWidget {
   final ValueChanged<TimelineBandSegment> onBandSelect;
   final ValueChanged<TimelineRowSegment> onSelect;
   final List<Clade> clades;
+  final BiologyColumnMode biologyColumnMode;
   final CladeViewMode cladeViewMode;
   final String cladeCategoryId;
   final CladeLabelMode cladeLabelMode;
@@ -121,6 +124,7 @@ class TimelineBody extends StatelessWidget {
               onSelect: onSelect,
               metrics: metrics,
               clades: clades,
+              biologyColumnMode: biologyColumnMode,
               cladeViewMode: cladeViewMode,
               cladeCategoryId: cladeCategoryId,
               cladeLabelMode: cladeLabelMode,

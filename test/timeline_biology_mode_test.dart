@@ -3,6 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:deep_time_2/domain/models/clade.dart';
 import 'package:deep_time_2/domain/models/clade_zoom_level.dart';
 import 'package:deep_time_2/domain/models/timeline_marker_catalog.dart';
+import 'package:deep_time_2/ui/models/biology_column_mode.dart';
+import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/models/time_label_mode.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_body.dart';
@@ -11,36 +13,14 @@ import 'package:deep_time_2/ui/screens/timeline/timeline_orientation.dart';
 import 'timeline_row_alignment_helpers.dart';
 
 void main() {
-  testWidgets('Vertical clade tree indents children and aligns range dates', (
+  testWidgets('Taxonomy mode shows taxonomy header and placeholder column', (
     tester,
   ) async {
     await setLargeSurface(tester);
     final palette = testPalette();
     final layout = splitPeriodLayout();
     const markers = TimelineMarkerCatalog(events: [], extinctions: []);
-    const clades = [
-      Clade(
-        id: 'parent_clade',
-        label: 'Parent Clade',
-        scientificRank: 'test',
-        startMa: 100,
-        endMa: 0,
-        displayGroups: ['all'],
-        displayPriority: 0,
-        minZoomLevel: CladeZoomLevel.whole,
-      ),
-      Clade(
-        id: 'child_clade',
-        label: 'Child Clade',
-        scientificRank: 'test',
-        parentId: 'parent_clade',
-        startMa: 50,
-        endMa: 0,
-        displayGroups: ['all'],
-        displayPriority: 1,
-        minZoomLevel: CladeZoomLevel.whole,
-      ),
-    ];
+
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
@@ -58,8 +38,10 @@ void main() {
                   selectedId: null,
                   onBandSelect: (_) {},
                   onSelect: (_) {},
-                  clades: clades,
+                  clades: const [],
+                  biologyColumnMode: BiologyColumnMode.taxonomic,
                   cladeViewMode: CladeViewMode.representativeOnly,
+                  cladeLabelMode: CladeLabelMode.common,
                   cladeCategoryId: 'all',
                   cladeRepresentativeIds: const [],
                   cladeSearchQuery: '',
@@ -78,34 +60,16 @@ void main() {
 
     await tester.pumpAndSettle();
 
-    final columnRect = tester.getRect(
-      find.byKey(const ValueKey('vertical-clade-column')),
-    );
-    final parentRect = tester.getRect(
-      find.byKey(const ValueKey('vertical-clade-parent_clade')),
-    );
-    final childRect = tester.getRect(
-      find.byKey(const ValueKey('vertical-clade-child_clade')),
-    );
-
-    expect(childRect.left, greaterThan(parentRect.left));
+    expect(find.text('Taxonomy'), findsOneWidget);
     expect(
-      (childRect.top - (columnRect.top + columnRect.height / 2)).abs(),
-      lessThanOrEqualTo(4.0),
-    );
-    expect(
-      (childRect.height - (columnRect.height / 2)).abs(),
-      lessThanOrEqualTo(4.0),
-    );
-    expect(
-      find.byKey(
-        const ValueKey('vertical-clade-connector-parent_clade-child_clade'),
-      ),
+      find.byKey(const ValueKey('vertical-taxonomy-column')),
       findsOneWidget,
     );
+    expect(find.text('Taxonomy view coming next'), findsOneWidget);
+    expect(find.byKey(const ValueKey('vertical-clade-column')), findsNothing);
   });
 
-  testWidgets('Representative clade view keeps ancestors for tree connectors', (
+  testWidgets('Cladistic mode filters clades without usable start dates', (
     tester,
   ) async {
     await setLargeSurface(tester);
@@ -114,27 +78,27 @@ void main() {
     const markers = TimelineMarkerCatalog(events: [], extinctions: []);
     const clades = [
       Clade(
-        id: 'parent_clade',
-        label: 'Parent Clade',
+        id: 'bad_nan',
+        label: 'Bad NaN',
         scientificRank: 'test',
-        startMa: 100,
+        startMa: double.nan,
         endMa: 0,
         displayGroups: ['all'],
         displayPriority: 0,
         minZoomLevel: CladeZoomLevel.whole,
       ),
       Clade(
-        id: 'child_clade',
-        label: 'Child Clade',
+        id: 'bad_reverse',
+        label: 'Bad Reverse',
         scientificRank: 'test',
-        parentId: 'parent_clade',
-        startMa: 50,
-        endMa: 0,
+        startMa: 20,
+        endMa: 40,
         displayGroups: ['all'],
         displayPriority: 1,
         minZoomLevel: CladeZoomLevel.whole,
       ),
     ];
+
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
@@ -153,9 +117,11 @@ void main() {
                   onBandSelect: (_) {},
                   onSelect: (_) {},
                   clades: clades,
+                  biologyColumnMode: BiologyColumnMode.cladistic,
                   cladeViewMode: CladeViewMode.representativeOnly,
+                  cladeLabelMode: CladeLabelMode.common,
                   cladeCategoryId: 'all',
-                  cladeRepresentativeIds: const ['child_clade'],
+                  cladeRepresentativeIds: const [],
                   cladeSearchQuery: '',
                   cladeSpotlightId: null,
                   onCladeSpotlight: (_) {},
@@ -172,26 +138,12 @@ void main() {
 
     await tester.pumpAndSettle();
 
+    expect(find.byKey(const ValueKey('vertical-clade-column')), findsOneWidget);
+    expect(find.text('No clades with usable start dates'), findsOneWidget);
+    expect(find.byKey(const ValueKey('vertical-clade-bad_nan')), findsNothing);
     expect(
-      find.byKey(const ValueKey('vertical-clade-parent_clade')),
-      findsOneWidget,
+      find.byKey(const ValueKey('vertical-clade-bad_reverse')),
+      findsNothing,
     );
-    expect(
-      find.byKey(const ValueKey('vertical-clade-child_clade')),
-      findsOneWidget,
-    );
-    expect(
-      find.byKey(
-        const ValueKey('vertical-clade-connector-parent_clade-child_clade'),
-      ),
-      findsOneWidget,
-    );
-  });
-}
-
-Future<void> setLargeSurface(WidgetTester tester) async {
-  await tester.binding.setSurfaceSize(const Size(2000, 1200));
-  addTearDown(() async {
-    await tester.binding.setSurfaceSize(null);
   });
 }
