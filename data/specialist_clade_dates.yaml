@@ -1,0 +1,16 @@
+dinosauria:
+  start_ma: 231.0
+  end_ma: 0.0
+  divergence_ma: 231.0
+  date_basis: curated_first_appearance
+  date_confidence: approximate
+  source_label: Curated dinosaur synthesis
+  note: Approximate first appearance based on curated project chronology.
+aves:
+  start_ma: 160.0
+  end_ma: 0.0
+  divergence_ma: 160.0
+  date_basis: curated_first_appearance
+  date_confidence: approximate
+  source_label: Curated avian synthesis
+  note: Approximate first appearance based on curated project chronology.

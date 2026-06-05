@@ -1,0 +1,133 @@
+# Stage 1 Hybrid Data Report
+
+- Generated: 2026-06-01T15:07:39.898430+00:00
+- Root: `dinosauria`
+- SQLite DB: `data/clades_detail_progressive_opentree.sqlite`
+- Clades in subtree: **40**
+- Max depth: **1**
+- Topology source: `opentree+curated_yaml_stage1`
+- Age source: `pbdb+timetree+curated_yaml_stage1`
+- OpenTree enrichments applied: **39**
+- PBDB age enrichments applied: **0**
+- TimeTree divergence enrichments applied: **0**
+- Age resolved: **40**
+- Age unresolved: **0**
+- Age inferred from ancestor: **0**
+- Age discrepancies flagged: **0**
+
+## Validation
+
+- Missing `start_ma`/`end_ma`: **0**
+- Missing label fields: **0**
+
+## Sample IDs
+
+- `dinosauria`
+- `non_avian_dinosaurs`
+- `aves`
+- `alethoalaornithidae`
+- `archaeoceratopsidae`
+- `arriagadoolithidae`
+- `balochisauridae`
+- `bohaiornithidae`
+- `brodavidae`
+- `caudipterygidae`
+- `eoenantiornithidae`
+- `guaibasauridae`
+- `hesperornidae`
+- `heterostrigidae`
+- `hongshanornithidae`
+- `huanghetitanidae`
+- `ignotornidae`
+- `mamenchisauridae`
+- `messelasturidae`
+- `metriacanthosauridae`
+- `montanoolithidae`
+- `moyenisauropodidae`
+- `mystiornithidae`
+- `omnivoropterygidae`
+- `ornithomimipodidae`
+
+## Warnings
+
+- dinosauria: pbdb_no_age_fields
+- dinosauria: timetree_name_resolution_failed
+- non_avian_dinosaurs: no_tnrs_match
+- non_avian_dinosaurs: no_pbdb_match
+- non_avian_dinosaurs: timetree_missing_mya
+- aves: pbdb_no_age_fields
+- aves: timetree_missing_mya
+- alethoalaornithidae: pbdb_no_age_fields
+- alethoalaornithidae: timetree_missing_mya
+- archaeoceratopsidae: pbdb_no_age_fields
+- archaeoceratopsidae: timetree_missing_mya
+- arriagadoolithidae: pbdb_no_age_fields
+- arriagadoolithidae: timetree_missing_mya
+- balochisauridae: pbdb_no_age_fields
+- balochisauridae: timetree_missing_mya
+- bohaiornithidae: pbdb_no_age_fields
+- bohaiornithidae: timetree_missing_mya
+- brodavidae: pbdb_no_age_fields
+- brodavidae: timetree_missing_mya
+- caudipterygidae: pbdb_no_age_fields
+- caudipterygidae: timetree_missing_mya
+- eoenantiornithidae: pbdb_no_age_fields
+- eoenantiornithidae: timetree_missing_mya
+- guaibasauridae: pbdb_no_age_fields
+- guaibasauridae: timetree_missing_mya
+- hesperornidae: pbdb_no_age_fields
+- hesperornidae: timetree_missing_mya
+- heterostrigidae: pbdb_no_age_fields
+- heterostrigidae: timetree_missing_mya
+- hongshanornithidae: pbdb_no_age_fields
+- hongshanornithidae: timetree_missing_mya
+- huanghetitanidae: pbdb_no_age_fields
+- huanghetitanidae: timetree_missing_mya
+- ignotornidae: pbdb_no_age_fields
+- ignotornidae: timetree_missing_mya
+- mamenchisauridae: pbdb_no_age_fields
+- mamenchisauridae: timetree_missing_mya
+- messelasturidae: pbdb_no_age_fields
+- messelasturidae: timetree_missing_mya
+- metriacanthosauridae: pbdb_no_age_fields
+- metriacanthosauridae: timetree_missing_mya
+- montanoolithidae: pbdb_no_age_fields
+- montanoolithidae: timetree_missing_mya
+- moyenisauropodidae: pbdb_no_age_fields
+- moyenisauropodidae: timetree_missing_mya
+- mystiornithidae: pbdb_no_age_fields
+- mystiornithidae: timetree_missing_mya
+- omnivoropterygidae: pbdb_no_age_fields
+- omnivoropterygidae: timetree_missing_mya
+- ornithomimipodidae: pbdb_no_age_fields
+- ornithomimipodidae: timetree_missing_mya
+- ovaloolithidae: pbdb_no_age_fields
+- ovaloolithidae: timetree_missing_mya
+- pachycorioolithidae: pbdb_no_age_fields
+- pachycorioolithidae: timetree_missing_mya
+- pakisauridae: pbdb_no_age_fields
+- pakisauridae: timetree_missing_mya
+- parvicursoridae: pbdb_no_age_fields
+- parvicursoridae: timetree_missing_mya
+- parvigruidae: pbdb_no_age_fields
+- parvigruidae: timetree_missing_mya
+- pengornithidae: pbdb_no_age_fields
+- pengornithidae: timetree_missing_mya
+- piatnitzkysauridae: pbdb_no_age_fields
+- piatnitzkysauridae: timetree_missing_mya
+- polyclonoolithidae: pbdb_no_age_fields
+- polyclonoolithidae: timetree_missing_mya
+- proceratosauridae: pbdb_no_age_fields
+- proceratosauridae: timetree_missing_mya
+- protoplotidae: pbdb_no_age_fields
+- protoplotidae: timetree_missing_mya
+- psilopteridae: pbdb_no_age_fields
+- psilopteridae: timetree_missing_mya
+- qianshanornithidae: pbdb_no_age_fields
+- qianshanornithidae: timetree_missing_mya
+- rhegminornithidae: pbdb_no_age_fields
+- rhegminornithidae: timetree_missing_mya
+- saltasauridae: pbdb_no_age_fields
+- saltasauridae: timetree_missing_mya
+- sauropodidae: pbdb_no_age_fields
+- sauropodidae: timetree_missing_mya

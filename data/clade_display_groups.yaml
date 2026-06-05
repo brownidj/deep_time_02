@@ -1,0 +1,31 @@
+- id: early_life
+  label: Early life
+  description: Microbes, eukaryotes, and Ediacaran life.
+
+- id: marine_invertebrates
+  label: Marine invertebrates
+  description: Trilobites, brachiopods, ammonoids, crinoids.
+
+- id: fish_early_vertebrates
+  label: Fish & early vertebrates
+  description: Jawless fish, placoderms, sharks, lobe-finned fish.
+
+- id: plants
+  label: Plants
+  description: Land plants, ferns, seed plants, conifers, flowering plants, grasses.
+
+- id: terrestrial_vertebrates
+  label: Terrestrial vertebrates
+  description: Amphibians, synapsids, reptiles, tetrapods.
+
+- id: dinosaurs_mesozoic_reptiles
+  label: Dinosaurs & Mesozoic reptiles
+  description: Dinosaurs, pterosaurs, marine reptiles.
+
+- id: mammals_birds
+  label: Mammals & birds
+  description: Mammals, birds, whales, horses, primates.
+
+- id: human_evolution_ice_age
+  label: Human evolution & Ice Age life
+  description: Hominins, Homo sapiens, megafauna.

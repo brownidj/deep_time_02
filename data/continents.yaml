@@ -1,0 +1,316 @@
+
+
+# Major ancient continents and supercontinents for the Deep Time timeline.
+#
+# Dates are approximate and expressed in Ma (millions of years ago).
+# These are not formal chronostratigraphic boundaries. They are educational
+# timeline ranges for reconstructed landmasses, continental groupings, and
+# supercontinents. Older entries are increasingly uncertain.
+
+continents:
+  - id: ur
+    label: Ur
+    short_label: Ur
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Diagram_of_possible_Ur_Continent_of_the_%28conjectured%29_Eoarchean_Era.png/330px-Diagram_of_possible_Ur_Continent_of_the_%28conjectured%29_Eoarchean_Era.png
+    source_page: https://en.wikipedia.org/wiki/Ur_(continent)
+    image_license: CC BY-SA 3.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/3.0
+    image_author: D A R C 12345
+    image_credit: Own work
+    type: bar
+    start_ma: 3100.0
+    end_ma: 2400.0
+    confidence: low
+    category: ancient_continent
+    explanation: |
+      Ur is a proposed early Archean continent or supercraton. It is highly
+      uncertain and should be treated as a reconstruction rather than a sharply
+      defined continent with exact boundaries.
+
+      Some models place Ur around 3.1 billion years ago. It may have survived
+      as part of later continental assemblies, but for timeline clarity this
+      marker shows the early interval when Ur is commonly treated as a distinct
+      ancient landmass.
+
+  - id: kenorland
+    label: Kenorland
+    short_label: Kenorland
+    image: https://upload.wikimedia.org/wikipedia/commons/7/73/Kenorland.jpg
+    source_page: https://en.wikipedia.org/wiki/Kenorland
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: 242*1eqasdf
+    image_credit: Own work
+    type: bar
+    start_ma: 2720.0
+    end_ma: 2100.0
+    confidence: low_moderate
+    category: supercontinent
+    explanation: |
+      Kenorland is a reconstructed Neoarchean to Paleoproterozoic supercontinent
+      or large supercraton grouping. Its exact shape, membership, and timing are
+      debated.
+
+      It is useful in a deep-time timeline because it represents one of the
+      earliest commonly discussed large-scale continental assemblies.
+
+  - id: arctica
+    label: Arctica
+    short_label: Arctica
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2400_Ma_paleoglobe.png/330px-2400_Ma_paleoglobe.png
+    source_page: https://en.wikipedia.org/wiki/Arctica
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Sammy2012
+    image_credit: Own work
+    type: bar
+    start_ma: 2500.0
+    end_ma: 1500.0
+    confidence: debated
+    category: continental_grouping
+    explanation: |
+      Arctica is a proposed ancient continental grouping involving cratonic
+      blocks that later contributed to parts of North America, Siberia, and
+      related northern landmasses.
+
+      It is more speculative than later supercontinents. Include it as an
+      optional educational marker rather than as a firm, universally accepted
+      supercontinent.
+
+  - id: atlantica
+    label: Atlantica
+    short_label: Atlantica
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Atlantica-2Ga.svg/330px-Atlantica-2Ga.svg.png
+    source_page: https://en.wikipedia.org/wiki/Atlantica
+    image_license: CC BY-SA 3.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/3.0
+    image_author: Fama Clamosa
+    image_credit: Own work
+    type: bar
+    start_ma: 2000.0
+    end_ma: 1100.0
+    confidence: debated
+    category: continental_grouping
+    explanation: |
+      Atlantica is a proposed Proterozoic continental grouping involving cratons
+      that later contributed to parts of South America and Africa.
+
+      It is useful for showing that continental blocks existed and recombined
+      before the better-known supercontinents, but its exact age range and
+      reconstruction remain uncertain.
+
+  - id: columbia_nuna
+    label: Columbia / Nuna
+    short_label: Columbia / Nuna
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Paleoglobe_NO_1590_mya-vector-colors.svg/330px-Paleoglobe_NO_1590_mya-vector-colors.svg.png
+    source_page: https://en.wikipedia.org/wiki/Columbia_(supercontinent)
+    image_license: CC BY-SA 3.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/3.0
+    image_author: Erlend Bjørtvedt (original author)
+    image_credit: Own work
+    type: bar
+    start_ma: 1820.0
+    end_ma: 1350.0
+    confidence: moderate
+    category: supercontinent
+    explanation: |
+      Columbia, also called Nuna, was a major Paleoproterozoic to
+      Mesoproterozoic supercontinent. It is one of the more important early
+      supercontinent reconstructions.
+
+      The exact assembly and breakup dates vary between models, so this marker
+      uses a rounded educational range rather than a precise boundary.
+
+  - id: rodinia
+    label: Rodinia
+    short_label: Rodinia
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Rodinia_900Ma_annotated.jpg/330px-Rodinia_900Ma_annotated.jpg
+    source_page: https://en.wikipedia.org/wiki/Rodinia
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: PebbleLetters
+    image_credit: Own work
+    type: bar
+    start_ma: 1130.0
+    end_ma: 750.0
+    confidence: moderate_high
+    category: supercontinent
+    explanation: |
+      Rodinia was a major Neoproterozoic supercontinent. It assembled long
+      before the Cambrian and broke apart before the rise of the Ediacaran biota
+      and the later Cambrian radiation.
+
+      Its exact configuration is reconstructed from geological and
+      palaeomagnetic evidence, so the dates should still be treated as
+      approximate.
+
+  - id: pannotia
+    label: Pannotia
+    short_label: Pannotia
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Panotiaggg.jpg/330px-Panotiaggg.jpg
+    source_page: https://en.wikipedia.org/wiki/Pannotia
+    image_license: Public domain
+    image_author: Original uploader was Jcwf at nl.wikipedia
+    image_credit: Nasa website. Transferred from nl.wikipedia; transferred to Commons by User:Hardscarf using CommonsHelper.
+    type: bar
+    start_ma: 633.0
+    end_ma: 573.0
+    confidence: debated
+    category: supercontinent
+    explanation: |
+      Pannotia is a proposed short-lived late Neoproterozoic supercontinent.
+      Its existence and exact arrangement are debated, so it should be shown as
+      a lower-confidence reconstruction.
+
+      It is useful for explaining the transition from Rodinia to the later
+      arrangement of Gondwana and other early Phanerozoic continental blocks.
+
+  - id: gondwana
+    label: Gondwana
+    short_label: Gondwana
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gondwana_420_Ma.png/330px-Gondwana_420_Ma.png
+    source_page: https://en.wikipedia.org/wiki/Gondwana
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Fama Clamosa
+    image_credit: Own work
+    type: bar
+    start_ma: 550.0
+    end_ma: 175.0
+    confidence: high
+    category: supercontinent_component
+    explanation: |
+      Gondwana was a major southern landmass that included continental blocks
+      now represented by Africa, South America, Antarctica, Australia, India,
+      Arabia, and related regions.
+
+      Gondwana existed before Pangaea, formed the southern component of Pangaea,
+      and later broke apart during the Mesozoic and Cenozoic.
+
+  - id: breakup_of_gondwana
+    label: Breakup of Gondwana
+    short_label: Gondwana breakup
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gondwana_420_Ma.png/330px-Gondwana_420_Ma.png
+    source_page: https://en.wikipedia.org/wiki/Gondwana
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Fama Clamosa
+    image_credit: Own work
+    type: bar
+    start_ma: 175.0
+    end_ma: 30.0
+    confidence: approximate
+    category: continental_breakup
+    explanation: |
+      The breakup of Gondwana was a long Mesozoic to Cenozoic process in which
+      the southern supercontinent fragmented into the landmasses that became
+      South America, Africa, Antarctica, Australia, India, Arabia, Madagascar,
+      and related continental blocks.
+
+      This marker spans the interval after the main Gondwana bar and before the
+      simplified modern-continent interval. It is intended to show the extended
+      transition from a connected southern supercontinent to a more modern
+      arrangement of separated southern continents.
+
+  - id: pangaea
+    label: Pangaea
+    short_label: Pangaea
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mollweide_Paleographic_Map_of_Earth%2C_250_Ma_%28Olenekian_Age%29.png/330px-Mollweide_Paleographic_Map_of_Earth%2C_250_Ma_%28Olenekian_Age%29.png
+    source_page: https://en.wikipedia.org/wiki/Pangaea
+    image_license: CC BY 4.0
+    image_license_url: https://creativecommons.org/licenses/by/4.0
+    image_author: Scotese, Christopher R.; Verard, Christian; Burgener, Landon; Elling, Reece P.; Kocsis, Adam T.
+    image_credit: Phanerozoic-scope supplementary material to The Cretaceous World from the PALEOMAP project (doi:10.5281/zenodo.10659112)
+    type: bar
+    start_ma: 336.0
+    end_ma: 175.0
+    confidence: high
+    category: supercontinent
+    explanation: |
+      Pangaea was the most recent true supercontinent. It assembled through the
+      late Paleozoic and began breaking apart during the Mesozoic.
+
+      The assembly of Pangaea, occurring approximately between 320 and 250 million
+      years ago during the Late Carboniferous to Permian periods, represents a
+      critical tectonic event in Earth’s geologic history. This supercontinent formed
+      through the convergence and collision of multiple continental landmasses,
+      including Laurentia, Gondwana, Siberia, and Baltica. The process involved
+      complex orogenies, such as the Alleghenian and Uralian, which facilitated the
+      suturing of these cratons. The amalgamation of Pangaea significantly altered
+      global paleogeography, ocean circulation, and climate patterns.
+
+      This tectonic
+      reorganization also influenced terrestrial and marine biota, promoting faunal
+      exchange and diversification, while simultaneously imposing environmental
+      stresses that contributed to the Permian mass extinction. The formation of
+      Pangaea marks a pivotal boundary in the geologic timeline, preceding the
+      Mesozoic breakup that shaped modern continental configurations.
+  - id: laurasia_within_pangaea
+    label: Laurasia within Pangaea
+    short_label: Laurasia in Pangaea
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Laurasia_200Ma.jpg/330px-Laurasia_200Ma.jpg
+    source_page: https://en.wikipedia.org/wiki/Laurasia
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Fama Clamosa
+    image_credit: Own work
+    type: bar
+    start_ma: 299.0
+    end_ma: 200.0
+    confidence: approximate
+    category: supercontinent_component
+    explanation: |
+      Laurasia was the northern component of Pangaea, paired with Gondwana to
+      the south and separated from it by the Tethys Ocean region. In this phase,
+      Laurasia should be understood as a subdivision of Pangaea rather than as a
+      fully independent continent.
+
+      This marker is useful for showing the internal geography of Pangaea before
+      and during its early breakup. It includes the continental blocks that would
+      later contribute to North America, Greenland, Europe, and much of Asia.
+
+  - id: distinct_laurasia
+    label: Distinct Laurasia
+    short_label: Laurasia distinct
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Laurasia_200Ma.jpg/330px-Laurasia_200Ma.jpg
+    source_page: https://en.wikipedia.org/wiki/Laurasia
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Fama Clamosa
+    image_credit: Own work
+    type: bar
+    start_ma: 200.0
+    end_ma: 30.0
+    confidence: approximate
+    category: continental_grouping
+    explanation: |
+      Distinct Laurasia emerged as Pangaea split into two major northern and
+      southern landmasses: Laurasia and Gondwana. This post-Pangaea Laurasia
+      later fragmented further as the North Atlantic opened and North America,
+      Greenland, Europe, and Asia moved toward their modern configurations.
+
+      This marker should be used for Laurasia as a separate northern landmass
+      after the initial breakup of Pangaea, rather than for Laurasia as merely
+      the northern part of an intact Pangaea.
+
+  - id: modern_continents
+    label: Modern continents
+    short_label: Modern continents
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Continental_models-Australia.gif/330px-Continental_models-Australia.gif
+    source_page: https://en.wikipedia.org/wiki/Continent
+    image_license: Public domain
+    image_author: One or more images by AlexCovarrubias, Corticopious
+    image_credit: Continental models.gif
+    type: bar
+    start_ma: 30.0
+    end_ma: 0.0
+    confidence: high
+    category: modern_configuration
+    explanation: |
+      The modern continents did not appear suddenly at 30 Ma, but by this broad
+      interval the post-Laurasia and post-Gondwana world was much closer to the
+      modern continental configuration.
+
+      This marker is best used as a simplified final timeline bar showing the
+      transition from ancient supercontinents to the present-day arrangement of
+      continents.

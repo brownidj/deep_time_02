@@ -1,0 +1,2547 @@
+paleo_ecology:
+- rank: eon
+  name: Hadean
+  path:
+  - Hadean
+- rank: eon
+  name: Archean
+  path:
+  - Archean
+- rank: era
+  name: Eoarchean
+  path:
+  - Archean
+  - Eoarchean
+- rank: era
+  name: Paleoarchean
+  path:
+  - Archean
+  - Paleoarchean
+- rank: era
+  name: Mesoarchean
+  path:
+  - Archean
+  - Mesoarchean
+- rank: era
+  name: Neoarchean
+  path:
+  - Archean
+  - Neoarchean
+- rank: eon
+  name: Proterozoic
+  path:
+  - Proterozoic
+- rank: era
+  name: Paleoproterozoic
+  path:
+  - Proterozoic
+  - Paleoproterozoic
+- rank: period
+  name: Siderian
+  path:
+  - Proterozoic
+  - Paleoproterozoic
+  - Siderian
+- rank: period
+  name: Rhyacian
+  path:
+  - Proterozoic
+  - Paleoproterozoic
+  - Rhyacian
+- rank: period
+  name: Orosirian
+  path:
+  - Proterozoic
+  - Paleoproterozoic
+  - Orosirian
+- rank: period
+  name: Statherian
+  path:
+  - Proterozoic
+  - Paleoproterozoic
+  - Statherian
+- rank: era
+  name: Mesoproterozoic
+  path:
+  - Proterozoic
+  - Mesoproterozoic
+- rank: period
+  name: Calymmian
+  path:
+  - Proterozoic
+  - Mesoproterozoic
+  - Calymmian
+- rank: period
+  name: Ectasian
+  path:
+  - Proterozoic
+  - Mesoproterozoic
+  - Ectasian
+- rank: period
+  name: Stenian
+  path:
+  - Proterozoic
+  - Mesoproterozoic
+  - Stenian
+- rank: era
+  name: Neoproterozoic
+  path:
+  - Proterozoic
+  - Neoproterozoic
+- rank: period
+  name: Tonian
+  path:
+  - Proterozoic
+  - Neoproterozoic
+  - Tonian
+- rank: period
+  name: Cryogenian
+  path:
+  - Proterozoic
+  - Neoproterozoic
+  - Cryogenian
+- rank: period
+  name: Ediacaran
+  path:
+  - Proterozoic
+  - Neoproterozoic
+  - Ediacaran
+- rank: eon
+  name: Phanerozoic
+  path:
+  - Phanerozoic
+- rank: era
+  name: Paleozoic
+  path:
+  - Phanerozoic
+  - Paleozoic
+- rank: period
+  name: Cambrian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Fortunian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Terreneuvian
+  - Fortunian
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Mostly marine microbial mats and early small shelly fossil ecosystems
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Stage 2
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Terreneuvian
+  - Stage 2
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Shallow marine ecosystems with expanding early animal burrowing and small
+    shelly fossils
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Stage 3
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Series 2
+  - Stage 3
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Cambrian shallow seas with rapidly diversifying trilobites and other
+    marine animals
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Stage 4
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Series 2
+  - Stage 4
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Warm shallow marine ecosystems with diverse early arthropods, sponges,
+    and shelly fauna
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Wuliuan
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Miaolingian
+  - Wuliuan
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Marine shelf ecosystems dominated by trilobites, brachiopods, sponges,
+    and early reef communities
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Drumian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Miaolingian
+  - Drumian
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Cambrian marine shelf communities with trilobites, brachiopods, sponges,
+    and soft-bodied fauna
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Guzhangian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Miaolingian
+  - Guzhangian
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Diverse Cambrian seas with trilobite-rich benthic communities and microbial
+    carbonate settings
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Paibian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Furongian
+  - Paibian
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Cambrian marine ecosystems with trilobites, brachiopods, echinoderms,
+    and microbial reefs
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Jiangshanian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Furongian
+  - Jiangshanian
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Cambrian shallow seas with trilobite and brachiopod communities
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Stage 10
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Cambrian
+  - Furongian
+  - Stage 10
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 4000
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Latest Cambrian marine shelf ecosystems before Ordovician biodiversity
+    expansion
+  confidence: low
+  note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
+    be refined from specialist datasets.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: period
+  name: Ordovician
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Tremadocian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Lower
+  - Tremadocian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Ordovician marine communities with expanding plankton, brachiopods,
+    trilobites, and graptolites
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Floian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Lower
+  - Floian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Warm Ordovician seas with increasing marine biodiversity and complex benthic
+    communities
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Dapingian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Middle
+  - Dapingian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Marine biodiversity expansion with brachiopods, bryozoans, trilobites,
+    corals, and graptolites
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Darriwilian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Middle
+  - Darriwilian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Diverse Ordovician marine ecosystems with reef growth and expanding suspension-feeding
+    communities
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Sandbian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Upper
+  - Sandbian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Highly diverse marine shelf ecosystems with corals, bryozoans, brachiopods,
+    and graptolites
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Katian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Upper
+  - Katian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 3600
+  sea_level_delta_m: +120.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Ordovician marine ecosystems with extensive reefs and diverse shelly
+    faunas
+  confidence: low
+  note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
+    stage scale.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Hirnantian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Ordovician
+  - Upper
+  - Hirnantian
+  avg_temp_delta_c: +1.0
+  avg_humidity_delta_percent: -5.0
+  avg_co2_ppm: 1400
+  sea_level_delta_m: -50.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Stressed late Ordovician marine ecosystems affected by cooling, glaciation,
+    and sea-level fall
+  confidence: moderate
+  note: Hirnantian values reflect the short-lived end-Ordovician glaciation and associated
+    sea-level fall.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: period
+  name: Silurian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Rhuddanian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Llandovery
+  - Rhuddanian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Post-extinction Silurian seas with recovering brachiopods, corals, trilobites,
+    and graptolites
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Aeronian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Llandovery
+  - Aeronian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Recovering Silurian marine communities with reef expansion and diverse
+    shelly faunas
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Telychian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Llandovery
+  - Telychian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Warm Silurian shallow seas with coral-stromatoporoid reefs and early jawed
+    fishes
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Sheinwoodian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Wenlock
+  - Sheinwoodian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Silurian reef seas with corals, stromatoporoids, brachiopods, and early
+    fishes
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Homerian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Wenlock
+  - Homerian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Mid-Silurian marine ecosystems with reefs, brachiopods, trilobites, and
+    graptolites
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Gorstian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Ludlow
+  - Gorstian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Silurian shallow seas with reef communities and increasingly diverse
+    jawed fishes
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Ludfordian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Ludlow
+  - Ludfordian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Silurian marine shelves with reefs, brachiopods, eurypterids, and
+    early vertebrate diversification
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Kopanina*
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Přídolí
+  - Kopanina*
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Regional late Silurian marine ecosystems with reef, brachiopod, and early
+    fish communities
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Přídolí*
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Silurian
+  - Přídolí
+  - Přídolí*
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 2200
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Latest Silurian marine and marginal environments with expanding early
+    land plant habitats
+  confidence: low
+  note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
+    represented here.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: period
+  name: Devonian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +3.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  confidence: low
+  note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
+    substantially.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Lochkovian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Lower
+  - Lochkovian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +3.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Devonian seas with jawed fishes and reef communities alongside simple
+    terrestrial plant cover
+  confidence: low
+  note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
+    substantially.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Emsian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Lower
+  - Emsian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +3.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Devonian marine ecosystems with diverse fishes and expanding early
+    vascular plants on land
+  confidence: low
+  note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
+    substantially.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Pragian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Lower
+  - Pragian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +3.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Shallow Devonian seas with reef faunas and early terrestrial plant communities
+  confidence: low
+  note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
+    substantially.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Eifelian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Middle
+  - Eifelian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +3.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Middle Devonian reef seas with placoderms, corals, stromatoporoids, and
+    expanding land vegetation
+  confidence: low
+  note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
+    substantially.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Givetian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Middle
+  - Givetian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +3.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Warm Devonian reef ecosystems and increasingly complex terrestrial plant
+    communities
+  confidence: low
+  note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
+    substantially.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Frasnian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Upper
+  - Frasnian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +2.0
+  avg_co2_ppm: 1400
+  sea_level_delta_m: +70.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Devonian reef seas with diverse fishes, forests expanding on land,
+    and growing ecological stress
+  confidence: low
+  note: Broad late Devonian estimate; reef decline and Kellwasser environmental stress are
+    not captured by average values alone.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Famennian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Devonian
+  - Upper
+  - Famennian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: +1.0
+  avg_co2_ppm: 1200
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: Post-Kellwasser Devonian ecosystems with reduced reefs, diverse fishes,
+    early forests, and early tetrapods
+  confidence: low
+  note: Broad latest Devonian estimate; Hangenberg cooling and extinction stress should be
+    represented separately as events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: period
+  name: Carboniferous
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  avg_temp_delta_c: -1.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: icehouse
+  confidence: low
+  note: Pennsylvanian values reflect late Paleozoic icehouse climate with humid tropical coal
+    swamps and strong regional contrasts.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Tournaisian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Mississippian
+  - Tournaisian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +60.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: Early Carboniferous wetlands, recovering marine ecosystems, and expanding
+    seedless vascular plants
+  confidence: low
+  note: Early Carboniferous estimate during transition toward late Paleozoic icehouse conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Visean
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Mississippian
+  - Visean
+  avg_temp_delta_c: +2.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 800
+  sea_level_delta_m: +50.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: Humid Carboniferous wetlands with coal-forming forests, amphibians, and
+    diverse marine carbonate platforms
+  confidence: low
+  note: Mississippian values reflect humid equatorial coal-forming settings superimposed on
+    broad global cooling.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Serpukhovian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Mississippian
+  - Serpukhovian
+  avg_temp_delta_c: +2.0
+  avg_humidity_delta_percent: +6.0
+  avg_co2_ppm: 800
+  sea_level_delta_m: +50.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: Late Mississippian wetlands and marine shelves with expanding forests
+    and early amniote habitats
+  confidence: low
+  note: Mississippian values reflect humid equatorial coal-forming settings superimposed on
+    broad global cooling.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Bashkirian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Pennsylvanian
+  - Bashkirian
+  avg_temp_delta_c: -1.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Pennsylvanian coal swamps with lycopsid forests, giant insects, amphibians,
+    and early reptiles
+  confidence: low
+  note: Pennsylvanian values reflect late Paleozoic icehouse climate with humid tropical coal
+    swamps and strong regional contrasts.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Moscovian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Pennsylvanian
+  - Moscovian
+  avg_temp_delta_c: -1.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Extensive tropical coal forests with amphibians, early reptiles, and diverse
+    arthropods
+  confidence: low
+  note: Pennsylvanian values reflect late Paleozoic icehouse climate with humid tropical coal
+    swamps and strong regional contrasts.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Kasimovian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Pennsylvanian
+  - Kasimovian
+  avg_temp_delta_c: -1.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Late Carboniferous wetlands alternating with drier habitats as coal forests
+    began to fragment
+  confidence: low
+  note: Pennsylvanian values reflect late Paleozoic icehouse climate with humid tropical coal
+    swamps and strong regional contrasts.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Gzhelian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Carboniferous
+  - Pennsylvanian
+  - Gzhelian
+  avg_temp_delta_c: -1.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Shrinking coal forests, expanding seasonally dry habitats, amphibians,
+    and early reptile diversification
+  confidence: low
+  note: Pennsylvanian values reflect late Paleozoic icehouse climate with humid tropical coal
+    swamps and strong regional contrasts.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: period
+  name: Permian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: -4.0
+  avg_co2_ppm: 1400
+  sea_level_delta_m: +15.0
+  icehouse_greenhouse_state: greenhouse
+  confidence: low
+  note: Late Permian values reflect warming, aridity, and environmental instability before
+    the end-Permian crisis.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Asselian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Cisuralian
+  - Asselian
+  avg_temp_delta_c: +0.5
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 700
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Early Permian icehouse landscapes with seasonally dry interiors and resilient
+    marine shelf communities
+  confidence: low
+  note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
+    aridity.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Sakmarian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Cisuralian
+  - Sakmarian
+  avg_temp_delta_c: +0.5
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 700
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Cool early Permian ecosystems with coniferous seed plants, synapsids,
+    reptiles, and marine faunas
+  confidence: low
+  note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
+    aridity.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Artinskian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Cisuralian
+  - Artinskian
+  avg_temp_delta_c: +0.5
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 700
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Early Permian terrestrial ecosystems with synapsids, reptiles, conifers,
+    and increasingly dry continental interiors
+  confidence: low
+  note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
+    aridity.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Kungurian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Cisuralian
+  - Kungurian
+  avg_temp_delta_c: +0.5
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 700
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Warming late early Permian habitats with drier continental interiors and
+    diverse terrestrial vertebrates
+  confidence: low
+  note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
+    aridity.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Roadian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Guadalupian
+  - Roadian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +20.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: Middle Permian terrestrial ecosystems with therapsids, reptiles, seed
+    plants, and arid interior basins
+  confidence: low
+  note: Middle Permian estimate during warming and weakening of late Paleozoic icehouse conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Wordian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Guadalupian
+  - Wordian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +20.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: Warm middle Permian ecosystems with diverse therapsids, reptiles, conifers,
+    and marine carbonate platforms
+  confidence: low
+  note: Middle Permian estimate during warming and weakening of late Paleozoic icehouse conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Capitanian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Guadalupian
+  - Capitanian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +20.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: Stressed late Guadalupian ecosystems with reef decline, marine turnover,
+    and diverse therapsid faunas
+  confidence: low
+  note: Middle Permian estimate during warming and weakening of late Paleozoic icehouse conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Wuchiapingian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Lopingian
+  - Wuchiapingian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: -4.0
+  avg_co2_ppm: 1400
+  sea_level_delta_m: +15.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Permian terrestrial ecosystems dominated by therapsids and seed plants
+    under increasingly arid climates
+  confidence: low
+  note: Late Permian values reflect warming, aridity, and environmental instability before
+    the end-Permian crisis.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: stage
+  name: Changhsingian
+  path:
+  - Phanerozoic
+  - Paleozoic
+  - Permian
+  - Lopingian
+  - Changhsingian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: -4.0
+  avg_co2_ppm: 1400
+  sea_level_delta_m: +15.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Latest Permian ecosystems under severe environmental stress before the
+    end-Permian mass extinction
+  confidence: low
+  note: Late Permian values reflect warming, aridity, and environmental instability before
+    the end-Permian crisis.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - Haq and Schutter 2008 Paleozoic sea-level synthesis
+- rank: era
+  name: Mesozoic
+  path:
+  - Phanerozoic
+  - Mesozoic
+- rank: period
+  name: Triassic
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Induan
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Lower
+  - Induan
+  avg_temp_delta_c: +8.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +20.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Post-extinction Early Triassic ecosystems with low diversity, stressed
+    marine faunas, and disaster taxa
+  confidence: low
+  note: Induan values reflect severe post-end-Permian greenhouse conditions and ecological
+    stress.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Olenekian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Lower
+  - Olenekian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Recovering Early Triassic ecosystems with marine reptiles, ammonoids,
+    and sparse stressed terrestrial communities
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Anisian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Middle
+  - Anisian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Middle Triassic recovery ecosystems with expanding marine reptiles, ammonoids,
+    archosaurs, and seed plants
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Ladinian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Middle
+  - Ladinian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Diverse Middle Triassic seas and terrestrial archosaur communities during
+    post-extinction recovery
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Carnian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Upper
+  - Carnian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Late Triassic ecosystems with archosaurs, early dinosaurs, conifers, and
+    humid Carnian interval habitats
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Norian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Upper
+  - Norian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Late Triassic terrestrial ecosystems dominated by archosaurs with early
+    dinosaurs and diverse marine reptiles
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Rhaetian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Triassic
+  - Upper
+  - Rhaetian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: -2.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Latest Triassic ecosystems with archosaurs, early dinosaurs, marine reptiles,
+    and pre-extinction ecological stress
+  confidence: low
+  note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: period
+  name: Jurassic
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Hettangian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Lower
+  - Hettangian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Jurassic post-extinction ecosystems with expanding dinosaurs, marine
+    reptiles, ammonites, and conifer forests
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Sinemurian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Lower
+  - Sinemurian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Warm Early Jurassic ecosystems with dinosaurs on land and ammonites plus
+    marine reptiles in seas
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Pliensbachian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Lower
+  - Pliensbachian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Jurassic marine and terrestrial ecosystems with ammonites, marine
+    reptiles, dinosaurs, and conifer vegetation
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Toarcian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Lower
+  - Toarcian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: warm Early Jurassic greenhouse world with marine anoxia, ammonites, marine
+    reptiles, dinosaurs, and conifer forests
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Aalenian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Middle
+  - Aalenian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Middle Jurassic ecosystems with diverse dinosaurs, marine reptiles, ammonites,
+    and gymnosperm forests
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Bajocian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Middle
+  - Bajocian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Middle Jurassic warm marine shelves and terrestrial dinosaur habitats
+    with abundant gymnosperm vegetation
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Bathonian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Middle
+  - Bathonian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Middle Jurassic ecosystems with sauropods, theropods, marine reptiles,
+    ammonites, and conifer-cycad vegetation
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Callovian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Middle
+  - Callovian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: late Middle Jurassic seas with ammonites and marine reptiles plus dinosaur-dominated
+    terrestrial ecosystems
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Oxfordian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Upper
+  - Oxfordian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Jurassic shallow seas, carbonate platforms, marine reptiles, and
+    dinosaur-rich terrestrial habitats
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Kimmeridgian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Upper
+  - Kimmeridgian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Late Jurassic ecosystems with large dinosaurs, pterosaurs, marine reptiles,
+    ammonites, and gymnosperm forests
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Tithonian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Jurassic
+  - Upper
+  - Tithonian
+  avg_temp_delta_c: +6.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1600
+  sea_level_delta_m: +80.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: latest Jurassic ecosystems with diverse dinosaurs, early birds, pterosaurs,
+    marine reptiles, and gymnosperms
+  confidence: low
+  note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
+    treated separately.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: period
+  name: Cretaceous
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Berriasian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Lower
+  - Berriasian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: earliest Cretaceous ecosystems with dinosaurs, pterosaurs, marine reptiles,
+    and gymnosperm-dominated vegetation
+  confidence: low
+  note: Broad Early Cretaceous greenhouse estimate with rising sea levels and regional oceanic
+    anoxic events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Valanginian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Lower
+  - Valanginian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Cretaceous terrestrial dinosaur ecosystems with gymnosperms and
+    early flowering plant expansion beginning
+  confidence: low
+  note: Broad Early Cretaceous greenhouse estimate with rising sea levels and regional oceanic
+    anoxic events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Hauterivian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Lower
+  - Hauterivian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Cretaceous dinosaur ecosystems with conifers, cycads, ferns, and
+    increasingly diverse early angiosperms
+  confidence: low
+  note: Broad Early Cretaceous greenhouse estimate with rising sea levels and regional oceanic
+    anoxic events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Barremian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Lower
+  - Barremian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Cretaceous ecosystems with dinosaurs, pterosaurs, marine reptiles,
+    and expanding flowering plants
+  confidence: low
+  note: Broad Early Cretaceous greenhouse estimate with rising sea levels and regional oceanic
+    anoxic events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Aptian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Lower
+  - Aptian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: warm Early Cretaceous greenhouse ecosystems with angiosperm expansion,
+    dinosaurs, and oceanic anoxic events
+  confidence: low
+  note: Broad Early Cretaceous greenhouse estimate with rising sea levels and regional oceanic
+    anoxic events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Albian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Lower
+  - Albian
+  avg_temp_delta_c: +7.0
+  avg_humidity_delta_percent: +5.0
+  avg_co2_ppm: 1800
+  sea_level_delta_m: +90.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Early Cretaceous ecosystems with widespread flowering plants, dinosaurs,
+    pterosaurs, and diverse marine faunas
+  confidence: low
+  note: Broad Early Cretaceous greenhouse estimate with rising sea levels and regional oceanic
+    anoxic events.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Cenomanian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Upper
+  - Cenomanian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: peak Cretaceous greenhouse ecosystems with high sea levels, angiosperm
+    forests, dinosaurs, and marine anoxia
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Turonian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Upper
+  - Turonian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: very warm Late Cretaceous seas and continents with dinosaurs, angiosperms,
+    and diverse marine reptiles
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Coniacian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Upper
+  - Coniacian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Late Cretaceous ecosystems with flowering plant diversification, dinosaurs,
+    marine reptiles, and modernizing insects
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Santonian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Upper
+  - Santonian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: Late Cretaceous terrestrial ecosystems with angiosperm-rich forests and
+    diverse dinosaur communities
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Campanian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Upper
+  - Campanian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: highly diverse Late Cretaceous dinosaur ecosystems with flowering plants,
+    birds, mammals, and marine reptiles
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Maastrichtian
+  path:
+  - Phanerozoic
+  - Mesozoic
+  - Cretaceous
+  - Upper
+  - Maastrichtian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 2000
+  sea_level_delta_m: +140.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: latest Cretaceous ecosystems with diverse dinosaurs, flowering plants,
+    birds, mammals, and pre-extinction turnover
+  confidence: low
+  note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
+    is simplified.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: era
+  name: Cenozoic
+  path:
+  - Phanerozoic
+  - Cenozoic
+- rank: period
+  name: Paleogene
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+- rank: stage
+  name: Danian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Paleocene
+  - Danian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +60.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: post-K-Pg recovery ecosystems with surviving birds, mammals, reptiles,
+    flowering plants, and recovering marine faunas
+  confidence: moderate
+  note: Paleocene estimate after K-Pg recovery and before the early Eocene climatic optimum.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Selandian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Paleocene
+  - Selandian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +60.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: Paleocene ecosystems with recovering forests, diversifying mammals, birds,
+    and warm shallow marine communities
+  confidence: moderate
+  note: Paleocene estimate after K-Pg recovery and before the early Eocene climatic optimum.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Thanetian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Paleocene
+  - Thanetian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +4.0
+  avg_co2_ppm: 1000
+  sea_level_delta_m: +60.0
+  icehouse_greenhouse_state: greenhouse
+  dominant_ecology: late Paleocene warm ecosystems with mammal diversification and widespread
+    angiosperm forests
+  confidence: moderate
+  note: Paleocene estimate after K-Pg recovery and before the early Eocene climatic optimum.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Ypresian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Eocene
+  - Ypresian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 1200
+  sea_level_delta_m: +70.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: early Eocene hothouse ecosystems with tropical forests, high-latitude
+    warmth, and rapid mammal diversification
+  confidence: moderate
+  note: Eocene values reflect globally warm greenhouse to hothouse conditions, especially
+    in the early Eocene.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Lutetian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Eocene
+  - Lutetian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 1200
+  sea_level_delta_m: +70.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: warm Eocene forests and shallow seas with diverse mammals, birds, reptiles,
+    and marine plankton
+  confidence: moderate
+  note: Eocene values reflect globally warm greenhouse to hothouse conditions, especially
+    in the early Eocene.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Bartonian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Eocene
+  - Bartonian
+  avg_temp_delta_c: +9.0
+  avg_humidity_delta_percent: +7.0
+  avg_co2_ppm: 1200
+  sea_level_delta_m: +70.0
+  icehouse_greenhouse_state: hothouse
+  dominant_ecology: middle Eocene warm ecosystems with broad forests, diverse mammals, and
+    cooling beginning toward later icehouse conditions
+  confidence: moderate
+  note: Eocene values reflect globally warm greenhouse to hothouse conditions, especially
+    in the early Eocene.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Priabonian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Eocene
+  - Priabonian
+  avg_temp_delta_c: +5.0
+  avg_humidity_delta_percent: +2.0
+  avg_co2_ppm: 800
+  sea_level_delta_m: +40.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: late Eocene cooling ecosystems with forest contraction, mammal turnover,
+    and approach to Antarctic glaciation
+  confidence: moderate
+  note: Late Eocene values reflect cooling toward the Eocene-Oligocene transition and Antarctic
+    glaciation.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Rupelian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Oligocene
+  - Rupelian
+  avg_temp_delta_c: +2.0
+  avg_humidity_delta_percent: -1.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +20.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: early Oligocene cooler icehouse ecosystems with Antarctic glaciation,
+    open habitats, and mammal turnover
+  confidence: moderate
+  note: Oligocene values reflect cooler icehouse conditions after Antarctic glaciation began.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Chattian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Paleogene
+  - Oligocene
+  - Chattian
+  avg_temp_delta_c: +2.0
+  avg_humidity_delta_percent: -1.0
+  avg_co2_ppm: 600
+  sea_level_delta_m: +20.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: late Oligocene cooler ecosystems with expanding open woodlands, grasslands,
+    and modernizing mammal faunas
+  confidence: moderate
+  note: Oligocene values reflect cooler icehouse conditions after Antarctic glaciation began.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: period
+  name: Neogene
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+- rank: stage
+  name: Aquitanian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Miocene
+  - Aquitanian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: +2.0
+  avg_co2_ppm: 500
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: early Miocene warm ecosystems with forests, woodlands, grassland expansion,
+    and diversifying mammals
+  confidence: moderate
+  note: Early to middle Miocene values include the Miocene climatic optimum and relatively
+    warm global conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Burdigalian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Miocene
+  - Burdigalian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: +2.0
+  avg_co2_ppm: 500
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: warm early Miocene ecosystems with widespread forests, marine productivity,
+    and diverse mammal communities
+  confidence: moderate
+  note: Early to middle Miocene values include the Miocene climatic optimum and relatively
+    warm global conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Langhian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Miocene
+  - Langhian
+  avg_temp_delta_c: +3.0
+  avg_humidity_delta_percent: +2.0
+  avg_co2_ppm: 500
+  sea_level_delta_m: +25.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: Miocene climatic optimum ecosystems with warm forests, productive seas,
+    and diverse mammals
+  confidence: moderate
+  note: Early to middle Miocene values include the Miocene climatic optimum and relatively
+    warm global conditions.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Serravallian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Miocene
+  - Serravallian
+  avg_temp_delta_c: +1.5
+  avg_humidity_delta_percent: -1.0
+  avg_co2_ppm: 400
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: cooling middle Miocene ecosystems with expanding grasslands, open woodlands,
+    and mammal habitat shifts
+  confidence: moderate
+  note: Late Miocene values reflect cooling, increasing aridity, and expansion of open habitats.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Tortonian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Miocene
+  - Tortonian
+  avg_temp_delta_c: +1.5
+  avg_humidity_delta_percent: -1.0
+  avg_co2_ppm: 400
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: late Miocene ecosystems with widespread grasslands, savannas, grazing
+    mammals, and increasing aridity
+  confidence: moderate
+  note: Late Miocene values reflect cooling, increasing aridity, and expansion of open habitats.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Messinian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Miocene
+  - Messinian
+  avg_temp_delta_c: +1.5
+  avg_humidity_delta_percent: -1.0
+  avg_co2_ppm: 400
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: transitional
+  dominant_ecology: latest Miocene ecosystems with grassland expansion, aridification, faunal
+    turnover, and Mediterranean salinity crisis effects
+  confidence: moderate
+  note: Late Miocene values reflect cooling, increasing aridity, and expansion of open habitats.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Zanclean
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Pliocene
+  - Zanclean
+  avg_temp_delta_c: +1.5
+  avg_humidity_delta_percent: 0.0
+  avg_co2_ppm: 400
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: early Pliocene relatively warm ecosystems with grasslands, forests, marine
+    recovery, and hominin-bearing landscapes
+  confidence: moderate
+  note: Pliocene values reflect warmer-than-present conditions before intensification of Northern
+    Hemisphere glaciation.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Piacenzian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Neogene
+  - Pliocene
+  - Piacenzian
+  avg_temp_delta_c: +1.5
+  avg_humidity_delta_percent: 0.0
+  avg_co2_ppm: 400
+  sea_level_delta_m: +10.0
+  icehouse_greenhouse_state: cool_greenhouse
+  dominant_ecology: late Pliocene cooling ecosystems with expanding grasslands, northern glaciation,
+    and hominin evolution
+  confidence: moderate
+  note: Pliocene values reflect warmer-than-present conditions before intensification of Northern
+    Hemisphere glaciation.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: period
+  name: Quaternary
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+- rank: stage
+  name: Gelasian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Pleistocene
+  - Gelasian
+  avg_temp_delta_c: -2.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 300
+  sea_level_delta_m: -60.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: early Pleistocene glacial-interglacial ecosystems with grasslands, steppe
+    habitats, megafauna, and early Homo
+  confidence: moderate
+  note: Pleistocene values average repeated glacial-interglacial cycles; individual interglacials
+    were much closer to present.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Calabrian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Pleistocene
+  - Calabrian
+  avg_temp_delta_c: -2.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 300
+  sea_level_delta_m: -60.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: Pleistocene glacial-cycle ecosystems with savannas, steppes, forests,
+    megafauna, and expanding human ancestors
+  confidence: moderate
+  note: Pleistocene values average repeated glacial-interglacial cycles; individual interglacials
+    were much closer to present.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Chibanian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Pleistocene
+  - Chibanian
+  avg_temp_delta_c: -2.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 300
+  sea_level_delta_m: -60.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: middle Pleistocene glacial-interglacial ecosystems with megafauna, grasslands,
+    forests, and archaic humans
+  confidence: moderate
+  note: Pleistocene values average repeated glacial-interglacial cycles; individual interglacials
+    were much closer to present.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Upper
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Pleistocene
+  - Upper
+  avg_temp_delta_c: -2.0
+  avg_humidity_delta_percent: -3.0
+  avg_co2_ppm: 300
+  sea_level_delta_m: -60.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: late Pleistocene ecosystems with repeated glaciations, megafauna, modern
+    humans, and major extinction pressures
+  confidence: moderate
+  note: Pleistocene values average repeated glacial-interglacial cycles; individual interglacials
+    were much closer to present.
+  sources:
+  - Scotese et al. 2021 Phanerozoic temperature reconstruction
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+  - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+- rank: stage
+  name: Greenlandian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Holocene
+  - Greenlandian
+  avg_temp_delta_c: -0.3
+  avg_humidity_delta_percent: 0.0
+  avg_co2_ppm: 300
+  sea_level_delta_m: -20.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: early Holocene warming ecosystems with retreating ice sheets, forest expansion,
+    and early agriculture beginning
+  confidence: moderate
+  note: Early Holocene values reflect warming after the last glacial period while sea level
+    was still rising toward present.
+  sources:
+  - Holocene climate and sea-level synthesis
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+- rank: stage
+  name: Northgrippian
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Holocene
+  - Northgrippian
+  avg_temp_delta_c: 0.0
+  avg_humidity_delta_percent: 0.0
+  avg_co2_ppm: 300
+  sea_level_delta_m: -2.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: middle Holocene ecosystems with relatively stable climates, expanding
+    human land use, forests, grasslands, and wetlands
+  confidence: moderate
+  note: Middle Holocene values are close to present but still preindustrial in atmospheric
+    CO2 terms.
+  sources:
+  - Holocene climate and sea-level synthesis
+  - Foster et al. 2017 Phanerozoic CO2 synthesis
+- rank: stage
+  name: Meghalayan
+  path:
+  - Phanerozoic
+  - Cenozoic
+  - Quaternary
+  - Holocene
+  - Meghalayan
+  avg_temp_delta_c: +0.5
+  avg_humidity_delta_percent: 0.0
+  avg_co2_ppm: 400
+  sea_level_delta_m: 0.0
+  icehouse_greenhouse_state: icehouse
+  dominant_ecology: late Holocene ecosystems shaped by agriculture, urbanization, deforestation,
+    species movement, and industrial impacts
+  confidence: moderate
+  note: Late Holocene values are close to the present baseline; recent industrial warming
+    is compressed into the latest part of the stage.
+  sources:
+  - Holocene climate and sea-level synthesis
+  - Foster et al. 2017 Phanerozoic CO2 synthesis

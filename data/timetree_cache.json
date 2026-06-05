@@ -1,0 +1,689 @@
+{
+  "dinosauria|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non-avian dinosaurs|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "aves|||dinosauria": {
+    "error": "timetree_missing_mya"
+  },
+  "alethoalaornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archaeoceratopsidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "arriagadoolithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "balochisauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "bohaiornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "brodavidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "caudipterygidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "eoenantiornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "guaibasauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hesperornidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "heterostrigidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hongshanornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "huanghetitanidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ignotornidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mamenchisauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "messelasturidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "metriacanthosauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "montanoolithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "moyenisauropodidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mystiornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "omnivoropterygidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ornithomimipodidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ovaloolithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pachycorioolithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pakisauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvicursoridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvigruidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pengornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "piatnitzkysauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "polyclonoolithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "proceratosauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "protoplotidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "psilopteridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "qianshanornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "rhegminornithidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "saltasauridae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "sauropodidae|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "dinosaurs|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "dinosauria|||diapsids": {
+    "error": "timetree_missing_mya"
+  },
+  "dinosaurs|||diapsids": {
+    "error": "timetree_missing_mya"
+  },
+  "dinosauria|||sauropsids": {
+    "error": "timetree_missing_mya"
+  },
+  "dinosaurs|||sauropsids": {
+    "error": "timetree_missing_mya"
+  },
+  "dinosauria|||amniota": {
+    "error": "timetree_missing_mya"
+  },
+  "dinosaurs|||amniota": {
+    "error": "timetree_missing_mya"
+  },
+  "archosaurs|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archosaurs|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archosaurs|||amniota": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "diapsids|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "diapsids|||sauropsids": {
+    "error": "timetree_missing_mya"
+  },
+  "diapsids|||amniota": {
+    "error": "timetree_missing_mya"
+  },
+  "sauropsids|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "sauropsids|||diapsids": {
+    "error": "timetree_missing_mya"
+  },
+  "sauropsids|||amniota": {
+    "error": "timetree_missing_mya"
+  },
+  "non-avian dinosaurs|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non avian dinosaurs|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non avian dinosaurs|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "dinosaurs|||dinosauria": {
+    "error": "timetree_missing_mya"
+  },
+  "non-avian dinosaurs|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non avian dinosaurs|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non-avian dinosaurs|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non avian dinosaurs|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non-avian dinosaurs|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "non avian dinosaurs|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "dinosauria|||dinosaurs": {
+    "error": "timetree_missing_mya"
+  },
+  "archosaurs|||dinosauria": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archosaurs|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "diapsids|||dinosauria": {
+    "error": "timetree_missing_mya"
+  },
+  "diapsids|||dinosaurs": {
+    "error": "timetree_missing_mya"
+  },
+  "aves|||dinosaurs": {
+    "error": "timetree_missing_mya"
+  },
+  "birds|||dinosauria": {
+    "error": "timetree_missing_mya"
+  },
+  "birds|||dinosaurs": {
+    "error": "timetree_missing_mya"
+  },
+  "aves|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "birds|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "aves|||diapsids": {
+    "error": "timetree_missing_mya"
+  },
+  "birds|||diapsids": {
+    "error": "timetree_missing_mya"
+  },
+  "aves|||sauropsids": {
+    "error": "timetree_missing_mya"
+  },
+  "birds|||sauropsids": {
+    "error": "timetree_missing_mya"
+  },
+  "alethoalaornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "alethoalaornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "alethoalaornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "alethoalaornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archaeoceratopsidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archaeoceratopsidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archaeoceratopsidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "archaeoceratopsidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "arriagadoolithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "arriagadoolithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "arriagadoolithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "arriagadoolithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "balochisauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "balochisauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "balochisauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "balochisauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "bohaiornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "bohaiornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "bohaiornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "bohaiornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "brodavidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "brodavidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "brodavidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "brodavidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "caudipterygidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "caudipterygidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "caudipterygidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "caudipterygidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "eoenantiornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "eoenantiornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "eoenantiornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "eoenantiornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "guaibasauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "guaibasauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "guaibasauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "guaibasauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hesperornidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hesperornidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hesperornidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hesperornidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "heterostrigidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "heterostrigidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "heterostrigidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "heterostrigidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hongshanornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hongshanornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hongshanornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "hongshanornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "huanghetitanidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "huanghetitanidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "huanghetitanidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "huanghetitanidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ignotornidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ignotornidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ignotornidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ignotornidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mamenchisauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mamenchisauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mamenchisauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mamenchisauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "messelasturidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "messelasturidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "messelasturidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "messelasturidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "metriacanthosauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "metriacanthosauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "metriacanthosauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "metriacanthosauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "montanoolithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "montanoolithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "montanoolithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "montanoolithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "moyenisauropodidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "moyenisauropodidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "moyenisauropodidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "moyenisauropodidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mystiornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mystiornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mystiornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "mystiornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "omnivoropterygidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "omnivoropterygidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "omnivoropterygidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "omnivoropterygidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ornithomimipodidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ornithomimipodidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ornithomimipodidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ornithomimipodidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ovaloolithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ovaloolithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ovaloolithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ovaloolithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pachycorioolithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pachycorioolithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pachycorioolithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pachycorioolithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pakisauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pakisauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pakisauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pakisauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvicursoridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvicursoridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvicursoridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvicursoridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvigruidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvigruidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvigruidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "parvigruidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pengornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pengornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pengornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "pengornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "piatnitzkysauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "piatnitzkysauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "piatnitzkysauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "piatnitzkysauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "polyclonoolithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "polyclonoolithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "polyclonoolithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "polyclonoolithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "proceratosauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "proceratosauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "proceratosauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "proceratosauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "protoplotidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "protoplotidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "protoplotidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "protoplotidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "psilopteridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "psilopteridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "psilopteridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "psilopteridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "qianshanornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "qianshanornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "qianshanornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "qianshanornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "rhegminornithidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "rhegminornithidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "rhegminornithidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "rhegminornithidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "saltasauridae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "saltasauridae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "saltasauridae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "saltasauridae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "sauropodidae|||dinosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "sauropodidae|||archosaurs": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "sauropodidae|||diapsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "sauropodidae|||sauropsids": {
+    "error": "timetree_name_resolution_failed"
+  },
+  "ncbi:8782|||ncbi:436486": {
+    "error": "timetree_missing_mya"
+  }
+}

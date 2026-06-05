@@ -1,0 +1,219 @@
+# Major ancient oceans, seaways, and epicontinental seas for the Deep Time timeline.
+#
+# Dates are approximate and expressed in Ma (millions of years ago).
+# These are educational palaeogeography ranges, not formal chronostratigraphic
+# boundaries. Many seas opened, narrowed, reconnected, or retreated repeatedly.
+
+seas:
+  - id: panthalassa
+    label: Panthalassa
+    short_label: Panthalassa
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Panthalassa_250Ma.jpg/330px-Panthalassa_250Ma.jpg
+    source_page: https://en.wikipedia.org/wiki/Panthalassa
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Fama Clamosa
+    image_credit: Own work
+    type: bar
+    start_ma: 335.0
+    end_ma: 200.0
+    confidence: approximate
+    category: superocean
+    explanation: |
+      Panthalassa was the vast global ocean surrounding Pangaea. It occupied
+      most of Earth's surface while the continents were assembled into the
+      Pangaea supercontinent.
+
+      This marker is best used as a broad visual companion to the Pangaea bar
+      rather than as a sharply bounded ocean with exact start and end dates.
+
+  - id: paleo_tethys
+    label: Paleo-Tethys Ocean
+    short_label: Paleo-Tethys
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/380_Ma_plate_tectonic_reconstruction.png/330px-380_Ma_plate_tectonic_reconstruction.png
+    source_page: https://en.wikipedia.org/wiki/Paleo-Tethys_Ocean
+    image_license: Attribution
+    image_author: Stampfli and Borel 2000
+    image_credit: This image comes from the Tethyan Plate Tectonic working group of the Institut de Mineralogie et Petrographie, Universite de Lausanne.
+    type: bar
+    start_ma: 400.0
+    end_ma: 250.0
+    confidence: approximate
+    category: ocean
+    explanation: |
+      The Paleo-Tethys Ocean was an important Paleozoic ocean basin associated
+      with the changing positions of Gondwana, Laurussia, and Asian continental
+      blocks.
+
+      It was progressively replaced by later Tethyan ocean systems as Pangaea
+      assembled and then began to break apart.
+
+  - id: tethys
+    label: Tethys Ocean
+    short_label: Tethys
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Laurasia-Gondwana.svg/330px-Laurasia-Gondwana.svg.png
+    source_page: https://en.wikipedia.org/wiki/Tethys_Ocean
+    image_license: CC BY 3.0
+    image_license_url: https://creativecommons.org/licenses/by/3.0
+    image_author: Lennart Kudling
+    image_credit: This image has been extracted from another file
+    type: bar
+    start_ma: 250.0
+    end_ma: 23.0
+    confidence: approximate
+    category: ocean
+    explanation: |
+      The Tethys Ocean was a major tropical ocean between Gondwana and Laurasia
+      during much of the Mesozoic and early Cenozoic.
+
+      Its remnants and successor basins contributed to the development of the
+      Mediterranean region, the Black Sea, the Caspian Sea, and related Eurasian
+      marine basins.
+
+  - id: iapetus
+    label: Iapetus Ocean
+    short_label: Iapetus
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Positions_of_ancient_continents%2C_550_million_years_ago.jpg/330px-Positions_of_ancient_continents%2C_550_million_years_ago.jpg
+    source_page: https://en.wikipedia.org/wiki/Iapetus_Ocean
+    image_license: Public domain
+    type: bar
+    start_ma: 600.0
+    end_ma: 420.0
+    confidence: approximate
+    category: ocean
+    explanation: |
+      The Iapetus Ocean opened during the breakup of Rodinia and separated
+      continental blocks including Laurentia, Baltica, and parts of Gondwana.
+
+      It closed through Ordovician to Silurian tectonic collisions, contributing
+      to mountain-building events around the margins of the North Atlantic
+      region.
+
+  - id: rheic
+    label: Rheic Ocean
+    short_label: Rheic
+    image: https://upload.wikimedia.org/wikipedia/commons/e/e4/Avalonia_entwicklung_odovizium_silur.png
+    source_page: https://en.wikipedia.org/wiki/Rheic_Ocean
+    image_license: CC BY-SA 3.0
+    image_license_url: http://creativecommons.org/licenses/by-sa/3.0/
+    image_author: Gunthram at German Wikipedia
+    image_credit: Own work
+    type: bar
+    start_ma: 480.0
+    end_ma: 320.0
+    confidence: approximate
+    category: ocean
+    explanation: |
+      The Rheic Ocean was a major Paleozoic ocean between Gondwana-derived
+      terranes and Laurussia.
+
+      Its closure during the Devonian to Mississippian helped assemble Pangaea
+      and produced major Appalachian, Ouachita, and Variscan mountain-building
+      systems.
+
+  - id: western_interior_seaway
+    label: Western Interior Seaway
+    short_label: Western Interior Seaway
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Map_of_North_America_with_the_Western_Interior_Seaway_during_the_Campanian_%28Upper_Cretaceous%29.png/330px-Map_of_North_America_with_the_Western_Interior_Seaway_during_the_Campanian_%28Upper_Cretaceous%29.png
+    source_page: https://en.wikipedia.org/wiki/Western_Interior_Seaway
+    image_license: CC BY 4.0
+    image_license_url: https://creativecommons.org/licenses/by/4.0
+    image_author: Scott D. Sampson, Mark A. Loewen, Andrew A. Farke, Eric M. Roberts, Catherine A. Forster, Joshua A. Smith, Alan L. Titus
+    image_credit: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0012292
+    type: bar
+    start_ma: 100.0
+    end_ma: 66.0
+    confidence: moderate
+    category: seaway
+    explanation: |
+      The Western Interior Seaway was a broad inland sea that split North
+      America into western Laramidia and eastern Appalachia during the Late
+      Cretaceous.
+
+      It connected the Arctic Ocean with the Gulf of Mexico at times and
+      supported rich marine ecosystems including ammonites, fish, marine
+      reptiles, seabirds, and planktonic communities.
+
+  - id: sundance_sea
+    label: Sundance Sea
+    short_label: Sundance Sea
+    image: https://upload.wikimedia.org/wikipedia/commons/2/23/Map_of_North_America_with_the_Western_Interior_Seaway_during_the_Campanian_%28Upper_Cretaceous%29.png
+    source_page: https://en.wikipedia.org/wiki/Sundance_Sea
+    image_license: CC BY 4.0
+    image_license_url: https://creativecommons.org/licenses/by/4.0
+    image_author: Scott D. Sampson, Mark A. Loewen, Andrew A. Farke, Eric M. Roberts, Catherine A. Forster, Joshua A. Smith, Alan L. Titus
+    image_credit: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0012292
+    type: bar
+    start_ma: 168.0
+    end_ma: 157.0
+    confidence: moderate
+    category: epicontinental_sea
+    explanation: |
+      The Sundance Sea was a Middle to early Late Jurassic inland sea that
+      flooded parts of western North America.
+
+      It deposited marine shales, sandstones, and limestones and supported
+      ammonites, bivalves, marine reptiles, and other shallow-marine life.
+
+  - id: zechstein_sea
+    label: Zechstein Sea
+    short_label: Zechstein Sea
+    image: https://upload.wikimedia.org/wikipedia/commons/5/5d/Zechsteinmeer_europa.jpg
+    source_page: https://en.wikipedia.org/wiki/Zechstein
+    image_license: CC BY-SA 3.0
+    image_license_url: http://creativecommons.org/licenses/by-sa/3.0/
+    image_author: San Jose, Drdoht at de.wikipedia
+    image_credit: de Datei Europe topography map en.png plus eigene Bearbeitung
+    type: bar
+    start_ma: 259.5
+    end_ma: 252.0
+    confidence: approximate
+    category: epicontinental_sea
+    explanation: |
+      The Zechstein Sea was a Late Permian sea that repeatedly flooded the
+      European Permian Basin.
+
+      Its restricted marine waters produced thick evaporites, carbonates, and
+      reef deposits across parts of what are now northern and central Europe.
+
+  - id: paratethys
+    label: Paratethys Sea
+    short_label: Paratethys
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Dire_Straits_FIG_01.jpg/330px-Dire_Straits_FIG_01.jpg
+    source_page: https://en.wikipedia.org/wiki/Paratethys
+    image_license: CC BY-SA 4.0
+    image_license_url: https://creativecommons.org/licenses/by-sa/4.0
+    image_author: Dan.palcu
+    image_credit: Palcu and Krijgsman, The dire straits of Paratethys, Geol. Soc. London, Spec. Publ. 523 (2023), doi:10.1144/SP523-2021-73
+    type: bar
+    start_ma: 34.0
+    end_ma: 5.0
+    confidence: moderate
+    category: inland_sea
+    explanation: |
+      The Paratethys was a large shallow inland sea across parts of Europe and
+      western Asia during the Oligocene and Miocene.
+
+      It became increasingly restricted through time and eventually left remnant
+      basins including the Black Sea, Caspian Sea, and Aral Sea region.
+
+  - id: modern_mediterranean
+    label: Mediterranean Sea
+    short_label: Mediterranean
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mediterranean_Sea_16.61811E_38.99124N.jpg/330px-Mediterranean_Sea_16.61811E_38.99124N.jpg
+    source_page: https://en.wikipedia.org/wiki/Mediterranean_Sea
+    image_license: Public domain
+    image_author: of the modification Eric Gaba (Sting)
+    image_credit: Screenshot from NASA World Wind (retouched)
+    type: bar
+    start_ma: 5.33
+    end_ma: 0.0
+    confidence: high
+    category: modern_sea
+    explanation: |
+      The modern Mediterranean Sea developed after the Messinian salinity crisis
+      when Atlantic waters reflooded the Mediterranean basin near the start of
+      the Pliocene.
+
+      This marker is useful as a late Cenozoic successor to parts of the older
+      Tethyan and Paratethyan marine systems.

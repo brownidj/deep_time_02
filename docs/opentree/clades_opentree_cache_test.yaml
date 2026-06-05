@@ -1,0 +1,107 @@
+generated_at: '2026-05-30T23:43:26.631239+00:00'
+source: OpenTree of Life API v3
+clades:
+  homo:
+    id: homo
+    label: Homo
+    parent_id: hominini
+    requested_name: Homo
+    checked_at: '2026-05-30T23:43:26.631239+00:00'
+    opentree:
+      ott_id: 770309
+      matched_name: Homo
+      unique_name: Homo
+      rank: genus
+      flags:
+      - extinct_inherited
+      - sibling_higher
+      lineage_ids:
+      - 312031
+      - 770311
+      - 386191
+      - 842867
+      - 386195
+      - 702152
+      - 913935
+      - 6520519
+      - 392222
+      - 5334778
+      - 683263
+      - 229558
+      - 244265
+      - 229560
+      - 229562
+      - 4940726
+      - 458402
+      - 114654
+      - 114656
+      - 278114
+      - 801601
+      - 947318
+      - 125642
+      - 147604
+      - 117569
+      - 641038
+      - 691846
+      - 5246131
+      - 332573
+      - 304358
+      - 93302
+      - 805080
+      is_approximate_match: false
+      score: 1.0
+      checked_at: '2026-05-30T23:43:26.631239+00:00'
+  homo_sapiens:
+    id: homo_sapiens
+    label: Homo sapiens
+    parent_id: homo
+    requested_name: Homo sapiens
+    checked_at: '2026-05-30T23:43:26.631239+00:00'
+    opentree:
+      ott_id: 770315
+      matched_name: Homo sapiens
+      unique_name: Homo sapiens
+      rank: species
+      flags:
+      - extinct
+      - sibling_higher
+      lineage_ids:
+      - 770309
+      - 312031
+      - 770311
+      - 386191
+      - 842867
+      - 386195
+      - 702152
+      - 913935
+      - 6520519
+      - 392222
+      - 5334778
+      - 683263
+      - 229558
+      - 244265
+      - 229560
+      - 229562
+      - 4940726
+      - 458402
+      - 114654
+      - 114656
+      - 278114
+      - 801601
+      - 947318
+      - 125642
+      - 147604
+      - 117569
+      - 641038
+      - 691846
+      - 5246131
+      - 332573
+      - 304358
+      - 93302
+      - 805080
+      is_approximate_match: false
+      score: 1.0
+      checked_at: '2026-05-30T23:43:26.631239+00:00'
+warnings: []
+errors: []
+subtree: null

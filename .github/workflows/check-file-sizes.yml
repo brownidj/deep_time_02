@@ -1,0 +1,20 @@
+name: Check File Sizes
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  check-file-sizes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ripgrep
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ripgrep
+
+      - name: Enforce 300-line file limit
+        run: ./scripts/check_file_sizes.sh .

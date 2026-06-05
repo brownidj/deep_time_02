@@ -1,0 +1,1221 @@
+alethoalaornithidae:
+  context:
+    common_label: Alethoalaornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for alethoalaornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Alethoalaornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+archaeoceratopsidae:
+  context:
+    common_label: Archaeoceratopsidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for archaeoceratopsidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Archaeoceratopsidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+arriagadoolithidae:
+  context:
+    common_label: Arriagadoolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for arriagadoolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Arriagadoolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+balochisauridae:
+  context:
+    common_label: Balochisauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for balochisauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Balochisauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+bohaiornithidae:
+  context:
+    common_label: Bohaiornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for bohaiornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Bohaiornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+brodavidae:
+  context:
+    common_label: Brodavidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for brodavidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Brodavidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+caudipterygidae:
+  context:
+    common_label: Caudipterygidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for caudipterygidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Caudipterygidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+eoenantiornithidae:
+  context:
+    common_label: Eoenantiornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for eoenantiornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Eoenantiornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+guaibasauridae:
+  context:
+    common_label: Guaibasauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for guaibasauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Guaibasauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+hesperornidae:
+  context:
+    common_label: Hesperornidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for hesperornidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Hesperornidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+heterostrigidae:
+  context:
+    common_label: Heterostrigidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for heterostrigidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Heterostrigidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+hongshanornithidae:
+  context:
+    common_label: Hongshanornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for hongshanornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Hongshanornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+huanghetitanidae:
+  context:
+    common_label: Huanghetitanidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for huanghetitanidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Huanghetitanidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+ignotornidae:
+  context:
+    common_label: Ignotornidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for ignotornidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Ignotornidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+mamenchisauridae:
+  context:
+    common_label: Mamenchisauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for mamenchisauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Mamenchisauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+messelasturidae:
+  context:
+    common_label: Messelasturidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for messelasturidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Messelasturidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+metriacanthosauridae:
+  context:
+    common_label: Metriacanthosauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for metriacanthosauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Metriacanthosauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+montanoolithidae:
+  context:
+    common_label: Montanoolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for montanoolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Montanoolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+moyenisauropodidae:
+  context:
+    common_label: Moyenisauropodidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for moyenisauropodidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Moyenisauropodidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+mystiornithidae:
+  context:
+    common_label: Mystiornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for mystiornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Mystiornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+omnivoropterygidae:
+  context:
+    common_label: Omnivoropterygidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for omnivoropterygidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Omnivoropterygidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+ornithomimipodidae:
+  context:
+    common_label: Ornithomimipodidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for ornithomimipodidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Ornithomimipodidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+ovaloolithidae:
+  context:
+    common_label: Ovaloolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for ovaloolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Ovaloolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+pachycorioolithidae:
+  context:
+    common_label: Pachycorioolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for pachycorioolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Pachycorioolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+pakisauridae:
+  context:
+    common_label: Pakisauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for pakisauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Pakisauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+parvicursoridae:
+  context:
+    common_label: Parvicursoridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for parvicursoridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Parvicursoridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+parvigruidae:
+  context:
+    common_label: Parvigruidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for parvigruidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Parvigruidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+pengornithidae:
+  context:
+    common_label: Pengornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for pengornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Pengornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+piatnitzkysauridae:
+  context:
+    common_label: Piatnitzkysauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for piatnitzkysauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Piatnitzkysauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+polyclonoolithidae:
+  context:
+    common_label: Polyclonoolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for polyclonoolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Polyclonoolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+proceratosauridae:
+  context:
+    common_label: Proceratosauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for proceratosauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Proceratosauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+protoplotidae:
+  context:
+    common_label: Protoplotidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for protoplotidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Protoplotidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+psilopteridae:
+  context:
+    common_label: Psilopteridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for psilopteridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Psilopteridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+qianshanornithidae:
+  context:
+    common_label: Qianshanornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for qianshanornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Qianshanornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+rhegminornithidae:
+  context:
+    common_label: Rhegminornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for rhegminornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Rhegminornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+saltasauridae:
+  context:
+    common_label: Saltasauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for saltasauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Saltasauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+sauropodidae:
+  context:
+    common_label: Sauropodidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
+        found for sauropodidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Sauropodidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: null
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending

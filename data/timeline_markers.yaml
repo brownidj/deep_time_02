@@ -1,0 +1,721 @@
+events:
+  - label: Great Oxidation
+    explanation: |
+      The Great Oxidation Event (GOE), occurring approximately between 2400 and 2100
+      million years ago, marks a pivotal interval in Earth's geologic timeline when
+      atmospheric oxygen levels rose dramatically. This rise was primarily driven by
+      cyanobacterial photosynthesis, which produced oxygen as a metabolic byproduct.
+      Prior to the GOE, Earth's atmosphere was largely anoxic, containing negligible
+      free oxygen. The accumulation of oxygen led to substantial geochemical and
+      biological transformations, including the oxidation of iron in marine
+      environments and the deposition of banded iron formations.
+
+      This event fundamentally altered Earth's redox state, enabling the evolution of aerobic
+      metabolisms and more complex life forms. Additionally, the GOE influenced
+      climate by affecting greenhouse gas concentrations, contributing to global
+      glaciations in the Paleoproterozoic. Thus, the Great Oxidation Event represents
+      a critical threshold in Earth's history, signaling the transition from an anoxic
+      to an oxygenated atmosphere with profound implications for planetary
+      habitability and biogeochemical cycling.
+    short_label: GOE
+    type: bar
+    start_ma: 2400.0
+    end_ma: 2100
+  - label: Ediacaran biota
+    explanation: |
+      The Ediacaran biota represents a critical interval in the late Precambrian,
+      spanning approximately 575 to 539 million years ago. This geologic timeline
+      marker is characterized by the emergence of the earliest known complex
+      multicellular organisms, which exhibit distinctive soft-bodied morphologies
+      preserved in the fossil record. These organisms display a range of body plans,
+      including frond-like, discoidal, and segmented forms, reflecting a significant
+      evolutionary experimentation preceding the Cambrian Explosion.
+
+      The Ediacaran assemblages provide vital insights into the early evolution of metazoans and the
+      ecological dynamics of Precambrian marine environments. Their preservation
+      predominantly as impressions in fine-grained sediments enables detailed
+      morphological studies. Despite their enigmatic affinities, Ediacaran biota
+      establish the foundation for subsequent diversification of animal life, marking
+      a pivotal transition from microscopic life forms to more structurally complex
+      organisms in Earth’s history.
+    short_label: Ediacaran
+    type: bar
+    start_ma: 575.0
+    end_ma: 538.8
+  - label: Cambrian radiation
+    explanation: |
+      The Cambrian radiation, occurring approximately between 539 and 520 million
+      years ago, represents a pivotal interval in Earth’s geologic timeline
+      characterized by the rapid diversification of multicellular life forms. This
+      period marks the emergence of most major animal phyla, evidenced by an extensive
+      fossil record exhibiting increased morphological complexity and ecological
+      specialization. The event reflects a significant evolutionary radiation,
+      transforming predominantly simple, microscopic ecosystems into complex,
+      heterogeneous marine communities.
+
+      The underlying causes of the Cambrian radiation remain a subject of ongoing research but are hypothesized to include
+      factors such as rising oxygen levels, genetic innovations like the development
+      of Hox genes, and ecological interactions promoting predator-prey dynamics. This
+      interval fundamentally reshaped the biosphere, setting the foundation for modern
+      metazoan diversity and establishing critical evolutionary lineages that persist
+      in contemporary fauna.
+    short_label: Cambrian radiation
+    type: bar
+    start_ma: 538.8
+    end_ma: 520
+  - label: Great Ordovician Biodiversification
+    explanation: |
+      The Great Ordovician Biodiversification Event (GOBE), occurring between
+      approximately 485 and 445 million years ago, represents a major expansion in
+      marine biodiversity during the Ordovician Period. This interval was
+      characterized by a dramatic increase in the complexity and diversity of marine
+      life, including the rapid diversification of brachiopods, bryozoans, mollusks,
+      and the early development of coral reefs. The expansion of ecological niches and
+      adaptations to varying marine environments fostered this proliferation,
+      significantly shaping Paleozoic ecosystems.
+
+      GOBE fundamentally altered the structure of marine communities, transitioning from Cambrian dominance by simple
+      organisms to more complex trophic interactions and ecosystem dynamics. This
+      biodiversification also coincides with substantial geological and climatic
+      shifts, such as elevated sea levels and increased nutrient availability, which
+      likely catalyzed evolutionary radiations and influenced biogeographical patterns
+      across Ordovician oceans.
+    short_label: GOBE
+    type: bar
+    start_ma: 485.4
+    end_ma: 443.1
+  - label: First land plants
+    explanation: |
+      The first land plants emerged during the Paleozoic Era, approximately between
+      470 and 430 million years ago, marking a critical transition in Earth’s geologic
+      timeline. These early terrestrial flora were predominantly non-vascular
+      bryophyte-like organisms, which adapted from aquatic ancestors to colonize moist
+      terrestrial environments. Their appearance significantly altered the planet’s
+      biosphere by initiating soil formation and contributing to increased atmospheric
+      oxygen through photosynthesis.
+
+      This geologic marker is crucial for understanding the evolution of terrestrial ecosystems, as it set the foundation
+      for subsequent plant diversification and the eventual dominance of vascular
+      plants. The advent of land plants influenced sedimentary processes and nutrient
+      cycles, facilitating the development of more complex ecosystems and profoundly
+      impacting Earth’s climate and biology during the Silurian and Devonian periods.
+    short_label: First land plants
+    type: bar
+    start_ma: 470.0
+    end_ma: 430
+  - label: First forests
+    explanation: |
+      The geologic timeline marker "First forests" spans approximately 390 to 370
+      million years ago, during the late Devonian period. This interval signifies the
+      emergence of complex terrestrial ecosystems dominated by large, tree-like
+      plants, including early gymnosperms and other vascular flora. The proliferation
+      of these primitive forests marked a pivotal evolutionary advancement,
+      facilitating enhanced carbon sequestration and significantly influencing global
+      climate and atmospheric composition by reducing atmospheric CO2 levels.
+
+      These
+      early forests contributed to soil formation and landscape stabilization,
+      enabling more diverse terrestrial habitats. Their structural complexity also
+      drove evolutionary pressures on terrestrial fauna, promoting increased
+      biodiversity. The development of extensive root systems further altered
+      hydrological cycles through increased soil water retention and nutrient cycling,
+      fundamentally transforming Earth's biosphere and setting the stage for
+      subsequent terrestrial ecosystem expansion.
+    short_label: First forests
+    type: bar
+    start_ma: 390.0
+    end_ma: 370
+  - label: First tetrapods
+    explanation: |
+      The marker "First tetrapods," spanning approximately 375 to 365 million years
+      ago during the Late Devonian period, denotes a critical evolutionary transition
+      from aquatic to terrestrial life. Tetrapods, characterized by four limbs with
+      digits, represent the earliest vertebrates adapted to inhabit both aquatic and
+      terrestrial environments. This interval captures the emergence of pivotal
+      anatomical adaptations such as robust limb bones and lungs, which facilitated
+      locomotion on land and air breathing.
+
+      This transition was driven by ecological
+      pressures including fluctuating water levels and the exploitation of new
+      terrestrial niches. Fossil evidence, such as the species *Tiktaalik* and
+      *Acanthostega*, illustrates intermediate forms bridging lobe-finned fishes and
+      true tetrapods. The advent of tetrapods set the foundation for the vast
+      diversification of terrestrial vertebrates, fundamentally reshaping ecosystems
+      and evolutionary trajectories.
+    short_label: Tetrapods
+    type: bar
+    start_ma: 375.0
+    end_ma: 365
+  - label: Coal swamps
+    explanation: |
+      Coal swamps represent a distinctive geologic timeline marker primarily
+      associated with the Late Devonian through the end of the Carboniferous period,
+      approximately 359 to 299 million years ago. These extensive wetlands were
+      dominated by dense vegetation, including lycophytes, horsetails, and ferns,
+      which thrived in warm, humid equatorial climates. The high organic productivity
+      and waterlogged conditions limited decomposition, allowing thick accumulations
+      of plant material that eventually transformed into coal deposits.
+
+      This interval
+      is significant for its role in shaping Earth’s carbon cycle and atmospheric
+      composition. The burial of vast organic carbon in coal swamps contributed to a
+      major drawdown of atmospheric carbon dioxide and a concomitant rise in oxygen
+      levels. These environmental changes profoundly influenced terrestrial
+      ecosystems, facilitating the diversification of amphibians and the emergence of
+      early amniotes. Coal swamps thus serve as key markers for paleoenvironmental
+      reconstruction during the late Paleozoic era.
+    short_label: Coal swamps
+    type: bar
+    start_ma: 358.86
+    end_ma: 298.9
+  - label: First dinosaurs
+    explanation: |
+      The "First dinosaurs" marker, dated approximately between 233 and 231 million
+      years ago during the late Triassic period, represents the emergence of the
+      earliest members of Dinosauria. This interval marks a crucial evolutionary
+      transition, as archosaurian reptiles diverged to form distinct dinosaur clades.
+      Fossil evidence from this timeframe includes primitive taxa such as
+      Herrerasaurus and Eoraptor, which exhibit key diagnostic traits that
+      differentiate dinosaurs from other contemporaneous reptiles, including an
+      upright posture and specialized pelvic structures.
+
+      This geologic timeline
+      marker signifies the initial diversification of dinosaurs before their
+      subsequent dominance in the Mesozoic Era. The onset of dinosaur evolution
+      corresponds with ecological shifts following the Permian-Triassic extinction,
+      facilitating the rise of terrestrial vertebrate faunas. Thus, the first
+      appearance of dinosaurs establishes a foundational reference point for
+      understanding vertebrate paleoecology and evolutionary history within the late
+      Triassic landscape.
+    short_label: Dinosaurs
+    type: bar
+    start_ma: 233.0
+    end_ma: 231
+  - label: First mammals
+    explanation: |
+      The marker "First mammals" denotes a critical interval from approximately 225 to
+      200 million years ago, during the Late Triassic period. This timeframe
+      represents the emergence of the earliest mammalian ancestors, characterized by
+      significant evolutionary advancements distinguishing them from earlier
+      synapsids. These nascent mammals exhibited features such as differentiated teeth
+      and more complex jaw structures, facilitating more efficient processing of food
+      and greater metabolic regulation.
+
+      The appearance of first mammals marks a
+      pivotal transition in vertebrate evolution, laying the foundation for the
+      extensive diversification observed in later periods. Their evolutionary
+      innovations occurred in conjunction with the decline of dominant reptilian taxa,
+      setting the stage for mammals’ eventual ecological expansion and dominance in
+      the Mesozoic and Cenozoic eras.
+    short_label: First Mammals
+    type: bar
+    start_ma: 225.0
+    end_ma: 200
+  - label: First birds
+    explanation: |
+      The "First birds" geologic timeline marker, dated between approximately 160 to
+      150 million years ago during the Late Jurassic period, signifies the emergence
+      of the earliest avian species. This interval marks a pivotal evolutionary
+      transition from theropod dinosaurs to true birds, exemplified by Archaeopteryx,
+      which exhibits a mosaic of avian and reptilian features. These early birds
+      possessed feathered wings capable of powered flight, alongside retained
+      primitive traits such as teeth and long bony tails.
+
+      This marker is crucial for
+      understanding avian evolution and the origins of flight. The appearance of the
+      first birds represents a significant adaptive radiation event that eventually
+      gave rise to the extensive diversification of modern avifauna. Moreover, this
+      period provides key fossil evidence elucidating the functional morphology and
+      ecological niches inhabited by basal birds.
+    short_label: First birds
+    type: bar
+    start_ma: 160.0
+    end_ma: 150
+  - label: Flowering plants
+    explanation: |
+      Flowering plants, or angiosperms, first emerged approximately between 135 and
+      125 million years ago during the Early Cretaceous period. This geologic timeline
+      marker signifies a major evolutionary advancement in plant reproduction and
+      diversity. Angiosperms are characterized by their enclosed seeds within fruits
+      and the presence of flowers, which facilitate more efficient pollination
+      mechanisms compared to earlier plant groups such as gymnosperms. Their rapid
+      diversification during this interval profoundly transformed terrestrial
+      ecosystems.
+
+      The advent of flowering plants had significant ecological and
+      evolutionary implications, including new interactions with pollinators and
+      herbivores, which accelerated coevolutionary processes. The widespread
+      establishment of angiosperms contributed to changes in climate regulation and
+      sedimentation patterns due to altered vegetation dynamics. Consequently, the
+      emergence of flowering plants represents a key phase in the history of life,
+      marking the origin of the dominant flora present in most modern ecosystems.
+    short_label: Angiosperms
+    type: bar
+    start_ma: 135.0
+    end_ma: 125
+  - label: Rise of mammals
+    explanation: |
+      The "Rise of mammals" marks a significant geologic timeline interval extending
+      from approximately 66 to 23 million years ago, encompassing the Paleocene,
+      Eocene, and Oligocene epochs. This period follows the Cretaceous-Paleogene
+      (K-Pg) extinction event, which eradicated non-avian dinosaurs and many other
+      species, thereby opening ecological niches. Mammals rapidly diversified in form
+      and function, evolving from small, nocturnal ancestors into a wide array of
+      adaptive morphologies, including herbivores, carnivores, and volant taxa.
+
+      During this interval, mammals expanded both in size and ecological complexity,
+      establishing dominance in terrestrial ecosystems. Key mammalian orders such as
+      Primates, Carnivora, and Ungulata emerged and radiated extensively, supported by
+      climatic shifts that fostered habitat diversification. The rise of mammals thus
+      represents a pivotal phase in the Cenozoic Era, shaping modern vertebrate
+      biodiversity and ecosystem structure.
+    short_label: Rise of mammals
+    type: bar
+    start_ma: 66.0
+    end_ma: 23
+  - label: Grassland expansion
+    explanation: |
+      Grassland expansion, occurring from approximately 23 to 5 million years ago
+      during the Miocene and early Pliocene epochs, marks a critical shift in Earth's
+      terrestrial ecosystems. This period witnessed a significant increase in open,
+      grassy habitats, largely replacing dense forests due to climatic cooling and
+      drying trends. The spread of C4 grasses was particularly notable, as these
+      plants adapted efficiently to lower atmospheric CO₂ and seasonal aridity. This
+      transition profoundly influenced soil development, fire regimes, and nutrient
+      cycling within these landscapes.
+
+      The expansion of grasslands also had
+      substantial evolutionary repercussions, driving diversification among
+      herbivorous mammals through the proliferation of grazing niches. This ecological
+      shift affected trophic dynamics and shaped modern biomes. Furthermore, it
+      influenced hominid evolution by altering available resources and habitats,
+      underscoring its integral role in both paleoenvironmental reconstruction and the
+      understanding of Cenozoic terrestrial biotic change.
+    short_label: Grassland expansion
+    type: bar
+    start_ma: 23.0
+    end_ma: 5
+  - label: Pleistocene glaciations
+    explanation: |
+      The Quaternary glaciations refer to a series of recurrent glacial and
+      interglacial cycles occurring during the Quaternary Period, spanning
+      approximately from 2.58 million years ago to 11,700 years before present. These
+      glaciations are characterized by extensive ice sheet expansions, primarily
+      across the Northern Hemisphere continents, driven by complex interactions among
+      Earth's orbital parameters, atmospheric composition, and tectonic
+      configurations. The cyclical advances and retreats of ice sheets profoundly
+      influenced global climate dynamics, sea levels, and terrestrial ecosystems.
+
+      This interval marks a significant climatic fluctuation phase that shaped the
+      modern biosphere and geography. Quaternary glaciations are pivotal in
+      understanding paleoclimate variability, as they provide critical insights into
+      feedback mechanisms within the Earth system, including the carbon cycle and
+      ocean circulation. Their study also informs predictions concerning future
+      climate trajectories under anthropogenic forcing.
+    short_label: Pleistocene glaciations
+    type: bar
+    start_ma: 2.58
+    end_ma: 0.0117
+  - label: End-Ediacaran turnover
+    explanation: |
+      The End-Ediacaran turnover, occurring around 539 million years ago, marks a
+      critical transition in the late Neoproterozoic geologic timeline. This interval
+      signifies the abrupt disappearance of the Ediacaran biota, a diverse assemblage
+      of soft-bodied, multicellular organisms that dominated marine ecosystems. The
+      turnover is associated with significant environmental and ecological shifts,
+      including changes in ocean chemistry, increased oxygenation, and the emergence
+      of new biological interactions. These factors collectively facilitated the
+      decline of Ediacaran communities and paved the way for early Cambrian faunal
+      diversification.
+
+      This marker delineates the boundary between the Ediacaran and
+      the Cambrian periods, highlighting a profound evolutionary transition. The End-
+      Ediacaran turnover reflects the onset of metazoan diversification and the
+      establishment of complex ecosystems characterized by biomineralization and
+      predation. Its significance lies in representing a major biological
+      restructuring and the foundation for the Cambrian explosion of animal life.
+    short_label: EET
+    type: point
+    at_ma: 538.8
+  - label: Ireviken event
+    explanation: |
+      The Ireviken event, occurring circa 433 million years ago during the early
+      Silurian (Llandovery epoch), represents a significant biotic crisis primarily
+      characterized by substantial extinctions among marine fauna, particularly
+      graptolites, conodonts, and trilobites. This event is marked stratigraphically
+      by distinct isotopic excursions, notably in carbon and oxygen isotopes,
+      reflecting perturbations in the global carbon cycle and climatic shifts. The
+      Ireviken event is commonly interpreted as linked to global cooling and changes
+      in sea level, contributing to habitat loss in epicontinental seas.
+      Geologically, the Ireviken event is delineated by a series of six extinction
+      pulses, documented mainly in the Ireviken section on Öland, Sweden. These
+      extinction patterns underscore the event’s stepwise nature and its ecological
+      selectivity, which had profound effects on Silurian marine ecosystems and
+      subsequent evolutionary trajectories. It remains a critical marker for
+      correlating sedimentary records and understanding early Paleozoic environmental
+      dynamics.
+    short_label: IE
+    type: point
+    at_ma: 432.9
+  - label: Lau event
+    explanation: |
+      The Lau Event, occurring near 420 million years ago during the Late Silurian,
+      represents a significant geologic and biotic perturbation marked by widespread
+      oceanic anoxia and climatic shifts. It is characterized by a notable positive
+      carbon isotope excursion, indicative of increased organic carbon burial and a
+      disruption of the global carbon cycle. This event is associated with sea-level
+      fluctuations and regional tectonic activity, contributing to environmental
+      stress on marine ecosystems.
+
+      Biologically, the Lau Event precipitated
+      substantial turnovers in marine faunas, particularly within deep-water benthic
+      communities. Extinctions and reductions in biodiversity affected brachiopods,
+      corals, and trilobites, reflecting ecosystem restructuring. The Lau Event is
+      thus recognized as a pivotal interval of ecological and biogeochemical change
+      within the Silurian, offering critical insights into the interplay between
+      climate, ocean chemistry, and marine biotic responses during paleoenvironmental
+      crises.
+    short_label: LE
+    type: point
+    at_ma: 419.62
+  - label: OAE2
+    explanation: |
+      OAE2, or Oceanic Anoxic Event 2, occurred during the Cenomanian-Turonian
+      boundary approximately 94 million years ago. This event is characterized by
+      widespread marine anoxia and organic-rich black shale deposition in global ocean
+      basins. It reflects a significant perturbation in the carbon cycle, marked by a
+      prominent positive carbon isotope excursion (δ13C). The event is linked to
+      elevated atmospheric CO2 levels, increased global temperatures, and sea-level
+      highstands, which collectively intensified ocean stratification and reduced
+      oxygen solubility in deep waters.
+
+      OAE2 profoundly influenced marine
+      biogeochemical cycling, resulting in extinction events among pelagic and benthic
+      organisms. Volcanism associated with the emplacement of large igneous provinces
+      likely triggered enhanced nutrient input, promoting high primary productivity
+      and subsequent oxygen depletion. This interval serves as a key stratigraphic
+      marker for mid-Cretaceous paleoenvironmental reconstructions and carbon cycle
+      studies.
+    short_label: OAE2
+    type: point
+    at_ma: 93.9
+  - label: PETM biotic event
+    explanation: |
+      The Paleocene-Eocene Thermal Maximum (PETM) biotic event, occurring around 56
+      million years ago, represents a significant geologic and climatic marker
+      characterized by rapid global warming and profound ecological disruptions. This
+      interval is delineated by a sharp negative carbon isotope excursion, reflecting
+      massive carbon input into the atmosphere-ocean system, likely from methane
+      hydrate release or extensive volcanic activity. The PETM led to elevated global
+      temperatures, ocean acidification, and altered carbon cycling, significantly
+      impacting marine and terrestrial biota.
+
+      Biotic responses to the PETM include
+      widespread species turnover, extinction of thermally sensitive taxa, and
+      migration of warm-adapted organisms into higher latitudes. Mammalian faunal
+      assemblages exhibit notable evolutionary radiations and dispersal, particularly
+      among early ungulates. The PETM serves as a crucial analog for modern climate
+      change, elucidating the ecological consequences of rapid carbon release and
+      sustained greenhouse conditions.
+    short_label: PETM
+    type: point
+    at_ma: 56
+  - label: Eocene-Oligocene turnover
+    explanation: |
+      The Eocene-Oligocene turnover, occurring around 34 million years ago, marks a
+      critical transition in Earth's geologic history characterized by significant
+      climatic and biotic changes. This boundary signifies the shift from the
+      greenhouse conditions of the late Eocene to the cooler, icehouse climate of the
+      Oligocene, associated with the onset of Antarctic glaciation. The global cooling
+      triggered widespread alterations in ocean circulation, atmospheric CO2 levels,
+      and biogeographic distributions.
+
+      Biologically, the turnover is marked by
+      substantial faunal and floral extinctions and radiations, particularly among
+      marine and terrestrial vertebrates. Notably, there was a decline in tropical
+      taxa and the emergence of more open-habitat adapted species. This event reflects
+      profound ecosystem restructuring, driven by climatic pressures that shaped
+      modern mammalian and marine assemblages, underscoring its importance in Cenozoic
+      evolutionary history.
+    short_label: EOT
+    type: point
+    at_ma: 33.9
+  - label: Antarctic glaciation
+    explanation: |
+      Antarctic glaciation denotes the progressive development and expansion of
+      continental ice sheets over Antarctica, commencing in the early Oligocene epoch
+      approximately 33.9 million years ago and continuing to the present. This event
+      marks a pivotal climatic transition driven by tectonic shifts, such as the
+      opening of the Drake Passage and the establishment of the Antarctic Circumpolar
+      Current, which thermally isolated the continent. These changes precipitated a
+      sustained cooling trend, facilitating extensive ice accumulation on the
+      Antarctic landmass.
+
+      The onset and persistence of Antarctic glaciation
+      significantly influenced global sea levels, ocean circulation patterns, and
+      climate dynamics. As ice sheets expanded, they contributed to lowering
+      atmospheric carbon dioxide levels, reinforcing glaciation feedback mechanisms.
+      The Antarctic glaciation timeline serves as a critical geologic marker for
+      understanding Cenozoic climate evolution and its interconnected Earth system
+      processes.
+    short_label: Antarctic glaciation
+    type: bar
+    start_ma: 33.9
+    end_ma: 0.0
+  - label: Homo sapiens
+    explanation: |
+      Homo sapiens, the species to which all modern humans belong, emerged
+      approximately 0.3 million years ago during the late Pleistocene epoch. This
+      geologic timeline marker signifies a pivotal stage in evolutionary history,
+      characterized by the development of complex cognitive abilities, advanced tool
+      use, and symbolic behavior. Anatomically distinct from earlier hominins, Homo
+      sapiens exhibited a more refined cranial structure, including a larger braincase
+      and reduced robusticity, facilitating higher-order functions such as abstract
+      reasoning and language.
+
+      The temporal range from 0.3 to 0.0 million years ago
+      encompasses the diversification and global dispersal of Homo sapiens,
+      culminating in the extinction of other hominin species. This period is critical
+      for understanding anthropogenic impacts on environments and the eventual
+      establishment of modern civilizations. Consequently, Homo sapiens serve as a
+      fundamental chronological and biological benchmark within the Quaternary
+      stratigraphic framework.
+    short_label: H. sapiens
+    type: bar
+    start_ma: 0.3
+    end_ma: 0.0
+
+extinctions:
+  - label: End-Ordovician
+    explanation: |
+      The End-Ordovician marks a significant boundary within the geologic timeline,
+      delineating the close of the Ordovician Period approximately 443 million years
+      ago. It represents one of the "Big Five" mass extinction events in Earth’s
+      history, characterized by a profound biotic turnover primarily affecting marine
+      invertebrates. This extinction phase coincides with a major glaciation event
+      triggered by the uplift of the Appalachian Mountains, which led to severe global
+      cooling and a drop in sea levels. These environmental stresses drastically
+      altered habitat conditions on continental shelves, where diverse and abundant
+      faunas had thrived.  Ecologically, the End-Ordovician extinction resulted in the
+      loss of about 85% of marine species, including significant reductions in
+      brachiopods, trilobites, and bryozoans. The event is often divided into two
+      pulses, corresponding to glacial maximum and subsequent warming phases. This
+      boundary thus serves as a crucial marker for understanding paleoenvironmental
+      shifts and the dynamics of extinction and recovery within the Paleozoic marine
+      ecosystems.
+    short_label: EO
+    is_major: true
+    anchor:
+      type: period
+      label: Ordovician
+  - label: Late Devonian
+    explanation: |
+      The Late Devonian, anchored to the Frasnian stage boundary approximately 382.7
+      million years ago, represents a critical interval within the Devonian period
+      characterized by significant evolutionary and ecological transitions. This
+      subdivision marks the onset of one of the major mass extinction events in Earth
+      history, profoundly affecting marine biota, particularly reef-building
+      organisms, brachiopods, and placoderm fishes. The event's causes are
+      hypothesized to involve complex factors including global anoxia, climate
+      fluctuations, and possibly large-scale volcanic activity.  Geologically, the
+      Late Devonian is distinguished by distinctive sedimentary deposits and
+      geochemical signatures reflective of widespread environmental stress. The
+      consequent biotic turnover reshaped marine ecosystems, driving evolutionary
+      radiations in surviving lineages and influencing subsequent Paleozoic ecological
+      structures. This interval is pivotal for understanding the interplay between
+      biotic crises and environmental change during the Devonian.
+    short_label: LD
+    is_major: true
+    anchor:
+      type: stage
+      label: Frasnian
+  - label: End-Permian
+    explanation: |
+      The End-Permian, also known as the Permian-Triassic boundary approximately 252
+      million years ago, marks the most severe mass extinction event in Earth's
+      history. This geologic timeline marker signifies a critical transition between
+      the Permian and Triassic periods. It is characterized by the abrupt loss of an
+      estimated 90-96% of marine species and around 70% of terrestrial vertebrate
+      species, profoundly reshaping biodiversity and ecosystems. The event is linked
+      to extensive volcanic activity, particularly the Siberian Traps eruptions, which
+      induced rapid climate change, ocean anoxia, and acidification.  This boundary is
+      identified by distinct shifts in sedimentology, fossil assemblages, and
+      geochemical signatures such as carbon isotope excursions. The End-Permian
+      extinction fundamentally altered evolutionary trajectories, paving the way for
+      Mesozoic dominance by reptiles, including early dinosaurs. It remains a pivotal
+      focus for understanding biotic resilience and environmental stressors in Earth’s
+      deep-time record.
+    short_label: EP
+    is_major: true
+    anchor:
+      type: period
+      label: Permian
+  - label: End-Triassic
+    explanation: |
+      The End-Triassic marks a critical geologic boundary approximately 201.3 million
+      years ago, delineating the close of the Triassic Period and the onset of the
+      Jurassic. This interval is characterized by one of Earth's major mass extinction
+      events, which profoundly reshaped marine and terrestrial ecosystems. The
+      extinction saw the disappearance of about 50% of marine genera and significant
+      losses among terrestrial vertebrates, including numerous archosaur clades,
+      enabling the subsequent rise of dinosaurs as dominant terrestrial fauna.
+      Geologically, the End-Triassic extinction is associated with widespread volcanic
+      activity related to the Central Atlantic Magmatic Province (CAMP), which
+      released extensive greenhouse gases, triggering severe global climate
+      perturbations. Ocean acidification, anoxia, and habitat loss contributed to
+      biotic crises across multiple environments. This event is a pivotal transition
+      within the Mesozoic Era, influencing biotic recovery patterns and ecosystem
+      restructuring in the Jurassic.
+    short_label: ET
+    is_major: true
+    anchor:
+      type: period
+      label: Triassic
+  - label: End-Cretaceous/K-Pg
+    explanation: |
+      The End-Cretaceous, also known as the Cretaceous-Paleogene (K-Pg) boundary,
+      marks a pivotal geologic timeline marker approximately 66 million years ago.
+      This boundary signifies the close of the Mesozoic Era’s Cretaceous period and
+      the onset of the Paleogene period in the Cenozoic Era. It is characterized by a
+      distinct layer of sediment enriched with iridium, an anomaly linked to an
+      extraterrestrial impact event. This marker serves as a critical stratigraphic
+      horizon for correlating geological and paleontological records worldwide.  The
+      K-Pg boundary is primarily associated with one of Earth’s most significant mass
+      extinction events, resulting in the demise of about 75% of all species,
+      including non-avian dinosaurs. This extinction dramatically reshaped
+      biodiversity and ecological dynamics, facilitating the rise of mammals and the
+      subsequent evolutionary pathways leading to modern ecosystems. The event
+      underscores the interplay between catastrophic processes and biological turnover
+      in Earth’s history.
+    short_label: K-Pg
+    is_major: true
+    anchor:
+      type: period
+      label: Cretaceous
+  - label: Cambrian extinction pulses
+    explanation: |
+      The Cambrian extinction pulses, occurring approximately 510 million years ago
+      during the early Cambrian, represent a series of minor biotic crises
+      characterized by short-term reductions in biodiversity. These extinction events
+      primarily affected marine invertebrates, particularly trilobites and small
+      shelly fauna, disrupting ecosystems amid the rapid diversification known as the
+      Cambrian Explosion. Although less severe than subsequent mass extinctions, these
+      pulses reflect underlying environmental stresses such as fluctuations in ocean
+      chemistry, sea level changes, and possible anoxia.  These extinction intervals
+      serve as important geologic timeline markers because they document episodic
+      faunal turnovers and evolutionary bottlenecks within early Paleozoic marine
+      communities. The pulses illustrate the complex interplay between biotic
+      radiations and environmental perturbations, influencing subsequent evolutionary
+      trajectories and the structure of Cambrian ecosystems.
+    short_label: CEP
+    is_major: false
+    anchor:
+      type: ma
+      ma: 510
+  - label: Kellwasser event
+    explanation: |
+      The Kellwasser event, occurring around 372 million years ago during the Late
+      Devonian, represents a significant yet relatively minor extinction pulse within
+      the geologic timeline. It is primarily characterized by widespread anoxia in
+      marine environments, evidenced by black shale deposits known as Kellwasser
+      facies. This event notably affected reef-building organisms and pelagic fauna,
+      contributing to biotic turnover without causing the extensive biodiversity loss
+      typical of major extinction events.  Geochemically, the Kellwasser event is
+      associated with perturbations in the carbon cycle, as indicated by pronounced
+      carbon isotope excursions. These environmental stressors reflect a complex
+      interplay of climate change, sea-level fluctuations, and oceanic anoxia.
+      Although not as catastrophic as later pulses in the Late Devonian extinction,
+      the Kellwasser event serves as a key stratigraphic marker, delineating
+      significant ecological shifts in the Devonian marine realm.
+    short_label: KE
+    is_major: false
+    anchor:
+      type: ma
+      ma: 372.15
+  - label: Hangenberg event
+    explanation: |
+      The Hangenberg event, occurring around 359 million years ago at the Devonian-
+      Carboniferous boundary, represents a significant though relatively minor
+      extinction pulse within the Late Devonian extinction complex. It is
+      characterized by notable biotic turnover primarily affecting marine vertebrates,
+      particularly jawed and jawless fishes, as well as reef-building organisms and
+      conodonts. Geologically, the event is marked by distinctive black shale deposits
+      indicative of widespread anoxia and environmental stress in the global oceans,
+      reflecting a collapse of marine ecosystems.  This event is critical for
+      understanding the transition between the Devonian and Carboniferous periods,
+      highlighting a phase of ecological crisis and faunal restructuring. It
+      contributed to the shaping of early Carboniferous biodiversity and played a role
+      in long-term paleoceanographic and climatic changes, emphasizing its importance
+      as a geologic timeline marker despite its relative subtlety compared to larger
+      mass extinctions.
+    short_label: HE
+    is_major: false
+    anchor:
+      type: ma
+      ma: 358.86
+  - label: Capitanian extinction
+    explanation: |
+      The Capitanian extinction, occurring approximately 262 million years ago during
+      the Middle Permian, represents a distinct but relatively minor extinction pulse
+      within the broader Late Permian biotic crises. It is characterized by selective
+      losses in marine faunas, notably affecting fusulinid foraminifers, corals, and
+      certain brachiopod groups. This event preceded the more severe end-Permian mass
+      extinction and marks a significant faunal turnover within Permian ecosystems.
+      Environmental perturbations associated with the Capitanian extinction include
+      pronounced global warming, oceanic anoxia, and volcanic activity linked to the
+      Emeishan Large Igneous Province. These factors likely triggered habitat
+      degradation and ecological stress, driving differential extinction patterns.
+      Although less catastrophic than the terminal Permian extinction, the Capitanian
+      event underscores the vulnerability of marine biota to rapid climatic and
+      geochemical changes during the Permian period.
+    short_label: CE
+    is_major: false
+    anchor:
+      type: ma
+      ma: 262
+  - label: Toarcian OAE
+    explanation: |
+      The Toarcian Oceanic Anoxic Event (OAE), occurring around 183 million years ago
+      during the Early Jurassic, represents a significant, albeit minor, biotic and
+      geochemical perturbation within the geologic timeline. This event is
+      characterized by widespread deposition of organic-rich black shales and
+      pronounced negative carbon isotope excursions, indicative of global-scale
+      alteration in oceanic redox conditions. Enhanced volcanic activity and
+      associated greenhouse gas emissions likely triggered widespread marine anoxia,
+      disrupting oceanic nutrient cycles and resulting in a transient but notable
+      extinction pulse affecting marine fauna, particularly ammonites and marine
+      invertebrates.  
+      
+      Although less severe than the larger Jurassic or Cretaceous
+      OAEs, the Toarcian OAE provides critical insight into the coupling between
+      volcanic forcing, ocean chemistry, and biological crises. Its study elucidates
+      the dynamics of Earth’s deep-time climate system and biotic resilience under
+      rapid environmental stress, contributing to broader understanding of carbonate
+      platform drowning and early Mesozoic paleoceanographic evolution.
+    short_label: TOAE
+    is_major: false
+    anchor:
+      type: ma
+      ma: 183.0
+  - label: Late Pleistocene megafaunal extinctions
+    explanation: |
+      The Late Pleistocene megafaunal extinctions, occurring around 0.05 Ma (50,000
+      years ago), represent a notable but relatively minor extinction pulse within the
+      late Quaternary period. This event primarily involved the decline and
+      disappearance of large-bodied terrestrial vertebrates, particularly megafauna
+      such as mammoths, saber-toothed cats, and giant ground sloths. Although less
+      extensive than the terminal Pleistocene extinctions closer to 0.01 Ma, this
+      pulse marks a significant ecological turnover influenced by climatic
+      fluctuations and the initial impacts of human predation and landscape
+      alteration.  These extinctions reflect complex interactions between
+      environmental changes, including glacial-interglacial cycles, and anthropogenic
+      pressures. The disappearance of these megafaunal taxa reshaped ecosystems by
+      altering trophic dynamics and nutrient cycling. Consequently, the Late
+      Pleistocene megafaunal extinction pulse is a key stratigraphic marker for
+      understanding Quaternary biodiversity shifts and early human-environment
+      interactions.
+    short_label: LPME
+    is_major: false
+    anchor:
+      type: ma
+      ma: 0.05
