@@ -155,7 +155,6 @@ class _VisibleCladeTopStrip extends StatelessWidget {
     required this.labelMode,
     required this.activeCladeRootId,
     required this.onTapClade,
-    this.bottomPadding = 4.0,
   });
 
   final double height;
@@ -164,7 +163,6 @@ class _VisibleCladeTopStrip extends StatelessWidget {
   final CladeLabelMode labelMode;
   final String? activeCladeRootId;
   final ValueChanged<Clade> onTapClade;
-  final double bottomPadding;
 
   @override
   Widget build(BuildContext context) {
@@ -196,7 +194,7 @@ class _VisibleCladeTopStrip extends StatelessWidget {
           for (final entry in sorted)
             Positioned(
               left: entry.left + 1.0 - (labelBandWidth / 2),
-              bottom: bottomPadding,
+              bottom: 4.0,
               width: labelBandWidth,
               height: height,
               child: Align(

@@ -21,7 +21,7 @@ void main() {
         reason: 'Expected dinosauria subtree detail to be at least 40 clades.',
       );
     } finally {
-      db.dispose();
+      db.close();
     }
   });
 

@@ -32,7 +32,7 @@ class SqliteCladeDetailRepository {
       );
       return result.map(_mapRow).toList();
     } finally {
-      db.dispose();
+      db.close();
     }
   }
 

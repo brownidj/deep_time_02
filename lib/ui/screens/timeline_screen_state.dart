@@ -10,6 +10,7 @@ class _TimelineScreenState extends State<TimelineScreen>
   TimeLabelMode _labelMode = TimeLabelMode.geologicTime;
   @override
   CladeViewMode _cladeViewMode = CladeViewMode.representativeOnly;
+  @override
   CladeLabelMode _cladeLabelMode = CladeLabelMode.common;
   @override
   String _cladeCategoryId = 'all';

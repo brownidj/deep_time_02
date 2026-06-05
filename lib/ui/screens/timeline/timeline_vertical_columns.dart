@@ -19,7 +19,6 @@ import 'package:deep_time_2/ui/screens/timeline/timeline_orientation.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_track_widths.dart';
 import 'package:deep_time_2/ui/theme/deep_time_palette.dart';
 import 'package:deep_time_2/ui/widgets/time_range_format.dart';
-import 'package:deep_time_2/ui/widgets/timeline_range_mapper.dart';
 import 'package:deep_time_2/ui/widgets/timeline_explanation_dialog.dart';
 
 part 'timeline_vertical_columns_segments.dart';

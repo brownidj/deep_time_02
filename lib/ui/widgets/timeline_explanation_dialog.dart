@@ -144,7 +144,7 @@ class _TimelineDialogImage extends StatelessWidget {
       return Image.asset(
         assetPath,
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => _buildNetwork(url),
+        errorBuilder: (context, error, stackTrace) => _buildNetwork(url),
       );
     }
     return _buildNetwork(url);
@@ -157,7 +157,7 @@ class _TimelineDialogImage extends StatelessWidget {
     return Image.network(
       url,
       fit: BoxFit.cover,
-      errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+      errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
     );
   }
 }

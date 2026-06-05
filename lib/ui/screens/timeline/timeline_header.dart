@@ -39,7 +39,7 @@ class TimelineHeader extends StatelessWidget {
           const SizedBox(width: 12),
           Expanded(
             child: Text(
-              'Deep Time',
+              'Deep Time 2',
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
                 fontWeight: FontWeight.w800,
                 color: DeepTimePalette.panelText,

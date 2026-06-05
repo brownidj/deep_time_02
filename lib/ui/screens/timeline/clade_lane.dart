@@ -10,7 +10,6 @@ import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/screens/timeline/clade_bar.dart';
 import 'package:deep_time_2/ui/theme/deep_time_palette.dart';
 import 'package:deep_time_2/ui/widgets/timeline_range_mapper.dart';
-import 'package:deep_time_2/ui/widgets/time_range_format.dart';
 
 class CladeLane extends StatelessWidget {
   const CladeLane({
