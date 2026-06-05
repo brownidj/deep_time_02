@@ -141,7 +141,6 @@ printf '==> using Chrome device: %s\n' "$CHROME_DEVICE_ID"
 
 cd "$REPO_DIR"
 run_step "./scripts/check_file_sizes.sh ." ./scripts/check_file_sizes.sh .
-
 cd "$APP_DIR"
 run_step "flutter clean" flutter clean
 run_step "flutter pub get" flutter pub get

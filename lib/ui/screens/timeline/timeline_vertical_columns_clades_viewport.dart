@@ -199,19 +199,13 @@ Widget _buildCladeViewport({
         ),
       ),
       if (topStripHeight > 0)
-        Positioned(
-          left: 0,
-          top: pinnedTop,
-          width: width,
+        _VisibleCladeTopStrip(
           height: topStripHeight,
-          child: _VisibleCladeTopStrip(
-            height: topStripHeight,
-            top: pinnedTop,
-            barLayouts: barLayouts,
-            labelMode: labelMode,
-            activeCladeRootId: activeCladeRootId,
-            onTapClade: handleCladeTap,
-          ),
+          top: pinnedTop,
+          barLayouts: barLayouts,
+          labelMode: labelMode,
+          activeCladeRootId: activeCladeRootId,
+          onTapClade: handleCladeTap,
         ),
       _CladeColumnScrollbar(
         width: width,

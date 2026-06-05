@@ -27,6 +27,7 @@ violations="$(
     -g '!**/generated_plugin_registrant.*' \
     -g '!**/*.g.dart' \
     -g '!**/*.freezed.dart' \
+    -g '!**/*.json' \
     -g '!data/time_divisions.yaml.bak.20260523_235558' \
     -g '!**/*.yaml' \
     -g '!**/*.yml' \
