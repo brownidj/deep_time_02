@@ -1,12 +1,15 @@
 import 'package:deep_time_2/app/app_debug.dart';
 import 'package:deep_time_2/application/services/timeline_service.dart';
 import 'package:deep_time_2/infra/db/app_database.dart';
+import 'package:deep_time_2/infra/db/taxonomy_database.dart';
 import 'package:deep_time_2/domain/repositories/clade_display_group_repository.dart';
 import 'package:deep_time_2/domain/repositories/clade_repository.dart';
 import 'package:deep_time_2/domain/repositories/clade_representative_repository.dart';
+import 'package:deep_time_2/domain/repositories/taxonomy_repository.dart';
 import 'package:deep_time_2/infra/repositories/sqlite_geologic_division_repository.dart';
 import 'package:deep_time_2/infra/repositories/sqlite_paleontology_repository.dart';
 import 'package:deep_time_2/infra/repositories/sqlite_clade_detail_repository.dart';
+import 'package:deep_time_2/infra/repositories/sqlite_taxonomy_repository.dart';
 import 'package:deep_time_2/infra/repositories/yaml_clade_repository.dart';
 import 'package:deep_time_2/infra/repositories/yaml_continent_repository.dart';
 import 'package:deep_time_2/infra/repositories/yaml_paleo_ecology_repository.dart';
@@ -19,25 +22,31 @@ import 'package:deep_time_2/infra/repositories/yaml_waterway_repository.dart';
 class AppDependencies {
   AppDependencies({
     required this.database,
+    required this.taxonomyDatabase,
     required this.timelineService,
     required this.cladeDisplayGroupRepository,
     required this.cladeRepresentativeRepository,
     required this.cladeRepository,
     required this.cladeDetailRepository,
+    required this.taxonomyRepository,
   });
 
   final AppDatabase database;
+  final TaxonomyDatabase taxonomyDatabase;
   final TimelineService timelineService;
   final CladeDisplayGroupRepository cladeDisplayGroupRepository;
   final CladeRepresentativeRepository cladeRepresentativeRepository;
   final CladeRepository cladeRepository;
   final SqliteCladeDetailRepository cladeDetailRepository;
+  final TaxonomyRepository taxonomyRepository;
 
   static Future<AppDependencies> build() async {
     try {
       final database = await AppDatabase.open();
+      final taxonomyDatabase = await TaxonomyDatabase.open();
       final divisionRepository = SqliteGeologicDivisionRepository(database);
       final paleontologyRepository = SqlitePaleontologyRepository(database);
+      final taxonomyRepository = SqliteTaxonomyRepository(taxonomyDatabase);
       final paletteRepository = YamlTimelinePaletteRepository(
         assetPath: 'data/time_divisions.yaml',
       );
@@ -76,11 +85,13 @@ class AppDependencies {
       );
       return AppDependencies(
         database: database,
+        taxonomyDatabase: taxonomyDatabase,
         timelineService: timelineService,
         cladeDisplayGroupRepository: cladeDisplayGroupRepository,
         cladeRepresentativeRepository: cladeRepresentativeRepository,
         cladeRepository: cladeRepository,
         cladeDetailRepository: cladeDetailRepository,
+        taxonomyRepository: taxonomyRepository,
       );
     } catch (error, stackTrace) {
       AppDebug.log(
@@ -94,5 +105,6 @@ class AppDependencies {
 
   Future<void> close() async {
     database.close();
+    taxonomyDatabase.close();
   }
 }
