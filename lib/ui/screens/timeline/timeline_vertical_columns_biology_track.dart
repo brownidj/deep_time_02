@@ -7,6 +7,7 @@ Widget _buildBiologyTrack({
   required TimelineBodyMetrics metrics,
   required ScrollController scrollController,
   required List<Clade> clades,
+  required TaxonomyRepository? taxonomyRepository,
   required BiologyColumnMode biologyColumnMode,
   required CladeViewMode cladeViewMode,
   required String cladeCategoryId,
@@ -18,6 +19,8 @@ Widget _buildBiologyTrack({
   required Map<String, List<Clade>> childrenByParentId,
   required ValueChanged<Clade> onCladeSpotlight,
   required ValueChanged<String?> onCladeRootChanged,
+  required String? activeTaxonomyTaxonId,
+  required ValueChanged<String?> onTaxonomyTaxonSelected,
   required List<double> stageHeightsForPaleo,
   required List<double> epochHeightsForClades,
   required List<double> periodHeightsForClades,
@@ -25,9 +28,17 @@ Widget _buildBiologyTrack({
   required List<double> eonHeightsForClades,
 }) {
   if (biologyColumnMode == BiologyColumnMode.taxonomic) {
-    return _VerticalTaxonomyPlaceholderColumn(
+    if (taxonomyRepository == null) {
+      return const _VerticalTaxonomyPlaceholderColumn(
+        message: 'Taxonomy data unavailable',
+      );
+    }
+    return TimelineTaxonomyColumn(
       width: width,
       height: height,
+      repository: taxonomyRepository,
+      activeTaxonomyTaxonId: activeTaxonomyTaxonId,
+      onTaxonomyTaxonSelected: onTaxonomyTaxonSelected,
     );
   }
   return _VerticalCladeColumn(

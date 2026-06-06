@@ -78,6 +78,7 @@ flutter:
     - data/clades.yaml
     - data/clades_detail.sqlite
     - data/clades_detail_progressive_opentree.sqlite
+    - data/taxonomy.sqlite
     - data/clade_display_groups.yaml
     - data/clade_representative_ids.yaml
     - assets/images/continents/

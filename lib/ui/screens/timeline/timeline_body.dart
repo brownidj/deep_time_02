@@ -5,6 +5,7 @@ import 'package:deep_time_2/application/services/timeline_layout_models.dart';
 import 'package:deep_time_2/domain/models/clade.dart';
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
 import 'package:deep_time_2/domain/models/timeline_marker_catalog.dart';
+import 'package:deep_time_2/domain/repositories/taxonomy_repository.dart';
 import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
@@ -27,6 +28,7 @@ class TimelineBody extends StatelessWidget {
     required this.onBandSelect,
     required this.onSelect,
     required this.clades,
+    this.taxonomyRepository,
     this.biologyColumnMode = BiologyColumnMode.cladistic,
     required this.cladeViewMode,
     required this.cladeCategoryId,
@@ -38,6 +40,8 @@ class TimelineBody extends StatelessWidget {
     this.childrenByParentId = const {},
     required this.onCladeSpotlight,
     this.onCladeRootChanged,
+    this.activeTaxonomyTaxonId,
+    this.onTaxonomyTaxonSelected,
     required this.visibleTracks,
     required this.paleoEcology,
   });
@@ -51,6 +55,7 @@ class TimelineBody extends StatelessWidget {
   final ValueChanged<TimelineBandSegment> onBandSelect;
   final ValueChanged<TimelineRowSegment> onSelect;
   final List<Clade> clades;
+  final TaxonomyRepository? taxonomyRepository;
   final BiologyColumnMode biologyColumnMode;
   final CladeViewMode cladeViewMode;
   final String cladeCategoryId;
@@ -62,6 +67,8 @@ class TimelineBody extends StatelessWidget {
   final Map<String, List<Clade>> childrenByParentId;
   final ValueChanged<Clade> onCladeSpotlight;
   final ValueChanged<String?>? onCladeRootChanged;
+  final String? activeTaxonomyTaxonId;
+  final ValueChanged<String?>? onTaxonomyTaxonSelected;
   final Set<TimelineTrack> visibleTracks;
   final List<PaleoEcologyEntry> paleoEcology;
 
@@ -124,6 +131,7 @@ class TimelineBody extends StatelessWidget {
               onSelect: onSelect,
               metrics: metrics,
               clades: clades,
+              taxonomyRepository: taxonomyRepository,
               biologyColumnMode: biologyColumnMode,
               cladeViewMode: cladeViewMode,
               cladeCategoryId: cladeCategoryId,
@@ -135,6 +143,8 @@ class TimelineBody extends StatelessWidget {
               childrenByParentId: childrenByParentId,
               onCladeSpotlight: onCladeSpotlight,
               onCladeRootChanged: onCladeRootChanged ?? (_) {},
+              activeTaxonomyTaxonId: activeTaxonomyTaxonId,
+              onTaxonomyTaxonSelected: onTaxonomyTaxonSelected ?? (_) {},
               paleoEcology: paleoEcology,
             );
           },

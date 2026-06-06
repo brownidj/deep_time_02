@@ -2,12 +2,14 @@ part of 'timeline_vertical_columns.dart';
 
 class _VerticalTaxonomyPlaceholderColumn extends StatelessWidget {
   const _VerticalTaxonomyPlaceholderColumn({
-    required this.width,
-    required this.height,
+    this.width = double.infinity,
+    this.height = double.infinity,
+    this.message = 'Taxonomy view coming next',
   });
 
   final double width;
   final double height;
+  final String message;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class _VerticalTaxonomyPlaceholderColumn extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Text(
-              'Taxonomy view coming next',
+              message,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: DeepTimePalette.panelText,

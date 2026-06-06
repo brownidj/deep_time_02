@@ -1,0 +1,18 @@
+{
+  "taxa": [
+    {
+      "ott_id": 691846,
+      "origin_ma": 770.0,
+      "origin_min_ma": 700.0,
+      "origin_max_ma": 800.0,
+      "source": "TimeTree manual import"
+    },
+    {
+      "ott_id": 304358,
+      "origin_ma": 1850.0,
+      "origin_min_ma": 1700.0,
+      "origin_max_ma": 2000.0,
+      "source": "Curated example"
+    }
+  ]
+}

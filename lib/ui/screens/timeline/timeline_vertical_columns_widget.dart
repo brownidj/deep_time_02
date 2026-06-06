@@ -11,6 +11,7 @@ class TimelineVerticalColumns extends StatelessWidget {
     required this.onSelect,
     required this.scrollController,
     required this.clades,
+    this.taxonomyRepository,
     this.biologyColumnMode = BiologyColumnMode.cladistic,
     required this.cladeViewMode,
     required this.cladeCategoryId,
@@ -22,6 +23,8 @@ class TimelineVerticalColumns extends StatelessWidget {
     this.childrenByParentId = const {},
     required this.onCladeSpotlight,
     this.onCladeRootChanged,
+    this.activeTaxonomyTaxonId,
+    this.onTaxonomyTaxonSelected,
     required this.metrics,
     required this.paleoEcology,
   });
@@ -34,6 +37,7 @@ class TimelineVerticalColumns extends StatelessWidget {
   final ValueChanged<TimelineRowSegment> onSelect;
   final ScrollController scrollController;
   final List<Clade> clades;
+  final TaxonomyRepository? taxonomyRepository;
   final BiologyColumnMode biologyColumnMode;
   final CladeViewMode cladeViewMode;
   final String cladeCategoryId;
@@ -45,6 +49,8 @@ class TimelineVerticalColumns extends StatelessWidget {
   final Map<String, List<Clade>> childrenByParentId;
   final ValueChanged<Clade> onCladeSpotlight;
   final ValueChanged<String?>? onCladeRootChanged;
+  final String? activeTaxonomyTaxonId;
+  final ValueChanged<String?>? onTaxonomyTaxonSelected;
   final TimelineBodyMetrics metrics;
   final List<PaleoEcologyEntry> paleoEcology;
 
@@ -221,6 +227,7 @@ class TimelineVerticalColumns extends StatelessWidget {
                 markers: markers,
                 scrollController: scrollController,
                 clades: clades,
+                taxonomyRepository: taxonomyRepository,
                 biologyColumnMode: biologyColumnMode,
                 cladeViewMode: cladeViewMode,
                 cladeCategoryId: cladeCategoryId,
@@ -232,6 +239,8 @@ class TimelineVerticalColumns extends StatelessWidget {
                 childrenByParentId: childrenByParentId,
                 onCladeSpotlight: onCladeSpotlight,
                 onCladeRootChanged: onCladeRootChanged ?? (_) {},
+                activeTaxonomyTaxonId: activeTaxonomyTaxonId,
+                onTaxonomyTaxonSelected: onTaxonomyTaxonSelected ?? (_) {},
                 paleoEcology: paleoEcology,
                 stageHeightsForPaleo: stageHeightsForPaleo,
                 eonHeightsForClades: eonHeightsForClades,

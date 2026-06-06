@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:deep_time_2/domain/models/clade_display_group.dart';
+import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/models/time_label_mode.dart';
@@ -10,6 +11,7 @@ class TimelineSettingsDialog extends StatefulWidget {
     super.key,
     required this.labelMode,
     required this.onScaleChanged,
+    required this.biologyColumnMode,
     required this.cladeViewMode,
     required this.cladeLabelMode,
     required this.cladeCategoryId,
@@ -23,6 +25,7 @@ class TimelineSettingsDialog extends StatefulWidget {
 
   final TimeLabelMode labelMode;
   final ValueChanged<double> onScaleChanged;
+  final BiologyColumnMode biologyColumnMode;
   final CladeViewMode cladeViewMode;
   final CladeLabelMode cladeLabelMode;
   final String cladeCategoryId;
@@ -75,95 +78,97 @@ class _TimelineSettingsDialogState extends State<TimelineSettingsDialog> {
               ),
             ),
             const SizedBox(height: 12),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Clade view',
-                style: Theme.of(context).textTheme.labelLarge,
-              ),
-            ),
-            const SizedBox(height: 4),
-            RadioGroup<CladeViewMode>(
-              groupValue: widget.cladeViewMode,
-              onChanged: (value) {
-                if (value != null) {
-                  widget.onCladeViewModeChanged(value);
-                }
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: CladeViewMode.values
-                    .map(
-                      (mode) => RadioListTile<CladeViewMode>(
-                        title: Text(mode.label),
-                        value: mode,
-                      ),
-                    )
-                    .toList(),
-              ),
-            ),
-            const SizedBox(height: 8),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Clade labels',
-                style: Theme.of(context).textTheme.labelLarge,
-              ),
-            ),
-            const SizedBox(height: 4),
-            RadioGroup<CladeLabelMode>(
-              groupValue: _localCladeLabelMode,
-              onChanged: (value) {
-                if (value != null) {
-                  setState(() {
-                    _localCladeLabelMode = value;
-                  });
-                  widget.onCladeLabelModeChanged(value);
-                }
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: CladeLabelMode.values
-                    .map(
-                      (mode) => RadioListTile<CladeLabelMode>(
-                        title: Text(mode.label),
-                        value: mode,
-                      ),
-                    )
-                    .toList(),
-              ),
-            ),
-            const SizedBox(height: 8),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Category',
-                style: Theme.of(context).textTheme.labelLarge,
-              ),
-            ),
-            DropdownButtonFormField<String>(
-              initialValue: widget.cladeCategoryId,
-              items: [
-                const DropdownMenuItem<String>(
-                  value: 'all',
-                  child: Text('All'),
+            if (widget.biologyColumnMode == BiologyColumnMode.cladistic) ...[
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Clade view',
+                  style: Theme.of(context).textTheme.labelLarge,
                 ),
-                ...widget.cladeDisplayGroups.map(
-                  (group) => DropdownMenuItem<String>(
-                    value: group.id,
-                    child: Text(group.label),
+              ),
+              const SizedBox(height: 4),
+              RadioGroup<CladeViewMode>(
+                groupValue: widget.cladeViewMode,
+                onChanged: (value) {
+                  if (value != null) {
+                    widget.onCladeViewModeChanged(value);
+                  }
+                },
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: CladeViewMode.values
+                      .map(
+                        (mode) => RadioListTile<CladeViewMode>(
+                          title: Text(mode.label),
+                          value: mode,
+                        ),
+                      )
+                      .toList(),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Clade labels',
+                  style: Theme.of(context).textTheme.labelLarge,
+                ),
+              ),
+              const SizedBox(height: 4),
+              RadioGroup<CladeLabelMode>(
+                groupValue: _localCladeLabelMode,
+                onChanged: (value) {
+                  if (value != null) {
+                    setState(() {
+                      _localCladeLabelMode = value;
+                    });
+                    widget.onCladeLabelModeChanged(value);
+                  }
+                },
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: CladeLabelMode.values
+                      .map(
+                        (mode) => RadioListTile<CladeLabelMode>(
+                          title: Text(mode.label),
+                          value: mode,
+                        ),
+                      )
+                      .toList(),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Category',
+                  style: Theme.of(context).textTheme.labelLarge,
+                ),
+              ),
+              DropdownButtonFormField<String>(
+                initialValue: widget.cladeCategoryId,
+                items: [
+                  const DropdownMenuItem<String>(
+                    value: 'all',
+                    child: Text('All'),
                   ),
-                ),
-              ],
-              onChanged: widget.cladeViewMode == CladeViewMode.byCategory
-                  ? (value) {
-                      if (value != null) {
-                        widget.onCladeCategoryChanged(value);
+                  ...widget.cladeDisplayGroups.map(
+                    (group) => DropdownMenuItem<String>(
+                      value: group.id,
+                      child: Text(group.label),
+                    ),
+                  ),
+                ],
+                onChanged: widget.cladeViewMode == CladeViewMode.byCategory
+                    ? (value) {
+                        if (value != null) {
+                          widget.onCladeCategoryChanged(value);
+                        }
                       }
-                    }
-                  : null,
-            ),
-            const SizedBox(height: 12),
+                    : null,
+              ),
+              const SizedBox(height: 12),
+            ],
             Align(
               alignment: Alignment.centerLeft,
               child: Text(

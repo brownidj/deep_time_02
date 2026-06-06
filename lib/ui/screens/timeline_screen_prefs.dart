@@ -113,6 +113,7 @@ mixin _TimelineScreenPreferences on State<TimelineScreen> {
             });
             _saveTimelineScale(value);
           },
+          biologyColumnMode: _biologyColumnMode,
           cladeViewMode: _cladeViewMode,
           cladeCategoryId: _cladeCategoryId,
           cladeLabelMode: _cladeLabelMode,

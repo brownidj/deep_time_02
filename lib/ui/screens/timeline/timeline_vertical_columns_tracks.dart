@@ -1,5 +1,4 @@
-part of 'timeline_vertical_columns.dart';
-Widget _buildVerticalTrack({
+part of 'timeline_vertical_columns.dart'; Widget _buildVerticalTrack({
   required TimelineTrack track,
   required double Function(TimelineTrack) scaledWidth,
   required double columnHeight,
@@ -14,31 +13,27 @@ Widget _buildVerticalTrack({
   required TimelineMarkerCatalog markers,
   required ScrollController scrollController,
   required List<Clade> clades,
+  required TaxonomyRepository? taxonomyRepository,
   required BiologyColumnMode biologyColumnMode,
   required CladeViewMode cladeViewMode,
   required String cladeCategoryId,
   required CladeLabelMode cladeLabelMode,
   required List<String> cladeRepresentativeIds,
-  required String cladeSearchQuery, required String? cladeSpotlightId,
-  required String? activeCladeRootId,
+  required String cladeSearchQuery,
+  required String? cladeSpotlightId, required String? activeCladeRootId,
   required Map<String, List<Clade>> childrenByParentId,
   required ValueChanged<Clade> onCladeSpotlight,
   required ValueChanged<String?> onCladeRootChanged,
+  required String? activeTaxonomyTaxonId,
+  required ValueChanged<String?> onTaxonomyTaxonSelected,
   required List<PaleoEcologyEntry> paleoEcology,
-  required List<double> stageHeightsForPaleo,
-  required List<double> eonHeightsForClades,
-  required List<double> eraHeightsForClades,
-  required List<double> periodHeightsForClades,
+  required List<double> stageHeightsForPaleo, required List<double> eonHeightsForClades,
+  required List<double> eraHeightsForClades, required List<double> periodHeightsForClades,
   required List<double> epochHeightsForClades,
 }) {
   switch (track) {
     case TimelineTrack.ma:
-      return _MaColumn(
-        width: scaledWidth(TimelineTrack.ma),
-        height: columnHeight,
-        layout: layout,
-        metrics: metrics,
-      );
+      return _MaColumn(width: scaledWidth(TimelineTrack.ma), height: columnHeight, layout: layout, metrics: metrics);
     case TimelineTrack.eon:
       return _VerticalBandColumn(
         width: scaledWidth(TimelineTrack.eon),
@@ -279,6 +274,7 @@ Widget _buildVerticalTrack({
         metrics: metrics,
         scrollController: scrollController,
         clades: clades,
+        taxonomyRepository: taxonomyRepository,
         biologyColumnMode: biologyColumnMode,
         cladeViewMode: cladeViewMode,
         cladeCategoryId: cladeCategoryId,
@@ -290,6 +286,8 @@ Widget _buildVerticalTrack({
         childrenByParentId: childrenByParentId,
         onCladeSpotlight: onCladeSpotlight,
         onCladeRootChanged: onCladeRootChanged,
+        activeTaxonomyTaxonId: activeTaxonomyTaxonId,
+        onTaxonomyTaxonSelected: onTaxonomyTaxonSelected,
         stageHeightsForPaleo: stageHeightsForPaleo,
         epochHeightsForClades: epochHeightsForClades,
         periodHeightsForClades: periodHeightsForClades,

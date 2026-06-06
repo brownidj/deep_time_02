@@ -23,6 +23,7 @@ class _TimelineScreenState extends State<TimelineScreen>
   String _cladeSearchQuery = '';
   String? _cladeSpotlightId;
   String? _activeCladeRootId;
+  String? _activeTaxonomyTaxonId;
   final Map<String, List<Clade>> _sqliteDetailCladeCache = {};
   final Set<String> _sqliteDetailLoadInFlight = <String>{};
   @override
@@ -129,7 +130,8 @@ class _TimelineScreenState extends State<TimelineScreen>
                       _saveBiologyColumnMode(mode);
                     },
                   ),
-                  if (_cladeViewMode == CladeViewMode.searchSpotlight)
+                  if (_biologyColumnMode == BiologyColumnMode.cladistic &&
+                      _cladeViewMode == CladeViewMode.searchSpotlight)
                     CladeSearchPanel(
                       query: _cladeSearchQuery,
                       matches: searchMatches,
@@ -175,6 +177,7 @@ class _TimelineScreenState extends State<TimelineScreen>
                       });
                     },
                     clades: displayedClades,
+                    taxonomyRepository: widget.dependencies.taxonomyRepository,
                     biologyColumnMode: _biologyColumnMode,
                     cladeViewMode: _cladeViewMode,
                     cladeCategoryId: _cladeCategoryId,
@@ -195,6 +198,12 @@ class _TimelineScreenState extends State<TimelineScreen>
                     },
                     onCladeRootChanged: (rootId) =>
                         _handleCladeRootChanged(rootId, clades),
+                    activeTaxonomyTaxonId: _activeTaxonomyTaxonId,
+                    onTaxonomyTaxonSelected: (taxonId) {
+                      setState(() {
+                        _activeTaxonomyTaxonId = taxonId;
+                      });
+                    },
                     visibleTracks: _visibleTracks,
                     paleoEcology: paleoEcology,
                   ),
