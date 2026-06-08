@@ -80,12 +80,7 @@ class _VerticalCladeBar extends StatelessWidget {
     final color = isHighlighted ? highlightColor : baseColor;
     final opacity = isDimmed ? 0.35 : 1.0;
     final showLabel = !hideInlineLabel && height >= 32;
-    final labelStyle = Theme.of(context).textTheme.labelSmall?.copyWith(
-      color: Colors.white,
-      fontWeight: FontWeight.w700,
-    );
     final lineWidth = isHighlighted ? 3.0 : 2.0;
-    const labelBandWidth = 28.0;
 
     return Opacity(
       opacity: opacity,
@@ -108,39 +103,81 @@ class _VerticalCladeBar extends StatelessWidget {
               ),
             ),
             if (showLabel)
-              Positioned(
-                left: -(labelBandWidth - lineWidth) / 2,
+              _CladeInlineRotatedLabel(
+                lineCenterX: lineWidth / 2,
                 top: 10,
-                width: labelBandWidth,
-                child: Center(
-                  child: DecoratedBox(
-                    decoration: const BoxDecoration(
-                      color: labelBackgroundColor,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 4),
-                      child: Tooltip(
-                        message: 'Crown age: ${_formatStartMa(clade.startMa)} Ma',
-                        child: GestureDetector(
-                          behavior: HitTestBehavior.translucent,
-                          onLongPress: onLongPress,
-                          child: RotatedBox(
-                            quarterTurns: 3,
-                            child: Text(
-                              labelText,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: labelStyle,
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
+                labelText: labelText,
+                textColor: Colors.white,
+                tooltipMessage: 'Crown age: ${_formatStartMa(clade.startMa)} Ma',
+                onTap: null,
+                onLongPress: onLongPress,
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CladeInlineRotatedLabel extends StatelessWidget {
+  const _CladeInlineRotatedLabel({
+    super.key,
+    required this.lineCenterX,
+    required this.top,
+    required this.labelText,
+    required this.textColor,
+    required this.tooltipMessage,
+    required this.onTap,
+    required this.onLongPress,
+  });
+
+  final double lineCenterX;
+  final double top;
+  final String labelText;
+  final Color textColor;
+  final String tooltipMessage;
+  final VoidCallback? onTap;
+  final VoidCallback onLongPress;
+
+  static const double labelBandWidth = 28.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final labelStyle = Theme.of(context).textTheme.labelSmall?.copyWith(
+      color: textColor,
+      fontWeight: FontWeight.w700,
+    );
+
+    return Positioned(
+      left: lineCenterX - (labelBandWidth / 2),
+      top: top,
+      width: labelBandWidth,
+      child: Center(
+        child: DecoratedBox(
+          decoration: const BoxDecoration(
+            color: _VerticalCladeBar.labelBackgroundColor,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            child: Tooltip(
+              message: tooltipMessage,
+              child: GestureDetector(
+                behavior: HitTestBehavior.translucent,
+                onTap: onTap,
+                onLongPress: onLongPress,
+                child: RotatedBox(
+                  quarterTurns: 3,
+                  child: Text(
+                    labelText,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: labelStyle,
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ),
-          ],
+            ),
+          ),
         ),
       ),
     );

@@ -79,6 +79,7 @@ void main() {
                   cladeSearchQuery: '',
                   cladeSpotlightId: null,
                   activeCladeRootId: 'root_a',
+                  activeCladeRootLabel: 'Root A',
                   childrenByParentId: childrenByParentId,
                   onCladeSpotlight: (_) {},
                   visibleTracks: {...kDefaultTimelineTrackOrder}
@@ -94,12 +95,12 @@ void main() {
 
     await tester.pumpAndSettle();
 
-    expect(find.byKey(const ValueKey('vertical-clade-root_a')), findsOneWidget);
+    expect(find.text('Clades: Root A'), findsOneWidget);
     expect(
-      find.byKey(const ValueKey('vertical-clade-child_a')),
+      find.byKey(const ValueKey('focused-clade-label-child_a')),
       findsOneWidget,
     );
-    expect(find.byKey(const ValueKey('vertical-clade-root_b')), findsNothing);
+    expect(find.byKey(const ValueKey('focused-clade-label-root_b')), findsNothing);
   });
 
   testWidgets(
@@ -196,6 +197,9 @@ void main() {
                         cladeSearchQuery: '',
                         cladeSpotlightId: null,
                         activeCladeRootId: activeRootId,
+                        activeCladeRootLabel: activeRootId == 'dinosauria'
+                            ? 'Dinosauria'
+                            : null,
                         childrenByParentId: childrenByParentId,
                         onCladeSpotlight: (_) {},
                         onCladeRootChanged: (value) {
@@ -229,11 +233,11 @@ void main() {
 
       expect(find.text('Clades: Dinosauria'), findsOneWidget);
       expect(
-        find.byKey(const ValueKey('vertical-clade-theropoda')),
+        find.byKey(const ValueKey('focused-clade-label-theropoda')),
         findsOneWidget,
       );
       expect(
-        find.byKey(const ValueKey('vertical-clade-outside_clade')),
+        find.byKey(const ValueKey('focused-clade-label-outside_clade')),
         findsNothing,
       );
 

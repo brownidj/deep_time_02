@@ -33,7 +33,7 @@ Future<void> showTimelineExplanationDialog({
                       localAssetImage.trim().isNotEmpty) ||
                   (imageUrl != null && imageUrl.trim().isNotEmpty))
                 const SizedBox(height: 12),
-              Text(explanation),
+              SelectableText(explanation),
               _ImageAttributionBlock(
                 sourcePage: sourcePage,
                 imageLicense: imageLicense,
