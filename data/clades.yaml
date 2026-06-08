@@ -1574,6 +1574,127 @@
     - Mesozoic
     - extinction
 
+- id: archaeoceratopsidae
+  common_label: Archaeoceratopsids
+  scientific_label: Archaeoceratopsidae
+  scientific_rank: family
+  parent_id: ceratopsia
+  start_ma: 100.5
+  end_ma: 66.0
+  range_note: Early Cretaceous fossil minimum through the K-Pg boundary
+  confidence: low
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 31
+  min_zoom_level: period
+  short_description: Early ceratopsians centred on Archaeoceratops from the Early Cretaceous of northwestern China.
+  divergence_ma: 100.5
+  branch_priority: 40
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Archaeoceratops
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ceratopsian
+    - family
+    - Mesozoic
+    - extinction
+
+- id: proceratosauridae
+  common_label: Proceratosaurids
+  scientific_label: Proceratosauridae
+  scientific_rank: family
+  parent_id: tyrannosauroidea
+  start_ma: 168.3
+  end_ma: 166.1
+  range_note: Bathonian fossil range currently documented for the family
+  confidence: moderate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 32
+  min_zoom_level: period
+  short_description: Early tyrannosauroids including Proceratosaurus and related Middle Jurassic forms.
+  divergence_ma: 168.3
+  branch_priority: 41
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Proceratosaurus
+    - Kileskus
+  extinction_note: Extinct before the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - tyrannosauroid
+    - family
+    - Mesozoic
+    - extinction
+
+- id: mamenchisauridae
+  common_label: Mamenchisaurids
+  scientific_label: Mamenchisauridae
+  scientific_rank: family
+  parent_id: sauropoda
+  start_ma: 166.0
+  end_ma: 114.4
+  range_note: Middle Jurassic to Early Cretaceous fossil range based on currently documented occurrences
+  confidence: moderate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 33
+  min_zoom_level: period
+  short_description: East Asian long-necked sauropods including Mamenchisaurus and close relatives.
+  divergence_ma: 166.0
+  branch_priority: 42
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Mamenchisaurus
+    - Omeisaurus
+  extinction_note: Extinct before the end of the Early Cretaceous or possibly later if younger assignments are confirmed.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - family
+    - Mesozoic
+    - extinction
+
+- id: saltasauridae
+  common_label: Saltasaurids
+  scientific_label: Saltasauridae
+  scientific_rank: family
+  parent_id: titanosauria
+  start_ma: 83.5
+  end_ma: 66.0
+  range_note: Campanian fossil minimum through the K-Pg boundary
+  confidence: low
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 34
+  min_zoom_level: period
+  short_description: Derived titanosaurs including Saltasaurus, Neuquensaurus, and close relatives.
+  divergence_ma: 83.5
+  branch_priority: 43
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Saltasaurus
+    - Neuquensaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - titanosaur
+    - family
+    - Mesozoic
+    - extinction
+
 - id: aves
   common_label: Birds
   scientific_label: Aves
