@@ -37,6 +37,7 @@ class TimelineBody extends StatelessWidget {
     required this.cladeSearchQuery,
     required this.cladeSpotlightId,
     this.activeCladeRootId,
+    this.activeCladeRootLabel,
     this.childrenByParentId = const {},
     required this.onCladeSpotlight,
     this.onCladeRootChanged,
@@ -64,6 +65,7 @@ class TimelineBody extends StatelessWidget {
   final String cladeSearchQuery;
   final String? cladeSpotlightId;
   final String? activeCladeRootId;
+  final String? activeCladeRootLabel;
   final Map<String, List<Clade>> childrenByParentId;
   final ValueChanged<Clade> onCladeSpotlight;
   final ValueChanged<String?>? onCladeRootChanged;
@@ -140,6 +142,7 @@ class TimelineBody extends StatelessWidget {
               cladeSearchQuery: cladeSearchQuery,
               cladeSpotlightId: cladeSpotlightId,
               activeCladeRootId: activeCladeRootId,
+              activeCladeRootLabel: activeCladeRootLabel,
               childrenByParentId: childrenByParentId,
               onCladeSpotlight: onCladeSpotlight,
               onCladeRootChanged: onCladeRootChanged ?? (_) {},

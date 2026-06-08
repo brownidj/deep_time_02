@@ -95,40 +95,45 @@ extension _TimelineScreenCladeDetail on _TimelineScreenState {
     String? rootId,
     List<Clade> yamlClades,
   ) async {
-    debugPrint('[CLADE_DEBUG] rootChange requested=${rootId ?? 'null'}');
-    setState(() {
-      _activeCladeRootId = rootId;
+    final normalizedRootId = rootId?.trim();
+    final nextRootId = (normalizedRootId == null || normalizedRootId.isEmpty)
+        ? null
+        : normalizedRootId;
+    debugPrint('[CLADE_DEBUG] rootChange requested=${nextRootId ?? 'null'}');
+    _updateScreenState(() {
+      _activeCladeRootId = nextRootId;
     });
-    if (rootId == null || rootId.isEmpty) {
+    if (!_isFocusedCladeMode) {
       debugPrint('[CLADE_DEBUG] rootChange cleared');
       return;
     }
-    if (_sqliteDetailCladeCache.containsKey(rootId)) {
-      final cachedLen = _sqliteDetailCladeCache[rootId]?.length ?? 0;
+    final activeRootId = _focusedCladeRootId!;
+    if (_sqliteDetailCladeCache.containsKey(activeRootId)) {
+      final cachedLen = _sqliteDetailCladeCache[activeRootId]?.length ?? 0;
       debugPrint(
-        '[CLADE_DEBUG] rootChange root=$rootId cacheHit len=$cachedLen',
+        '[CLADE_DEBUG] rootChange root=$activeRootId cacheHit len=$cachedLen',
       );
       return;
     }
     Clade? root;
     for (final clade in yamlClades) {
-      if (clade.id == rootId) {
+      if (clade.id == activeRootId) {
         root = clade;
         break;
       }
     }
     if (root == null || root.detailSource != 'sqlite') {
       debugPrint(
-        '[CLADE_DEBUG] rootChange root=$rootId fetchSkipped '
+        '[CLADE_DEBUG] rootChange root=$activeRootId fetchSkipped '
         'rootFound=${root != null} detailSource=${root?.detailSource ?? 'n/a'}',
       );
       return;
     }
     try {
-      await _loadSqliteDetailSubtree(rootId: rootId);
+      await _loadSqliteDetailSubtree(rootId: activeRootId);
     } catch (error, stackTrace) {
       AppDebug.log(
-        'Failed to load SQLite detail clades for root $rootId; using YAML fallback',
+        'Failed to load SQLite detail clades for root $activeRootId; using YAML fallback',
         error: error,
         stackTrace: stackTrace,
       );
@@ -136,8 +141,8 @@ extension _TimelineScreenCladeDetail on _TimelineScreenState {
   }
 
   void _ensureActiveRootDetailLoaded(List<Clade> yamlClades) {
-    final rootId = _activeCladeRootId?.trim();
-    if (rootId == null || rootId.isEmpty) {
+    final rootId = _focusedCladeRootId;
+    if (rootId == null) {
       return;
     }
     if (_sqliteDetailCladeCache.containsKey(rootId) ||
@@ -187,7 +192,7 @@ extension _TimelineScreenCladeDetail on _TimelineScreenState {
         );
         return;
       }
-      setState(() {
+      _updateScreenState(() {
         _sqliteDetailCladeCache[rootId] = detail;
       });
       debugPrint(

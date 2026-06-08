@@ -12,6 +12,8 @@ class TimelineHeader extends StatelessWidget {
     required this.maxScale,
     required this.biologyColumnMode,
     required this.onBiologyColumnModeChanged,
+    this.activeCladeRootLabel,
+    this.onClearCladeRoot,
   });
 
   final VoidCallback onSettings;
@@ -21,6 +23,8 @@ class TimelineHeader extends StatelessWidget {
   final double maxScale;
   final BiologyColumnMode biologyColumnMode;
   final ValueChanged<BiologyColumnMode> onBiologyColumnModeChanged;
+  final String? activeCladeRootLabel;
+  final VoidCallback? onClearCladeRoot;
 
   String _scaleLabel() {
     final offset = minScale - 1.0;
@@ -52,6 +56,16 @@ class TimelineHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 12),
+          if (biologyColumnMode == BiologyColumnMode.cladistic &&
+              activeCladeRootLabel != null) ...[
+            IconButton(
+              tooltip: 'Previous clade view',
+              onPressed: onClearCladeRoot,
+              icon: const Icon(Icons.arrow_back),
+              color: DeepTimePalette.panelText,
+            ),
+            const SizedBox(width: 8),
+          ],
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [

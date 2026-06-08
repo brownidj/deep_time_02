@@ -34,6 +34,34 @@ class _TimelineScreenState extends State<TimelineScreen>
   bool _labelModeRetryScheduled = false;
   @override
   int _labelModeRetryCount = 0;
+
+  String? get _focusedCladeRootId {
+    final rootId = _activeCladeRootId?.trim();
+    if (rootId == null || rootId.isEmpty) {
+      return null;
+    }
+    return rootId;
+  }
+
+  bool get _isFocusedCladeMode => _focusedCladeRootId != null;
+
+  void _updateScreenState(VoidCallback update) {
+    setState(update);
+  }
+
+  String? _cladeLabelForId(List<Clade> clades, String? cladeId) {
+    final targetId = cladeId?.trim();
+    if (targetId == null || targetId.isEmpty) {
+      return null;
+    }
+    for (final clade in clades) {
+      if (clade.id == targetId) {
+        return clade.label;
+      }
+    }
+    return targetId;
+  }
+
   @override
   void initState() {
     super.initState();
@@ -76,7 +104,11 @@ class _TimelineScreenState extends State<TimelineScreen>
         _ensureActiveRootDetailLoaded(clades);
         final displayedClades = _resolveDisplayedClades(
           yamlClades: clades,
-          activeRootId: _activeCladeRootId,
+          activeRootId: _focusedCladeRootId,
+        );
+        final activeCladeRootLabel = _cladeLabelForId(
+          displayedClades,
+          _focusedCladeRootId,
         );
         final childrenByParentId = _buildChildrenByParentId(displayedClades);
         final layout = _layoutService.build(
@@ -117,6 +149,16 @@ class _TimelineScreenState extends State<TimelineScreen>
                     minScale: AppDebug.minTimelineScale,
                     maxScale: AppDebug.maxTimelineScale,
                     biologyColumnMode: _biologyColumnMode,
+                    activeCladeRootLabel: _biologyColumnMode ==
+                                BiologyColumnMode.cladistic &&
+                            _isFocusedCladeMode
+                        ? _cladeLabelForId(clades, _focusedCladeRootId)
+                        : null,
+                    onClearCladeRoot: _biologyColumnMode ==
+                                BiologyColumnMode.cladistic &&
+                            _isFocusedCladeMode
+                        ? () => _handleCladeRootChanged(null, clades)
+                        : null,
                     onScaleChanged: (value) {
                       setState(() {
                         AppDebug.timelineScale = value;
@@ -185,7 +227,8 @@ class _TimelineScreenState extends State<TimelineScreen>
                     cladeRepresentativeIds: _cladeRepresentativeIds,
                     cladeSearchQuery: _cladeSearchQuery,
                     cladeSpotlightId: _cladeSpotlightId,
-                    activeCladeRootId: _activeCladeRootId,
+                    activeCladeRootId: _focusedCladeRootId,
+                    activeCladeRootLabel: activeCladeRootLabel,
                     childrenByParentId: childrenByParentId,
                     onCladeSpotlight: (clade) {
                       if (_cladeViewMode != CladeViewMode.searchSpotlight) {

@@ -59,11 +59,15 @@ Widget _buildCladeViewport({
   }
   final visibleStart = mapper.maForY(scrollOffset) ?? layout.oldestMa;
   final visibleEnd = mapper.maForY(scrollOffset + viewportHeight) ?? layout.youngestMa;
+  final hasActiveRoot = activeCladeRootId != null;
+  final focusedTargetCount = hasActiveRoot
+      ? _focusedCladeTargetVisibleCount(width)
+      : 40;
   final scopedClades = _scopeCladesForActiveRoot(
     source: clades,
     activeRootId: activeCladeRootId,
     childrenByParentId: childrenByParentId,
-    targetVisibleCount: 40,
+    targetVisibleCount: focusedTargetCount,
   );
   final dateableClades = _filterDateableClades(scopedClades);
   if (dateableClades.isEmpty) {
@@ -74,9 +78,9 @@ Widget _buildCladeViewport({
     representativeIds: representativeIds,
     viewMode: viewMode,
     searchQuery: searchQuery,
-    hasActiveRoot: activeCladeRootId != null,
+    hasActiveRoot: hasActiveRoot,
   );
-  final filterId = activeCladeRootId == null && viewMode == CladeViewMode.byCategory
+  final filterId = !hasActiveRoot && viewMode == CladeViewMode.byCategory
       ? displayGroupId
       : null;
   final visible = _filterVisibleClades(
@@ -86,9 +90,9 @@ Widget _buildCladeViewport({
     displayGroupId: filterId,
     scale: AppDebug.timelineScale,
     availableWidth: width,
-    includeAllZoomLevels: activeCladeRootId != null,
-    preferredVisibleCount: activeCladeRootId == null ? null : 40,
-    includeOutsideVisibleRange: activeCladeRootId != null,
+    includeAllZoomLevels: hasActiveRoot,
+    preferredVisibleCount: hasActiveRoot ? focusedTargetCount : null,
+    includeOutsideVisibleRange: hasActiveRoot,
   );
   if (visible.isEmpty) {
     return _emptyCladeColumn(

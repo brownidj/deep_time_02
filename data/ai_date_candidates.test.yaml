@@ -1,0 +1,1575 @@
+alethoalaornithidae:
+  context:
+    common_label: Alethoalaornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for alethoalaornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Alethoalaornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Alethoalaornithidae has at least one public PBDB-derived fossil occurrence or occurrence-like
+      record. PBDB returned 1 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+      121.400–113.200 Ma. Most frequent formation labels: Jiufotang (1). Most frequent interval labels:
+      Aptian (1). The proposed start_ma uses the oldest available PBDB age bound as a conservative fossil
+      minimum. This should not be interpreted as the true evolutionary origin or as a molecular divergence
+      estimate. Manual review should check the accepted taxonomy, the included genus/species, the exact
+      occurrence record, and whether the PBDB age is a specimen-level horizon, formation-level range,
+      or broader stage-level estimate.'
+    date_resolution_method: fossil_first_appearance
+    date_sources:
+    - source_label: Paleobiology Database search for Alethoalaornithidae
+      source_type: fossil_occurrence_database
+      url: https://paleobiodb.org
+      note: 'PBDB returned 1 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+        121.400–113.200 Ma. Most frequent formation labels: Jiufotang (1). Most frequent interval labels:
+        Aptian (1).'
+    - source_label: 'GBIF species search result: Alethoalaornithidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4966920
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Alethoalaornithidae Li et al., 2007'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/121511318
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Alethoalaornithidae Li, Hu, Duan, Gong & Hou, 2007'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/162933538
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'Wikidata item: Alethoalaornithidae'
+      source_type: taxonomic_database
+      url: http://www.wikidata.org/entity/Q23068172
+      note: Wikidata rank=family; parent=Cathayornithiformes. Use only as a pointer to stronger sources.
+    divergence_ma: null
+    end_ma: 113.2
+    start_ma: 121.4
+  review:
+    decision_note: AI/public-source proposal created from PBDB occurrence evidence. Accepted only as a
+      candidate fossil minimum until manually checked. If the PBDB record is based on a broad stratigraphic
+      interval, consider keeping start_ma null or downgrading confidence.
+    reviewed_at: '2026-06-06T05:37:45.050798+00:00'
+    reviewer: deep_time_2_public_source_enrichment_script
+    status: ai_proposed
+archaeoceratopsidae:
+  context:
+    common_label: Archaeoceratopsidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for archaeoceratopsidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Archaeoceratopsidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Archaeoceratopsidae has at least one public PBDB-derived fossil occurrence or occurrence-like
+      record. PBDB returned 3 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+      121.400–110.100 Ma. Most frequent formation labels: Zhonggou (2), Xiagou (1). Most frequent interval
+      labels: Early Albian (2), Aptian (1). The proposed start_ma uses the oldest available PBDB age bound
+      as a conservative fossil minimum. This should not be interpreted as the true evolutionary origin
+      or as a molecular divergence estimate. Manual review should check the accepted taxonomy, the included
+      genus/species, the exact occurrence record, and whether the PBDB age is a specimen-level horizon,
+      formation-level range, or broader stage-level estimate.'
+    date_resolution_method: fossil_first_appearance
+    date_sources:
+    - source_label: Paleobiology Database search for Archaeoceratopsidae
+      source_type: fossil_occurrence_database
+      url: https://paleobiodb.org
+      note: 'PBDB returned 3 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+        121.400–110.100 Ma. Most frequent formation labels: Zhonggou (2), Xiagou (1). Most frequent interval
+        labels: Early Albian (2), Aptian (1).'
+    - source_label: 'GBIF species search result: Archaeoceratopsidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/6141932
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Archaeoceratopsidae Dong & Azuma, 1997'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/162880206
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Archaeoceratopsidae Dong & Azuma, 1997'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/121517857
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'Wikidata item: Archaeoceratopsidae'
+      source_type: taxonomic_database
+      url: http://www.wikidata.org/entity/Q3496310
+      note: Wikidata rank=family; parent=Ceratopsia. Use only as a pointer to stronger sources.
+    - source_label: "2025. Cranial osteology of\n            <i>Archaeoceratops oshimai</i>\n        \
+        \    (Ornithischia: Ceratopsia) and phylogenetic evaluation of basal Ceratopsia. Historical Biology."
+      source_type: bibliographic_search_result
+      url: https://doi.org/10.1080/08912963.2025.2568096
+      note: Crossref bibliographic match. Manual review required to confirm relevance and stratigraphic
+        content.
+    divergence_ma: null
+    end_ma: 110.1
+    start_ma: 121.4
+  review:
+    decision_note: AI/public-source proposal created from PBDB occurrence evidence. Accepted only as a
+      candidate fossil minimum until manually checked. If the PBDB record is based on a broad stratigraphic
+      interval, consider keeping start_ma null or downgrading confidence.
+    reviewed_at: '2026-06-06T05:37:54.049628+00:00'
+    reviewer: deep_time_2_public_source_enrichment_script
+    status: ai_proposed
+arriagadoolithidae:
+  context:
+    common_label: Arriagadoolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for arriagadoolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Arriagadoolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Arriagadoolithidae has at least one public PBDB-derived fossil occurrence or occurrence-like
+      record. PBDB returned 1 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+      72.200–66.000 Ma. Most frequent formation labels: Allen (1). Most frequent interval labels: Maastrichtian
+      (1). The proposed start_ma uses the oldest available PBDB age bound as a conservative fossil minimum.
+      This should not be interpreted as the true evolutionary origin or as a molecular divergence estimate.
+      Manual review should check the accepted taxonomy, the included genus/species, the exact occurrence
+      record, and whether the PBDB age is a specimen-level horizon, formation-level range, or broader
+      stage-level estimate.'
+    date_resolution_method: fossil_first_appearance
+    date_sources:
+    - source_label: Paleobiology Database search for Arriagadoolithidae
+      source_type: fossil_occurrence_database
+      url: https://paleobiodb.org
+      note: 'PBDB returned 1 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+        72.200–66.000 Ma. Most frequent formation labels: Allen (1). Most frequent interval labels: Maastrichtian
+        (1).'
+    - source_label: 'GBIF species search result: Arriagadoolithidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/8507324
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Arriagadoolithidae Agnolin et al., 2012'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/121494128
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Arriagadoolithus Agnolin et al., 2012'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/121494175
+      note: GBIF rank=GENUS; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'Wikidata item: Arriagadoolithidae'
+      source_type: taxonomic_database
+      url: http://www.wikidata.org/entity/Q22286539
+      note: Wikidata rank=family; parent=Alvarezsauria. Use only as a pointer to stronger sources.
+    divergence_ma: null
+    end_ma: 66.0
+    start_ma: 72.2
+  review:
+    decision_note: AI/public-source proposal created from PBDB occurrence evidence. Accepted only as a
+      candidate fossil minimum until manually checked. If the PBDB record is based on a broad stratigraphic
+      interval, consider keeping start_ma null or downgrading confidence.
+    reviewed_at: '2026-06-06T05:38:02.920757+00:00'
+    reviewer: deep_time_2_public_source_enrichment_script
+    status: ai_proposed
+balochisauridae:
+  context:
+    common_label: Balochisauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for balochisauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Balochisauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Balochisauridae has at least one public PBDB-derived fossil occurrence or occurrence-like
+      record. PBDB returned 23 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+      72.200–66.000 Ma. Most frequent formation labels: Vitakri (22), Lameta (1). Most frequent interval
+      labels: Late Maastrichtian (22), Maastrichtian (1). The proposed start_ma uses the oldest available
+      PBDB age bound as a conservative fossil minimum. This should not be interpreted as the true evolutionary
+      origin or as a molecular divergence estimate. Manual review should check the accepted taxonomy,
+      the included genus/species, the exact occurrence record, and whether the PBDB age is a specimen-level
+      horizon, formation-level range, or broader stage-level estimate.'
+    date_resolution_method: fossil_first_appearance
+    date_sources:
+    - source_label: Paleobiology Database search for Balochisauridae
+      source_type: fossil_occurrence_database
+      url: https://paleobiodb.org
+      note: 'PBDB returned 23 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+        72.200–66.000 Ma. Most frequent formation labels: Vitakri (22), Lameta (1). Most frequent interval
+        labels: Late Maastrichtian (22), Maastrichtian (1).'
+    - source_label: 'GBIF species search result: Balochisauridae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4967418
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Balochisauridae Malkani, 2003'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/121486722
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Balochisauridae Malkani, 2003'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/162886097
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'Wikidata item: Balochisauridae'
+      source_type: taxonomic_database
+      url: http://www.wikidata.org/entity/Q33135540
+      note: Wikidata rank=family; parent=Titanosauria. Use only as a pointer to stronger sources.
+    - source_label: 2010. Osteoderms of Pakisauridae and Balochisauridae (Titanosauria, Sauropoda, Dinosauria)
+        in Pakistan. Journal of Earth Science.
+      source_type: bibliographic_search_result
+      url: https://doi.org/10.1007/s12583-010-0212-z
+      note: Crossref bibliographic match. Manual review required to confirm relevance and stratigraphic
+        content.
+    divergence_ma: null
+    end_ma: 66.0
+    start_ma: 72.2
+  review:
+    decision_note: AI/public-source proposal created from PBDB occurrence evidence. Accepted only as a
+      candidate fossil minimum until manually checked. If the PBDB record is based on a broad stratigraphic
+      interval, consider keeping start_ma null or downgrading confidence.
+    reviewed_at: '2026-06-06T05:38:09.271420+00:00'
+    reviewer: deep_time_2_public_source_enrichment_script
+    status: ai_proposed
+bohaiornithidae:
+  context:
+    common_label: Bohaiornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for bohaiornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Bohaiornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Bohaiornithidae has at least one public PBDB-derived fossil occurrence or occurrence-like
+      record. PBDB returned 9 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+      161.500–113.200 Ma. Most frequent formation labels: Jiufotang (8), Qiaotou (1). Most frequent interval
+      labels: Aptian (8), Late Jurassic (1). The proposed start_ma uses the oldest available PBDB age
+      bound as a conservative fossil minimum. This should not be interpreted as the true evolutionary
+      origin or as a molecular divergence estimate. Manual review should check the accepted taxonomy,
+      the included genus/species, the exact occurrence record, and whether the PBDB age is a specimen-level
+      horizon, formation-level range, or broader stage-level estimate.'
+    date_resolution_method: fossil_first_appearance
+    date_sources:
+    - source_label: Paleobiology Database search for Bohaiornithidae
+      source_type: fossil_occurrence_database
+      url: https://paleobiodb.org
+      note: 'PBDB returned 9 fossil occurrence record(s). The broad PBDB occurrence envelope is approximately
+        161.500–113.200 Ma. Most frequent formation labels: Jiufotang (8), Qiaotou (1). Most frequent
+        interval labels: Aptian (8), Late Jurassic (1).'
+    - source_label: 'GBIF species search result: Bohaiornithidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/8640334
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Bohaiornithidae Wang et al., 2014'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/165598844
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'GBIF species search result: Bohaiornithidae Wang et al., 2014'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/121511008
+      note: GBIF rank=FAMILY; taxonomicStatus=ACCEPTED. Useful for name checking, not as a date source.
+    - source_label: 'Wikidata item: Bohaiornithidae'
+      source_type: taxonomic_database
+      url: http://www.wikidata.org/entity/Q15644506
+      note: Wikidata rank=family; parent=Enantiornithes. Use only as a pointer to stronger sources.
+    - source_label: 2024. Synthetic analysis of trophic diversity and evolution in Enantiornithes with
+        new insights from Bohaiornithidae. eLife.
+      source_type: bibliographic_search_result
+      url: https://doi.org/10.7554/elife.89871
+      note: Crossref bibliographic match. Manual review required to confirm relevance and stratigraphic
+        content.
+    - source_label: '2023. Trophic diversity and evolution in Enantiornithes: a synthesis including new
+        insights from Bohaiornithidae.'
+      source_type: bibliographic_search_result
+      url: https://doi.org/10.7554/elife.89871.1
+      note: Crossref bibliographic match. Manual review required to confirm relevance and stratigraphic
+        content.
+    - source_label: '2023. Trophic diversity and evolution in Enantiornithes: a synthesis including new
+        insights from Bohaiornithidae.'
+      source_type: bibliographic_search_result
+      url: https://doi.org/10.1101/2023.07.18.549506
+      note: Crossref bibliographic match. Manual review required to confirm relevance and stratigraphic
+        content.
+    divergence_ma: null
+    end_ma: 113.2
+    start_ma: 161.5
+  review:
+    decision_note: AI/public-source proposal created from PBDB occurrence evidence. Accepted only as a
+      candidate fossil minimum until manually checked. If the PBDB record is based on a broad stratigraphic
+      interval, consider keeping start_ma null or downgrading confidence.
+    reviewed_at: '2026-06-06T05:38:15.417532+00:00'
+    reviewer: deep_time_2_public_source_enrichment_script
+    status: ai_proposed
+brodavidae:
+  context:
+    common_label: Brodavidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for brodavidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Brodavidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: No reliable specialist literature, PBDB, TimeTree, or reputable educational sources provide
+      date estimates for Brodavidae. Therefore, no confident or approximate dating can be proposed at
+      this time.
+    date_resolution_method: null
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:23.655570+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+caudipterygidae:
+  context:
+    common_label: Caudipterygidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for caudipterygidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Caudipterygidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: low
+    date_notes: No reliable specialist, PBDB, TimeTree, or reputable educational sources provide usable
+      date estimates for Caudipterygidae; therefore, dates remain unresolved.
+    date_resolution_method: unresolved
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:27.951048+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+eoenantiornithidae:
+  context:
+    common_label: Eoenantiornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for eoenantiornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Eoenantiornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil record
+    date_confidence: low
+    date_notes: Date range is an approximate Early Cretaceous interval (Barremian to Aptian) where Eoenantiornithidae
+      fossils have been reported in literature; no precise specialist or database-derived dates available,
+      so confidence remains low.
+    date_resolution_method: first appearance in fossil record
+    date_sources:
+    - note: Based on Early Cretaceous fossil occurrences attributed to Eoenantiornithidae in general literature;
+        no specialist or database confirmation available
+      source_label: Eoenantiornithidae occurrences in Early Cretaceous deposits
+      source_type: literature review
+      url: null
+    divergence_ma: null
+    end_ma: 115
+    start_ma: 130
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:30.713833+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+guaibasauridae:
+  context:
+    common_label: Guaibasauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for guaibasauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Guaibasauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil occurrence range from early Norian to late Carnian of the Late Triassic
+    date_confidence: low
+    date_notes: No specialist publications or high-confidence dates were found for Guaibasauridae. Proposed
+      start and end ages reflect the stratigraphic range of known fossils assigned to this family, corresponding
+      approximately to the Late Triassic Norian to Carnian stages, but uncertainty remains high. Divergence
+      date is unresolved due to lack of molecular or cladistic calibration data.
+    date_resolution_method: stratigraphic correlation from fossil localities
+    date_sources:
+    - note: Fossil occurrences of basal saurischian dinosaurs including Guaibasauridae members span this
+        interval
+      source_label: Paleobiology Database (PBDB)
+      source_type: database
+      url: null
+    - note: No specialist or consensus source specifically resolving Guaibasauridae dates
+      source_label: Various Late Triassic dinosaur faunal assemblage studies
+      source_type: literature
+      url: null
+    divergence_ma: null
+    end_ma: 210
+    start_ma: 228
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:33.832183+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+hesperornidae:
+  context:
+    common_label: Hesperornidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for hesperornidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Hesperornidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: stratigraphic range of known fossils
+    date_confidence: low
+    date_notes: No precise molecular divergence dates available. The family Hesperornidae is known from
+      Late Cretaceous fossil deposits ranging roughly from 99 to 66 million years ago. Dates are approximate
+      and based on stratigraphic occurrence of fossils. No specialist, comprehensive PBDB, or TimeTree
+      data was found for more accurate dating.
+    date_resolution_method: fossil range inference
+    date_sources:
+    - note: Approximate range of Hesperornidae based on stratigraphic layers from Late Cretaceous
+      source_label: 'Benson et al. 2013, ''Mesozoic marine tetrapods: fossil record and evolutionary patterns'''
+      source_type: primary literature
+      url: null
+    divergence_ma: null
+    end_ma: 66
+    start_ma: 99
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:37.269310+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+heterostrigidae:
+  context:
+    common_label: Heterostrigidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for heterostrigidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Heterostrigidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: low
+    date_notes: No reliable specialist, PBDB, TimeTree, or reputable educational sources provide dates
+      for Heterostrigidae; unable to propose updated date resolution.
+    date_resolution_method: unresolved
+    date_sources:
+    - note: null
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:39.316625+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+hongshanornithidae:
+  context:
+    common_label: Hongshanornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for hongshanornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Hongshanornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil first appearance
+    date_confidence: low
+    date_notes: No direct specialist, PBDB, or TimeTree dates found; dates are inferred from stratigraphic
+      context of known fossils attributed to Hongshanornithidae from Early Cretaceous deposits.
+    date_resolution_method: approximate assignment based on Early Cretaceous fossil records of Hongshanornithidae
+    date_sources:
+    - note: Fossils from the Yixian Formation dated to approximately 125-120 Ma
+      source_label: Early Cretaceous avian fossils including Hongshanornithidae
+      source_type: primary literature
+      url: null
+    divergence_ma: null
+    end_ma: 120.0
+    start_ma: 125.0
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:44.050550+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+huanghetitanidae:
+  context:
+    common_label: Huanghetitanidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for huanghetitanidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Huanghetitanidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: low
+    date_notes: No usable or reliable date estimates found for Huanghetitanidae; dates remain unresolved
+      with low confidence.
+    date_resolution_method: unresolved
+    date_sources:
+    - note: No reliable specialist, PBDB, TimeTree, or educational dates available for Huanghetitanidae.
+      source_label: null
+      source_type: null
+      url: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: Generated by OpenAI; manual review still required.
+    reviewed_at: '2026-06-06T04:59:48.532886+00:00'
+    reviewer: gpt-4.1-mini
+    status: ai_proposed
+ignotornidae:
+  context:
+    common_label: Ignotornidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for ignotornidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Ignotornidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Lower Cretaceous Gates Formation, Albian stage, Canada
+    date_confidence: moderate
+    date_notes: The earliest known occurrence of Ignotornidae is from the Lower Cretaceous Gates Formation
+      (Albian) in Canada, as reported by [Turner et al., 2018](https://www.sciencedirect.com/science/article/pii/S0195667117303464).
+    date_resolution_method: fossil occurrence
+    date_sources:
+    - source_label: Turner et al., 2018
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0195667117303464
+      note: First report of Ignotornidae from the Lower Cretaceous Gates Formation (Albian) of western
+        Canada.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 113
+  review:
+    decision_note: The proposed date is based on the earliest known fossil occurrence of Ignotornidae
+      in the Lower Cretaceous Gates Formation, Albian stage, Canada. No molecular or phylogenetic divergence
+      estimates are available to refine this date.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+mamenchisauridae:
+  context:
+    common_label: Mamenchisauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for mamenchisauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Mamenchisauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrences in the Shaximiao and Suining Formations, China
+    date_confidence: moderate
+    date_notes: Fossils of Mamenchisauridae, including Mamenchisaurus, have been found in the Shaximiao
+      Formation, dating to the Oxfordian-Tithonian interval (159-150 million years ago). Additionally,
+      fossils of Mamenchisaurus anyuensis from the Suining Formation date to the Aptian stage of the Early
+      Cretaceous (around 114.4 million years ago).
+    date_resolution_method: Fossil occurrence ages
+    date_sources:
+    - source_label: Wang et al. (2019)
+      source_type: geochronology_reference
+      url: https://doi.org/10.1016/j.cretres.2019.07.006
+      note: Provided detrital zircon U/Pb ages for the Suining Formation, indicating an Aptian age of
+        approximately 114.4 million years ago.
+    - source_label: Moore et al. (2023)
+      source_type: specialist_taxonomic_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/14772019.2023.2171818
+      note: Re-assessed Mamenchisaurus sinocanadorum from the Late Jurassic, supporting its presence in
+        the Oxfordian stage (161.2 to 158.7 million years ago).
+    divergence_ma: null
+    end_ma: 114.4
+    start_ma: 159
+  review:
+    decision_note: The proposed dates for Mamenchisauridae are based on fossil occurrences in the Shaximiao
+      and Suining Formations, with moderate confidence. The Shaximiao Formation fossils date to the Oxfordian-Tithonian
+      interval (159-150 million years ago), while Mamenchisaurus anyuensis from the Suining Formation
+      dates to the Aptian stage of the Early Cretaceous (around 114.4 million years ago).
+    reviewed_at: null
+    reviewer: null
+    status: pending
+messelasturidae:
+  context:
+    common_label: Messelasturidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for messelasturidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Messelasturidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrences in the Messel Formation, Germany, dated to the Middle Eocene (Lutetian
+      stage)
+    date_confidence: high
+    date_notes: The Messel Formation, where Messelasturidae fossils have been found, is well-dated to
+      approximately 47 million years ago, providing a reliable minimum age for the family.
+    date_resolution_method: Fossil occurrence age
+    date_sources:
+    - source_label: Messel Pit Wikipedia article
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Messel_Pit
+      note: Provides information on the Messel Formation's age and fossil content.
+    - source_label: Palaeochiropteryx Wikipedia article
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Palaeochiropteryx
+      note: Mentions the Lutetian age of the Messel Formation, supporting the dating of fossils found
+        there.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 47
+  review:
+    decision_note: The proposed date is based on well-dated fossil occurrences in the Messel Formation,
+      providing a reliable minimum age for Messelasturidae. No additional sources were found to support
+      a more precise date.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+metriacanthosauridae:
+  context:
+    common_label: Metriacanthosauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for metriacanthosauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Metriacanthosauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Oxford Clay Formation, England
+    date_confidence: moderate
+    date_notes: The Oxford Clay Formation dates to the Late Jurassic period, approximately 161 million
+      years ago. The presence of Metriacanthosaurus in this formation suggests a minimum age for the clade.
+      However, the exact divergence time of Metriacanthosauridae remains uncertain due to limited fossil
+      records and phylogenetic analyses.
+    date_resolution_method: Fossil occurrence age
+    date_sources:
+    - source_label: Metriacanthosaurus fossil occurrence in Oxford Clay Formation
+      source_type: geochronology_reference
+      url: https://en.wikipedia.org/wiki/Metriacanthosaurus
+      note: The Oxford Clay Formation, dating to the Late Jurassic period, is the known fossil locality
+        for Metriacanthosaurus.
+    - source_label: Metriacanthosauridae clade age estimation
+      source_type: specialist_taxonomic_reference
+      url: https://en.wikipedia.org/wiki/Metriacanthosauridae
+      note: The clade Metriacanthosauridae is suggested to have originated in Asia during the Middle Jurassic
+        period, but exact dates are not specified.
+    divergence_ma: null
+    end_ma: 161
+    start_ma: null
+  review:
+    decision_note: The proposed date resolution is based on the known fossil occurrence of Metriacanthosaurus
+      in the Oxford Clay Formation, which provides a minimum age for the clade. However, due to the lack
+      of direct evidence for the divergence time of Metriacanthosauridae, the divergence date remains
+      unresolved. Further phylogenetic studies and fossil discoveries are needed to refine the temporal
+      boundaries of this clade.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+montanoolithidae:
+  context:
+    common_label: Montanoolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for montanoolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Montanoolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Two Medicine Formation, Montana, USA
+    date_confidence: moderate
+    date_notes: The fossil eggs of Montanoolithus strongorum were discovered in the Two Medicine Formation,
+      which dates to the Late Cretaceous period, approximately 83.5 to 70.6 million years ago. This provides
+      a minimum age for the taxon.
+    date_resolution_method: Fossil occurrence age
+    date_sources:
+    - source_label: Zelenitsky and Therrien (2008)
+      source_type: specialist_taxonomic_reference
+      url: https://www.palaeontologyonline.com/articles/2008/11/unique-maniraptoran-egg-clutch-from-the-upper-cretaceous-two-medicine-formation-of-montana-reveals-theropod-nesting-behaviour/
+      note: This study describes the discovery of Montanoolithus strongorum eggs in the Two Medicine Formation,
+        providing a minimum age for the taxon.
+    - source_label: 'Mindat.org: Blackfeet Reservation, Glacier County, Montana, USA'
+      source_type: geochronology_reference
+      url: https://www.mindat.org/paleo_loc.php?id=88844
+      note: This source provides the geochronological age of the Two Medicine Formation, confirming its
+        Late Cretaceous age.
+    divergence_ma: null
+    end_ma: 70.6
+    start_ma: 83.5
+  review:
+    decision_note: The proposed date range is based on the known age of the Two Medicine Formation, where
+      Montanoolithus fossils were found. This provides a reasonable minimum age for the taxon. However,
+      without molecular data or more specific stratigraphic information, a more precise divergence date
+      cannot be confidently proposed.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+moyenisauropodidae:
+  context:
+    common_label: Moyenisauropodidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for moyenisauropodidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Moyenisauropodidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: fossil occurrence
+    date_confidence: low
+    date_notes: The oldest known fossil occurrence of Moyenisauropodidae is from the Late Triassic period,
+      approximately 237 million years ago. However, this date is based on a single fossil occurrence,
+      and the clade's origin date remains uncertain.
+    date_resolution_method: fossil occurrence
+    date_sources:
+    - source_label: 'Mindat.org: Moyenisauropodidae'
+      source_type: general_reference
+      url: https://www.mindat.org/taxon-P131256.html
+      note: Provides information on the fossil distribution and age of Moyenisauropodidae.
+    - source_label: 'Mindat.org: Ornithopoda'
+      source_type: general_reference
+      url: https://www.mindat.org/taxon-P38713.html
+      note: Includes data on the fossil occurrences and age of Moyenisauropodidae.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 237
+  review:
+    decision_note: The proposed date is based on the oldest known fossil occurrence of Moyenisauropodidae,
+      but due to the limited fossil record, the clade's origin date remains uncertain.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+mystiornithidae:
+  context:
+    common_label: Mystiornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for mystiornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Mystiornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence of Mystiornis cyrili in the Early Cretaceous (Barremian/Aptian) of western
+      Siberia, Russia.
+    date_confidence: low
+    date_notes: The fossil record of Mystiornis cyrili provides a minimum age for the Mystiornithidae
+      clade, but no molecular or phylogenetic studies have been identified to support a more precise divergence
+      date.
+    date_resolution_method: Fossil occurrence
+    date_sources:
+    - source_label: 'Mindat.org: Mystiornis'
+      source_type: general_reference
+      url: https://www.mindat.org/taxon-8606287.html
+      note: Provides information on the fossil occurrence of Mystiornis cyrili in the Early Cretaceous
+        of western Siberia, Russia.
+    - source_label: 'Wikipedia: Archaeornithura'
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Archaeornithura
+      note: Mentions the fossil record of Archaeornithura meemannae from the Early Cretaceous, which is
+        contemporaneous with Mystiornis cyrili.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 129.4
+  review:
+    decision_note: The proposed date is based on the fossil occurrence of Mystiornis cyrili in the Early
+      Cretaceous (Barremian/Aptian) of western Siberia, Russia. No molecular or phylogenetic studies have
+      been identified to support a more precise divergence date for the Mystiornithidae clade. Therefore,
+      the proposed date is a minimum age based on the fossil record.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+omnivoropterygidae:
+  context:
+    common_label: Omnivoropterygidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for omnivoropterygidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Omnivoropterygidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Jiufotang Formation, China
+    date_confidence: moderate
+    date_notes: The Jiufotang Formation is dated to approximately 120 million years ago, providing a minimum
+      age for Omnivoropterygidae.
+    date_resolution_method: Fossil occurrence age
+    date_sources:
+    - source_label: Czerkas & Ji, 2002
+      source_type: specialist_taxonomic_reference
+      url: https://en.wikipedia.org/wiki/Omnivoropterygidae
+      note: Original description of Omnivoropterygidae from the Jiufotang Formation.
+    - source_label: Zhou & Zhang, 2002
+      source_type: specialist_taxonomic_reference
+      url: https://en.wikipedia.org/wiki/Sapeornis
+      note: Description of Sapeornis from the Jiufotang Formation, providing age context.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 120
+  review:
+    decision_note: The proposed date is based on the fossil occurrence of Omnivoropterygidae in the Jiufotang
+      Formation, dated to approximately 120 million years ago. This provides a minimum age estimate for
+      the family. No molecular or phylogenetic divergence estimates are available to refine this date.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+ornithomimipodidae:
+  context:
+    common_label: Ornithomimipodidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for ornithomimipodidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Ornithomimipodidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrences of Ornithomimidae in the Late Cretaceous Period
+    date_confidence: high
+    date_notes: Fossil records of Ornithomimidae, such as Gallimimus, date back to the Late Cretaceous
+      Period, approximately 70 to 66 million years ago.
+    date_resolution_method: Fossil record dating
+    date_sources:
+    - source_label: 'Eon Codex: Gallimimus'
+      source_type: general_reference
+      url: https://eoncodex.org/fossil-specimens/gallimimus
+      note: Provides information on the fossil record of Gallimimus, a member of Ornithomimidae, from
+        the Late Cretaceous Period.
+    - source_label: 'Wikipedia: Ornithomimidae'
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Ornithomimidae
+      note: Discusses the fossil occurrences of Ornithomimidae in the Late Cretaceous Period.
+    divergence_ma: null
+    end_ma: 66
+    start_ma: 70
+  review:
+    decision_note: The proposed date range for Ornithomimidae is based on well-documented fossil records
+      from the Late Cretaceous Period, with a high level of confidence.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+ovaloolithidae:
+  context:
+    common_label: Ovaloolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for ovaloolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Ovaloolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrences in the Late Cretaceous
+    date_confidence: moderate
+    date_notes: Fossil occurrences of Ovaloolithidae date from the Late Cretaceous period, specifically
+      from 70.6 to 66.0 million years ago. ([mindat.org](https://www.mindat.org/taxon-P65569.html?utm_source=openai))
+    date_resolution_method: Fossil occurrence dating
+    date_sources:
+    - source_label: Paleobiology Database (PBDB)
+      source_type: taxonomic_database
+      url: https://paleobiodb.org/classic/checkTaxonInfo?taxon_no=65569
+      note: PBDB lists fossil occurrences of Ovaloolithidae from 70.6 to 66.0 million years ago.
+    - source_label: Mindat.org
+      source_type: general_reference
+      url: https://www.mindat.org/taxon-P65569.html
+      note: Mindat.org provides information on the fossil occurrences of Ovaloolithidae in the Late Cretaceous
+        period.
+    divergence_ma: null
+    end_ma: 66.0
+    start_ma: 70.6
+  review:
+    decision_note: The proposed date range for Ovaloolithidae is based on fossil occurrences from the
+      Late Cretaceous period, specifically from 70.6 to 66.0 million years ago. This information is supported
+      by the Paleobiology Database (PBDB) and Mindat.org. However, the exact origin date of the clade
+      remains unresolved due to the lack of molecular or phylogenetic studies. Therefore, the divergence
+      date is marked as null, and the date resolution method is 'Fossil occurrence dating'.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+pachycorioolithidae:
+  context:
+    common_label: Pachycorioolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for pachycorioolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Pachycorioolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Lower Cretaceous (Albian) Liangtoutang Formation of Zhejiang
+      Province, China
+    date_confidence: low
+    date_notes: Pachycorioolithidae is known from a single fossil egg, Pachycorioolithus jinyunensis,
+      found in the Lower Cretaceous (Albian) Liangtoutang Formation of Zhejiang Province, China. The exact
+      age of this formation is not specified in the available sources.
+    date_resolution_method: fossil occurrence
+    date_sources:
+    - source_label: Lawver et al. (2016)
+      source_type: specialist_taxonomic_reference
+      url: https://www.researchgate.net/publication/295702857_An_avian_egg_from_the_Lower_Cretaceous_(Albian)_Liangtoutang_Formation_of_Zhejiang_Province_China
+      note: This study describes the discovery of Pachycorioolithus jinyunensis in the Liangtoutang Formation
+        but does not provide a specific age for the formation.
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: The proposed date is based on the known fossil occurrence of Pachycorioolithidae in
+      the Lower Cretaceous (Albian) Liangtoutang Formation. However, the exact age of this formation is
+      not specified in the available sources, leading to low confidence in the proposed date.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+pakisauridae:
+  context:
+    common_label: Pakisauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for pakisauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Pakisauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in Maastrichtian deposits of the Vitakri Formation, Pakistan
+    date_confidence: moderate
+    date_notes: Pakisaurus balochistani, the type species of Pakisaurus, is known from four caudal vertebrae
+      found in the Maastrichtian-aged Vitakri Formation in Pakistan. The Maastrichtian stage spans from
+      approximately 72 to 66 million years ago. Therefore, the Pakisauridae family is constrained to this
+      time frame.
+    date_resolution_method: Fossil occurrence in Maastrichtian deposits
+    date_sources:
+    - source_label: Malkani, M. S. (2007). New Pakisaurus (Pakisauridae, Titanosauria, Sauropoda) remains,
+        and Cretaceous Tertiary (K-T) boundary from Pakistan. Sindh University Research Journal (Science
+        Series), 39(1), 1-10.
+      source_type: geochronology_reference
+      url: https://nja.pastic.gov.pk/journals/index.php/SURJ/article/view/27406
+      note: This study reports the discovery of Pakisaurus remains in the Maastrichtian-aged Vitakri Formation
+        in Pakistan, providing a temporal constraint for the Pakisauridae family.
+    divergence_ma: null
+    end_ma: 66
+    start_ma: 72
+  review:
+    decision_note: The proposed date range for Pakisauridae is based on the known fossil occurrence of
+      Pakisaurus balochistani in Maastrichtian deposits of the Vitakri Formation in Pakistan. This provides
+      a moderate level of confidence in the temporal range of the family. No additional sources were identified
+      to refine this estimate further.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+parvicursoridae:
+  context:
+    common_label: Parvicursoridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for parvicursoridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Parvicursoridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: 'No usable specialist, PBDB, TimeTree, or reputable educational date found for Parvicursoridae.
+
+      '
+    date_resolution_method: unresolved
+    date_sources:
+    - source_label: null
+      source_type: null
+      url: null
+      note: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+parvigruidae:
+  context:
+    common_label: Parvigruidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for parvigruidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Parvigruidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the early Eocene London Clay of Walton-on-the-Naze, Essex, UK.
+    date_confidence: moderate
+    date_notes: The earliest known record of Parvigruidae is from the early Eocene, approximately 55 million
+      years ago, based on fossils from the London Clay of Walton-on-the-Naze, Essex, UK. This is the earliest
+      record of the Parvigruidae, which before was only known from the early Oligocene of France, Belgium,
+      and Germany. ([link.springer.com](https://link.springer.com/article/10.1007/s12549-025-00653-6?utm_source=openai))
+    date_resolution_method: Fossil occurrence
+    date_sources:
+    - source_label: Mayr and Kitchener (2025)
+      source_type: specialist_taxonomic_reference
+      url: https://link.springer.com/article/10.1007/s12549-025-00653-6
+      note: Describes two new species of larger gruiform and charadriiform birds from the early Eocene
+        London Clay of Walton-on-the-Naze, Essex, UK, including a new species of Parvigruidae.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 55
+  review:
+    decision_note: The proposed date is based on fossil evidence from the early Eocene London Clay of
+      Walton-on-the-Naze, Essex, UK, approximately 55 million years ago. This is the earliest known record
+      of Parvigruidae, which before was only known from the early Oligocene of France, Belgium, and Germany.
+      ([link.springer.com](https://link.springer.com/article/10.1007/s12549-025-00653-6?utm_source=openai))
+    reviewed_at: null
+    reviewer: null
+    status: pending
+pengornithidae:
+  context:
+    common_label: Pengornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for pengornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Pengornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrences in the Huajiying and Jiufotang Formations of China
+    date_confidence: moderate
+    date_notes: Fossil specimens of Pengornithidae have been found in the Huajiying Formation (Hauterivian
+      age, approximately 130.7 million years ago) and the Jiufotang Formation (Aptian age, approximately
+      120 million years ago) in Liaoning and Hebei provinces, China. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Pengornithidae?utm_source=openai))
+    date_resolution_method: Fossil occurrence dating
+    date_sources:
+    - source_label: 'Wikipedia: Pengornithidae'
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Pengornithidae
+      note: Provides information on the fossil occurrences of Pengornithidae in the Huajiying and Jiufotang
+        Formations.
+    - source_label: 'Wikipedia: Pengornis'
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Pengornis
+      note: Discusses the fossil specimens of Pengornis, a genus within Pengornithidae, found in the Jiufotang
+        Formation.
+    divergence_ma: null
+    end_ma: 120
+    start_ma: 130.7
+  review:
+    decision_note: The proposed date range for Pengornithidae is based on fossil occurrences in the Huajiying
+      and Jiufotang Formations, with ages ranging from approximately 130.7 to 120 million years ago. This
+      range is supported by fossil evidence but does not include molecular or phylogenetic divergence
+      estimates, which are currently unavailable.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+piatnitzkysauridae:
+  context:
+    common_label: Piatnitzkysauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for piatnitzkysauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Piatnitzkysauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Cañadón Asfalto Formation, Argentina
+    date_confidence: moderate
+    date_notes: The Cañadón Asfalto Formation has been dated to the Toarcian to Bathonian stages of the
+      Jurassic period, approximately 179 to 168 million years ago. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Piatnitzkysauridae?utm_source=openai))
+    date_resolution_method: Fossil occurrence in dated formation
+    date_sources:
+    - source_label: Piatnitzkysauridae - Wikipedia
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Piatnitzkysauridae
+      note: Provides information on the fossil occurrence of Piatnitzkysauridae in the Cañadón Asfalto
+        Formation, Argentina.
+    - source_label: Piatnitzkysaurus - Wikipedia
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Piatnitzkysaurus
+      note: Details the fossil occurrence of Piatnitzkysaurus in the Cañadón Asfalto Formation, Argentina.
+    divergence_ma: null
+    end_ma: 168
+    start_ma: 179
+  review:
+    decision_note: The proposed date range is based on the fossil occurrence of Piatnitzkysauridae in
+      the Cañadón Asfalto Formation, which has been dated to the Toarcian to Bathonian stages of the Jurassic
+      period, approximately 179 to 168 million years ago. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Piatnitzkysauridae?utm_source=openai))
+    reviewed_at: null
+    reviewer: null
+    status: pending
+polyclonoolithidae:
+  context:
+    common_label: Polyclonoolithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for polyclonoolithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Polyclonoolithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Lower Cretaceous Hekou Group, Gansu Province, China
+    date_confidence: low
+    date_notes: The only known specimen of Polyclonoolithus is from the Lower Cretaceous Hekou Group,
+      part of the Lanzhou-Minhe Basin in Gansu Province, China. Due to the poor preservation of the specimen,
+      the exact age of the formation is not well established. Therefore, the fossil occurrence provides
+      a minimum age estimate for the clade.
+    date_resolution_method: Fossil occurrence age
+    date_sources:
+    - source_label: Xie et al. (2016)
+      source_type: specialist_taxonomic_reference
+      url: https://en.wikipedia.org/wiki/Polyclonoolithus
+      note: Xie et al. (2016) described the discovery of Polyclonoolithus from the Lower Cretaceous Hekou
+        Group in Gansu Province, China.
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: The proposed date is based on the fossil occurrence of Polyclonoolithus in the Lower
+      Cretaceous Hekou Group, Gansu Province, China. Due to the poor preservation of the specimen and
+      the lack of precise geochronological data for the formation, the exact age is uncertain. Therefore,
+      the fossil occurrence provides a minimum age estimate for the clade, but a more precise date cannot
+      be determined at this time.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+proceratosauridae:
+  context:
+    common_label: Proceratosauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for proceratosauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Proceratosauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence
+    date_confidence: moderate
+    date_notes: The earliest known Proceratosauridae fossil, Proceratosaurus bradleyi, dates to the Bathonian
+      stage of the Middle Jurassic, approximately 168 to 166 million years ago. This age is based on detailed
+      cranial osteology and phylogenetic analysis of the specimen from Minchinhampton, England. ([academic.oup.com](https://academic.oup.com/zoolinnean/article/158/1/155/2732041?utm_source=openai))
+    date_resolution_method: Fossil occurrence age
+    date_sources:
+    - source_label: Rauhut et al. (2009)
+      source_type: specialist_taxonomic_reference
+      url: https://academic.oup.com/zoolinnean/article/158/1/155/2732041
+      note: Detailed cranial osteology and phylogenetic analysis of Proceratosaurus bradleyi from the
+        Bathonian of Minchinhampton, England.
+    divergence_ma: null
+    end_ma: 166
+    start_ma: 168
+  review:
+    decision_note: The proposed date is based on the fossil occurrence of Proceratosaurus bradleyi from
+      the Bathonian stage, with moderate confidence. No molecular or phylogenetic divergence estimates
+      are available to refine this date.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+protoplotidae:
+  context:
+    common_label: Protoplotidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for protoplotidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Protoplotidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence in the Sangkarewang Formation, Sumatra, Indonesia
+    date_confidence: moderate
+    date_notes: The Sangkarewang Formation is dated to the Late Paleocene to Early Eocene, approximately
+      55 to 50 million years ago. The fossil of Protoplotus beauforti, the type species of Protoplotidae,
+      was discovered in this formation. This provides a minimum age for the family Protoplotidae, as the
+      genus Protoplotus is the only known member of this family.
+    date_resolution_method: Fossil occurrence in dated formation
+    date_sources:
+    - source_label: Lambrecht, K. (1931). Protoplotus beauforti n.g. n.sp., ein Schlangenhalsvogel aus
+        dem Tertiär von W. Sumatra, Wetenschappelijke Mededeelingen Dienst van den Mijnbouw in Nederlandisch-Indie
+        17, 15-24.
+      source_type: specialist_taxonomic_reference
+      url: https://www.mindat.org/paleo_loc.php?id=10277
+      note: Original description of Protoplotus beauforti from the Sangkarewang Formation.
+    - source_label: Mindat.org. Protoplotus beauforti type, West Sumatra Province, Indonesia.
+      source_type: general_reference
+      url: https://www.mindat.org/paleo_loc.php?id=10277
+      note: Information on the fossil locality and age of Protoplotus beauforti.
+    divergence_ma: null
+    end_ma: 50
+    start_ma: 55
+  review:
+    decision_note: The proposed date range for Protoplotidae is based on the fossil occurrence of Protoplotus
+      beauforti in the Sangkarewang Formation, dated to the Late Paleocene to Early Eocene (approximately
+      55 to 50 million years ago). This provides a minimum age for the family, as Protoplotus is the only
+      known member of Protoplotidae. No molecular or phylogenetic studies are available to estimate the
+      divergence time of this family. Therefore, the proposed date range is based on the fossil record,
+      with moderate confidence.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+psilopteridae:
+  context:
+    common_label: Psilopteridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for psilopteridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Psilopteridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: 'No usable specialist, PBDB, TimeTree, or reputable educational date found for Psilopteridae.
+
+      '
+    date_resolution_method: unresolved
+    date_sources:
+    - source_label: null
+      source_type: null
+      url: null
+      note: null
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: null
+    reviewed_at: null
+    reviewer: null
+    status: pending
+qianshanornithidae:
+  context:
+    common_label: Qianshanornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for qianshanornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Qianshanornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: null
+    date_confidence: null
+    date_notes: 'No usable specialist, PBDB, TimeTree, or reputable educational date found for Qianshanornithidae.
+      The Paleobiology Database lists the first recorded appearance of Qianshanornis, the type genus of
+      Qianshanornithidae, as between 66.0 and 61.7 million years ago, placing it in the Late Cretaceous
+      period. ([mindat.org](https://www.mindat.org/taxon-P272005.html?utm_source=openai)) However, this
+      range is based on a single occurrence and does not provide a definitive age for the family. Additionally,
+      the Mindat.org entry for Qianshanornithidae does not list any fossil occurrences, indicating a lack
+      of fossil evidence for this family. ([mindat.org](https://www.mindat.org/taxon-8513187.html?utm_source=openai))
+      Given the absence of strong specialist or geochronological support, a specific date for Qianshanornithidae
+      cannot be confidently proposed.
+
+      '
+    date_resolution_method: unresolved
+    date_sources:
+    - source_label: Paleobiology Database
+      source_type: taxonomic_database
+      url: https://paleobiodb.org/classic/checkTaxonInfo?taxon_no=351019&is_real_user=1
+      note: Lists the first recorded appearance of Qianshanornis between 66.0 and 61.7 million years ago.
+    - source_label: Mindat.org
+      source_type: general_reference
+      url: https://www.mindat.org/taxon-P272005.html
+      note: Does not list any fossil occurrences for Qianshanornithidae.
+    divergence_ma: null
+    end_ma: null
+    start_ma: null
+  review:
+    decision_note: Due to the lack of strong specialist or geochronological support, a specific date for
+      Qianshanornithidae cannot be confidently proposed.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+rhegminornithidae:
+  context:
+    common_label: Rhegminornithidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for rhegminornithidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Rhegminornithidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrence of Rhegminornis calobates in the Miocene Hawthorne Formation, Florida,
+      USA.
+    date_confidence: low
+    date_notes: The fossil record of Rhegminornithidae is limited, with Rhegminornis calobates being the
+      only known species. The Miocene age of this species provides a minimum age for the family's existence.
+    date_resolution_method: Fossil occurrence
+    date_sources:
+    - source_label: Smithsonian Institution
+      source_type: geochronology_reference
+      url: https://www.si.edu/object/nmnhpaleobiology_3370976
+      note: Fossil specimen of Rhegminornis calobates from the Miocene Hawthorne Formation, Florida, USA.
+    - source_label: Olson and Farrand (1974)
+      source_type: literature
+      url: https://repository.si.edu/items/e2ea4f85-09b0-4eeb-a1d1-a5d1a91d8cf4
+      note: Restudy of Rhegminornis calobates, providing additional context on its Miocene age.
+    divergence_ma: null
+    end_ma: 23.03
+    start_ma: 16.0
+  review:
+    decision_note: The proposed date for Rhegminornithidae is based on the known fossil occurrence of
+      Rhegminornis calobates in the Miocene Hawthorne Formation, Florida, USA. This provides a minimum
+      age for the family's existence. However, due to the limited fossil record and lack of molecular
+      data, the confidence in this date is low.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+saltasauridae:
+  context:
+    common_label: Saltasauridae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for saltasauridae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Saltasauridae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: Fossil occurrences of Saltasauridae in the Late Cretaceous period.
+    date_confidence: moderate
+    date_notes: Fossil occurrences of Saltasauridae are known from the Late Cretaceous period, with some
+      genera like Saltasaurus and Neuquensaurus dating to around 70.6 to 83.5 million years ago. However,
+      the exact divergence date for the family Saltasauridae remains unresolved due to limited molecular
+      or detailed stratigraphic data.
+    date_resolution_method: Fossil occurrence-based inference
+    date_sources:
+    - source_label: Saltasauridae - Wikipedia
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Saltasauridae
+      note: Provides general information on the fossil distribution and temporal range of Saltasauridae.
+    - source_label: Saltasaurinae - Wikipedia
+      source_type: general_reference
+      url: https://en.wikipedia.org/wiki/Saltasaurinae
+      note: Details on the temporal range of Saltasaurinae, a subfamily within Saltasauridae.
+    - source_label: Saltasauridae - Mindat
+      source_type: general_reference
+      url: https://www.mindat.org/taxon-P64335.html
+      note: Lists fossil occurrences and age estimates for various Saltasauridae genera.
+    divergence_ma: null
+    end_ma: 66
+    start_ma: 83.5
+  review:
+    decision_note: The proposed date range for Saltasauridae is based on fossil occurrences from the Late
+      Cretaceous period, with genera like Saltasaurus and Neuquensaurus dating to approximately 70.6 to
+      83.5 million years ago. However, due to the lack of molecular or detailed stratigraphic data, the
+      exact divergence date for the family remains unresolved. Further research, including molecular studies
+      and detailed stratigraphic analyses, is needed to refine the divergence date for Saltasauridae.
+    reviewed_at: null
+    reviewer: null
+    status: pending
+sauropodidae:
+  context:
+    common_label: Sauropodidae
+    current_dates:
+      date_basis: unresolved
+      date_confidence: low
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found for sauropodidae.
+      date_resolution_method: unresolved
+      divergence_ma: null
+      end_ma: null
+      start_ma: null
+    label: Sauropodidae
+    parent_id: dinosauria
+    rank: family
+  proposed_date_resolution:
+    date_basis: oldest known sauropod fossil
+    date_confidence: moderate
+    date_notes: The earliest known sauropod fossils date back to the Late Triassic period, approximately
+      230 million years ago. ([nature.com](https://www.nature.com/articles/35024060?utm_source=openai))
+    date_resolution_method: fossil evidence
+    date_sources:
+    - source_label: Buffetaut et al. (2000)
+      source_type: specialist_taxonomic_reference
+      url: https://www.nature.com/articles/35024060
+      note: This study reports the discovery of an incomplete sauropod skeleton from the Late Triassic
+        period of Thailand, providing the first osteological evidence of pre-Jurassic sauropods.
+    divergence_ma: null
+    end_ma: null
+    start_ma: 230
+  review:
+    decision_note: The proposed date is based on fossil evidence from the Late Triassic period, approximately
+      230 million years ago, as reported by Buffetaut et al. (2000). ([nature.com](https://www.nature.com/articles/35024060?utm_source=openai))
+    reviewed_at: null
+    reviewer: null
+    status: pending

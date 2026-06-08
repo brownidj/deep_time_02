@@ -4,8 +4,8 @@ alethoalaornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for alethoalaornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for alethoalaornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -14,20 +14,87 @@ alethoalaornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: unresolved
+    date_confidence: low
+    date_notes: 'Alethoalaornithidae was erected for the monogeneric enantiornithine Alethoalaornis
+      agitornis from western Liaoning, China; the holotype is LPM 00009 and the taxon has
+      been used in subsequent specialist work. Available sources consistently place the occurrence
+      in the Jiufotang Formation (Jehol Group, Aptian), but an accessible, specimen-level
+      bed or dated horizon tied explicitly to LPM 00009 could not be verified here. Absolute
+      ages for Jiufotang include a 40Ar/39Ar age of 120.3 ± 0.7 Ma from a tuff interbedded
+      with fossil-bearing shales at the Shangheshou section, SIMS U–Pb zircon ages of 122.0
+      ± 0.9 Ma and 118.9 ± 0.8 Ma from Jianchang Basin sections, and an LA–ICP–MS U–Pb age
+      of 118.07 ± 0.98 Ma from an upper Jiufotang rhyolitic tuff. Recent high‑precision U–Pb
+      geochronology and Bayesian age modeling further refine fossiliferous Jiufotang layers
+      near ~121 Ma. In the absence of a published, specimen‑tied horizon for Alethoalaornis,
+      these values constrain only a formation‑level occurrence window in the Aptian and do
+      not justify selecting a single numeric date for the clade’s origin. Treat any Jiufotang‑derived
+      value strictly as a fossil/formation‑based minimum, not an evolutionary divergence estimate.
+
+      '
+    date_resolution_method: unresolved
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: 'Li L., Hu D.-Y., Duan Y., Gong E.-P., Hou L.-H. 2007. Alethoalaornithidae
+        fam. nov.: a new family of enantiornithine bird from the Lower Cretaceous of western
+        Liaoning, Acta Palaeontologica Sinica 46(3):365–372 (Chinese).'
+      source_type: specialist_taxonomic_reference
+      url: https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=200902295330897483
+      note: Original family erection; establishes Alethoalaornithidae from western Liaoning
+        (Jehol Group).
+    - source_label: BioNames record for Li et al. 2007 (Acta Palaeontologica Sinica 46(3):365–372)
+      source_type: taxonomic_database
+      url: https://bionames.org/references/98036aadaaaf4a71c68d4968ed3798ec
+      note: Bibliographic confirmation of the 2007 family description.
+    - source_label: 'GBIF: Alethoalaornis Li, Hu, Duan, Gong & Hou, 2007'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4966921
+      note: Backbone taxonomy entry placing Alethoalaornis in Alethoalaornithidae; echoes
+        original citation.
+    - source_label: 'O’Connor, J.K. & Dyke, G.J. 2011. A revision of enantiornithine (Aves:
+        Ornithothoraces) skull morphology.'
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/abs/10.1080/14772019.2010.526639
+      note: Includes Alethoalaornis agitornis (specimen LPM 00009) in comparative figures;
+        supports usage but not horizon.
+    - source_label: He et al. 2004. Timing of the Jiufotang Formation (Jehol Group) in Liaoning,
+        NE China, and its implications. Geophys. Res. Lett. 31:L12605.
+      source_type: geochronology_reference
+      url: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2004GL019790
+      note: 40Ar/39Ar tuff interbedded with fossil-bearing shales dated 120.3 ± 0.7 Ma at
+        Shangheshou; widely cited Jiufotang anchor.
+    - source_label: Zhong et al. 2021. New geochronological constraints for the Jiufotang
+        Formation, Jianchang Basin. Palaeogeogr. Palaeoclimatol. Palaeoecol.
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0031018221004429
+      note: SIMS U–Pb zircon ages of 122.0 ± 0.9 Ma and 118.9 ± 0.8 Ma from different Jiufotang
+        sections.
+    - source_label: Gao et al. 2024. New palynological data and U–Pb dating from the Jiufotang
+        Formation.
+      source_type: geochronology_reference
+      url: https://biosoil.ru/storage/entities/publication/22442/f834d139-dc9d-425b-81a0-5d912675791a.pdf
+      note: LA–ICP–MS U–Pb age of 118.07 ± 0.98 Ma from an upper Jiufotang rhyolitic tuff;
+        supports Aptian range.
+    - source_label: 'High-precision geochronology of the Early Cretaceous Jiufotang Formation:
+        Temporal constraints on the late phase of the Jehol Biota (EPSL, 2025).'
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0012821X25004868
+      note: Reports precisely dated fossiliferous layers near ~121 Ma using U–Pb and Bayesian
+        modeling; supports refined Aptian timing.
     divergence_ma: null
     end_ma: null
     start_ma: null
   review:
-    decision_note: null
+    decision_note: 'Kept all numeric fields null. Although Alethoalaornithidae (for Alethoalaornis
+      agitornis) is supported by the 2007 Acta Palaeontologica Sinica description and later
+      specialist usage (LPM 00009), I did not find an accessible, bed‑level stratigraphic
+      tie for the holotype beyond “Jiufotang Formation.” Multiple geochronology papers bracket
+      Jiufotang within the Aptian (~122–118 Ma; some fossiliferous horizons ~121 Ma), but
+      without a documented horizon for the Alethoalaornis specimen, selecting a single value
+      would overstate precision. Next steps: obtain Li et al. (2007) and any museum/field
+      documentation for LPM 00009 to verify exact locality and horizon; if a dated tuff or
+      bed association is documented, propose a calibrated minimum age accordingly.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -37,8 +104,8 @@ archaeoceratopsidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for archaeoceratopsidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for archaeoceratopsidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -47,20 +114,77 @@ archaeoceratopsidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Archaeoceratopsidae is rarely used in recent taxonomy, so a cautious fossil-derived
+      minimum is anchored to the type genus Archaeoceratops. The redescription of Archaeoceratops
+      oshimai explicitly assigns the Mazongshan material to the late Early Cretaceous and
+      “probably Albian” in age. Regional stratigraphic work on the Xinminpu (Xinminpu/Xinminbao)
+      Group correlates gray-variegated beds (upper Xiagou Formation) to the Aptian and overlying
+      red beds (beginning of the Zhonggou Formation) to the early Albian. Radiometric constraints
+      from adjacent Hanxia and Hongliuxia sections place basalts near the Xiagou–Zhonggou
+      transition at ~115–114 Ma, and a basalt low in the Zhonggou has been dated at ~112.4
+      Ma, but specific Archaeoceratops-bearing horizons are not tied to a single dated bed.
+      Treating this as a fossil-occurrence minimum rather than an evolutionary origin, the
+      minimum is set at the Albian–Cenomanian boundary (100.5 Ma) on the current ICS timescale.
+      If future specialist work firmly demonstrates an archaeoceratopsid occurrence in securely
+      dated Aptian strata (e.g., Xiagou beds) or clarifies family circumscription, the minimum
+      could shift older (~113–120 Ma); this is not adopted here due to horizon-level and taxonomic
+      uncertainties.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: You & Dodson 2003 – Redescription of Archaeoceratops oshimai
+      source_type: specialist_descriptive_reference
+      url: https://app.pan.pl/archive/published/app48/app48-261.pdf
+      note: States the Mazongshan Archaeoceratops material is late Early Cretaceous, probably
+        Albian.
+    - source_label: You, Dodson & Morschhauser (eds.) 2019 – Introducing the Mazongshan Dinosaur
+        Fauna (SVP Memoir 18)
+      source_type: specialist_taxonomic_reference
+      url: https://ivpp.cas.cn/sourcedb/zw/klt/kycg/gswxyj/202312/P020231012344664297496.pdf
+      note: Correlates gray-variegated beds to upper Xiagou (Aptian) and red beds to early
+        Albian Zhonggou; locates Archaeoceratops/Auroraceratops occurrences within this scheme.
+    - source_label: Suarez et al. 2019 – Chemostratigraphy of Xiagou and Zhonggou formations
+        (SVP Memoir 18)
+      source_type: geochronology_reference
+      url: https://ivpp.cas.cn/sourcedb/zw/klt/kycg/gswxyj/202312/P020231012312802137366.pdf
+      note: 'Reports U–Pb ages: 123 ± 2.6 Ma (Xiagou), 115 ± 4.5 Ma and 113.7 ± 1.8/115.6
+        ± 1.1 Ma near the Xiagou–Zhonggou contact; supports Aptian–early Albian assignment.'
+    - source_label: Harper et al. 2021 (preprint updated) – Aptian–Albian isotopes and Xiagou/Zhonggou
+        framework
+      source_type: geochronology_reference
+      url: https://cp.copernicus.org/preprints/cp-2020-152/cp-2020-152.pdf
+      note: Synthesizes Aptian–Albian correlation in the Jiuquan region; includes a new U–Pb
+        age of 112.4 ± 0.3 Ma for a basalt at the lowermost Zhonggou.
+    - source_label: Pancost et al. 2024 – Methane-fueled lake pelagic food webs (PNAS)
+      source_type: geochronology_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11536134/
+      note: Places the lacustrine Xiagou Formation in the Aptian within a regional biostratigraphic
+        and geochronological framework.
+    - source_label: International Chronostratigraphic Chart (Dec 2024)
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Numerical stage boundaries used for the conservative minimum (Albian–Cenomanian
+        = 100.5 Ma; Aptian–Albian ~113.2 Ma).
+    - source_label: 'GBIF: Archaeoceratopsidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/6141932
+      note: Backbone taxon entry confirming family-level usage and spelling.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 100.5
   review:
-    decision_note: null
+    decision_note: 'Adopted a conservative fossil minimum tied to the type genus Archaeoceratops
+      and regional Xiagou–Zhonggou chronology. Used specialist descriptions to justify an
+      Albian assignment and relied on basin-level chemostratigraphy and U–Pb constraints to
+      frame the Aptian–early Albian window, but set the minimum at 100.5 Ma (Albian–Cenomanian
+      boundary; ICS 2024) due to uncertain specimen placement relative to dated beds and unsettled
+      family circumscription. Did not push older based on potential Aptian occurrences pending
+      firmer horizon-level and phylogenetic documentation.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -70,8 +194,8 @@ arriagadoolithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for arriagadoolithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for arriagadoolithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -80,20 +204,63 @@ arriagadoolithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Arriagadoolithidae was erected to contain Arriagadoolithus (eggs associated
+      with the alvarezsaurid Bonapartenykus) and the oogenus Triprismatoolithus. The Arriagadoolithus
+      type material comes from upper levels of the Allen Formation at Salitral Ojo de Agua
+      (Río Negro, Patagonia), generally regarded as middle Campanian–lower Maastrichtian;
+      this provides only a broad formation-derived minimum and is not necessarily the first
+      occurrence of the family. The oldest securely dated occurrence attributable to Arriagadoolithidae
+      is Triprismatoolithus stephensi from the lowermost Two Medicine Formation (Sevenmile
+      Hill, Montana), at a site immediately above a volcanic tuff/bentonite dated to 80.0
+      Ma. Recent CA–ID–TIMS U–Pb geochronology constrains overall Two Medicine deposition
+      to ca. 82.4–74.4 Ma, consistent with an early Campanian (~80 Ma) placement for this
+      occurrence. Accordingly, start_ma is set to 80.0 as a conservative fossil first-appearance
+      minimum for the oofamily, rather than a true evolutionary origin estimate. Younger Patagonian
+      occurrences in the Allen Formation indicate persistence into the Campanian–Maastrichtian,
+      but no single horizon yields a precise youngest bound; end_ma is left null.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Agnolin, Powell, Novas & Kundrát 2012 – New alvarezsaurid with associated
+        eggs; Arriagadoolithidae erected; includes Triprismatoolithus; Allen Fm. (Campanian–Maastrichtian)
+      source_type: specialist_descriptive_reference
+      url: https://ri.conicet.gov.ar/bitstream/handle/11336/272003/CONICET_Digital_Nro.fc86bfe8-a83e-4337-8749-6186f6b5294d_E.pdf
+      note: Defines Arriagadoolithidae; explicitly lists included ootaxa (Arriagadoolithus,
+        Triprismatoolithus) and gives locality/horizon in the Allen Formation (Campanian–Maastrichtian).
+        ([ri.conicet.gov.ar](https://ri.conicet.gov.ar/bitstream/handle/11336/272003/CONICET_Digital_Nro.fc86bfe8-a83e-4337-8749-6186f6b5294d_E.pdf?isAllowed=y&sequence=5))
+    - source_label: Jackson & Varricchio 2010 – Sevenmile Hill eggs; Triprismatoolithus stephensi
+        above 80.0 Ma tuff (lowermost Two Medicine Fm.)
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/abs/10.1080/02724634.2010.483537
+      note: Reports site immediately above a volcanic tuff/bentonite dated to 80.0 Ma; describes
+        Triprismatoolithus from the locality. ([tandfonline.com](https://www.tandfonline.com/doi/abs/10.1080/02724634.2010.483537?utm_source=openai))
+    - source_label: 'Rogers et al. 2024 – GSA Bulletin: new CA–ID–TIMS U–Pb ages for the Two
+        Medicine Formation (82.4–74.4 Ma)'
+      source_type: geochronology_reference
+      url: https://scholarworks.montana.edu/server/api/core/bitstreams/ef12f9ea-cbcf-443d-917b-9d391374ac75/content
+      note: Provides calibrated age model and explicit deposition span 82.4–74.4 Ma, supporting
+        an early Campanian position for the Sevenmile Hill horizon. ([scholarworks.montana.edu](https://scholarworks.montana.edu/server/api/core/bitstreams/ef12f9ea-cbcf-443d-917b-9d391374ac75/content))
+    - source_label: 'Meso et al. 2025 – PLOS ONE: Bonapartenykus/Arriagadoolithus from Allen
+        Fm. described as middle Campanian–lower Maastrichtian; quarry and “egg level 2” context'
+      source_type: specialist_descriptive_reference
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0308366
+      note: Confirms Allen Formation age range at Salitral Ojo de Agua and documents the stratigraphic
+        context of the alvarezsaur/egg material. ([journals.plos.org](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0308366&utm_source=openai))
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 80.0
   review:
-    decision_note: null
+    decision_note: 'Set start_ma to 80.0 Ma as a conservative fossil first-appearance minimum
+      based on Triprismatoolithus in the lowermost Two Medicine Formation immediately above
+      an 80.0 Ma tuff, corroborated by CA–ID–TIMS ages for the formation (82.4–74.4 Ma). Allen
+      Formation occurrences (middle Campanian–lower Maastrichtian) support later persistence
+      but do not yield a precise youngest bound; end_ma is left null. Sources include the
+      oofamily’s original description, site-level descriptive work, and formation geochronology.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -103,8 +270,8 @@ balochisauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for balochisauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for balochisauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -113,20 +280,68 @@ balochisauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: unresolved
+    date_confidence: low
+    date_notes: '“Balochisauridae” is a family-level name used primarily by M.S. Malkani for
+      stocky titanosaurian material (e.g., Balochisaurus, Marisaurus) from the dinosaur-bearing
+      red beds at Vitakri in the Sulaiman Basin (Pakistan). Independent vertebrate and sedimentological
+      studies place the relevant Pab Range succession in the Maastrichtian, and late Maastrichtian
+      ammonite biostratigraphy is documented regionally; however, there is no widely accepted,
+      independently dated radiometric horizon that directly constrains the dinosaur-producing
+      Vitakri beds, and the family-level taxon itself is not broadly adopted in specialist
+      syntheses. Following Deep Time policy (treating formation ages as cautious minima and
+      avoiding author-specific higher taxa without broad consensus), no numerical dates are
+      proposed here. If future work corroborates the clade and ties the Vitakri horizons to
+      a firm chronometric or narrowly constrained biostratigraphic age, a minimum fossil occurrence
+      date (start_ma) can be added.
+
+      '
+    date_resolution_method: unresolved
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Malkani 2009 – New Balochisaurus (Balochisauridae, Titanosauria) and Vitakridrinda
+        remains from Pakistan (Sindh Univ. Res. J. Sci. Ser. 41:65–92)
+      source_type: specialist_descriptive_reference
+      url: https://sujo.usindh.edu.pk/index.php/SURJ/article/download/6194/4229
+      note: Explicitly erects/uses Balochisauridae and assigns Pakistani titanosaur material
+        from the Vitakri beds.
+    - source_label: Wilson, Malkani & Gingerich 2001 – New crocodyliform from the Upper Cretaceous
+        Pab Formation of Vitakri, Balochistan (Contributions from the Museum of Paleontology,
+        Univ. Michigan 30:321–336)
+      source_type: specialist_descriptive_reference
+      url: https://deepblue.lib.umich.edu/items/44a07e12-93ce-4f3a-8c1a-39e225466fd8
+      note: Documents the Vitakri localities within the Pab Formation and treats them as Upper
+        Cretaceous (Maastrichtian).
+    - source_label: Eschard et al. 2003 – Downstream evolution of turbiditic channel complexes
+        in the Pab Range outcrops (Maastrichtian, Pakistan) (Marine and Petroleum Geology
+        20:691–710)
+      source_type: literature
+      url: https://www.researchgate.net/publication/229199567_Downstream_evolution_of_turbiditic_channel_complexes_in_the_Pab_Range_outcrops_Maastrichtian_Pakistan
+      note: Refers to the Pab Formation as deposited during the Late Maastrichtian; supports
+        regional age assignment.
+    - source_label: 'Kennedy et al. 1999 – Maastrichtian ammonites from Balochistan, Pakistan
+        (Journal of Paleontology 73: 558–571)'
+      source_type: geochronology_reference
+      url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/9EEBB9F1896D3139F67B409A1C9CD4FF/S0022336000032467a.pdf/maastrichtian_ammonites_from_balochistan_pakistan.pdf
+      note: Late Maastrichtian ammonite biostratigraphy in the southern Pab Range (Korara
+        Shale), providing independent regional age control.
+    - source_label: Mehmood et al. 2023 – Sedimentary facies and depositional environments
+        of the Maastrichtian Pab Formation, Rakhi Gorge (JMSE 11:726)
+      source_type: literature
+      url: https://www.mdpi.com/2077-1312/11/4/726
+      note: Treats the Pab Formation as Maastrichtian and notes the latest Cretaceous Vitakri
+        unit in the Fort Munro Group; no precise numeric tie for the dinosaur-bearing beds.
     divergence_ma: null
-    end_ma: null
+    end_ma: 66.0
     start_ma: null
   review:
-    decision_note: null
+    decision_note: 'Retain as unresolved with low confidence. Usage of “Balochisauridae” is
+      largely author-specific, and while multiple independent studies support a Maastrichtian
+      age for the Pab/Vitakri succession, there is no precise, independently dated horizon
+      for the dinosaur-producing Vitakri beds nor a broadly accepted family-level treatment.
+      Leave numerical fields null pending stronger taxonomic consensus and formation-tied
+      geochronology.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -136,8 +351,8 @@ bohaiornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for bohaiornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for bohaiornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -146,20 +361,105 @@ bohaiornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Bohaiornithidae is known from the Early Cretaceous Jehol Group with securely
+      referred occurrences in both the Yixian and Jiufotang formations. The family was erected
+      and diagnosed by Wang et al. (2014), who listed included genera from Jehol Group localities;
+      subsequent descriptive work continues to place bohaiornithids in these formations. ([ivpp.ac.cn](https://www.ivpp.ac.cn/sourcedb/zw/rck/jcqn/202209/W020140121388700972757.pdf))
+
+      The holotype of Bohaiornis guoi was originally reported from Lamadong, Jianchang as
+      Yixian Formation by Hu et al. (2011), but Wang et al. (2014) argued the Lamadong outcrops
+      at that locality represent the Jiufotang Formation. Regardless, multiple bohaiornithids
+      are securely documented from the Yixian Formation (e.g., Sulcavis geeorum), establishing
+      Yixian as providing the earliest defensible fossil occurrence for the clade. ([ivpp.cas.cn](https://ivpp.cas.cn/sourcedb/zw/rck/jcqn/202311/P020140313550491380549.pdf))
+
+      High-precision CA-ID-IRMS U-Pb zircon geochronology tightly brackets the Yixian Formation
+      in the Jin–Yang basin between 125.755 ± 0.061 Ma and 124.122 ± 0.048 Ma; we conservatively
+      use the older bound (125.755 Ma) as a formation-derived minimum for Bohaiornithidae,
+      acknowledging individual bohaiornithid horizons within Yixian may be younger. This is
+      a fossil occurrence/formation minimum, not a true divergence time. ([academic.oup.com](https://academic.oup.com/nsr/article/8/6/nwab063/6223474?utm_source=openai))
+
+      Bohaiornithids also occur in the overlying Jiufotang Formation (e.g., Neobohaiornis
+      lamadongensis), whose chronology has recently been refined to 124.44–112.25 Ma in western
+      Liaoning; however, the youngest securely dated bohaiornithid-bearing bed within Jiufotang
+      has not been directly tied to a specific absolute age in that succession, so end_ma
+      is left null. ([nature.com](https://www.nature.com/articles/s41598-024-82869-8?utm_source=openai))
+
+      Some analyses include the older Shenqiornis from the Huajiying (Qiaotou) beds within
+      Bohaiornithidae, but both its placement and the precise ages of those beds are debated;
+      SIMS U-Pb dating suggests earliest Jehol elements around ~129–131 Ma in the Huajiying
+      Formation, yet bohaiornithid monophyly and membership remain unstable across datasets.
+      We therefore do not use Huajiying occurrences to push the family minimum older. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/32513701/?utm_source=openai))
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Wang et al. 2014 — Bohaiornithidae fam. nov. (Vertebrata PalAsiatica 52:31–76)
+      source_type: specialist_taxonomic_reference
+      url: https://www.ivpp.ac.cn/sourcedb/zw/rck/jcqn/202209/W020140121388700972757.pdf
+      note: Establishes Bohaiornithidae; summarizes included taxa and notes Bohaiornis holotype
+        likely from Jiufotang rather than Yixian.
+    - source_label: Hu et al. 2011 — Bohaiornis guoi holotype (Journal of Vertebrate Paleontology
+        31:154–161)
+      source_type: specialist_descriptive_reference
+      url: https://ivpp.cas.cn/sourcedb/zw/rck/jcqn/202311/P020140313550491380549.pdf
+      note: Original description; reports Lamadong (Jianchang) specimen from the Lower Cretaceous
+        Yixian Formation.
+    - source_label: O’Connor et al. 2013 — Sulcavis geeorum from the Yixian Formation (JVP
+        33:1–12)
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/02724634.2012.719176
+      note: Documents a bohaiornithid-grade enantiornithine from the Yixian Formation, corroborating
+        early Yixian occurrence.
+    - source_label: Zhong et al. 2021 — High-precision geochronology of the Yixian Formation
+        (National Science Review 8:nwab063)
+      source_type: geochronology_reference
+      url: https://academic.oup.com/nsr/article/8/6/nwab063/6223474
+      note: CA‑ID‑IRMS zircon ages bracket Yixian at 125.755 ± 0.061 Ma to 124.122 ± 0.048
+        Ma; used to set the minimum.
+    - source_label: Zhong et al. 2025 — High-precision chronology of the Jiufotang Formation
+        (Earth and Planetary Science Letters 671:119688)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0012821X25004868
+      note: Refines Jiufotang in western Liaoning to 124.44–112.25 Ma; youngest bohaiornithid
+        horizon not bed‑dated.
+    - source_label: Shen et al. 2024 — Neobohaiornis from the Jiufotang Formation (Scientific
+        Reports 14:31363)
+      source_type: specialist_descriptive_reference
+      url: https://www.nature.com/articles/s41598-024-82869-8
+      note: Confirms bohaiornithid presence within Jiufotang; no direct absolute bed-age tie
+        for this horizon.
+    - source_label: Miller et al. 2024 — Synthetic analysis with new insights from Bohaiornithidae
+        (eLife 13:e89871)
+      source_type: literature
+      url: https://elifesciences.org/articles/89871
+      note: Reviews trophic diversity and notes instability/variability in definitions and
+        membership of Bohaiornithidae.
+    - source_label: 'GBIF: Bohaiornithidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/8640334
+      note: Backbone taxonomy entry acknowledging family-level concept; not a primary source
+        for dating.
+    - source_label: Yang et al. 2020 — Huajiying SIMS U-Pb dating and Jehol appearance (PNAS
+        117:14299–14305)
+      source_type: geochronology_reference
+      url: https://pubmed.ncbi.nlm.nih.gov/32513701/
+      note: Places earliest Jehol elements in Huajiying at ~129–131 Ma; used here only to
+        explain why Huajiying is not adopted for a family minimum.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 125.755
   review:
-    decision_note: null
+    decision_note: 'Adopted a conservative minimum start at 125.755 Ma tied to high‑precision
+      U‑Pb ages for the Yixian Formation and the presence of securely referred bohaiornithids
+      in that unit; left end_ma and divergence_ma null because the youngest Jiufotang occurrences
+      are not bed‑dated and no explicit molecular divergences exist. Bohaiornis holotype provenance
+      (Jiufotang vs. Yixian) and the debated inclusion of older Huajiying taxa (e.g., Shenqiornis)
+      were noted, but not used to shift the family minimum older given stratigraphic and phylogenetic
+      uncertainty.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -169,8 +469,8 @@ brodavidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for brodavidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for brodavidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -179,20 +479,67 @@ brodavidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Brodavidae was erected by Martin, Kurochkin, and Tokaryk (2012) for the hesperornithiform
+      genus Brodavis. The oldest occurrence referred to this clade is Brodavis varneri from
+      the Sharon Springs Member of the Pierre Shale in South Dakota, described originally
+      as Baptornis varneri and explicitly placed in the lower–middle Campanian by its describing
+      paper. Independent stratigraphic/geochemical work constrains deposition of the Sharon
+      Springs interval to roughly ~82–77 Ma. Consistent with a cautious formation-derived
+      minimum, a start_ma of ~81.0 Ma is proposed to capture the earliest Campanian occurrence
+      window noted for the Sharon Springs Member. Younger brodavid records are Maastrichtian
+      (e.g., Frenchman and Hell Creek formations; Nemegt Fm. in Mongolia), but these do not
+      affect the minimum. This should be treated strictly as a fossil-occurrence/ formation-based
+      minimum age for the family, not a phylogenetic or molecular origin estimate.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Martin, Kurochkin & Tokaryk 2012. A new evolutionary lineage of diving
+        birds from the Late Cretaceous of North America and Asia. Palaeoworld 21(1):59–63
+      source_type: specialist_taxonomic_reference
+      url: https://www.sciencedirect.com/science/article/pii/S1871174X12000066
+      note: Original erection of Brodavidae for Brodavis; Late Cretaceous occurrences in North
+        America and Asia.
+    - source_label: 'Martin & Cordes-Person 2007. A new species of the diving bird Baptornis
+        (Ornithurae: Hesperornithiformes) from the lower Pierre Shale Group (Upper Cretaceous)
+        of southwestern South Dakota. GSA Special Paper 427:227–237'
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/286544883
+      note: Describes the Sharon Springs Member specimen (lower–middle Campanian) later referred
+        to Brodavis varneri.
+    - source_label: 'Bell & Chiappe 2022. The Hesperornithiformes: A review of the earliest
+        diving birds. Diversity 14(4):267'
+      source_type: literature
+      url: https://www.mdpi.com/1424-2818/14/4/267
+      note: Summarizes Brodavidae; oldest brodavid occurrence in the Campanian Pierre Shale;
+        most records Maastrichtian.
+    - source_label: Allred 2017. Depositional system and source rock potential of the Sharon
+        Springs Formation in Colorado (M.S. thesis, Colorado School of Mines)
+      source_type: geochronology_reference
+      url: https://repository.mines.edu/entities/publication/1454553b-cbb9-487c-876c-b1f5e67437af
+      note: Constrains Sharon Springs deposition to ~82–77 Ma, used here to bracket a cautious
+        Campanian minimum.
+    - source_label: 'GBIF: Brodavidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/8548214
+      note: Confirms usage of the family-rank name and its placement with Brodavis.
+    - source_label: Notable Cretaceous–Paleogene (K–Pg) boundary exposures in SW Saskatchewan
+      source_type: literature
+      url: https://www.researchgate.net/publication/283081800_Notable_Cretaceous-Paleogene_K-Pg_Boundary_exposures_in_Southwest_Saskatchewan_Canada_A_Window_onto_Extinction
+      note: Frenchman Fm. documented as latest Maastrichtian and spanning the K–Pg boundary;
+        supports younger Brodavis occurrences.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 81.0
   review:
-    decision_note: null
+    decision_note: 'Accept a low-confidence, formation-derived minimum at ~81.0 Ma based on
+      the earliest reported Brodavis occurrence in the Sharon Springs Member (lower–middle
+      Campanian). This is not an evolutionary origin estimate and should be revised if bed-level
+      radiometric constraints for the fossil horizon become available.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -202,8 +549,8 @@ caudipterygidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for caudipterygidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for caudipterygidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -212,20 +559,86 @@ caudipterygidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Caudipterygidae is documented by Caudipteryx from the Jianshangou Unit/Bed
+      of the Yixian Formation at the classic Sihetun–Huangbanjigou localities of western Liaoning,
+      and by Similicaudipteryx in the overlying Jiufotang Formation. For a conservative clade
+      first-appearance minimum (start_ma), I use the best-supported bed-level radioisotopic
+      ages tied to the Jianshangou fossil horizon: recent single‑crystal 40Ar/39Ar sanidine
+      dates from bed 6 at Sihetun/Huangbanjigou that cluster around 125.38 Ma, with a weighted
+      mean of ~125.389 Ma. These are consistent with high‑precision CA–ID–TIMS zircon ages
+      that bracket deposition of the Yixian Formation between 125.755 ± 0.061 Ma and 124.122
+      ± 0.048 Ma. Independent constraints on the Jiufotang Formation include a lowermost tuff
+      at 122.1 ± 0.3 Ma (40Ar/39Ar) and SIMS U–Pb zircon ages from ~122.0 to ~118.6–118.9
+      Ma in western Liaoning, confirming younger occurrences of the family but not establishing
+      a terminal range bound. Following project guidance, I treat the Jianshangou bed age
+      as a fossil‑occurrence/ formation‑derived minimum and leave divergence_ma and end_ma
+      null.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: 'Ji et al. 1998: Two feathered dinosaurs from northeastern China (Nature)'
+      source_type: specialist_descriptive_reference
+      url: https://www.nature.com/articles/31635
+      note: Original description of Caudipteryx from Yixian Formation (Sihetun/Jianshangou
+        localities).
+    - source_label: 'He, Wang & Zhou 2008: A new genus and species of caudipterid dinosaur
+        from the Lower Cretaceous Jiufotang Formation of western Liaoning, China (Vertebrata
+        PalAsiatica)'
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/273009937_A_new_genus_and_species_of_caudipterid_dinosaur_from_the_Lower_Cretaceous_Jiufotang_Formation_of_western_Liaoning_China
+      note: Names Similicaudipteryx yixianensis; places it in Caudipterygidae and in the Jiufotang
+        Fm.
+    - source_label: 'Chang et al. 2021: High-precision geochronological constraints on the
+        duration of ‘Dinosaur Pompeii’ and the Yixian Formation (CA–ID–TIMS U–Pb)'
+      source_type: geochronology_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8288181/
+      note: Brackets Yixian Formation between 125.755 ± 0.061 Ma and 124.122 ± 0.048 Ma.
+    - source_label: 'Li et al. 2022: Rapid preservation of Jehol Biota in Northeast China
+        from high precision 40Ar/39Ar geochronology (EPSL)'
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0012821X22003545
+      note: Jianshangou bed 6 sanidine ages 125.374–125.414 Ma; weighted mean ~125.389 Ma
+        at Sihetun/Huangbanjigou.
+    - source_label: 'Wang et al. 2022: New geochronological constraints for the Lower Cretaceous
+        Jiufotang Formation (Palaeogeogr Palaeoclimatol Palaeoecol.)'
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0031018221004429
+      note: 'SIMS U–Pb zircon ages: 122.0 ± 0.9 Ma near base; 118.9 ± 0.8/0.6 Ma higher in
+        section; constrains youngest Jehol interval.'
+    - source_label: 'He et al. 2004: Timing of the Jiufotang Formation (Geophys. Res. Lett.)'
+      source_type: geochronology_reference
+      url: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2004GL019790
+      note: Reports Jiufotang ash-bed ages near ~120.3 ± 0.7 Ma; early constraints on Aptian
+        age.
+    - source_label: 'HKU Scholars Hub: High-precision 40Ar/39Ar age for the Jehol Biota'
+      source_type: geochronology_reference
+      url: https://repository.hku.hk/handle/10722/132844
+      note: Gives 122.1 ± 0.3 Ma for a lowermost Jiufotang tuff and 129.7 ± 0.5 Ma for basal
+        Yixian lava.
+    - source_label: 'Cao et al. 2019: A new caudipterid from the Lower Cretaceous of China
+        (Sci. Reports)'
+      source_type: specialist_descriptive_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6483983/
+      note: Describes Xingtianosaurus ganqi (Caudipterygidae) from the Yixian Formation; corroborates
+        family-level assignment and Yixian occurrence.
+    - source_label: 'GBIF: Caudipteryx Ji, Currie, Norell & Ji, 1998'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4821940
+      note: Confirms current usage of Caudipteryx and its placement within Caudipterygidae.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 125.39
   review:
-    decision_note: null
+    decision_note: 'Adopted a bed-level fossil minimum for Caudipterygidae using high‑precision
+      40Ar/39Ar ages from the Jianshangou Unit at Sihetun/Huangbanjigou (~125.39 Ma), supported
+      by CA–ID–TIMS bracketing for the Yixian Formation and independent Jiufotang geochronology
+      documenting younger occurrences. divergence_ma and end_ma remain null to avoid implying
+      an origin or extinction bound beyond the dated fossil horizons.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -235,8 +648,8 @@ eoenantiornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for eoenantiornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for eoenantiornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -245,20 +658,54 @@ eoenantiornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Eoenantiornithidae has been used inconsistently in the enantiornithean literature
+      and lacks a stable family-level taxonomy. To set a conservative minimum tied to the
+      name’s historical usage, this proposal anchors on the best-supported taxon historically
+      referred to this family, Eoenantiornis. The holotype of Eoenantiornis buhleri (IVPP
+      V11537) is explicitly from the Jianshangou Bed of the lower Yixian Formation at Heitizigou,
+      Beipiao, Liaoning. High-precision single-crystal 40Ar/39Ar geochronology constrains
+      the fossiliferous Jianshangou horizon to 125.374–125.572 Ma. Treating bed ages as fossil-occurrence
+      minima, start_ma is set to the youngest bound (~125.37 Ma). Because the family concept
+      is unstable and there is no defensible divergence estimate for the clade, divergence_ma
+      and end_ma are left null. This is a bed-tied fossil minimum for the name’s usage, not
+      a true evolutionary origin time.
+
+      '
+    date_resolution_method: specialist_literature
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Zhou, Chiappe & Zhang 2005 – Anatomy of the Early Cretaceous bird Eoenantiornis
+        buhleri (Canadian Journal of Earth Sciences 42:1331–1338)
+      source_type: specialist_descriptive_reference
+      url: https://ivpp.cas.cn/sourcedb/zw/rck/yjy/200908/P020120601588943773344.pdf
+      note: 'Gives holotype IVPP V11537 and explicit locality/horizon: Heitizigou, Jianshangou
+        Bed, lower Yixian Formation (Early Cretaceous, Aptian).'
+    - source_label: Li et al. 2022 – Rapid preservation of Jehol Biota in Northeast China
+        from high‑precision 40Ar/39Ar geochronology (Earth and Planetary Science Letters)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0012821X22003545
+      note: Single‑crystal 40Ar/39Ar dates constrain the Jianshangou fossil bed to 125.374
+        ± 0.085 to 125.572 ± 0.120 Ma; used here as the fossil minimum.
+    - source_label: Chang et al. 2009 – High‑precision 40Ar/39Ar age for the Jehol Biota (Palaeogeography,
+        Palaeoclimatology, Palaeoecology 280:94–104)
+      source_type: geochronology_reference
+      url: https://repository.hku.hk/handle/10722/132844
+      note: Regional calibration for the Yixian–Jiufotang succession; reports 129.7 ± 0.5
+        Ma near the base of Yixian and 122.1 ± 0.3 Ma low in Jiufotang, corroborating Early
+        Aptian context.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 125.37
   review:
-    decision_note: null
+    decision_note: 'Adopt a conservative fossil minimum based on Eoenantiornis (historically
+      placed in Eoenantiornithidae). The holotype is from the Jianshangou Bed of the lower
+      Yixian Formation (Zhou et al., 2005). High‑precision 40Ar/39Ar ages for that fossil
+      bed are 125.374–125.572 Ma (Li et al., 2022); set start_ma to 125.37 Ma. Due to unstable
+      family usage and absent range constraints, leave divergence_ma and end_ma null; Chang
+      et al. (2009) provides broader Jehol calibration only.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -268,8 +715,8 @@ guaibasauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for guaibasauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for guaibasauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -278,20 +725,75 @@ guaibasauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Guaibasauridae was erected by Bonaparte, Ferigolo & Ribeiro (1999) for Guaibasaurus
+      candelariensis from the Caturrita Formation (southern Brazil). Subsequent work variably
+      expanded the family to include very early sauropodomorphs such as Saturnalia, Panphagia
+      and Chromogisaurus (often as “Saturnaliinae” within Guaibasauridae sensu Ezcurra 2010),
+      though more recent analyses tend to segregate these as Saturnaliidae and/or recover
+      Guaibasaurus outside that clade. Because of this phylogenetic instability, the family’s
+      earliest occurrence depends on the definition adopted. High‑precision CA‑ID‑TIMS U‑Pb
+      dating constrains the Saturnalia‑bearing upper Santa Maria Formation (Cerro da Alemoa)
+      to 233.23 ± 0.73 Ma (Carnian), whereas a single‑zircon 206Pb/238U date of 225.42 ± 0.37
+      Ma provides only a maximum age for the Guaibasaurus‑bearing Caturrita Formation (early
+      Norian). Here, a cautious fossil minimum of 233.23 Ma is proposed only under the broadened
+      usage that includes Saturnalia within Guaibasauridae; if the family is restricted to
+      Guaibasaurus sensu some recent treatments, the minimum would be younger (Caturrita,
+      ~225 Ma maximum constraint). In all cases this should be treated as a formation‑derived
+      fossil minimum, not an evolutionary origin estimate for the clade.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Bonaparte, Ferigolo & Ribeiro 1999. A new early Late Triassic saurischian
+        dinosaur from Rio Grande do Sul State, Brazil (NSM Monographs 15:89–109)
+      source_type: specialist_taxonomic_reference
+      url: https://cir.nii.ac.jp/crid/1573387451763638400
+      note: Original description erecting Guaibasauridae for Guaibasaurus from the Caturrita
+        Fm.
+    - source_label: Langer et al. 2018. U-Pb age constraints on dinosaur rise from south Brazil
+        (Gondwana Research)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S1342937X18300327
+      note: CA‑ID‑TIMS 233.23 ± 0.73 Ma for Santa Maria Fm (Cerro da Alemoa); single‑zircon
+        225.42 ± 0.37 Ma maximum for Caturrita Fm.
+    - source_label: Langer, Bittencourt & Schultz 2011. Reassessment of Guaibasaurus (EESTRSE
+        101:301–332)
+      source_type: specialist_descriptive_reference
+      url: https://www.cambridge.org/core/journals/earth-and-environmental-science-transactions-of-royal-society-of-edinburgh/article/abs/reassessment-of-the-basal-dinosaur-guaibasaurus-candelariensis-from-the-late-triassic-caturrita-formation-of-south-brazil/CA2762E590F7FD3950527B911A79BB57
+      note: Caturrita occurrences and Norian age context for Guaibasaurus.
+    - source_label: Ezcurra 2010. A new early dinosaur… Journal of Systematic Palaeontology
+        8:371–425
+      source_type: specialist_taxonomic_reference
+      url: https://colab.ws/articles/10.1080%2F14772019.2010.484650
+      note: Defines Guaibasauridae including Saturnalia, Panphagia, Chromogisaurus; establishes
+        Saturnaliinae within it.
+    - source_label: Novas et al. 2021. Review of early saurischians, J. South American Earth
+        Sciences
+      source_type: specialist_taxonomic_reference
+      url: https://keuper.us.edu.pl/02_Keuper-literature/Novas%20et%20al%202021_JSAES.pdf
+      note: Summarizes shifting placements of Guaibasaurus and the rise of Saturnaliidae;
+        notes early Norian age for Caturrita sites.
+    - source_label: Bittencourt et al. 2019. Skull remains of Saturnalia (PLoS ONE, open access)
+      source_type: specialist_descriptive_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6730896/
+      note: Places Saturnalia in the Santa Maria Fm (Carnian), consistent with ~233 Ma constraints.
+    - source_label: 'GBIF: Guaibasaurus candelariensis'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4819473
+      note: Taxonomic listing confirming use of Guaibasauridae for Guaibasaurus.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 233.23
   review:
-    decision_note: null
+    decision_note: 'Accept a low‑confidence fossil minimum based on Santa Maria (233.23 Ma)
+      only under definitions that include Saturnalia within Guaibasauridae. If restricted
+      to Guaibasaurus alone, a younger Norian minimum (~225 Ma, Caturrita maximum constraint)
+      would apply. Treat strictly as a formation‑derived occurrence age, not an evolutionary
+      origin.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -301,8 +803,8 @@ hesperornidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for hesperornidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for hesperornidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -311,20 +813,65 @@ hesperornidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'The earliest occurrences attributable to Hesperornidae sensu Clarke/Bell
+      & Chiappe (taxa closer to Hesperornis than to Baptornis) are Hesperornis fossils reported
+      from the Boyne Member (Carlile Formation; formerly part of the Vermilion River Formation)
+      in southern Manitoba. The Boyne Member is broadly constrained to the Turonian–Santonian,
+      so using the base of the Turonian (93.9 Ma) provides a conservative, formation-derived
+      minimum for the family’s fossil first appearance. This is not a molecular or true phylogenetic
+      origin estimate. Older hesperornithiform records in the Cenomanian (e.g., Pasquiaornis,
+      Baptornis) are generally considered outside Hesperornidae in recent treatments and thus
+      are not used to extend the family’s range. Additional well-known hesperornid occurrences
+      from the Niobrara Chalk and Pierre Shale are younger (Coniacian–Campanian), but do not
+      alter the older Boyne-derived minimum. Given the stratigraphic (not horizon-dated) basis,
+      confidence is set to low and the value should be treated strictly as a fossil-occurrence/formation
+      minimum.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Aotsuka & Sato 2016, Cretaceous Research 63:154–169
+      source_type: specialist_descriptive_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0195667116300337
+      note: Notes Hesperornis occurrences from Manitoba including material from the Vermilion
+        River Fm (Boyne Member of the Carlile Fm), establishing Boyne-linked records for the
+        clade.
+    - source_label: Shaw et al. 2017 (GS2017-15), Manitoba Geological Survey
+      source_type: geochronology_reference
+      url: https://www.manitoba.ca/iem/geo/field/roa17pdfs/GS2017-15.pdf
+      note: Explicitly states the Boyne Member (Carlile Fm) is Upper Cretaceous Turonian–Santonian
+        in SW Manitoba; used to bound the Hesperornis-bearing unit.
+    - source_label: Bell & Chiappe 2020, Life 10(5):62 — Anatomy of Parahesperornis
+      source_type: specialist_taxonomic_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7281208/
+      note: Defines Hesperornidae as taxa closer to Hesperornis than Baptornis and discusses
+        placement of Pasquiaornis/Baptornis outside Hesperornidae.
+    - source_label: Bell et al. 2022, Diversity 14:267 — Hesperornithiformes review
+      source_type: literature
+      url: https://www.mdpi.com/1424-2818/14/4/267
+      note: Specialist overview of hesperornithiform diversity, distribution, and taxonomy;
+        summarizes family-level content including Hesperornidae.
+    - source_label: 'Britannica: Turonian Stage (93.9–89.8 Ma)'
+      source_type: geochronology_reference
+      url: https://www.britannica.com/science/Turonian-Stage
+      note: Used for the numerical stage boundary to set a conservative 93.9 Ma minimum.
+    - source_label: 'GBIF: Hesperornis regalis'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4966843
+      note: Confirms taxonomic usage for Hesperornis; included as a secondary corroborating
+        database.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 93.9
   review:
-    decision_note: null
+    decision_note: 'Adopt 93.9 Ma as a conservative formation-derived minimum for Hesperornidae
+      based on Boyne Member Hesperornis records; treat as a fossil-occurrence minimum, not
+      an evolutionary origin. Older Cenomanian hesperornithiforms (e.g., Pasquiaornis, Baptornis)
+      are not used here because recent analyses place them outside Hesperornidae.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -334,8 +881,8 @@ heterostrigidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for heterostrigidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for heterostrigidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -344,20 +891,57 @@ heterostrigidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Heterostrigidae was erected for the small owl Heterostrix tatsinensis (gen.
+      et sp. nov.) from the Early Oligocene of Mongolia. The type material is from the Valley
+      of Lakes region (Taatsiin/Tatsyn Gol area), where Early Oligocene vertebrate localities
+      are within the Hsanda Gol Formation. The Hsanda Gol lower strata are magnetostratigraphically
+      correlated to GPTS Chrons C13r–C12r (~34–31.2 Ma), and an interbedded basalt flow (“Basalt
+      I”) has 40Ar/39Ar ages clustered around ~31.5 Ma. Because the exact bed for Heterostrix
+      within Hsanda Gol is not specified in the original description, a cautious formation/flow-derived
+      minimum of ~31.5 Ma is proposed, acknowledging that the fossil could be slightly older
+      within the early Rupelian interval (~34–31.2 Ma). This is a fossil-occurrence/formation-derived
+      minimum and should not be interpreted as a phylogenetic origin age for the family.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Kurochkin & Dyke 2011, Paleontological Journal 45(4):445–458
+      source_type: specialist_taxonomic_reference
+      url: https://eprints.soton.ac.uk/201149/
+      note: Original description; establishes Heterostrigidae fam. nov. for Heterostrix tatsinensis
+        from the Early Oligocene of Mongolia.
+    - source_label: Daxner-Höck et al. 2017, Oligocene stratigraphy across the Eocene and
+        Miocene boundaries in the Valley of Lakes (Mongolia)
+      source_type: geochronology_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5367740/
+      note: Correlates lower Hsanda Gol + Basalt I with Chrons C13r–C12r (~34–31.2 Ma); provides
+        biozone calibration and context.
+    - source_label: Höck et al. 1999, Oligocene–Miocene sediments, fossils and basalts from
+        the Valley of Lakes (Central Mongolia) – an integrated study
+      source_type: geochronology_reference
+      url: https://www.researchgate.net/publication/284314250_Oligocene-Miocene_sediments_fossils_and_basalts_from_the_Valley_of_Lakes_Central_Mongolia_-_An_integrated_study
+      note: Reports 40Ar/39Ar dates for interbedded basalts; Early Oligocene Basalt I ~31.5
+        Ma widely used as a regional tie-point.
+    - source_label: Harzhauser et al. 2021, Climate of the Past 17:1955–1977
+      source_type: geochronology_reference
+      url: https://cp.copernicus.org/articles/17/1955/2021/cp-17-1955-2021.html
+      note: Synthesizes Valley of Lakes chronology; letter zone A (early Rupelian) ~33.9–31.5
+        Ma, bracketing lower Hsanda Gol ages.
+    - source_label: 'EOL: Strigiformes (Owls)'
+      source_type: taxonomic_database
+      url: https://www.eol.org/pages/696
+      note: Lists Heterostrigidae among owl families; supplemental taxonomic context.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 31.5
   review:
-    decision_note: null
+    decision_note: 'Propose 31.5 Ma as a low-confidence, formation/flow-derived minimum age
+      for Heterostrigidae based on Early Oligocene Hsanda Gol strata and the ~31.5 Ma Basalt
+      I tie-point; not an evolutionary origin estimate.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -367,8 +951,8 @@ hongshanornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for hongshanornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for hongshanornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -377,20 +961,63 @@ hongshanornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The oldest secure occurrence assigned to Hongshanornithidae is Archaeornithura
+      meemannae from the lower Huajiying Formation (Sichakou Basin, northern Hebei, China).
+      The bird-bearing horizon that yields Archaeornithura (and the Protopteryx horizon) is
+      tightly constrained by 40Ar/39Ar dating at 130.7 Ma, and independent SIMS U–Pb zircon
+      ages for the Huajiying bird interval indicate ~129–131 Ma. Archaeornithura is explicitly
+      resolved within Hongshanornithidae in the descriptive paper, so this occurrence provides
+      a defensible fossil minimum for the family; it is not an evolutionary origin estimate.
+      Younger hongshanornithids are documented in the Yixian Formation, which high-precision
+      CA–ID–TIMS U–Pb dates bracket at ~125.8–124.1 Ma, and in the Jiufotang Formation, with
+      SIMS U–Pb ages around ~122.0–118.9 Ma. The last appearance of the family is not securely
+      bounded by specialist or geochronological sources, so no end date is proposed.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: 'Wang et al. 2015, Nature Communications: The oldest record of Ornithuromorpha
+        from the Early Cretaceous of China'
+      source_type: specialist_descriptive_reference
+      url: https://www.nature.com/articles/ncomms7987
+      note: Describes Archaeornithura, places it within Hongshanornithidae, and cites a 130.7
+        Ma 40Ar/39Ar age for the Huajiying bird horizon.
+    - source_label: 'Yang et al. 2020, PNAS: SIMS U–Pb zircon dating for the Huajiying Formation'
+      source_type: geochronology_reference
+      url: https://pubmed.ncbi.nlm.nih.gov/32513701/
+      note: Concludes oldest Jehol ornithuromorph and enantiornithine birds are ~129–131 Ma;
+        refines timing of the Huajiying bird interval.
+    - source_label: 'O’Connor, Gao & Chiappe 2010, Journal of Vertebrate Paleontology: A new
+        ornithuromorph bird from the Jehol Group (Longicrusavis)'
+      source_type: specialist_taxonomic_reference
+      url: https://www.tandfonline.com/doi/abs/10.1080/02724631003617498
+      note: Erects Hongshanornithidae based on Yixian Formation material and diagnoses the
+        family.
+    - source_label: 'Zhong et al. 2021, National Science Review: High-precision geochronological
+        constraints on the Yixian Formation'
+      source_type: geochronology_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8288181/
+      note: CA–ID–TIMS U–Pb zircon ages bracket Yixian at 125.755 ± 0.061 to 124.122 ± 0.048
+        Ma.
+    - source_label: 'Liu et al. 2021, Palaeogeography, Palaeoclimatology, Palaeoecology: New
+        geochronological constraints for the Jiufotang Formation'
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0031018221004429
+      note: SIMS U–Pb zircon ages from fossiliferous Jiufotang strata yield 122.0 ± 0.9/1.5
+        Ma and 118.9 ± 0.8/1.4 Ma.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 130.7
   review:
-    decision_note: null
+    decision_note: 'Start_ma set to 130.7 Ma as a fossil/formation-derived minimum based on
+      Archaeornithura (a hongshanornithid) from the dated Huajiying horizon. End_ma left null
+      because later hongshanornithid occurrences extend into the Yixian (~125.8–124.1 Ma)
+      and Jiufotang (~122–119 Ma) formations, but a firm last appearance datum for the family
+      is not established by specialist or geochronological sources.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -400,8 +1027,8 @@ huanghetitanidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for huanghetitanidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for huanghetitanidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -410,20 +1037,70 @@ huanghetitanidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: low
+    date_notes: 'Huanghetitanidae was erected by Lü et al. (2007) as a monogeneric family
+      for Huanghetitan. The included occurrences are from Lower Cretaceous units in China:
+      (i) “Huanghetitan” ruyangensis from the Ruyang Basin, now assigned to the Haoling Formation,
+      which multiple specialist works place in the late Early Cretaceous (Aptian–Albian) based
+      on field data and invertebrate/microfossil assemblages; and (ii) H. liujiaxiaensis from
+      the Hekou Group (Lanzhou–Minhe Basin), widely treated as Lower Cretaceous. Because the
+      available constraints are formation-/stage-level rather than bed-tied radiometric ages
+      at the fossil horizons, this is treated as a cautious formation-derived fossil minimum
+      rather than a phylogenetic or molecular origin estimate. A conservative numerical minimum
+      of 113.2 Ma (approximate base Albian on the current ICS chart) is adopted within the
+      Aptian–Albian window reported for the Haoling Formation. Note that later phylogenetic
+      work questions the monophyly and utility of “Huanghetitanidae,” so this date should
+      be interpreted strictly as a fossil-occurrence/formation minimum for the family-level
+      taxon as used in the literature, not as a clade-origin calibration.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Lü et al. 2007, Acta Geologica Sinica 81(2):167–176
+      source_type: specialist_taxonomic_reference
+      url: https://doi.org/10.1111/j.1755-6724.2007.tb00941.x
+      note: Original description of H. ruyangensis; proposes Huanghetitanidae fam. nov.; specimens
+        from Ruyang Basin.
+    - source_label: 'GBIF: Huanghetitanidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4967321
+      note: Backbone entry recognizing the family-level taxon; useful for taxonomic cross-reference.
+    - source_label: Lü et al. 2013, Cretaceous Research 44:202–213 (Yunmenglong paper)
+      source_type: specialist_descriptive_reference
+      url: https://doi.org/10.1016/j.cretres.2013.04.009
+      note: Places the dinosaur-bearing horizon in the Haoling Formation and summarizes Aptian–Albian
+        age assignment based on prior field and microfossil work (Xu et al. 2012).
+    - source_label: ICS International Chronostratigraphic Chart (v2024/12)
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Gives the base Albian at ~113.2 Ma; used here as a conservative numerical minimum
+        within the Aptian–Albian window.
+    - source_label: 'Li et al. 2014 (Yongjinglong), PLoS ONE 9(1): e85979'
+      source_type: specialist_descriptive_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3906019/
+      note: Documents additional titanosauriforms in the Hekou Group and cites Huanghetitan
+        liujiaxiaensis from the Lower Cretaceous Hekou Group (Gansu).
+    - source_label: Zhang et al. 2010, SHRIMP U–Pb of Jiudian Fm tuffs (in Chinese, with English
+        abstract)
+      source_type: geochronology_reference
+      url: https://www.geojournals.cn/georev/georev/article/abstract/20100102002
+      note: Tuffs underlying the dinosaur-bearing succession yield 130–133 Ma; supports a
+        late Early Cretaceous age for overlying Ruyang dinosaur strata.
+    - source_label: Mannion et al. 2013, Zoological Journal of the Linnean Society 168:98–206
+      source_type: literature
+      url: https://docentes.fct.unl.pt/omateus/files/mannion_et_al_2013_sauropod_lusotitan_portugal.pdf
+      note: Questions the monophyly of ‘Huanghetitanidae’ and suggests ‘H.’ ruyangensis likely
+        requires a new genus; included to flag taxonomic instability.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 113.2
   review:
-    decision_note: null
+    decision_note: 'Accept a cautious formation-derived minimum (113.2 Ma) for Huanghetitanidae,
+      acknowledging that the family concept is unstable and that this is not an evolutionary
+      origin estimate.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -433,8 +1110,8 @@ ignotornidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for ignotornidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for ignotornidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -443,20 +1120,67 @@ ignotornidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Ignotornidae is an avian ichnofamily erected for tetradactyl bird tracks
+      with a prominent hallux and characteristic semi‑palmate web traces. The earliest well-documented
+      occurrences assigned to Ignotornidae come from Lower Cretaceous units: the Haman Formation
+      of South Korea (Ignotornis yangi, I. gajinensis) and the Dakota Group of Colorado (Ignotornis
+      mcconnelli), with the first Canadian record from the Albian Gates Formation. Specialist
+      sources place the Dakota Ignotornis horizon in the upper Albian–lower Cenomanian, and
+      summarize the Korean Haman material as Aptian–middle Albian; more recent detrital-zircon
+      work constrains the Haman Formation to Albian ages (~105–96 Ma) at studied sites. Given
+      these formation-level constraints, an Albian placement is appropriate; a cautious minimum
+      start is set at the Aptian–Albian boundary (113.1 Ma) based on U–Pb calibration of that
+      boundary. This is a fossil-occurrence/formation-derived minimum presence for the ichnofamily,
+      not a phylogenetic origin estimate.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Kim et al. 2006, Cretaceous Research 27:56–69
+      source_type: specialist_taxonomic_reference
+      url: https://doc.rero.ch/record/15478/files/PAL_E2866.pdf
+      note: Emended definition of ichnofamily Ignotornidae; documents Ignotornis trackways
+        in the Haman Formation (Korea).
+    - source_label: Buckley et al. 2018, Cretaceous Research 84:209–222
+      source_type: specialist_descriptive_reference
+      url: https://lisagbuckley.com/wp-content/uploads/2018/10/buckley-et-al-2018-ignotornis-canadensis.pdf
+      note: First Canadian Ignotornidae (Ignotornis canadensis) from the Albian Gates Formation;
+        table summarizing Ignotornidae occurrences and formation-stage assignments (e.g.,
+        Haman Fm Aptian–middle Albian; Dakota Group Aptian–Cenomanian).
+    - source_label: Anfinson & Lockley et al. 2009, Cretaceous Research 30:885–894
+      source_type: specialist_descriptive_reference
+      url: https://doc.rero.ch/record/16674/files/PAL_E3274.pdf
+      note: Notes Ignotornis mcconnelli from the upper Albian–lower Cenomanian Dakota Group
+        near Golden, Colorado.
+    - source_label: Gates Formation stratigraphic lexicon (Geological Survey of Canada)
+      source_type: geochronology_reference
+      url: https://weblex.canada.ca/html/005000/GSCC00053005478.html
+      note: Places Gates Formation in the Early Albian (Arcthoplites Zone) in the Peace River
+        region.
+    - source_label: Selby et al. 2009, U–Pb zircon age for the Aptian/Albian boundary
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0195667109000755
+      note: Gives 113.1 ± 0.3 Ma for the Aptian/Albian boundary used here as a conservative
+        minimum.
+    - source_label: Lee et al. 2018, Nature and evolution of the Cretaceous basins in the
+        eastern margin of Eurasia (J. Asian Earth Sci.)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S1367912018302669
+      note: Detrital-zircon constraints including a maximum depositional age of 105.4 ± 0.4
+        Ma for the Haman Formation; supports Albian timing of Korean Ignotornidae sites.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 113.1
   review:
-    decision_note: null
+    decision_note: 'Accept an Albian minimum based on formation-level occurrences of Ignotornidae
+      (Haman Fm, Korea; Dakota Group, USA; Gates Fm, Canada). Start_ma set to 113.1 Ma (Aptian–Albian
+      boundary) as a cautious formation-derived minimum; do not interpret as the evolutionary
+      origin of the ichnofamily. Confidence kept low due to stage/formation-level constraints
+      rather than bed-specific radiometric dates tied to the track-bearing horizons.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -466,8 +1190,8 @@ mamenchisauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for mamenchisauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for mamenchisauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -476,20 +1200,76 @@ mamenchisauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_range
+    date_confidence: moderate
+    date_notes: 'The earliest well-constrained occurrences of Mamenchisauridae are in the
+      Middle Jurassic of China. Mamenchisaurid material (e.g., Omeisaurus) is documented from
+      the Lower Member of the Shaximiao Formation in Yunyang (Chongqing); a tuffaceous horizon
+      bounding this dinosaur-bearing level yields a U–Pb zircon weighted mean age of 166.0
+      ± 1.5 Ma, which provides a defensible maximum-burial/formation-derived minimum age for
+      the clade’s first appearance in that basin. Additional mamenchisaurid occurrences in
+      the upper Shishugou Formation (Xinjiang), including Mamenchisaurus sinocanadorum, are
+      consistent with an Oxfordian age bracketed by dated tuffs at ~161.2–158.7 Ma. For the
+      youngest record, detrital zircon U–Pb ages from classic Mamenchisaurus anyuensis sites
+      in the Suining Formation average 114.4 ± 1.1 Ma (Aptian). Although some subsequent works
+      argue for a Late Jurassic age of the Suining Formation based on biostratigraphic comparisons,
+      the published radiometric dataset provides a conservative youngest-appearance minimum.
+      Mamenchisaurid material from Thailand’s Phu Kradung Formation also indicates survival
+      near the Jurassic–Cretaceous boundary. These values are fossil-occurrence/formation
+      ages (minima) and should not be interpreted as evolutionary origin or true extinction
+      times for the family.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Dai et al. 2022, Palaeogeogr. Palaeoclimatol. Palaeoecol.
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0031018222000645
+      note: Lower Shaximiao (Yunyang) U–Pb zircon age 166.0 ± 1.5 Ma as maximum burial age
+        for a dinosaur-bearing horizon.
+    - source_label: Tan et al. (preprint/field report), Discovery of Omeisaurus in the Middle
+        Jurassic Shaximiao Formation (Yunyang)
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/332369134_Discovery_of_Omeisaurus_Dinosauria_Sauropoda_in_the_Middle_Jurassic_Shaximiao_Formation_of_Yunyang_Chongqing_China
+      note: Documents Omeisaurus (a mamenchisaurid) from the Lower Member of the Shaximiao
+        Fm. at Yunyang.
+    - source_label: Moore et al. 2023, Journal of Systematic Palaeontology
+      source_type: specialist_taxonomic_reference
+      url: https://discovery.ucl.ac.uk/id/eprint/10169082/
+      note: Redescription of Mamenchisaurus sinocanadorum; Late Jurassic (Oxfordian) Shishugou
+        Fm. context for Asian mamenchisaurids.
+    - source_label: Acta Palaeontologica Polonica 2009 (tritylodontid paper, Shishugou ages
+        summarized)
+      source_type: geochronology_reference
+      url: https://bioone.org/journals/acta-palaeontologica-polonica/volume-54/issue-3/app.2008.0053/A-New-Tritylodontid-from-the-Upper-Jurassic-of-Xinjiang-China/10.4202/app.2008.0053.pdf
+      note: Upper Shishugou Fm. bracketed by radiometric ages 161.2 ± 0.2 to 158.7 ± 0.3 Ma.
+    - source_label: Wang et al. 2019, Cretaceous Research
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0195667119300333
+      note: Detrital zircon U–Pb from Suining Fm. with mean age 114.4 ± 1.1 Ma at classic
+        Mamenchisaurus anyuensis sites.
+    - source_label: Suteethorn et al. 2013, Acta Palaeontologica Polonica
+      source_type: specialist_descriptive_reference
+      url: https://www.app.pan.pl/article/item/app20090155.html
+      note: Reports a mamenchisaurid cervical vertebra from the Phu Kradung Fm. (Upper Jurassic–Lower
+        Cretaceous), Thailand.
+    - source_label: 'GBIF: Mamenchisauridae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4967275
+      note: Backbone taxonomy entry for the family; useful for occurrence cross-referencing
+        (data largely sourced from PBDB and literature).
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 114.4
+    start_ma: 166.0
   review:
-    decision_note: null
+    decision_note: 'Treat 166.0 Ma (Lower Shaximiao U–Pb tuff; Yunyang) as an earliest occurrence
+      minimum and 114.4 Ma (Suining Fm. detrital zircon mean age) as a youngest occurrence
+      minimum for Mamenchisauridae. Both are formation-derived constraints with moderate confidence,
+      acknowledging continuing debate on Suining Fm. age and variable precision among localities.
+      These values should not be interpreted as evolutionary origin or true extinction times
+      for the family.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -499,8 +1279,8 @@ messelasturidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for messelasturidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for messelasturidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -509,20 +1289,78 @@ messelasturidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Messelasturidae is known from Messelastur (Messel Formation, Germany) and
+      Tynskya (early Eocene of Europe and North America). The earliest securely identified
+      occurrence is Tynskya waltonensis from the Walton Member (Division A2) of the London
+      Clay Formation at Walton‑on‑the‑Naze, Essex, which multiple specialist sources place
+      in the early Ypresian at about 55–54.6 Ma. This provides a cautious fossil-occurrence/formation-
+      derived minimum for the family. Younger occurrences include Tynskya eocaena in the Green
+      River Formation, constrained by 40Ar/39Ar-dated tuffs to ~51–49 Ma, and Messelastur
+      gratulator from the Messel oil shale, whose underlying volcanics yield tightly constrained
+      40Ar/39Ar ages near ~48.2–47.8 Ma. The proposed start_ma is therefore tied to the oldest
+      documented messelasturid material (London Clay) and should not be taken as a phylogenetic
+      origin or divergence date.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: 'Mayr 2021 (PalZ): Tynskya waltonensis from the London Clay'
+      source_type: specialist_descriptive_reference
+      url: https://link.springer.com/article/10.1007/s12542-020-00541-8
+      note: Reports a new Tynskya species from Walton-on-the-Naze; notes London Clay c. 55
+        Ma and contrasts to ~52 Ma Green River and ~48 Ma Messel.
+    - source_label: 'BGS Earthwise OR/14/008: London Basin lithostratigraphy (Walton Member
+        = Division A2)'
+      source_type: literature
+      url: https://earthwise.bgs.ac.uk/index.php/OR/14/008_Lithostratigraphy_of_the_London_Basin_and_East_Anglia
+      note: Defines the Walton Member (Division A2) and its ash-bed bearing succession at
+        Walton-on-the-Naze, supporting stratigraphic placement within the early Ypresian.
+    - source_label: 'Papers in Palaeontology 2026: London Clay avifauna overview'
+      source_type: literature
+      url: https://onlinelibrary.wiley.com/doi/10.1002/spp2.70093
+      note: Places the Walton Member (Division A2) in the early Ypresian and cites an age
+        interval of ~55–54.6 Ma for the Walton-on-the-Naze succession.
+    - source_label: 'Smith, Singer & Carroll 2003, GSA Bulletin: 40Ar/39Ar ages for Green
+        River tuffs'
+      source_type: geochronology_reference
+      url: https://experts.azregents.edu/en/publications/sup40suparsup39supar-geochronology-of-the-eocene-green-river-form/
+      note: Provides tuff ages (e.g., 51.25±0.31 Ma to 48.94±0.12 Ma) constraining the Green
+        River Formation that preserves Tynskya eocaena.
+    - source_label: Lenz et al. 2015; and updated chronostratigraphy 2025/2026 for Messel
+        Formation
+      source_type: geochronology_reference
+      url: https://dbc.library.uu.nl/bitstream/handle/1874/452343/nos_Volume_57_Number_2_p153-170_Improved_chronostratigraphy_for_the_Messel_Formation_Hesse_Germany_provides_insight_into_early_to_middle_Eocene_climate_variability_103805.pdf
+      note: Reports revised 40Ar/39Ar ages of 48.27 ± 0.22 and 48.11 ± 0.22 Ma for volcanics
+        immediately underlying the Messel oil shale.
+    - source_label: 'Franzen 2005, Annales de Paléontologie: implications of numerical dating
+        at Messel'
+      source_type: geochronology_reference
+      url: https://doc.rero.ch/record/16026/files/PAL_E3808.pdf
+      note: Summarizes ^40Ar/^39Ar age of 47.8 ± 0.2 Ma for the Messel phreatomagmatic system
+        and ~47 Ma for the fossil deposit.
+    - source_label: 'Weems et al. 2021, Historical Biology: Nanjemoy Formation birds'
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/08912963.2021.1910820
+      note: Records Messelasturidae material from the early Eocene Nanjemoy Formation (Virginia),
+        corroborating the early Ypresian distribution.
+    - source_label: 'Mayr 2005, Journal of Vertebrate Paleontology: postcranial osteology
+        of Messelastur'
+      source_type: specialist_taxonomic_reference
+      url: https://www.biologicaldiversity.org/campaigns/global_owl_project/descriptions/Fossil_owls/Mayr%202005%20-%20postcranial%20osteology.pdf
+      note: Key descriptive/taxonomic work linking Messelastur and Tynskya within Messelasturidae.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 55.0
   review:
-    decision_note: null
+    decision_note: 'Accepting 55.0 Ma as a formation-derived minimum age based on the earliest
+      messelasturid fossils in the Walton Member (Division A2) of the London Clay. This is
+      supported by specialist descriptive work and independent geochronology for coeval successions
+      (Green River) and younger Messel occurrences; it should not be interpreted as a true
+      divergence time.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -532,8 +1370,8 @@ metriacanthosauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for metriacanthosauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for metriacanthosauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -542,20 +1380,51 @@ metriacanthosauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'A securely referred metriacanthosaurid is the holotype of Metriacanthosaurus
+      parkeri from Summertown Brick Pit (Oxford, England), recorded from the Middle Oxford
+      Clay and explicitly tied to the Upper Callovian Peltoceras athleta ammonite Zone. Using
+      the International Commission on Stratigraphy numerical calibration for Jurassic stage
+      boundaries, the top of the Callovian (and base of the Oxfordian) is at ~163.5 Ma; this
+      provides a conservative fossil-occurrence/biozone-derived minimum age for Metriacanthosauridae.
+      Other widely cited metriacanthosaurids from China (e.g., Yangchuanosaurus, Sinraptor)
+      are from Middle–Late Jurassic formations that are generally Oxfordian or close to the
+      Callovian–Oxfordian boundary, and do not contradict this minimum. This should be treated
+      strictly as a fossil minimum, not a true clade divergence time.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Martill 1988, Mercian Geologist 11(3):171–190
+      source_type: specialist_descriptive_reference
+      url: https://www.emgs.org.uk/uploads/1/4/9/1/149143154/mg11_3_1988_171_martill_review_of_terrestrial_vertebrate_fossils_of_the_oxford_clay_2.pdf
+      note: Lists Metriacanthosaurus parkeri from Summertown Brick Pit, horizon given as Middle
+        Oxford Clay, Upper Callovian, Athleta Zone.
+    - source_label: 'BGS Lexicon: Oxford Clay Formation (OXC)'
+      source_type: geochronology_reference
+      url: https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=OXC
+      note: Gives Oxford Clay Formation age range as Callovian to Oxfordian.
+    - source_label: ICS International Chronostratigraphic Chart (2021-10)
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2021-10.pdf
+      note: Calibrates Callovian–Oxfordian boundary at 163.5 Ma; Callovian spans 166.1–163.5
+        Ma.
+    - source_label: Carrano, Benson & Sampson 2012, Journal of Systematic Palaeontology
+      source_type: specialist_taxonomic_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/14772019.2012.713753
+      note: Uses Metriacanthosauridae for the Sinraptoridae clade, including Metriacanthosaurus,
+        Yangchuanosaurus, and Sinraptor; taxonomic context for the family.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 163.5
   review:
-    decision_note: null
+    decision_note: 'Accept start_ma = 163.5 Ma as a formation/biozone-derived fossil minimum
+      based on the Metriacanthosaurus holotype horizon in the Upper Callovian Athleta Zone.
+      This is not an evolutionary origin estimate for Metriacanthosauridae; earlier occurrences
+      are insufficiently constrained to improve this minimum at present.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -565,8 +1434,8 @@ montanoolithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for montanoolithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for montanoolithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -575,20 +1444,50 @@ montanoolithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: moderate
+    date_notes: 'Montanoolithidae was established for the maniraptoran oogenus Montanoolithus
+      (type and only known oospecies M. strongorum) based on a partial clutch and eggshell
+      from the Upper Cretaceous (Campanian) Two Medicine Formation of Montana, USA. This ties
+      the family to a well-dated stratigraphic unit rather than to a specific radiometric
+      horizon at the fossil site. Recent CA–ID–TIMS U–Pb zircon ages calibrate the Two Medicine
+      Formation between about 82.4 Ma and 74.4 Ma, consistent with earlier 40Ar/39Ar ash-bed
+      ages near ~80 Ma (lower part) and ~74 Ma (upper part). Accordingly, the proposed age
+      represents a cautious formation-derived occurrence bracket/minimum constraint for Montanoolithidae
+      and should not be interpreted as a phylogenetic or molecular origin time for the clade.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Zelenitsky & Therrien 2008, Palaeontology 51(6):1253–1259
+      source_type: specialist_taxonomic_reference
+      url: https://palass.org/publications/palaeontology-journal/archive/51/6/article_pp1253-1259
+      note: Original description of Montanoolithus strongorum and erection of Montanoolithidae
+        from the Two Medicine Formation.
+    - source_label: Rogers et al. 2024, GSA Bulletin (Updating the Two Medicine Formation...)
+      source_type: geochronology_reference
+      url: https://scholarworks.montana.edu/handle/1/18949
+      note: Eight CA–ID–TIMS U–Pb ages constrain the Two Medicine Formation to ca. 82.4–74.4
+        Ma; provides updated chronostratigraphic framework.
+    - source_label: Rogers, Swisher & Horner 1993, Canadian Journal of Earth Sciences 30:1066–1075
+      source_type: geochronology_reference
+      url: https://rogerslab.weebly.com/uploads/9/1/9/3/91932718/rogersswisherhorner_.pdf
+      note: 40Ar/39Ar ages from bentonites ~100 m above base (~80 Ma) and ~10 m below top
+        (~74 Ma) of the Two Medicine Formation.
+    - source_label: Foreman et al. 2008, Cretaceous Research 29:373–385
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0195667107000742
+      note: Reports a new 40Ar/39Ar age (77.52 ± 0.19 Ma) for a mid-formation bentonite; geochemical
+        characterization of Two Medicine bentonites.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 74.4
+    start_ma: 82.4
   review:
-    decision_note: null
+    decision_note: 'Accept a Two Medicine Formation–derived bracket (82.4–74.4 Ma) as a moderate-confidence
+      fossil/formation age for Montanoolithidae. This is an occurrence-based minimum constraint,
+      not an evolutionary origin estimate.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -598,8 +1497,8 @@ moyenisauropodidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for moyenisauropodidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for moyenisauropodidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -608,20 +1507,62 @@ moyenisauropodidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: low
+    date_notes: 'Moyenisauropodidae is an ichnofamily erected by Ellenberger (1974) for small
+      ornithischian-like dinosaur tracks from the Moyeni tracksite (Lesotho). The Moyeni surface
+      and other occurrences attributable to Moyenisauropus are mapped to the upper Elliot
+      Formation (uEF) of the Stormberg Group. Recent chronostratigraphic work using U–Pb detrital
+      zircons and magnetostratigraphic correlations indicates the uEF is Hettangian–Sinemurian
+      in age, with maximum depositional ages near the Triassic–Jurassic boundary and samples
+      in the uEF yielding <201–<192 Ma. Accordingly, a cautious minimum “first appearance”
+      for Moyenisauropodidae is set at the base of the Hettangian (201.4 Ma), treated strictly
+      as a formation-derived fossil minimum rather than a phylogenetic origin. Ichnotaxonomic
+      assignments within Ellenberger’s scheme are debated, and many taxa have been revised
+      or synonymized; this further warrants low confidence in a precise numeric age beyond
+      the uEF interval constraint.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Ellenberger 1974, Palaeovertebrata Mémoire Extraordinaire
+      source_type: specialist_taxonomic_reference
+      url: https://palaeovertebrata.com/articles/keyword/51
+      note: Original ichnotaxonomic treatment of the Moyeni tracksite; erects Moyenisauropodidae
+        and Moyenisauropus from the Stormberg (uEF).
+    - source_label: 'Wilson et al. 2009, PLOS ONE: Dynamic Locomotor Capabilities...'
+      source_type: specialist_descriptive_reference
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0007331
+      note: Places the Moyeni tracksite in the lower part of the Upper Elliot Formation and
+        provides an English translation of Ellenberger’s Moyenisauropus sections.
+    - source_label: 'Marsicano et al. 2014, PLOS ONE: Temnospondyl trackway at Moyeni'
+      source_type: specialist_descriptive_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4123899/
+      note: Describes Moyeni tracksite as Early Jurassic and within the lower uEF.
+    - source_label: Bordy et al. 2020, Earth-Science Reviews 203:103120
+      source_type: geochronology_reference
+      url: https://par.nsf.gov/servlets/purl/10144138
+      note: Detrital-zircon U–Pb MDAs and magnetostratigraphy; constrains Elliot Fm to Norian–Sinemurian,
+        with uEF Hettangian–Sinemurian and samples yielding <201 to <192 Ma.
+    - source_label: ICS International Chronostratigraphic Chart v2024/12
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Gives the base of the Hettangian (and Jurassic) at 201.4 ± 0.2 Ma, used here as
+        the conservative minimum bound.
+    - source_label: Gierliński 1991, Palaeogeography Palaeoclimatology Palaeoecology 85:137–148
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/222448459_New_dinosaur_ichnotaxa_from_the_Early_Jurassic_of_the_Holy_Cross_Mountains_Poland
+      note: Reports Moyenisauropus karaszevskii from the Upper Hettangian of the Holy Cross
+        Mountains, consistent with an Early Jurassic uEF-correlative age.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 201.4
   review:
-    decision_note: null
+    decision_note: 'Accept a 201.4 Ma start_ma as a low-confidence, formation-derived minimum
+      for the ichnofamily’s first appearance. Trackmaker identity and Ellenberger’s ichnotaxonomy
+      remain debated; this is not a phylogenetic origin estimate.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -631,8 +1572,8 @@ mystiornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for mystiornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for mystiornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -641,20 +1582,58 @@ mystiornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'Mystiornis cyrili, the only included taxon attributable to “Mystiornithidae,”
+      is based on a holotype metatarsus from the Shestakovo‑1 locality in the Ilek Formation
+      and was described by Kurochkin et al. (2011), who erected both the order Mystiornithiformes
+      and the family Mystiornithidae. Specialist work on the Ilek Formation places the fossiliferous
+      Shestakovo horizons in the Aptian (with some authors giving a broader Barremian–Aptian
+      span). Given that the fossil occurrence is tied to formation‑level age control rather
+      than a dated bed or radiometric horizon, we treat it as a fossil/formation‑derived minimum.
+      To set a conservative minimum bound consistent with an Aptian assignment, we use the
+      youngest boundary of the Aptian—i.e., the base of the Albian at 113.2 ± 0.3 Ma from
+      the latest ICS chart—as start_ma. No molecular divergence estimate is available for
+      this family‑level concept, and the placement of Mystiornis (e.g., as enantiornithine
+      vs. distinct order) remains debated; therefore divergence_ma and an explicit fossil
+      range end are not proposed.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Kurochkin et al. 2011 — A new taxon of birds (Aves) from the Early Cretaceous
+        of Western Siberia, Russia (Journal of Systematic Palaeontology 9(1):109–117)
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/abs/10.1080/14772019.2010.522202
+      note: Original description of Mystiornis cyrili from Shestakovo‑1 (Ilek Formation, Barremian–Aptian);
+        erects Mystiornithiformes and Mystiornithidae.
+    - source_label: Averianov et al. 2023 — First sauropod dinosaur remains from the Early
+        Cretaceous Shestakovo‑3 locality, Western Siberia, Russia (Biological Communications
+        68[4])
+      source_type: literature
+      url: https://doi.org/10.21638/spbu03.2023.404
+      note: Treats Shestakovo localities within the Lower Cretaceous (Aptian) Ilek Formation,
+        supporting an Aptian assignment for the Shestakovo horizon.
+    - source_label: Averianov 2019 — Theropod teeth from the Lower Cretaceous Ilek Formation
+        of Western Siberia, Russia (Proc. Zool. Inst. RAS 323[2]:65–82)
+      source_type: specialist_descriptive_reference
+      url: https://www.zin.ru/journals/trudyzin/doc/vol_323_2/tz_323_2_averianov.pdf
+      note: Reviews vertebrate localities of the Ilek Formation (including Shestakovo‑1/3)
+        and summarizes their age as Barremian–Aptian, consistent with an Aptian placement
+        of the bird horizon.
+    - source_label: ICS International Chronostratigraphic Chart v2024/12
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Numerical stage boundaries; Aptian spans 121.4 ± 0.6 to 113.2 ± 0.3 Ma; the Albian
+        base at 113.2 ± 0.3 Ma is used as the conservative minimum bound.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 113.2
   review:
-    decision_note: null
+    decision_note: Adopt start_ma = 113.2 Ma as a conservative minimum tied to the Aptian
+      assignment of the Shestakovo‑1 Mystiornis horizon and ICS stage boundaries. This anchors
+      Mystiornithidae to its best‑documented fossil occurrence without over‑interpreting stratigraphic
+      precision or unsettled systematics; no divergence estimate or range end is proposed.
     reviewed_at: null
     reviewer: null
     status: pending
@@ -664,8 +1643,8 @@ omnivoropterygidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for omnivoropterygidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for omnivoropterygidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -674,20 +1653,73 @@ omnivoropterygidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The earliest defensible occurrence for Omnivoropterygidae is taken from Sapeornis
+      chaoyangensis, described from the Early Cretaceous Jiufotang Formation of western Liaoning,
+      China. This provides a fossil-occurrence/ formation-derived minimum age for the clade
+      rather than a true evolutionary origin time. High-precision geochronology constrains
+      key fossiliferous Jiufotang horizons to 121.539 ± 0.085 Ma (Xiaotaizi, Jianchang Basin)
+      and 121.09 +0.18/−0.75 Ma (Shangheshou, Chaoyang Basin), with the Jiufotang as a whole
+      bracketed between ~124.44 ± 0.29 Ma and ~112.25 Ma. Earlier 40Ar/39Ar and U–Pb work
+      reported concordant ages near 122.1 ± 0.3 Ma (a tuff at the lowermost Jiufotang) and
+      120.3 ± 0.7 Ma (tuffs interbedded with fossil-bearing shales at Shangheshou), supporting
+      an Aptian age for principal avialan-bearing beds. We conservatively set start_ma to
+      121.1 Ma as a fossil-occurrence minimum anchored to these dated horizons. This is not
+      a molecular or phylogenetic divergence estimate and should be treated strictly as a
+      minimum occurrence age for Omnivoropterygidae.
+
+      '
+    date_resolution_method: fossil_occurrence_age
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Zhou & Zhang, 2002 – Sapeornis chaoyangensis description (Naturwissenschaften)
+      source_type: specialist_taxonomic_reference
+      url: https://www.ivpp.cas.cn/sourcedb/zw/rck/jcqn/202209/P020120604504623145215.pdf
+      note: Original description of Sapeornis from the Jiufotang Formation (Early Cretaceous),
+        establishing occurrence of the clade in this unit.
+    - source_label: Zhong et al., 2025 – High‑precision geochronology of the Jiufotang Formation
+        (Earth and Planetary Science Letters)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0012821X25004868
+      note: CA‑ID‑TIMS U–Pb framework; reports fossiliferous horizons at 121.09 +0.18/−0.75
+        Ma (Shangheshou) and 121.539 ± 0.085 Ma (Xiaotaizi), and brackets Jiufotang between
+        ~124.44 ± 0.29 Ma and ~112.25 Ma.
+    - source_label: He et al., 2004 – Timing of the Jiufotang Formation (Geophysical Research
+        Letters)
+      source_type: geochronology_reference
+      url: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2004GL019790
+      note: 40Ar/39Ar age of 120.3 ± 0.7 Ma from tuffs interbedded with fossil‑bearing shales
+        at the Shangheshou section; discusses Sapeornis among co‑occurring taxa.
+    - source_label: Chang et al., 2009 – High‑precision 40Ar/39Ar age for the Jehol Biota
+        (Palaeogeography, Palaeoclimatology, Palaeoecology)
+      source_type: geochronology_reference
+      url: https://repository.hku.hk/handle/10722/132844
+      note: Reports 122.1 ± 0.3 Ma for a tuff in the lowermost Jiufotang, providing an upper
+        bracket near the base of the formation.
+    - source_label: Yin et al., 2021 – New geochronological constraints for the Jiufotang
+        Formation (Palaeogeography, Palaeoclimatology, Palaeoecology)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0031018221004429
+      note: SIMS zircon U–Pb ages of 122.0 ± 0.9/1.5 Ma and 118.9 ± 0.8/1.4 Ma at Sanmendian
+        and Xiaotaizi sections refine Aptian timing of fossiliferous strata.
+    - source_label: 'IRMNG: Omnivoropterygidae Czerkas & Ji, 2002'
+      source_type: taxonomic_database
+      url: https://www.irmng.org/aphia.php?id=11924343&p=taxdetails
+      note: Confirms authorship and usage of Omnivoropterygidae; notes synonymy issues with
+        Sapeornithidae and placement of Omnivoropteryx/Sapeornis.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 121.1
   review:
-    decision_note: null
+    decision_note: 'Adopt start_ma = 121.1 Ma as a conservative fossil‑occurrence minimum
+      for Omnivoropterygidae based on Sapeornis from the Jiufotang and high‑precision dates
+      for key fossiliferous horizons (121.539 ± 0.085 Ma; 121.09 +0.18/−0.75 Ma). Formation‑level
+      bracketing (∼124.44–112.25 Ma) and prior 40Ar/39Ar/U–Pb results (122.1 ± 0.3 Ma at base;
+      120.3 ± 0.7 Ma within fossil‑bearing beds) are consistent with this placement. No credible
+      divergence estimates specific to this clade were found, so divergence_ma and end_ma
+      remain null, and the age is treated strictly as a minimum occurrence.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -697,8 +1729,8 @@ ornithomimipodidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for ornithomimipodidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for ornithomimipodidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -707,20 +1739,64 @@ ornithomimipodidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The submitted family name ''Ornithomimipodidae'' is not a standard zoological
+      family; here it is conservatively interpreted as Ornithomimidae (derived ornithomimosaur
+      theropods). The oldest well-documented occurrence of Ornithomimidae is from the Bissekty
+      Formation at Dzharakuduk (Kyzylkum Desert, Uzbekistan), which multiple specialist papers
+      explicitly place in the middle–upper Turonian and use as the basis for describing ornithomimid
+      material from that unit. Independent stratigraphic syntheses for Bissekty constrain
+      it to approximately the Turonian interval, commonly treated as ca. 90–92 Ma; adopting
+      92 Ma provides a defensible minimum fossil age for the family. Some authors have mentioned
+      possible Cenomanian ornithomimids (e.g., Khodzhakul Fm.), but these occurrences are
+      sparse and/or less tightly tied to numerically calibrated horizons in readily accessible
+      primary descriptions, so they are not used here to push the minimum older. Reports that
+      Archaeornithomimus-bearing Iren Dabasu deposits might be Cenomanian are contradicted
+      by biostratigraphic work placing Iren Dabasu as Campanian–Maastrichtian, so it does
+      not predate the Turonian Bissekty records. As per guidance, this is treated as a fossil
+      occurrence/formation-derived minimum age, not a phylogenetic or molecular origin estimate.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: 'Averianov & Sues 2016, Cretaceous Research: Ornithomimidae from the Bissekty
+        Formation (Uzbekistan)'
+      source_type: specialist_descriptive_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0195667115300355
+      note: Describes ornithomimid material from the Bissekty Fm. and discusses its Turonian
+        age and significance as an early ornithomimid record.
+    - source_label: 'Brusatte et al. 2016, Nature Communications (Timurlengia): Bissekty middle–upper
+        Turonian age context'
+      source_type: geochronology_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4822578/
+      note: Places Bissekty within ca. 90–92 Ma (mid–upper Turonian) via regional stratigraphic
+        bracketing; widely cited for the unit’s age window.
+    - source_label: International Chronostratigraphic Chart (ICS) v2024/12
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: 'Stage boundaries used for context: Turonian 93.9–89.8 Ma; supports converting
+        Turonian placement of Bissekty into a numeric minimum.'
+    - source_label: 'Van Itterbeeck et al. 2005, Cretaceous Research: Age of the Iren Dabasu
+        Formation'
+      source_type: geochronology_reference
+      url: https://www.vliz.be/imisdocs/publications/279510.pdf
+      note: Biostratigraphy indicates Iren Dabasu is Campanian–Maastrichtian; counters older
+        claims that would predate Bissekty.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 92
   review:
-    decision_note: null
+    decision_note: 'Set start_ma to 92 Ma as a cautious minimum based on the earliest well-supported
+      Ornithomimidae fossils from the Bissekty Formation (Dzharakuduk, Uzbekistan), consistently
+      constrained to the middle–upper Turonian (~90–92 Ma) and converted to a numeric bound
+      using the ICS chart. Earlier Cenomanian mentions exist (e.g., Khodzhakul Fm.) but are
+      not adopted here due to weaker family-level support and less explicit numerical calibration.
+      Iren Dabasu is Campanian–Maastrichtian and thus not informative for the earliest occurrence.
+      divergence_ma and end_ma remain null to avoid implying a full temporal range without
+      explicit support.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -730,8 +1806,8 @@ ovaloolithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for ovaloolithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for ovaloolithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -740,20 +1816,73 @@ ovaloolithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The earliest defensible occurrences of the oofamily Ovaloolithidae are Ovaloolithus
+      eggs from the Upper Cretaceous Majiacun Formation of the Xixia–Xichuan basins (Henan/Hubei),
+      where Ovaloolithus is explicitly listed in formation-level egg assemblages. Independent
+      stratigraphic syntheses place the Majiacun in the late Coniacian–end Santonian window,
+      providing a conservative appearance minimum near that interval; here a start_ma ≈88.0
+      Ma is adopted as a formation-derived minimum rather than a true evolutionary origin.
+      Published correlations vary (some biostratigraphic work has suggested parts of the Majiacun
+      could be Turonian), reinforcing a cautious, minimum-only interpretation. Later Ovaloolithidae
+      occurrences extend at least into the latest Cretaceous (Maastrichtian Lance Formation,
+      Wyoming), but a firm last-appearance bound is not demonstrated, so end_ma is left null.
+      Parataxonomic eggshell groups lack molecular/phylogenetic divergence estimates; fossil
+      occurrence ages are treated strictly as minima.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Liang et al. 2009 — Dinosaur eggs and egg-bearing deposits of Henan (Progress
+        in Natural Science 19:1587–1601)
+      source_type: specialist_descriptive_reference
+      url: https://www.sciencedirect.com/science/article/pii/S1002007109002949
+      note: Lists Ovaloolithus among the Majiacun Formation assemblage (and also in Sigou),
+        anchoring formation-tied occurrences.
+    - source_label: Tan et al. 2015 — New hadrosauroid material from the Upper Cretaceous
+        Majiacun Formation of Hubei Province (Vertebrata PalAsiatica)
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/280055406_New_hadrosauroid_material_from_the_Upper_Cretaceous_Majiacun_Formation_of_Hubei_Province_central_China
+      note: States the Majiacun Formation ranges from late Coniacian to end Santonian; provides
+        stage-level age control used for the minimum.
+    - source_label: Van der Linden et al. 2025 — First dinosaurian eggshell from the Maastrichtian
+        Lance Formation, Wyoming (Acta Palaeontologica Polonica 70)
+      source_type: specialist_descriptive_reference
+      url: https://www.app.pan.pl/archive/published/app70/app012112024.pdf
+      note: Assigns Lance Fm. eggshell to Ovaloolithidae, most comparable to Ovaloolithus;
+        supports presence into the latest Cretaceous.
+    - source_label: Mikhailov 1991 — Classification of fossil eggshells (Acta Palaeontologica
+        Polonica 36:193–238)
+      source_type: specialist_taxonomic_reference
+      url: https://www.app.pan.pl/archive/published/app36/app36-193.pdf
+      note: Erects Family Ovaloolithidae and includes Ovaloolithus; used as a taxonomic anchor
+        for the oofamily concept.
+    - source_label: Li et al. 2008 — Spinicaudatan Tylestheria and age implications for the
+        Majiacun Fm. (Cretaceous Research 29:747–761)
+      source_type: specialist_descriptive_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0195667108001195
+      note: Suggests parts of the Majiacun correlate with Turonian units; included to document
+        variability/uncertainty in age assignments.
+    - source_label: International Chronostratigraphic Chart (ICS) v2024/12
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Numerical bounds for Coniacian–Santonian–Maastrichtian used to translate stage
+        assignments into Ma values.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 88.0
   review:
-    decision_note: null
+    decision_note: 'Adopt fossil_first_appearance with start_ma=88.0 Ma (minimum) based on
+      Ovaloolithus in the Majiacun Fm. and independent literature placing that unit within
+      the late Coniacian–Santonian; use ICS 2024/12 for numerical conversion. Presence in
+      the Maastrichtian Lance Fm. indicates the clade persists into the latest Cretaceous,
+      but a definitive last-appearance is not established, so end_ma remains null. Divergence_ma
+      is null by design for parataxonomic eggshell oofamilies. Confidence is moderate because
+      the minimum rests on formation–stage correlations rather than directly dated horizons,
+      and published correlations for the Majiacun vary.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -763,8 +1892,8 @@ pachycorioolithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for pachycorioolithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for pachycorioolithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -773,20 +1902,58 @@ pachycorioolithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Pachycorioolithidae was erected for the oogenus Pachycorioolithus based on
+      a single small, thin‑shelled egg (Pachycorioolithus jinyunensis) from the Liangtoutang
+      (Laijia) Formation of Jinyun County, Zhejiang, China. The Liangtoutang Formation is
+      generally constrained to the Albian–Cenomanian, with SIMS/zircon U–Pb dates from interbedded
+      tuffs in the nearby Tiantai Basin indicating ca. 99–96 Ma for Liangtoutang strata and
+      an additional zircon U–Pb determination of 100 ± 1 Ma from dinosaur‑bearing Liangtoutang
+      red beds; combined radiometric data place the unit broadly at 105.9–96 Ma. Because the
+      Shuhong/Jinyun egg horizon is not tied to a dated ash bed and tuff interbeds are unevenly
+      distributed among basins, a cautious formation‑derived minimum of ~100 Ma is proposed.
+      This is a fossil occurrence/formation age and should not be interpreted as a phylogenetic
+      origin time for the clade.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
+    - source_label: 'Lawver et al. 2016, Journal of Vertebrate Paleontology 36(3): e1100631'
+      source_type: specialist_taxonomic_reference
+      url: https://www.tandfonline.com/doi/abs/10.1080/02724634.2016.1100631
+      note: Original description of Pachycorioolithus jinyunensis and family Pachycorioolithidae
+        from the Liangtoutang Formation (Albian) of Jinyun, Zhejiang.
+    - source_label: He et al. 2013, Journal of Asian Earth Sciences 62:654–661
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S1367912012005019
+      note: SIMS zircon U–Pb ages from tuffs interbedded with Laijia/Liangtoutang and Chichengshan
+        formations in Tiantai Basin; indicates Liangtoutang ca. 99–96 Ma.
+    - source_label: Jiang et al. 2016, Journal of Stratigraphy 40:272–277
+      source_type: geochronology_reference
       url: null
+      note: 'Zircon U–Pb age of dinosaur‑bearing strata in the Tiantai Basin (Liangtoutang):
+        100 ± 1 Ma; frequently cited in subsequent work.'
+    - source_label: Zheng et al. 2018, Scientific Reports 8:3711 (Jinyunpelta)
+      source_type: specialist_descriptive_reference
+      url: https://pubmed.ncbi.nlm.nih.gov/29487376/
+      note: Synthesizes Liangtoutang age constraints across studies, bracketing the unit at
+        ~105.9–96 Ma and citing He 2013 and Jiang 2016.
+    - source_label: 'ChinaLex Geological Lexicon: Liangtoutang Fm (Eastern Zhejiang)'
+      source_type: general_reference
+      url: https://chinalex.geolex.org/formations/Liangtoutang%20Fm
+      note: Notes basin‑to‑basin variability in volcanic interbeds (tuffs common in Tiantai,
+        rarer in Huzhen/Shuhong), supporting caution when transferring ages.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 100.0
   review:
-    decision_note: null
+    decision_note: 'Adopted start_ma ≈ 100.0 Ma as a low‑confidence, formation‑derived minimum
+      for Pachycorioolithidae based on dated Liangtoutang tuffs in the Tiantai Basin and regional
+      synthesis (Liangtoutang ~105.9–96 Ma). The egg horizon at Shuhong (Jinyun) is not directly
+      dated; this is not a true evolutionary origin date for the oofamily.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -796,8 +1963,8 @@ pakisauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for pakisauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for pakisauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -806,20 +1973,64 @@ pakisauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: low
+    date_notes: 'Pakisauridae was proposed by M. S. Malkani for Maastrichtian titanosaurian
+      sauropods from the Sulaiman Basin of Pakistan, including Pakisaurus balochistani. The
+      type material of Pakisaurus (caudal vertebrae) is from the Vitakri unit near Vitakri
+      Dome, Balochistan—treated by many authors as the Vitakri Member of the Pab Formation—whose
+      age is consistently assigned to the Maastrichtian, with the Vitakri considered latest
+      Cretaceous and just below the K–Pg boundary. In the absence of a dated bed or radiometric
+      horizon tied directly to the Pakisaurus-bearing level, the Maastrichtian stage bounds
+      (72.1–66.0 Ma) are used here only as a cautious, formation-derived fossil-occurrence
+      window/minimum constraint for the family, not as an evolutionary origin estimate. The
+      family’s validity and content remain debated; the dating relies on formation age rather
+      than phylogenetic inference.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Malkani 2007 — New Pakisaurus (Pakisauridae, Titanosauria) remains, and
+        Cretaceous–Tertiary (K–T) boundary from Pakistan, SURJ 39(1)
+      source_type: specialist_taxonomic_reference
+      url: https://nja.pastic.gov.pk/journals/index.php/SURJ/article/view/27406
+      note: Proposes/uses Pakisauridae; discusses Pakisaurus material from the Vitakri unit
+        (Pab/Vitakri) in Balochistan.
+    - source_label: Wilson, Malkani & Gingerich 2001 — New crocodyliform from the Upper Cretaceous
+        Pab Formation of Vitakri, Balochistan (Pakistan), Contrib. Mus. Paleontol. Univ. Michigan
+        30:321–336
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/30849421
+      note: Describes Pabwehshi from the same Vitakri/Pab succession; explicitly states the
+        Pab Formation is generally believed to be Maastrichtian based on stratigraphic position.
+    - source_label: JMSE 2023 — Sedimentary Facies, Architectural Elements, and Depositional
+        Environments of the Maastrichtian Pab Formation (Rakhi Gorge, E. Sulaiman Ranges,
+        Pakistan)
+      source_type: geochronology_reference
+      url: https://mdpi-res.com/d_attachment/jmse/jmse-11-00726/article_deploy/jmse-11-00726-v2.pdf
+      note: Treats Pab as Maastrichtian and refers to the Vitakri unit as latest Cretaceous
+        within the Fort Munro Group.
+    - source_label: International Commission on Stratigraphy 2023/09 — International Chronostratigraphic
+        Chart
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf
+      note: Gives Maastrichtian numerical bounds 72.1–66.0 Ma used here for the formation-derived
+        window.
+    - source_label: GBIF — Khetranisaurus Malkani, 2004
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4967447
+      note: GBIF backbone lists Khetranisaurus in Pakisauridae, reflecting usage of the family
+        name in taxonomic databases.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 72.1
   review:
-    decision_note: null
+    decision_note: 'Accept a low-confidence Maastrichtian (72.1–66.0 Ma) window as a formation-derived
+      fossil occurrence/minimum for Pakisauridae based on Pakisaurus from the Vitakri (Pab/Vitakri)
+      succession. Do not treat as a phylogenetic origin date; family status and content remain
+      uncertain.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -829,8 +2040,8 @@ parvicursoridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for parvicursoridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for parvicursoridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -839,20 +2050,91 @@ parvicursoridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: unresolved
+    date_confidence: low
+    date_notes: "Scope and taxonomy: “Parvicursoridae” was originally erected with the description\
+      \ of Parvicursor remotus, but most recent systematic works place these taxa within Alvarezsauridae\
+      \ (often as Parvicursorinae) rather than recognizing a separate family. Taxonomic usage\
+      \ at family rank is therefore inconsistent in the specialist literature and should be\
+      \ treated cautiously. (Averianov & Lopatin 2021; see also the original Parvicursor concept\
+      \ cited therein.)\n\nFossil occurrences attributable to the clade concept: - Parvicursor\
+      \ remotus from the Khulsan locality, Barun Goyot (Baruungoyot)\n  Formation, Mongolia;\
+      \ reappraised as Campanian Barun Goyot material.\n  (Averianov & Lopatin 2021)\n- Ceratonykus\
+      \ oculatus from the Barun Goyot Formation (Khermiin Tsav),\n  explicitly assigned to\
+      \ Parvicursoridae by its describers. (Alifanov &\n  Barsbold 2009)\n\n\nFormation-level\
+      \ age constraints: Multiple stratigraphic syntheses and field studies document that\
+      \ the Barun Goyot Formation and the overlying Nemegt Formation interfinger in the Nemegt\
+      \ Basin, and that absolute dating of the key Barun Goyot fossil horizons is hampered\
+      \ by scarce datable ash beds and limited microfossil biostratigraphy. Magnetostratigraphic\
+      \ work correlates Baruungoyot–Nemegt sections to the late Campanian–earliest Maastrichtian\
+      \ interval (approx. C33n–C31), but robust numeric tie points for the specific Khulsan/Khermiin\
+      \ Tsav fossil beds are not demonstrated. Consequently, the widely cited “late Campanian\
+      \ to earliest Maastrichtian” window for Barun Goyot remains only broadly calibrated.\
+      \ (Eberth et al. 2009; Eberth 2018; Hicks et al. 2001 GSA; Jerzykiewicz & Russell 1991)\n\
+      \nConservative resolution: Given (1) unstable family‑rank usage for the group, (2) the\
+      \ oldest securely referred fossils (Parvicursor, Ceratonykus) deriving from Barun Goyot\
+      \ horizons whose absolute ages are still debated within a broad late Campanian–earliest\
+      \ Maastrichtian bracket, and (3) the absence of radiometric ages directly tied to the\
+      \ specific fossil-bearing beds, a defensible numerical start_ma cannot be proposed without\
+      \ over‑interpretation. Following project guidance, fossil occurrences are treated as\
+      \ minimum constraints, but here the minimum cannot be expressed as a specific Ma value\
+      \ pending stronger geochronology for the relevant Barun Goyot localities. The entry\
+      \ is therefore left unresolved with null numerical fields until better-constrained dates\
+      \ become available.\n"
+    date_resolution_method: unresolved
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: A re‑appraisal of Parvicursor remotus (Journal of Systematic Palaeontology,
+        2021)
+      source_type: specialist_taxonomic_reference
+      url: https://www.tandfonline.com/doi/abs/10.1080/14772019.2021.2013965
+      note: Redescribes Parvicursor; confirms Barun Goyot (Khulsan) and treats material as
+        Campanian; discusses taxonomic placement within Alvarezsauridae.
+    - source_label: Ceratonykus oculatus gen. et sp. nov. (Paleontological Journal, 2009)
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/226583988_Ceratonykus_oculatusgen_et_sp_nov_a_new_dinosaur_Theropoda_Alvarezsauria_from_the_Late_Cretaceous_of_Mongolia
+      note: Describes Ceratonykus from the Barun Goyot Formation (Khermiin Tsav) and assigns
+        it to Parvicursoridae.
+    - source_label: The Baruungoyot–Nemegt transition at the Nemegt type area (Eberth et al.,
+        2009)
+      source_type: literature
+      url: https://artscimedia.case.edu/wp-content/uploads/sites/108/2017/05/17210929/Eberth-et-al-2009.pdf
+      note: Documents Baruungoyot–Nemegt interfingering and emphasizes poor absolute age control
+        for the boundary and associated fossil horizons.
+    - source_label: Stratigraphy and paleoenvironmental evolution of the Baruungoyot–Nemegt
+        succession (Palaeogeogr. Palaeoclimatol. Palaeoecol., 2018)
+      source_type: literature
+      url: https://www.sciencedirect.com/science/article/pii/S0031018217305771
+      note: Modern stratigraphic framework; corroborates interfingering and ongoing difficulty
+        establishing precise numeric ages.
+    - source_label: Magnetostratigraphic correlation of Late Cretaceous localities, Nemegt
+        Basin (GSA Abstracts with Programs, 2001)
+      source_type: geochronology_reference
+      url: https://gsa.confex.com/gsa/2001AM/webprogram/Paper28817.html
+      note: Correlates Barun Goyot–Nemegt sections to late Campanian–early Maastrichtian (upper
+        C33n through C32 into lower C31); preliminary and not tightly calibrated to absolute
+        dates.
+    - source_label: Late Mesozoic stratigraphy and vertebrates of the Gobi Basin (Cretaceous
+        Research, 1991)
+      source_type: literature
+      url: https://www.sciencedirect.com/science/article/abs/pii/0195667191900155
+      note: Classic synthesis for Djadokhta–Barun Goyot–Nemegt succession; provides long‑standing
+        age interpretations that remain broadly framed.
+    - source_label: 'GBIF: Parvicursor Karhu & Rautian, 1996'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4822804
+      note: Checklist entry confirming usage of Parvicursor; supportive for taxonomic context
+        only.
     divergence_ma: null
-    end_ma: null
+    end_ma: 66.0
     start_ma: null
   review:
-    decision_note: null
+    decision_note: 'Keep Parvicursoridae unresolved with null numerical fields. Although key
+      occurrences (Parvicursor, Ceratonykus) are Barun Goyot and broadly late Campanian–earliest
+      Maastrichtian in age, specialist sources emphasize interfingering with Nemegt and the
+      lack of radiometric ages tied to the fossil beds. Combined with unstable family‑rank
+      usage, a specific start_ma would overstate current constraints.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -862,8 +2144,8 @@ parvigruidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for parvigruidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for parvigruidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -872,20 +2154,57 @@ parvigruidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The earliest secure record of Parvigruidae is ?Parvigrus ypresiensis sp.
+      nov. from the early Eocene Walton Member (formerly “Division A2”) of the London Clay
+      Formation at Walton‑on‑the‑Naze (Essex, UK). Mayr & Kitchener (2025) explicitly identify
+      the specimen as a parvigruid and note it as the family’s earliest record, previously
+      known only from the early Oligocene of Europe. The Walton Member at Walton‑on‑the‑Naze
+      is placed in the early Ypresian and repeatedly constrained in recent avian work to about
+      55–54.6 Ma; we adopt the younger bound (54.6 Ma) as a conservative minimum for this
+      fossil occurrence. This is a fossil/formation‑derived minimum age and should not be
+      interpreted as the evolutionary origin or divergence time of Parvigruidae. Stratigraphic
+      assignment of the Walton Member and its type section at The Naze are documented by the
+      BGS Lexicon; broader stage boundaries follow the current ICS chart.
+
+      '
+    date_resolution_method: specialist_literature
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Mayr & Kitchener (2025) – Two new species of larger gruiform and charadriiform
+        birds from the London Clay of Walton‑on‑the‑Naze (Essex, UK)
+      source_type: specialist_taxonomic_reference
+      url: https://link.springer.com/article/10.1007/s12549-025-00653-6
+      note: Describes ?Parvigrus ypresiensis (Parvigruidae) from the early Eocene London Clay
+        at Walton‑on‑the‑Naze and states it is the earliest record of the family; gives horizon
+        as early Ypresian 54.6–55 Ma.
+    - source_label: BGS Lexicon – Walton Member (London Clay)
+      source_type: geochronology_reference
+      url: https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=WAM
+      note: Assigns the Walton Member to the Ypresian; lists The Naze (Walton‑on‑the‑Naze)
+        as a partial type section and provides stratigraphic context.
+    - source_label: ICS International Chronostratigraphic Chart (v2024/12)
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Time‑scale framework; Ypresian Stage spans 56.0–47.8 Ma.
+    - source_label: Mayr (2026) – Overview of the early Eocene London Clay avifauna (Papers
+        in Palaeontology)
+      source_type: specialist_descriptive_reference
+      url: https://onlinelibrary.wiley.com/doi/10.1002/spp2.70093
+      note: Summarizes Walton‑on‑the‑Naze (Walton Member/‘Division A2’) as 55–54.6 Ma, supporting
+        the numeric bracket used here.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 54.6
   review:
-    decision_note: null
+    decision_note: 'Adopt start_ma = 54.6 Ma as a conservative minimum first appearance for
+      Parvigruidae based on ?Parvigrus ypresiensis from the early Eocene Walton Member (London
+      Clay) at Walton‑on‑the‑Naze. The unit’s age is independently constrained to ~55–54.6
+      Ma in recent London Clay avian studies; stratigraphic context and Ypresian assignment
+      are corroborated by the BGS Lexicon, with stage boundaries from the ICS chart. Treat
+      strictly as a fossil minimum; divergence_ma and end_ma remain unresolved.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -895,8 +2214,8 @@ pengornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for pengornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for pengornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -905,20 +2224,62 @@ pengornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The earliest securely dated member of Pengornithidae is Eopengornis martini
+      from the Huajiying Formation (Sichakou/“Protopteryx-horizon”) in northern Hebei. The
+      Huajiying avifaunas are independently bracketed by high-precision SIMS U–Pb zircon ages
+      indicating the earliest Jehol birds are ~129–131 Ma, and multiple specialist works treating
+      the Huajiying “Protopteryx-horizon” use a ~130.7 Ma age for these beds. Pengornithidae
+      is also present in the overlying Jiufotang Formation (e.g., Pengornis houi holotype
+      from Dapingfang, Chaoyang; and Parapengornis eurycaudatus from Liaoning). Jiufotang
+      fossiliferous horizons in the Jianchang Basin are radiometrically bracketed between
+      122.0 ± 0.9 Ma and 118.9 ± 0.8 Ma. Because pengornithid specimens are generally not
+      tied to specific dated tuff beds within these formations across basins, 130.7 Ma is
+      adopted here as a conservative formation- derived minimum first appearance for the family,
+      and no last-occurrence is fixed. Putative much younger occurrences outside the Jehol
+      Group are debated and are not used to extend the range.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Wang et al. 2014 – Eopengornis martini (Huajiying Formation)
+      source_type: specialist_descriptive_reference
+      url: https://doi.org/10.1111/bij.12313
+      note: Describes Eopengornis martini from the Huajiying Fm and places it within Pengornithidae,
+        establishing a Huajiying occurrence for the family.
+    - source_label: Yang et al. 2020 – SIMS U–Pb dating of the Huajiying Formation (PNAS)
+      source_type: geochronology_reference
+      url: https://pubmed.ncbi.nlm.nih.gov/32513701/
+      note: Eight interbedded tuff samples constrain earliest Jehol avifaunas (Huajiying)
+        to ~129–131 Ma; supports the Eopengornis-based minimum.
+    - source_label: Zhou, Clarke & Zhang 2008 – Pengornis houi holotype (Jiufotang Formation)
+      source_type: specialist_descriptive_reference
+      url: https://pubmed.ncbi.nlm.nih.gov/18397240/
+      note: Original description of Pengornis houi from Dapingfang, Chaoyang, Liaoning; documents
+        Pengornithidae in Jiufotang.
+    - source_label: Hu, O’Connor & Zhou 2015 – Parapengornis eurycaudatus (Jiufotang Formation)
+      source_type: specialist_descriptive_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4454694/
+      note: Describes a pengornithid from the Jiufotang Fm, reinforcing family presence in
+        this unit.
+    - source_label: Yu et al. 2021 – Jiufotang SIMS U–Pb zircon ages (Jianchang Basin)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0031018221004429
+      note: Four tuffs interbedded with fossil horizons yield 122.0 ± 0.9 Ma to 118.9 ± 0.8
+        Ma, bracketing Jiufotang fossil beds without assigning specimen-specific ages.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 130.7
   review:
-    decision_note: null
+    decision_note: 'Adopt fossil-first-appearance only. Start_ma = 130.7 Ma is used as a conservative
+      Huajiying/“Protopteryx-horizon” minimum for Pengornithidae and is consistent with independent
+      SIMS U–Pb zircon constraints (~129–131 Ma). The family is present in the Jiufotang Formation,
+      whose fossiliferous intervals are dated 122.0–118.9 Ma in the Jianchang Basin, but pengornithid
+      occurrences are not tied to specific dated tuffs across basins; therefore end_ma is
+      left null. No vetted molecular divergence estimates were found.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -928,8 +2289,8 @@ piatnitzkysauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for piatnitzkysauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for piatnitzkysauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -938,20 +2299,77 @@ piatnitzkysauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The earliest securely documented members of Piatnitzkysauridae (sensu Carrano
+      et al. 2012) are Piatnitzkysaurus floresi and Condorraptor currumili from the Las Chacritas
+      Member of the Cañadón Asfalto Formation near Cerro Cóndor, Chubut, Patagonia. These
+      occurrences anchor the family’s first appearance to that unit rather than to a molecular
+      or phylogenetic divergence. High-precision CA–ID–TIMS U–Pb ages on interbedded tuffs
+      from the fossiliferous lower Cañadón Asfalto constrain the relevant interval to the
+      late Toarcian. Reported dates include 179.17 ± 0.12 Ma at the base of the fossiliferous
+      succession and 178.07 ± 0.21 Ma higher in section, with additional Toarcian CA–ID–TIMS
+      determinations ~179.5–177.3 Ma from correlative tuffs in the same member across the
+      basin. Following this evidence, a cautious formation-derived minimum age of ~179.2 Ma
+      is proposed for the first appearance of Piatnitzkysauridae. Note that some studies have
+      reported younger (Bajocian–Callovian) ages for parts of the formation in other depocenters,
+      but the late Toarcian dates cited here directly constrain the fossiliferous Las Chacritas
+      interval that yields piatnitzkysaurids. This is a fossil-occurrence/formation-based
+      minimum and not an evolutionary origin estimate for the clade.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Carrano, Benson & Sampson 2012, The phylogeny of Tetanurae (Journal of
+        Systematic Palaeontology)
+      source_type: specialist_taxonomic_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/14772019.2012.713753
+      note: Defines Piatnitzkysauridae as a clade within Megalosauroidea; establishes taxonomic
+        context for the family.
+    - source_label: Rauhut 2005, Osteology and relationships of a new theropod dinosaur from
+        the Middle Jurassic of Patagonia (Palaeontology)
+      source_type: specialist_descriptive_reference
+      url: https://doc.rero.ch/record/15220/files/PAL_E2496.pdf
+      note: Original description of Condorraptor from the Cañadón Asfalto Fm. (Las Chacritas
+        Member) near Cerro Cóndor.
+    - source_label: Cúneo et al. 2013, High-precision U–Pb geochronology for the Cañadón Asfalto
+        Basin (Gondwana Research)
+      source_type: geochronology_reference
+      url: https://staff.mef.org.ar/images/investigadores/diego_pol/papers/63.pdf
+      note: CA–ID–TIMS dates for lower Cañadón Asfalto; includes 178.766 ± 0.092 Ma and interprets
+        deposition beginning ~179 Ma (late Toarcian).
+    - source_label: Pol et al. 2020, Proceedings of the Royal Society B (Bagualia context)
+      source_type: geochronology_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7739499/
+      note: 'Reports CA–ID–TIMS ages bracketing the lower Cañadón Asfalto fossiliferous interval:
+        179.17 ± 0.12 Ma (base) and 178.07 ± 0.21 Ma (upper).'
+    - source_label: Monferran et al. 2020, Late Toarcian continental palaeoenvironmental conditions
+        (Cañadón Asfalto Formation)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S1342937X20302562
+      note: Additional CA–ID–TIMS U–Pb dates from Las Chacritas Member tuffs ~179.5–177.3
+        Ma supporting a late Toarcian age for the fossiliferous levels.
+    - source_label: University of Birmingham 2026, Piatnitzkysaurus axial osteology page
+      source_type: specialist_descriptive_reference
+      url: https://research.birmingham.ac.uk/en/publications/the-axial-osteology-of-the-theropod-dinosaur-ipiatnitzkysaurus-fl/
+      note: Summarizes Piatnitzkysaurus occurrences in the Early Jurassic deposits of the
+        Cañadón Asfalto Formation.
+    - source_label: 'GBIF: Piatnitzkysaurus floresi'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/159404337
+      note: Backbone taxonomy entry confirming placement of Piatnitzkysaurus; useful for cross-referencing
+        database identifiers.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 179.17
   review:
-    decision_note: null
+    decision_note: 'Accept a formation-derived minimum first-appearance age of ~179.2 Ma for
+      Piatnitzkysauridae, based on late Toarcian CA–ID–TIMS U–Pb ages from the fossiliferous
+      Las Chacritas Member that yields Piatnitzkysaurus and Condorraptor. Treat as a fossil/formation
+      minimum, not a clade origin estimate; acknowledge inter-depocenter age disagreements
+      but prioritize the dated tuffs constraining the Cerro Cóndor fossil interval.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -961,8 +2379,8 @@ polyclonoolithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for polyclonoolithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for polyclonoolithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -971,20 +2389,60 @@ polyclonoolithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: low
+    date_notes: 'Polyclonoolithidae was erected for a new oofamily based on the type oogenus
+      Polyclonoolithus from Yangjiagou, on the Lintao–Yongjing county border, within the Lower
+      Cretaceous Hekou Group of the Lanzhou–Minhe Basin (Gansu, China). The original description
+      explicitly places the occurrence in the “late Early Cretaceous” and ties it to the upper
+      part of a measured Hekou Group section. Independent palynological work on the upper
+      Hekou Formation in the Lanzhou–Minhe region assigns it to the Aptian–Albian, and subsequent
+      syntheses reiterate an Aptian–Albian age for the upper Hekou and paleomagnetic constraints
+      of ~140.7–124.2 Ma for the middle–lower Hekou. Because the fossil horizon is stage-constrained
+      rather than tied to a dated bed, the age here is treated as a cautious formation-/stage-derived
+      minimum and expressed as an Albian-bounded range, not a true evolutionary origin estimate.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Xie J.-F., Zhang S.-K., Jin X.-S., Li D.-Q., Zhou L.-Q. 2016. A new type
+        of dinosaur eggs from Early Cretaceous of Gansu Province, China. Vertebrata PalAsiatica
+        54(1):79–88
+      source_type: specialist_taxonomic_reference
+      url: https://ivpp.cas.cn/xwdt/kyjz/201811/P020160229563042622198.pdf
+      note: 'Establishes Polyclonoolithidae (oofam. nov.) and Polyclonoolithus; locality Yangjiagou;
+        horizon: Lower Cretaceous Hekou Group; text indicates a late Early Cretaceous age
+        for the unit.'
+    - source_label: Ji L.-M. 1995. Sporo‑pollen assemblages from late phase of Early Cretaceous
+        in Minhe Basin.
+      source_type: geochronology_reference
+      url: https://www.jipb.net/EN/abstract/abstract23693.shtml
+      note: Palynological study of the upper Hekou Formation near Lanzhou assigning it to
+        the Aptian–Albian (late Early Cretaceous).
+    - source_label: Xing L. et al. 2016. Digit-only sauropod pes trackways… Scientific Reports
+        6:21138
+      source_type: specialist_descriptive_reference
+      url: https://researchonline.ljmu.ac.uk/id/eprint/3018/1/srep21138.pdf
+      note: 'Geological setting for Yanguoxia/Lanzhou–Minhe: upper Hekou ≈ Aptian–Albian (from
+        pollen); middle–lower Hekou paleomagnetism ≈ 140.66–124.19 Ma.'
+    - source_label: International Commission on Stratigraphy, International Chronostratigraphic
+        Chart v2024/12
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf
+      note: Numerical bounds used for Albian 113.2 ± 0.3 to 100.5 ± 0.1 Ma; provides conversion
+        of stage to Ma.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 100.5
+    start_ma: 113.2
   review:
-    decision_note: null
+    decision_note: 'Accept as a low-confidence, stage/formation-derived fossil minimum for
+      Polyclonoolithidae based on the type occurrence of Polyclonoolithus in the upper Hekou
+      Group. The Albian bracket (113.2–100.5 Ma) follows the published attribution to the
+      late Early Cretaceous and palynological assignment to Aptian–Albian; it should not be
+      interpreted as the evolutionary origin of the oofamily. A tighter numeric bound would
+      require bed-specific geochronology.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -994,8 +2452,8 @@ proceratosauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for proceratosauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for proceratosauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1004,20 +2462,64 @@ proceratosauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: moderate
+    date_notes: 'The earliest securely dated occurrence of Proceratosauridae is the type genus
+      Proceratosaurus bradleyi from Minchinhampton (Gloucestershire, UK), described and reappraised
+      as a basal tyrannosauroid forming a monophyletic Proceratosauridae with Guanlong. The
+      holotype’s precise bed within the Great Oolite Group is uncertain (commonly attributed
+      to the White Limestone Formation or the overlying Forest Marble Formation), but both
+      units are Bathonian in age. Accordingly, the family’s first appearance is bracketed
+      by the Bathonian stage limits 168.3–166.1 Ma on the International Chronostratigraphic
+      Chart. This is a stage/formation-derived fossil minimum and should not be treated as
+      a calibrated divergence date. Additional Bathonian proceratosaurid material (e.g., Kileskus
+      from the Itat Formation, West Siberia) corroborates a Middle Jurassic presence but does
+      not extend the range earlier than Bathonian.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Rauhut, Milner & Moore-Fay 2010, Zoological Journal of the Linnean Society
+        158:155–195
+      source_type: specialist_taxonomic_reference
+      url: https://onlinelibrary.wiley.com/doi/10.1111/j.1096-3642.2009.00591.x
+      note: Redescription of Proceratosaurus; places the holotype in the Bathonian of Minchinhampton
+        and erects Proceratosauridae with Guanlong.
+    - source_label: 'BGS Lexicon: White Limestone Formation (Great Oolite Group)'
+      source_type: literature
+      url: https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=WHL
+      note: States Bathonian age and stratigraphic relations; relevant because the Minchinhampton
+        specimen is often attributed to this unit.
+    - source_label: 'BGS Lexicon: Forest Marble Formation (Great Oolite Group)'
+      source_type: literature
+      url: https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=FMB
+      note: Also Bathonian; cited as an alternative unit for the Minchinhampton horizon in
+        the literature.
+    - source_label: International Chronostratigraphic Chart (ICS), version 2021-10
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2021-10.pdf
+      note: Provides Bathonian numerical boundaries 168.3–166.1 Ma used to bracket the first
+        appearance.
+    - source_label: Averianov et al. 2010, Proc. Zool. Inst. RAS 314(1):42–57
+      source_type: specialist_taxonomic_reference
+      url: https://zin.ru/journals/trudyzin/doc/vol_314_1/TZ_314_1_Averianov.pdf
+      note: Describes Kileskus from the Bathonian Itat Formation and refers it to Proceratosauridae,
+        supporting a Middle Jurassic occurrence.
+    - source_label: 'GBIF: Proceratosaurus bradleyi'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4966958
+      note: Taxonomic listing for the type genus; used only to corroborate placement, not
+        for dating.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 166.1
+    start_ma: 168.3
   review:
-    decision_note: null
+    decision_note: 'Accept Bathonian 168.3–166.1 Ma as the earliest securely bracketed fossil
+      occurrence of Proceratosauridae based on the Minchinhampton Proceratosaurus holotype
+      and contemporaneous Bathonian records (e.g., Kileskus). Treat strictly as a formation/stage-derived
+      minimum, not an evolutionary origin estimate.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -1027,8 +2529,8 @@ protoplotidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for protoplotidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for protoplotidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1037,20 +2539,93 @@ protoplotidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: low
+    date_notes: 'Protoplotidae is based on the Sumatran taxon Protoplotus beauforti, originally
+      described by Lambrecht (1931) and reappraised by van Tets, Rich, and Marino-Hadiwardoyo
+      (1989) as the basis for a distinct pelecaniform family. The holotype comes from Sibang
+      in the Sangkarewang Formation (Ombilin Basin, West Sumatra). Modern summaries explicitly
+      tie the specimen to the Sangkarewang Formation and note an “at least Eocene” age for
+      these deposits. Palynological and stratigraphic work constraining the overlying Sawahlunto
+      Formation to the middle–late Eocene implies an early–middle Eocene age for the underlying
+      Sangkarewang Formation; additional fish-focused studies on the same beds also argue
+      for an early–mid Eocene interval. Because the fossil is tied to a formation rather than
+      a precisely dated horizon, this range is used cautiously as a formation-derived minimum
+      window for the first appearance of Protoplotidae, not a true evolutionary origin date.
+      Older assignments (e.g., Paleocene) have been suggested in parts of the literature and
+      underscore the uncertainty; hence confidence remains low. For numeric boundaries of
+      the early–middle Eocene window, the ICS chart (Ypresian 56.0 Ma to Lutetian base 47.8
+      Ma to Bartonian base 41.2 Ma) is followed.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Lambrecht, K. 1931. Protoplotus beauforti n.g. n.sp., ein Schlangenhalsvogel
+        aus dem Tertiär von W.-Sumatra
+      source_type: specialist_taxonomic_reference
+      url: https://repository.naturalis.nl/pub/505950/LGM1931005001016.pdf
+      note: Original description establishing Protoplotus beauforti from West Sumatra.
+    - source_label: van Tets, Rich & Marino-Hadiwardoyo 1989. A reappraisal of Protoplotus
+        beauforti ... and the basis of a new pelecaniform family
+      source_type: specialist_taxonomic_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2954798/
+      note: Cited in later specialist works as erecting Protoplotidae; original appears in
+        Geological Research and Development Centre, Paleontology Series 5:57–75.
+    - source_label: Mourer-Chauviré & Göhlich 2014, Avian fossil record in Insular Southeast
+        Asia
+      source_type: specialist_descriptive_reference
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3961167/
+      note: States the Protoplotus holotype is from Sibang in the Sangkarewang Formation;
+        deposits thought to be at least Eocene.
+    - source_label: 'Murray et al. 2015, JVP: A fossil gourami from probable Eocene deposits
+        of the Ombilin Basin'
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/02724634.2014.906444
+      note: Vertebrate occurrence in Sangkarewang/Ombilin framed as probable Eocene.
+    - source_label: 'Murray 2020, JVP: Early Cenozoic cyprinoids from Sumatra (Sangkarewang
+        Formation)'
+      source_type: specialist_descriptive_reference
+      url: https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1762627
+      note: Argues for early–mid Eocene age of Sangkarewang based on multiple lines of evidence.
+    - source_label: 'O’Brien et al. 2025, Journal of Asian Earth Sciences: Depositional framework
+        of the Sangkarewang and Sawahlunto Formations'
+      source_type: geochronology_reference
+      url: https://ri.conicet.gov.ar/handle/11336/281780
+      note: Palynology constrains Sawahlunto to middle–late Eocene (possibly into earliest
+        Oligocene), implying Sangkarewang is early–middle Eocene.
+    - source_label: 'Anggayana et al. 2014, J. Eng. Technol. Sci.: Depositional Environment
+        of the Sangkarewang Oil Shale'
+      source_type: specialist_descriptive_reference
+      url: https://media.neliti.com/media/publications/70922-EN-depositional-environment-of-the-sangkare.pdf
+      note: Stratigraphic column places Sangkarewang within Eocene sequence of the Ombilin
+        Basin.
+    - source_label: International Commission on Stratigraphy, International Chronostratigraphic
+        Chart (2023/06)
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2023-06.pdf
+      note: 'Stage boundaries used for numerical limits: Ypresian 56.0 Ma, Lutetian 47.8 Ma,
+        Bartonian 41.2 Ma.'
+    - source_label: Holroyd et al. (UMich Museum of Paleontology) – Contributions, Vol 31
+        No 7 (contextual note)
+      source_type: literature
+      url: https://deepblue.lib.umich.edu/bitstream/handle/2027.42/41254/Vol%2031%20No%207%20Final.pdf
+      note: Notes that some sources have considered the Sangkarewang bird horizon Paleocene,
+        highlighting age uncertainty.
+    - source_label: 'Mindat/PBDB: Protoplotus (taxon page)'
+      source_type: taxonomic_database
+      url: https://www.mindat.org/taxon-P39687.html
+      note: Aggregates PBDB taxonomy for Protoplotus; confirms usage and literature trail.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 41.2
+    start_ma: 56.0
   review:
-    decision_note: null
+    decision_note: 'Use the early–middle Eocene interval (56.0–41.2 Ma) as a cautious, formation-derived
+      window for Protoplotidae, grounded in the Sangkarewang Formation provenance of Protoplotus
+      beauforti and recent palynological constraints from the Ombilin Basin. Treat strictly
+      as a fossil/formation minimum rather than a phylogenetic origin date; confidence remains
+      low due to lingering age uncertainty in parts of the literature.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -1060,8 +2635,8 @@ psilopteridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for psilopteridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for psilopteridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1070,20 +2645,64 @@ psilopteridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'The oldest candidate occurrence attributable to Psilopteridae (often treated
+      as Psilopterinae within Phorusrhacidae) is Paleopsilopterus itaboraiensis from the São
+      José de Itaboraí Basin, Brazil. The avifauna there defines the Itaboraian SALMA, which
+      recent correlations place in the Early Eocene at about 53–50 Ma. Using the conservative
+      older bound (53.0 Ma) as a formation-derived minimum for the family’s fossil appearance
+      is appropriate. Note that (i) the rank and circumscription of Psilopteridae vs. Psilopterinae
+      vary among authors, and (ii) the precise absolute age of the Itaboraí deposits has been
+      debated, though multiple syntheses now converge on an Early Eocene (Ypresian) age near
+      53–50 Ma. Accordingly, treat this as a formation/occurrence minimum, not an evolutionary
+      origin estimate.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: 'Alvarenga 1985: Um novo Psilopteridae (Aves: Gruiformes) dos sedimentos
+        Terciários de Itaboraí, Rio de Janeiro, Brasil'
+      source_type: specialist_taxonomic_reference
+      url: https://fundacionazara.org.ar/img/libros/sistematica-y-filogenia-de-aves-fororracoideas-ok.pdf
+      note: Original description of Paleopsilopterus itaboraiensis cited in a specialist monograph’s
+        bibliography (Séptimo Congresso Brasileiro de Paleontologia, Série Geologia 27:17–20);
+        establishes the Itaboraí occurrence. ([fundacionazara.org.ar](https://fundacionazara.org.ar/img/libros/sistematica-y-filogenia-de-aves-fororracoideas-ok.pdf))
+    - source_label: Alvarenga & Höfling 2003, Papéis Avulsos de Zoologia 43:55–91
+      source_type: specialist_taxonomic_reference
+      url: https://www.scielo.br/j/paz/a/4Fg4WZvd43qzy65KSpSyWLb/?format=pdf
+      note: Systematic revision of Phorusrhacidae; discusses psilopterine taxa and recognizes
+        Paleopsilopterus from Itaboraí as the earliest small ‘terror bird’ record. ([scielo.br](https://www.scielo.br/j/paz/a/4Fg4WZvd43qzy65KSpSyWLb/?format=pdf&lang=en&utm_source=openai))
+    - source_label: Woodburne et al. 2014, J. South American Earth Sciences
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0895981114000649
+      note: Revised timing of early Paleogene SALMAs; constrains the Itaboraian to ~53–50
+        Ma, used here to set a conservative minimum. ([sciencedirect.com](https://www.sciencedirect.com/science/article/abs/pii/S0895981114000649?utm_source=openai))
+    - source_label: Beck et al. 2017, PLOS ONE (Itaboraí fauna age summary)
+      source_type: literature
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5684316/
+      note: Reviews Itaboraí vertebrates and notes most recent absolute age estimate for the
+        Itaboraian at 50–53 Ma. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC5684316/?utm_source=openai))
+    - source_label: Clemente et al. 2017, Palaeontologia Electronica
+      source_type: geochronology_reference
+      url: https://palaeo-electronica.org/content/2017/1898-enamel-microstructure-carodnia
+      note: Summarizes debate but supports an Early Eocene Itaboraian near 53–50 Ma; reinforces
+        formation-age context. ([palaeo-electronica.org](https://palaeo-electronica.org/content/2017/1898-enamel-microstructure-carodnia?utm_source=openai))
+    - source_label: 'GBIF: Paleopsilopterus Alvarenga, 1985'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4852235
+      note: Database record placing Paleopsilopterus within Psilopteridae/Phorusrhacidae and
+        linking it to the Itaboraí occurrence. ([gbif.org](https://www.gbif.org/species/4852235?utm_source=openai))
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 53.0
   review:
-    decision_note: null
+    decision_note: 'Accept 53.0 Ma as a cautious, formation-derived fossil minimum based on
+      Paleopsilopterus from the Itaboraí Basin and the 53–50 Ma timing of the Itaboraian SALMA.
+      Treat rank (family vs. subfamily) and referral of Paleopsilopterus with caution; this
+      is not an origin estimate.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -1093,8 +2712,8 @@ qianshanornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for qianshanornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for qianshanornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1103,20 +2722,47 @@ qianshanornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Qianshanornithidae was erected by Mayr et al. (2013) for the bird Qianshanornis
+      rapax from the Wanghudun Formation (Qianshan Basin, Anhui, China), explicitly reported
+      as middle Paleocene. A specialist stratigraphic synopsis for the Qianshan Basin indicates
+      the Wanghudun Formation spans Early to Middle Paleocene and correlates with the Shanghuan
+      and Nongshanian Asian Land Mammal Ages, which in turn correspond broadly to the Danian
+      and Selandian stages of the global time scale. Given the published “middle Paleocene”
+      assignment, a cautious minimum bound can be taken as the top of the Selandian (59.2
+      Ma) from the International Chronostratigraphic Chart. This is a formation/stage correlation-based
+      fossil occurrence minimum, not a molecular or phylogenetic origin estimate for the family.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Mayr et al. 2013, Journal of Vertebrate Paleontology 33(4):895–901
+      source_type: specialist_taxonomic_reference
+      url: https://www.researchgate.net/publication/263459759_A_Strigogyps-Like_Bird_from_the_Middle_Paleocene_of_China_with_an_Unusual_Grasping_Foot
+      note: Original description of Qianshanornis rapax and erection of Qianshanornithidae;
+        locality given as middle Paleocene Wanghudun Formation, Qianshan Basin.
+    - source_label: Wang et al. 2016, Vertebrata PalAsiatica 54(2):89–120
+      source_type: specialist_descriptive_reference
+      url: https://www.vertpala.ac.cn/EN/Y2016/V54/I2/89
+      note: Synopsis of Qianshan Basin Paleocene stratigraphy; Wanghudun Fm correlated with
+        Shanghuan (Danian) and Nongshanian (Selandian); Qianshan vertebrates are Early–Middle
+        Paleocene.
+    - source_label: International Commission on Stratigraphy, International Chronostratigraphic
+        Chart (v2023-09)
+      source_type: geochronology_reference
+      url: https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf
+      note: Gives Selandian stage boundaries at 61.6–59.2 Ma; used here to translate 'middle
+        Paleocene' to an absolute minimum bound.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 59.2
   review:
-    decision_note: null
+    decision_note: 'Accept a cautious fossil/formation-derived minimum at 59.2 Ma (top of
+      Selandian) based on the middle Paleocene Wanghudun occurrence; do not interpret as the
+      evolutionary origin of Qianshanornithidae.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -1126,8 +2772,8 @@ rhegminornithidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for rhegminornithidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for rhegminornithidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1136,20 +2782,77 @@ rhegminornithidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'Rhegminornithidae was erected by Wetmore (1960) for the fossil bird Rhegminornis
+      calobates from the Lower/Early Miocene of Florida. The known material is a distal tarsometatarsus
+      from the Thomas Farm site (Gilchrist County). Olson & Farrand (1974) later reassigned
+      Rhegminornis to Meleagrididae (turkeys), but the family-group name Rhegminornithidae
+      persists historically in some treatments. For Deep Time 2, this clade’s timing should
+      be treated strictly as a fossil-occurrence minimum based on the Thomas Farm locality
+      rather than an evolutionary origin estimate for any broader lineage.
+
+      The Thomas Farm deposits are sinkhole-fill sediments that yield an Early Miocene (Hemingfordian)
+      vertebrate assemblage; museum syntheses place the site at about 18–18.5 Ma. Because
+      this is a locality/biostratigraphic age rather than a direct radiometric date on the
+      Rhegminornis-bearing bed, confidence is kept low. The Hemingfordian itself is generally
+      calibrated to ~20.6–16.3 Ma, which brackets the site age.
+
+      '
+    date_resolution_method: specialist_literature
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Wetmore 1960, Classification, Smithsonian Miscellaneous Collections 139:1–37
+      source_type: specialist_taxonomic_reference
+      url: https://repository.si.edu/bitstream/handle/10088/22963/SMC_139_Wetmore_1960_11_1-37.pdf
+      note: Erects Rhegminornithidae for Rhegminornis calobates; states Lower Miocene of Florida
+        and places it in Charadrioidea.
+    - source_label: Wetmore 1943, Fossil birds from the Tertiary deposits of Florida, Proc.
+        New England Zool. Club 22:59–68
+      source_type: specialist_descriptive_reference
+      url: https://bionames.org/issn/0749-8934
+      note: Original description including Rhegminornis calobates from Thomas Farm; citation
+        record confirming publication details.
+    - source_label: 'Olson & Farrand 1974, Rhegminornis restudied: a tiny Miocene turkey (Wilson
+        Bulletin 86:114–120)'
+      source_type: specialist_descriptive_reference
+      url: https://repository.si.edu/bitstreams/286c8a1d-1432-4b71-97f8-0f6a971324dd/download
+      note: Re-examines type; confirms Lower Miocene Thomas Farm provenance and reassigns
+        Rhegminornis to Meleagrididae.
+    - source_label: 'Smithsonian NMNH Paleobiology: Rhegminornis calobates specimen record'
+      source_type: taxonomic_database
+      url: https://www.si.edu/object/nmnhpaleobiology_3370976
+      note: 'Holotype/specimen metadata: Miocene, Gilchrist County, Florida; includes type
+        citation and stratigraphic note.'
+    - source_label: 'Florida Museum: Thomas Farm site page'
+      source_type: specialist_descriptive_reference
+      url: https://www.floridamuseum.ufl.edu/florida-vertebrate-fossils/sites/thomas-farm/
+      note: Gives Early Miocene, early Hemingfordian age and ‘about 18 million years old’
+        for the Thomas Farm locality.
+    - source_label: 'Florida Museum Research News (2015): Thomas Farm: a prehistoric treasure'
+      source_type: general_reference
+      url: https://www.floridamuseum.ufl.edu/science/thomas-farm-a-prehistoric-treasure/
+      note: Describes Thomas Farm as an ~18.5-million-year-old Early Miocene site.
+    - source_label: Pratt 1990, Taphonomy of the Thomas Farm locality, FLMNH Bulletin 35(2):35–130
+      source_type: specialist_descriptive_reference
+      url: https://flmnhbulletin.com/index.php/flmnh/article/view/flmnh-vol35-no2
+      note: Details sinkhole-fill nature of the deposits and site taphonomy; supports locality-based
+        age context.
+    - source_label: Integrated geochronology of Ogallala Group; Hemingfordian calibration
+        (20.6–16.3 Ma)
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S2950117224000207
+      note: Provides widely used numerical calibration for the Hemingfordian NALMA interval.
     divergence_ma: null
     end_ma: null
-    start_ma: null
+    start_ma: 18.5
   review:
-    decision_note: null
+    decision_note: 'Accepting a low-confidence fossil minimum based on the Thomas Farm occurrence
+      (~18–18.5 Ma). Note that Rhegminornithidae is a historical family-group name for Rhegminornis;
+      Olson & Farrand (1974) place the taxon within Meleagrididae. Do not interpret this as
+      a clade origin estimate—only as the earliest securely dated fossil evidence tied to
+      the name.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -1159,8 +2862,8 @@ saltasauridae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for saltasauridae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for saltasauridae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1169,20 +2872,73 @@ saltasauridae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: fossil_first_appearance
+    date_confidence: low
+    date_notes: 'The earliest well-documented saltasaurid body fossils are from Neuquensaurus
+      (Saltasaurinae) in the Anacleto Formation of the Neuquén Basin (Cinco Saltos area, Río
+      Negro Province, Argentina). Multiple specialist works place these Neuquensaurus occurrences
+      within the Anacleto, which regional magnetostratigraphy at Auca Mahuevo constrains to
+      early–middle Campanian. Published constraints for the Anacleto include a magnetostratigraphic/biostratigraphic
+      age window of approximately 83.5–79.5 Ma and an independent detrital-zircon maximum
+      depositional age near Paso Córdoba of 78.6 ± 1.7 Ma; together these indicate a Campanian
+      age but do not yield a precise bed-by-bed date for the Neuquensaurus horizons at Cinco
+      Saltos. Accordingly, the proposed start_ma is treated as a cautious formation-derived
+      minimum for the family’s fossil first appearance, not a calibrated divergence date.
+      Saltasaurid occurrences continue through the Campanian–Maastrichtian in South America
+      and elsewhere (e.g., Saltasaurus in the Lecho Formation), but a secure last-appearance
+      endpoint is not established here.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Dingus et al. 2000, AMNH Novitates no. 3290
+      source_type: geochronology_reference
+      url: https://www.biodiversitylibrary.org/item/315451
+      note: Magnetostratigraphic/stratigraphic constraints at Auca Mahuevo place the Anacleto
+        Fm in the early–middle Campanian (~83.5–79.5 Ma).
+    - source_label: Iglesias et al. (CONICET) c.2020–2021, First U–Pb detrital zircon ages
+        (Paso Córdoba, Río Negro)
+      source_type: geochronology_reference
+      url: https://ri.conicet.gov.ar/handle/11336/202175
+      note: Reports an Anacleto Fm maximum depositional age of 78.6 ± 1.7 Ma near Paso Córdoba
+        (middle Campanian).
+    - source_label: 'Garrido et al. 2014, Sedimentary palaeoenvironment… of the Anacleto Formation
+        (Sedimentary Geology 308–309: 1–16)'
+      source_type: specialist_descriptive_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0895981114000352
+      note: Sedimentology and basin context of the Anacleto Fm within the Neuquén Basin foreland
+        fill.
+    - source_label: 'Tectonophysics 2019: The Neuquén Group reconstruction (35–37°S)'
+      source_type: geochronology_reference
+      url: https://www.sciencedirect.com/science/article/pii/S0040195119302847
+      note: Synthesizes regional dating; summarizes early Campanian age for the Anacleto (~83.5–79.5
+        Ma) based on Dingus et al. and other data.
+    - source_label: Heredia & Salgado 2005, JVP 25(3):623–634 — A new specimen of Neuquensaurus
+        australis
+      source_type: specialist_descriptive_reference
+      url: https://www.researchgate.net/publication/232687962_A_new_specimen_of_Neuquensaurus_australis_a_Late_Cretaceous_Saltasaurine_titanosaur_from_North_Patagonia
+      note: Documents Neuquensaurus (Saltasaurinae) from Cinco Saltos in the Anacleto Fm.
+    - source_label: 'GBIF: Saltasauridae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4967427
+      note: Backbone taxonomy listing for the family; cross-references PBDB IDs.
+    - source_label: Quattrocchio et al. 2005, Palynostratigraphy of the Salta Group (Micropaleontología
+        37[2])
+      source_type: geochronology_reference
+      url: https://web.igme.es/publicaciones/revistaMicro/pdfs/Micropaleo37_2_2005.pdf
+      note: Supports a Campanian–Maastrichtian age for upper Salta Group units including the
+        Lecho Fm that yields Saltasaurus.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 83.5
   review:
-    decision_note: null
+    decision_note: 'Accept as a low-confidence, formation-derived minimum for the first fossil
+      appearance of Saltasauridae, anchored to Neuquensaurus in the Anacleto Formation and
+      the formation’s early–middle Campanian age constraints. This is not a phylogenetic divergence
+      estimate; improved bed-level geochronology at the Neuquensaurus sites (Cinco Saltos)
+      could refine start_ma. End_ma left null pending a securely dated last occurrence.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending
@@ -1192,8 +2948,8 @@ sauropodidae:
     current_dates:
       date_basis: unresolved
       date_confidence: low
-      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date
-        found for sauropodidae.
+      date_notes: No usable specialist, PBDB, TimeTree, or reputable educational date found
+        for sauropodidae.
       date_resolution_method: unresolved
       divergence_ma: null
       end_ma: null
@@ -1202,20 +2958,67 @@ sauropodidae:
     parent_id: dinosauria
     rank: family
   proposed_date_resolution:
-    date_basis: null
-    date_confidence: null
-    date_notes: null
-    date_resolution_method: null
+    date_basis: formation_age_inference
+    date_confidence: low
+    date_notes: '“Sauropodidae” is treated here as a broad sauropod-family placeholder; a
+      cautious minimum is tied to the oldest widely accepted sauropod body fossil. The earliest
+      definitive sauropod remains are from Vulcanodon karibaensis at the Island 126/127 locality
+      (Lake Kariba, Zimbabwe). A stratigraphic reassessment places the type horizon in the
+      uppermost Forest Sandstone and correlates it with the Clarens Formation of the main
+      Karoo Basin, implying a Sinemurian–Pliensbachian age and c. 10–15 Myr older than earlier
+      Toarcian assignments. Detrital-zircon work indicates the Clarens Formation is mainly
+      Pliensbachian; using the ICS numerical boundary for the base of the Pliensbachian (190.8
+      Ma) provides a conservative formation-derived minimum for the first appearance of this
+      clade. Reports of a Late Triassic sauropod (Isanosaurus attavipachi) from the Nam Phong
+      Formation suggest a potentially older record, but both the age of the relevant Nam Phong
+      strata and the taxon’s placement have been considered uncertain; therefore, they are
+      not used to fix the minimum here. This is a fossil-occurrence/formation-based minimum
+      only and should not be interpreted as a true molecular or crown origin for Sauropodidae/Sauropoda.
+
+      '
+    date_resolution_method: formation_age_inference
     date_sources:
-    - note: null
-      source_label: null
-      source_type: null
-      url: null
+    - source_label: Viglietti et al. 2018, J. African Earth Sciences 137:149–156
+      source_type: specialist_descriptive_reference
+      url: https://www.sciencedirect.com/science/article/abs/pii/S1464343X17303953
+      note: Repositions Vulcanodon to the upper Forest Sandstone; correlates with Clarens
+        Formation; infers Sinemurian–Pliensbachian and ~10–15 Ma older than previously thought.
+    - source_label: Bordy et al. 2020, Earth-Science Reviews 203:103120
+      source_type: geochronology_reference
+      url: https://par.nsf.gov/servlets/purl/10144138
+      note: Chronostratigraphic framework for the upper Stormberg Group; Clarens Formation
+        mainly Pliensbachian based on U–Pb detrital zircon MDAs.
+    - source_label: International Commission on Stratigraphy, International Chronostratigraphic
+        Chart (2023/09)
+      source_type: geochronology_reference
+      url: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf
+      note: Numerical stage boundaries; Pliensbachian base at 190.8 Ma used to anchor a conservative
+        minimum.
+    - source_label: Buffetaut et al. 2000, Nature 407:72–74
+      source_type: specialist_descriptive_reference
+      url: https://www.nature.com/articles/35024060
+      note: Original report of a purported Late Triassic sauropod (Isanosaurus); establishes
+        possibility of a pre-Jurassic sauropod record, though later works question exact age/placement.
+    - source_label: Racey & Goodall 2009, in GSL Spec. Publ. 315
+      source_type: geochronology_reference
+      url: https://www.researchgate.net/publication/266150360
+      note: Palynology/stratigraphy of Khorat Group red beds; indicates parts of Nam Phong
+        may extend into the Jurassic, underscoring age uncertainty for Isanosaurus-bearing
+        horizons.
+    - source_label: 'GBIF: Sauropodidae'
+      source_type: taxonomic_database
+      url: https://www.gbif.org/species/4966982
+      note: Backbone family entry used to document taxon name usage at family rank.
     divergence_ma: null
-    end_ma: null
-    start_ma: null
+    end_ma: 66.0
+    start_ma: 190.8
   review:
-    decision_note: null
+    decision_note: 'Accept a conservative start_ma of 190.8 Ma as a low-confidence, formation-correlated
+      minimum based on the Vulcanodon horizon’s linkage to the mainly Pliensbachian Clarens-equivalent
+      upper Forest Sandstone. The Isanosaurus/Nam Phong record is acknowledged but not used
+      to set the minimum due to unresolved age and taxonomic issues.
+
+      '
     reviewed_at: null
     reviewer: null
     status: pending

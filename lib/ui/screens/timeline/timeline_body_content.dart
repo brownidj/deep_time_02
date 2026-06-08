@@ -38,6 +38,7 @@ class TimelineBodyContent extends StatelessWidget {
     required this.cladeSearchQuery,
     required this.cladeSpotlightId,
     this.activeCladeRootId,
+    this.activeCladeRootLabel,
     this.childrenByParentId = const {},
     required this.onCladeSpotlight,
     this.onCladeRootChanged,
@@ -65,6 +66,7 @@ class TimelineBodyContent extends StatelessWidget {
   final String cladeSearchQuery;
   final String? cladeSpotlightId;
   final String? activeCladeRootId;
+  final String? activeCladeRootLabel;
   final Map<String, List<Clade>> childrenByParentId;
   final ValueChanged<Clade> onCladeSpotlight;
   final ValueChanged<String?>? onCladeRootChanged;
@@ -92,16 +94,11 @@ class TimelineBodyContent extends StatelessWidget {
     if (biologyColumnMode == BiologyColumnMode.taxonomic) {
       return 'Taxonomy';
     }
-    final rootId = activeCladeRootId?.trim();
-    if (rootId == null || rootId.isEmpty) {
+    final rootLabel = activeCladeRootLabel?.trim();
+    if (rootLabel == null || rootLabel.isEmpty) {
       return 'Clades';
     }
-    for (final clade in clades) {
-      if (clade.id == rootId) {
-        return 'Clades: ${clade.label}';
-      }
-    }
-    return 'Clades';
+    return 'Clades: $rootLabel';
   }
 
   Widget _buildVerticalCanvas() {

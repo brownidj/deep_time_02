@@ -120,3 +120,8 @@ List<Clade> _scopeCladesForActiveRoot({
   );
   return source.where((clade) => scopedIds.contains(clade.id)).toList();
 }
+
+int _focusedCladeTargetVisibleCount(double width) {
+  final widthDrivenCount = (width / 14.0).floor();
+  return widthDrivenCount.clamp(40, 120);
+}
