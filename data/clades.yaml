@@ -1769,6 +1769,38 @@
     - Mesozoic
     - extinction
 
+- id: alvarezsauria
+  common_label: Alvarezsauria
+  scientific_label: Alvarezsauria
+  scientific_rank: clade
+  zoomable: true
+  parent_id: maniraptora
+  start_ma: 84.0
+  end_ma: 66.0
+  range_note: Late Cretaceous to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 29
+  min_zoom_level: period
+  short_description: Small specialised maniraptorans including alvarezsaurids and parvicursorine relatives.
+  divergence_ma: 84.0
+  branch_priority: 38
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Parvicursor
+    - Mononykus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - maniraptoran
+    - alvarezsaurian
+    - Mesozoic
+    - extinction
+
 - id: diplodocoidea
   common_label: Diplodocoidea
   scientific_label: Diplodocoidea
