@@ -105,7 +105,6 @@ Widget _buildCladeViewport({
       ),
     );
   }
-  final allById = {for (final clade in clades) clade.id: clade};
   void handleCladeTap(Clade clade) {
     if (!clade.zoomable) {
       onSpotlight(clade);
@@ -113,6 +112,29 @@ Widget _buildCladeViewport({
     }
     onCladeRootChanged(activeCladeRootId == clade.id ? null : clade.id);
   }
+
+  if (hasActiveRoot) {
+    return _buildFocusedCladeViewport(
+      context: context,
+      width: width,
+      height: height,
+      mapper: mapper,
+      scrollController: scrollController,
+      allClades: clades,
+      visibleClades: visible,
+      activeCladeRootId: activeCladeRootId,
+      pendingFocusedRootAutoScrollId: pendingFocusedRootAutoScrollId,
+      labelMode: labelMode,
+      spotlightId: spotlightId,
+      onSpotlight: onSpotlight,
+      onCladeRootChanged: onCladeRootChanged,
+      onFocusedRootAutoScrollHandled: onFocusedRootAutoScrollHandled,
+      eonSegments: eonSegments,
+      eonHeights: eonHeights,
+    );
+  }
+
+  final allById = {for (final clade in clades) clade.id: clade};
 
   final barLayouts = _layoutCladeBars(
     visible: visible,

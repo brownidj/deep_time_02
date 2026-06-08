@@ -2,6 +2,7 @@ import 'package:deep_time_2/application/services/timeline_layout_models.dart';
 import 'package:deep_time_2/domain/models/geologic_rank.dart';
 import 'package:deep_time_2/domain/models/timeline_marker_catalog.dart';
 import 'package:deep_time_2/domain/models/timeline_palette.dart';
+import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/time_label_mode.dart';
@@ -18,6 +19,7 @@ void main() {
       MaterialApp(
         home: TimelineSettingsDialog(
           labelMode: TimeLabelMode.geologicTime,
+          biologyColumnMode: BiologyColumnMode.cladistic,
           onScaleChanged: (_) {},
           cladeViewMode: CladeViewMode.representativeOnly,
           cladeLabelMode: CladeLabelMode.common,

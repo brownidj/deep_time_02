@@ -46,6 +46,8 @@ part 'timeline_vertical_columns_clades_mapper.dart';
 part 'timeline_vertical_columns_clades_widgets.dart';
 part 'timeline_vertical_columns_clades_scrollbar.dart';
 part 'timeline_vertical_columns_clades_layout_helpers.dart';
+part 'timeline_vertical_columns_clades_focused_layout.dart';
+part 'timeline_vertical_columns_clades_focused_renderer.dart';
 part 'timeline_vertical_columns_clades_misc.dart';
 part 'timeline_vertical_columns_taxonomy_placeholder.dart';
 part 'timeline_vertical_columns_biology_track.dart';

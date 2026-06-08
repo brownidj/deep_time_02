@@ -11,15 +11,41 @@ String _buildCladeDetailsText(_VerticalCladeBarLayout entry) {
   final clade = entry.clade;
   final scientific = (clade.scientificLabel ?? clade.openTreeName ?? '').trim();
   final parts = <String>[
-    'Display: ${clade.label}',
-    'Scientific: ${scientific.isEmpty ? '-' : scientific}',
+    'Display name: ${clade.label}',
+    'Scientific name: ${scientific.isEmpty ? '-' : scientific}',
     'Rank: ${clade.scientificRank}',
+    'ID: ${clade.id}',
     'Parent: ${entry.parentLabel ?? '-'}',
-    'Started: ${_formatCladeStartMa(clade.startMa)} Ma ${clade.confidence ?? '-'}',
-    clade.shortDescription ?? '-',
-    'Range: ${clade.rangeNote ?? '-'}',
-    (clade.tags == null || clade.tags!.isEmpty) ? '-' : clade.tags!.join('; '),
+    'Start: ${_formatCladeStartMa(clade.startMa)} Ma',
+    'End: ${_formatCladeStartMa(clade.endMa)} Ma',
+    'Duration: ${_formatCladeStartMa(clade.durationMa)} Ma',
+    'Confidence: ${clade.confidence ?? '-'}',
+    'Zoomable: ${clade.zoomable ? 'yes' : 'no'}',
+    'Minimum zoom level: ${clade.minZoomLevel.id}',
+    'Display priority: ${clade.displayPriority}',
+    'Branch priority: ${clade.branchPriority?.toString() ?? '-'}',
+    'OpenTree OTT: ${clade.ottId?.toString() ?? '-'}',
+    'Cladistic role: ${clade.cladisticRole ?? '-'}',
+    'Detail source: ${clade.detailSource ?? '-'}',
+    'Detail scope: ${clade.detailScope ?? '-'}',
+    'Display groups: ${clade.displayGroups.isEmpty ? '-' : clade.displayGroups.join(', ')}',
+    'Representative taxa: ${(clade.representativeTaxa == null || clade.representativeTaxa!.isEmpty) ? '-' : clade.representativeTaxa!.join(', ')}',
+    'Tags: ${(clade.tags == null || clade.tags!.isEmpty) ? '-' : clade.tags!.join(', ')}',
+    'Summary: ${clade.shortDescription ?? '-'}',
+    'Range note: ${clade.rangeNote ?? '-'}',
+    'Extinction note: ${clade.extinctionNote ?? '-'}',
   ];
+  final openTree = clade.openTree;
+  if (openTree != null) {
+    parts.addAll([
+      'OpenTree matched name: ${openTree.matchedName?.trim().isNotEmpty == true ? openTree.matchedName!.trim() : '-'}',
+      'OpenTree unique name: ${openTree.uniqueName?.trim().isNotEmpty == true ? openTree.uniqueName!.trim() : '-'}',
+      'OpenTree rank: ${openTree.rank?.trim().isNotEmpty == true ? openTree.rank!.trim() : '-'}',
+      'OpenTree flags: ${(openTree.flags == null || openTree.flags!.isEmpty) ? '-' : openTree.flags!.join(', ')}',
+      'OpenTree lineage IDs: ${(openTree.lineageIds == null || openTree.lineageIds!.isEmpty) ? '-' : openTree.lineageIds!.join(', ')}',
+      'OpenTree checked at: ${openTree.checkedAt?.trim().isNotEmpty == true ? openTree.checkedAt!.trim() : '-'}',
+    ]);
+  }
   return parts.join('\n');
 }
 

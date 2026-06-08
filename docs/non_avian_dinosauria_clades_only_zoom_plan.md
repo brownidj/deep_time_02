@@ -364,7 +364,7 @@ Semantics:
 
 Example:
 
-```dart
+```text
 []
 ['dinosauria']
 ['dinosauria', 'theropoda']
@@ -547,8 +547,8 @@ That means Phase 1 should be implemented as an incremental extension of the curr
 
 Files:
 
-- [timeline_screen_state.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline_screen_state.dart)
-- [timeline_screen_clade_detail.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline_screen_clade_detail.dart)
+- [timeline_screen_state.dart](../lib/ui/screens/timeline_screen_state.dart)
+- [timeline_screen_clade_detail.dart](../lib/ui/screens/timeline_screen_clade_detail.dart)
 
 Tasks:
 
@@ -569,8 +569,8 @@ Success criteria:
 
 Files:
 
-- [timeline_header.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_header.dart)
-- [timeline_screen_state.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline_screen_state.dart)
+- [timeline_header.dart](../lib/ui/screens/timeline/timeline_header.dart)
+- [timeline_screen_state.dart](../lib/ui/screens/timeline_screen_state.dart)
 
 Tasks:
 
@@ -587,8 +587,8 @@ Success criteria:
 
 Files:
 
-- [timeline_body_content.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_body_content.dart)
-- [timeline_column_headers.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_column_headers.dart)
+- [timeline_body_content.dart](../lib/ui/screens/timeline/timeline_body_content.dart)
+- [timeline_column_headers.dart](../lib/ui/screens/timeline/timeline_column_headers.dart)
 
 Tasks:
 
@@ -606,9 +606,9 @@ Success criteria:
 
 Files:
 
-- [timeline_vertical_columns_clades_scope.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_scope.dart)
-- [timeline_vertical_columns_clades_viewport.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
-- [timeline_vertical_columns_clades_helpers.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_helpers.dart)
+- [timeline_vertical_columns_clades_scope.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_scope.dart)
+- [timeline_vertical_columns_clades_viewport.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
+- [timeline_vertical_columns_clades_helpers.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_helpers.dart)
 
 Tasks:
 
@@ -629,9 +629,9 @@ Success criteria:
 
 Files:
 
-- [timeline_track_widths.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_track_widths.dart)
-- [timeline_body_metrics.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_body_metrics.dart)
-- [timeline_vertical_columns_tracks.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_tracks.dart)
+- [timeline_track_widths.dart](../lib/ui/screens/timeline/timeline_track_widths.dart)
+- [timeline_body_metrics.dart](../lib/ui/screens/timeline/timeline_body_metrics.dart)
+- [timeline_vertical_columns_tracks.dart](../lib/ui/screens/timeline/timeline_vertical_columns_tracks.dart)
 
 Tasks:
 
@@ -651,9 +651,9 @@ Success criteria:
 
 Files:
 
-- [timeline_vertical_columns_tracks.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_tracks.dart)
-- [timeline_body.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_body.dart)
-- [timeline_body_content.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_body_content.dart)
+- [timeline_vertical_columns_tracks.dart](../lib/ui/screens/timeline/timeline_vertical_columns_tracks.dart)
+- [timeline_body.dart](../lib/ui/screens/timeline/timeline_body.dart)
+- [timeline_body_content.dart](../lib/ui/screens/timeline/timeline_body_content.dart)
 
 Tasks:
 
@@ -676,9 +676,9 @@ Success criteria:
 
 Files:
 
-- [timeline_vertical_columns_clades_labels.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_labels.dart)
-- [timeline_vertical_columns_clades_widgets.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_widgets.dart)
-- [timeline_vertical_columns_clades_viewport.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
+- [timeline_vertical_columns_clades_labels.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_labels.dart)
+- [timeline_vertical_columns_clades_widgets.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_widgets.dart)
+- [timeline_vertical_columns_clades_viewport.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
 
 Tasks:
 
@@ -696,9 +696,9 @@ Success criteria:
 
 Files:
 
-- [timeline_vertical_columns_clades_viewport.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
-- [timeline_vertical_columns_clades_layout_helpers.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_layout_helpers.dart)
-- [timeline_vertical_columns_clades_visibility.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/lib/ui/screens/timeline/timeline_vertical_columns_clades_visibility.dart)
+- [timeline_vertical_columns_clades_viewport.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
+- [timeline_vertical_columns_clades_layout_helpers.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_layout_helpers.dart)
+- [timeline_vertical_columns_clades_visibility.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_visibility.dart)
 
 Tasks:
 
@@ -715,7 +715,7 @@ Success criteria:
 
 Files:
 
-- [clades.yaml](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/data/clades.yaml)
+- [clades.yaml](../data/clades.yaml)
 
 Tasks:
 
@@ -732,8 +732,8 @@ Success criteria:
 
 Files:
 
-- [timeline_biology_mode_test.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/test/timeline_biology_mode_test.dart)
-- [timeline_row_alignment_test.dart](/Users/david/AndroidStudioProjects/flutter/Deep_Time_2/test/timeline_row_alignment_test.dart)
+- [timeline_biology_mode_test.dart](../test/timeline_biology_mode_test.dart)
+- [timeline_row_alignment_test.dart](../test/timeline_row_alignment_test.dart)
 - new focused-clade test file if needed
 
 Tasks:
@@ -760,9 +760,88 @@ Success criteria:
 
 ## Phase 3: focused cladogram layout engine
 
-- implement subtree-specific layout not tied to geological axis
-- add descendant branch rendering
+Problem to solve:
+
+- the current focused subtree renderer still draws each clade as an independent vertical time bar
+- parent-child relationships are then shown with short horizontal connector stubs at the child top
+- once the subtree gains depth, this produces disconnected horizontal line segments such as those now seen around `megalosauroidea` and `tyrannosauroidea`
+- those segments are renderer artifacts, not meaningful cladogram structure
+
+Design rule:
+
+- keep the current overview renderer unchanged
+- replace the focused subtree renderer only
+- do not try to force deeper focused subtrees through the same bar-plus-connector model used by the overview
+
+Implementation goals:
+
+- implement subtree-specific layout not tied to the geological axis
+- replace disconnected child-top connector stubs with explicit branch junctions
+- preserve the current top-down orientation
+- left-pack sparse branches rather than stretching them across the full clade column
 - add label collision control
+
+Focused-mode renderer model:
+
+- a visible focused root trunk
+- explicit parent branch junctions
+- child branches that emerge from the parent trunk at controlled branch levels
+- horizontal levels allocated by tree structure, not by full-width distribution
+- a deterministic branch-spacing policy with an upper cap
+
+Rendering primitives:
+
+- vertical trunk segment
+- horizontal branch segment
+- branch junction node or elbow
+- label rail / rotated label
+
+Do not use in focused mode:
+
+- isolated horizontal connector stubs at child tops
+- full-width fraction-based lane spreading for sparse clades
+- purely time-bar-derived branch appearance
+
+Suggested layout pipeline:
+
+1. Build the focused subtree from the active root.
+2. Keep only the visible subtree plus required internal support nodes.
+3. Compute a tree depth for each node.
+4. Allocate horizontal lanes by branch structure:
+   - root on the left
+   - descendants to the right
+   - sparse sibling groups left-packed
+   - inter-lane spacing capped
+5. Compute branch junction Y positions:
+   - use a stable node anchor
+   - not necessarily identical to `start_ma`
+6. Draw parent trunks and child elbows from those junctions.
+7. Place labels with priority/collision rules.
+8. Keep the pinned strip and focused-root auto-scroll behavior.
+
+Suggested code boundary:
+
+- keep overview logic in the existing vertical clade bar renderer
+- add a dedicated focused renderer and layout service for subtree mode
+
+Suggested files:
+
+- [timeline_vertical_columns_clades_viewport.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
+- [timeline_vertical_columns_clades_layout_helpers.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_layout_helpers.dart)
+- [timeline_vertical_columns_clades_visibility.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_visibility.dart)
+- new focused-layout model/service file if needed
+
+Recommended internal separation:
+
+- `OverviewCladeLayout`: current time-bar layout
+- `FocusedCladeLayout`: new subtree branch layout
+
+Phase 3 success criteria:
+
+- deep dinosaur branches read as one connected cladogram
+- no misleading disconnected horizontal stubs
+- sparse branches stay left-packed
+- adding more descendants improves detail rather than visual confusion
 
 Success criteria:
 
