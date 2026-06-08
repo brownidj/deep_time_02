@@ -96,11 +96,28 @@ extension _TimelineScreenCladeDetail on _TimelineScreenState {
     List<Clade> yamlClades,
   ) async {
     final normalizedRootId = rootId?.trim();
-    final nextRootId = (normalizedRootId == null || normalizedRootId.isEmpty)
+    final requestedRootId = (normalizedRootId == null || normalizedRootId.isEmpty)
         ? null
         : normalizedRootId;
-    debugPrint('[CLADE_DEBUG] rootChange requested=${nextRootId ?? 'null'}');
+    debugPrint('[CLADE_DEBUG] rootChange requested=${requestedRootId ?? 'null'}');
+    final nextPath = List<String>.from(_cladeFocusPath);
+    if (requestedRootId == null) {
+      if (nextPath.isNotEmpty) {
+        nextPath.removeLast();
+      }
+    } else {
+      final existingIndex = nextPath.indexOf(requestedRootId);
+      if (existingIndex >= 0) {
+        nextPath.removeRange(existingIndex + 1, nextPath.length);
+      } else {
+        nextPath.add(requestedRootId);
+      }
+    }
+    final nextRootId = nextPath.isEmpty ? null : nextPath.last;
     _updateScreenState(() {
+      _cladeFocusPath
+        ..clear()
+        ..addAll(nextPath);
       _activeCladeRootId = nextRootId;
       _pendingFocusedRootAutoScrollId = nextRootId;
     });

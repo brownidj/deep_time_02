@@ -132,7 +132,7 @@ class _TimelineHeaderState extends State<TimelineHeader> {
               }
             },
           ),
-          const SizedBox(width: 20),
+          const SizedBox(width: 30),
           if (widget.biologyColumnMode == BiologyColumnMode.cladistic)
             SizedBox(
               width: 240,
@@ -180,13 +180,13 @@ class _TimelineHeaderState extends State<TimelineHeader> {
               ),
             ),
           if (widget.biologyColumnMode == BiologyColumnMode.cladistic)
-            const SizedBox(width: 20),
+            const SizedBox(width: 30),
           SizedBox(
             width: 220,
             child: Row(
               children: [
                 Text(
-                  'Scale',
+                  'Scale:',
                   style: Theme.of(context).textTheme.labelLarge?.copyWith(
                     color: DeepTimePalette.panelText,
                     fontWeight: FontWeight.w600,
@@ -206,7 +206,7 @@ class _TimelineHeaderState extends State<TimelineHeader> {
               ],
             ),
           ),
-          const SizedBox(width: 20),
+          const SizedBox(width: 30),
           IconButton(
             tooltip: 'Settings',
             onPressed: widget.onSettings,

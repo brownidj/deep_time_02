@@ -22,6 +22,7 @@ class _TimelineScreenState extends State<TimelineScreen>
   List<String> _cladeRepresentativeIds = const [];
   String _cladeSearchQuery = '';
   String? _cladeSpotlightId;
+  final List<String> _cladeFocusPath = <String>[];
   String? _activeCladeRootId;
   String? _pendingFocusedRootAutoScrollId;
   String? _activeTaxonomyTaxonId;
@@ -37,7 +38,9 @@ class _TimelineScreenState extends State<TimelineScreen>
   int _labelModeRetryCount = 0;
 
   String? get _focusedCladeRootId {
-    final rootId = _activeCladeRootId?.trim();
+    final rootId = _cladeFocusPath.isEmpty
+        ? _activeCladeRootId?.trim()
+        : _cladeFocusPath.last.trim();
     if (rootId == null || rootId.isEmpty) {
       return null;
     }
@@ -72,13 +75,30 @@ class _TimelineScreenState extends State<TimelineScreen>
     return targetId;
   }
 
-  void _updateCladeSearch(String value, List<Clade> displayedClades) {
+  void _updateCladeSearch({
+    required String value,
+    required List<Clade> displayedClades,
+    required List<Clade> yamlClades,
+  }) {
     final query = value.trim();
-    final matches = query.isEmpty ? const <Clade>[] : searchClades(displayedClades, query);
+    final matches = query.isEmpty
+        ? const <Clade>[]
+        : searchClades(displayedClades, query);
+    final firstZoomableMatch = matches.cast<Clade?>().firstWhere(
+      (clade) => clade?.zoomable == true,
+      orElse: () => null,
+    );
     setState(() {
       _cladeSearchQuery = value;
-      _cladeSpotlightId = matches.isEmpty ? null : matches.first.id;
+      _cladeSpotlightId = null;
     });
+    if (firstZoomableMatch == null) {
+      return;
+    }
+    if (firstZoomableMatch.id == _focusedCladeRootId) {
+      return;
+    }
+    _handleCladeRootChanged(firstZoomableMatch.id, yamlClades);
   }
 
   @override
@@ -165,8 +185,11 @@ class _TimelineScreenState extends State<TimelineScreen>
                     maxScale: AppDebug.maxTimelineScale,
                     biologyColumnMode: _biologyColumnMode,
                     cladeSearchQuery: _cladeSearchQuery,
-                    onCladeSearchChanged: (value) =>
-                        _updateCladeSearch(value, displayedClades),
+                    onCladeSearchChanged: (value) => _updateCladeSearch(
+                      value: value,
+                      displayedClades: displayedClades,
+                      yamlClades: clades,
+                    ),
                     activeCladeRootLabel: _biologyColumnMode ==
                                 BiologyColumnMode.cladistic &&
                             _isFocusedCladeMode
