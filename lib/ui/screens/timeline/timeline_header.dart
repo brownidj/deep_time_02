@@ -192,12 +192,13 @@ class _TimelineHeaderState extends State<TimelineHeader> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const SizedBox(width: 4),
+                const SizedBox(width: 0),
                 Expanded(
                   child: Slider(
                     min: widget.minScale,
                     max: widget.maxScale,
                     divisions: 12,
+                    padding: const EdgeInsets.only(left: 4),
                     value: widget.scale.clamp(widget.minScale, widget.maxScale),
                     label: _scaleLabel(),
                     onChanged: widget.onScaleChanged,

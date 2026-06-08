@@ -1158,12 +1158,105 @@
     - Mesozoic
     - extinction
 
+- id: neornithischia
+  common_label: Neornithischia
+  scientific_label: Neornithischia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: ornithischia
+  start_ma: 200.0
+  end_ma: 66.0
+  range_note: Early Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 17
+  min_zoom_level: period
+  short_description: Derived ornithischians including ornithopods and marginocephalians.
+  divergence_ma: 200.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Iguanodon
+    - Triceratops
+    - Pachycephalosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ornithischian
+    - Mesozoic
+    - extinction
+
+- id: eurypoda
+  common_label: Eurypoda
+  scientific_label: Eurypoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: thyreophora
+  start_ma: 174.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 18
+  min_zoom_level: period
+  short_description: Advanced thyreophorans including stegosaurs and ankylosaurs.
+  divergence_ma: 174.0
+  branch_priority: 27
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Stegosaurus
+    - Ankylosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - thyreophoran
+    - armoured
+    - Mesozoic
+    - extinction
+
+- id: cerapoda
+  common_label: Cerapoda
+  scientific_label: Cerapoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: neornithischia
+  start_ma: 171.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 19
+  min_zoom_level: period
+  short_description: Neornithischians including ornithopods and marginocephalians.
+  divergence_ma: 171.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Iguanodon
+    - Triceratops
+    - Pachycephalosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ornithischian
+    - Mesozoic
+    - extinction
+
 - id: ornithopoda
   common_label: Ornithopoda
   scientific_label: Ornithopoda
   scientific_rank: clade
   zoomable: true
-  parent_id: ornithischia
+  parent_id: cerapoda
   start_ma: 190.0
   end_ma: 66.0
   range_note: Early Jurassic to K-Pg boundary
@@ -1195,7 +1288,7 @@
   scientific_label: Marginocephalia
   scientific_rank: clade
   zoomable: true
-  parent_id: ornithischia
+  parent_id: cerapoda
   start_ma: 171.0
   end_ma: 66.0
   range_note: Middle Jurassic to K-Pg boundary
@@ -1410,7 +1503,7 @@
   common_label: Stegosauria
   scientific_label: Stegosauria
   scientific_rank: clade
-  parent_id: thyreophora
+  parent_id: eurypoda
   start_ma: 171.0
   end_ma: 145.0
   range_note: Middle Jurassic to Early Cretaceous
@@ -1438,7 +1531,7 @@
   common_label: Ankylosauria
   scientific_label: Ankylosauria
   scientific_rank: clade
-  parent_id: thyreophora
+  parent_id: eurypoda
   start_ma: 174.0
   end_ma: 66.0
   range_note: Middle Jurassic to K-Pg boundary

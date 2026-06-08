@@ -196,11 +196,19 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
   const padding = labelHalfWidth;
   const minBarHeight = 12.0;
   const lineHitWidth = 72.0;
+  const minLaneSpacing = 30.0;
+  const maxLaneSpacing = minLaneSpacing * 3;
   final visibleById = {for (final clade in visible) clade.id: clade};
 
   final layouts = <_VerticalCladeBarLayout>[];
   final ordered = _orderedTreeClades(visible);
   final usable = math.max(0.0, columnWidth - (padding * 2) - 2);
+  final laneSpacing = ordered.length <= 1
+      ? 0.0
+      : math.min(
+          maxLaneSpacing,
+          usable / math.max(1, ordered.length - 1),
+        );
   var skippedZeroHeight = 0;
   var inheritedRangeCount = 0;
 
@@ -252,8 +260,7 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
       skippedZeroHeight += 1;
       continue;
     }
-    final laneFraction = ordered.length <= 1 ? 0.0 : i / (ordered.length - 1);
-    final left = padding + (usable * laneFraction);
+    final left = padding + (laneSpacing * i);
     final hitWidth = math.max(12.0, math.min(lineHitWidth, columnWidth - left));
     layouts.add(
       _VerticalCladeBarLayout(
@@ -271,7 +278,8 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
   }
   _debugCladeZoom(
     'layout ordered=${ordered.length} laidOut=${layouts.length} skipped=$skippedZeroHeight '
-    'inheritedRange=$inheritedRangeCount columnH=${columnHeight.toStringAsFixed(1)}',
+    'inheritedRange=$inheritedRangeCount laneSpacing=${laneSpacing.toStringAsFixed(1)} '
+    'columnH=${columnHeight.toStringAsFixed(1)}',
   );
   return layouts;
 }
