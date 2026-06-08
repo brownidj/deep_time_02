@@ -977,6 +977,7 @@
   common_label: Non-avian dinosaurs
   scientific_label: Non-avian dinosaurs
   scientific_rank: informal clade
+  zoomable: true
   parent_id: dinosauria
   start_ma: 231.0
   end_ma: 66.0
@@ -999,6 +1000,577 @@
   tags:
     - vertebrate
     - dinosaur
+    - Mesozoic
+    - extinction
+
+- id: saurischia
+  common_label: Saurischia
+  scientific_label: Saurischia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: non_avian_dinosaurs
+  start_ma: 231.0
+  end_ma: 66.0
+  range_note: Late Triassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 12
+  min_zoom_level: period
+  short_description: The saurischian branch including theropods and sauropodomorphs.
+  divergence_ma: 231.0
+  branch_priority: 21
+  cladistic_role: backbone
+  uncertainty: approximate
+  representative_taxa:
+    - Tyrannosaurus
+    - Allosaurus
+    - Diplodocus
+  extinction_note: Extinct outside the avian lineage at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - saurischian
+    - Mesozoic
+    - extinction
+
+- id: ornithischia
+  common_label: Ornithischia
+  scientific_label: Ornithischia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: non_avian_dinosaurs
+  start_ma: 228.0
+  end_ma: 66.0
+  range_note: Late Triassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 13
+  min_zoom_level: period
+  short_description: Herbivorous non-avian dinosaurs including ceratopsians, ornithopods, and thyreophorans.
+  divergence_ma: 228.0
+  branch_priority: 22
+  cladistic_role: backbone
+  uncertainty: approximate
+  representative_taxa:
+    - Triceratops
+    - Stegosaurus
+    - Iguanodon
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ornithischian
+    - Mesozoic
+    - extinction
+
+- id: theropoda
+  common_label: Theropoda
+  scientific_label: Theropoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: saurischia
+  start_ma: 231.0
+  end_ma: 66.0
+  range_note: Late Triassic to K-Pg boundary in the non-avian branch
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 14
+  min_zoom_level: period
+  short_description: Predominantly bipedal saurischians; birds descend from avian theropods outside this non-avian focus branch.
+  divergence_ma: 231.0
+  branch_priority: 23
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Tyrannosaurus
+    - Velociraptor
+    - Allosaurus
+  extinction_note: Non-avian theropods were lost at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - Mesozoic
+    - extinction
+
+- id: sauropodomorpha
+  common_label: Sauropodomorpha
+  scientific_label: Sauropodomorpha
+  scientific_rank: clade
+  zoomable: true
+  parent_id: saurischia
+  start_ma: 227.0
+  end_ma: 66.0
+  range_note: Late Triassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 15
+  min_zoom_level: period
+  short_description: Long-necked saurischians including the giant sauropods.
+  divergence_ma: 227.0
+  branch_priority: 24
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Plateosaurus
+    - Diplodocus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropodomorph
+    - Mesozoic
+    - extinction
+
+- id: thyreophora
+  common_label: Thyreophora
+  scientific_label: Thyreophora
+  scientific_rank: clade
+  zoomable: true
+  parent_id: ornithischia
+  start_ma: 201.0
+  end_ma: 66.0
+  range_note: Early Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 16
+  min_zoom_level: period
+  short_description: Armoured ornithischians including stegosaurs and ankylosaurs.
+  divergence_ma: 201.0
+  branch_priority: 25
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Stegosaurus
+    - Ankylosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ornithischian
+    - armoured
+    - Mesozoic
+    - extinction
+
+- id: ornithopoda
+  common_label: Ornithopoda
+  scientific_label: Ornithopoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: ornithischia
+  start_ma: 190.0
+  end_ma: 66.0
+  range_note: Early Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 17
+  min_zoom_level: period
+  short_description: Ornithischians including iguanodontians and hadrosaur relatives.
+  divergence_ma: 190.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Iguanodon
+    - Parasaurolophus
+    - Edmontosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ornithischian
+    - herbivore
+    - Mesozoic
+    - extinction
+
+- id: marginocephalia
+  common_label: Marginocephalia
+  scientific_label: Marginocephalia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: ornithischia
+  start_ma: 171.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 18
+  min_zoom_level: period
+  short_description: Ornithischians including ceratopsians and pachycephalosaurs.
+  divergence_ma: 171.0
+  branch_priority: 27
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Triceratops
+    - Pachycephalosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ornithischian
+    - Mesozoic
+    - extinction
+
+- id: coelurosauria
+  common_label: Coelurosauria
+  scientific_label: Coelurosauria
+  scientific_rank: clade
+  zoomable: true
+  parent_id: theropoda
+  start_ma: 168.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary in the non-avian branch
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 19
+  min_zoom_level: period
+  short_description: Theropods including tyrannosauroids, ornithomimosaurs, and maniraptorans.
+  divergence_ma: 168.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Tyrannosaurus
+    - Ornithomimus
+    - Velociraptor
+  extinction_note: Non-avian coelurosaurs were lost at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - Mesozoic
+    - extinction
+
+- id: ceratosauria
+  common_label: Ceratosauria
+  scientific_label: Ceratosauria
+  scientific_rank: clade
+  parent_id: theropoda
+  start_ma: 201.0
+  end_ma: 66.0
+  range_note: Early Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Early-branching theropods including ceratosaur and abelisaur lineages.
+  divergence_ma: 201.0
+  branch_priority: 29
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Ceratosaurus
+    - Carnotaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - Mesozoic
+    - extinction
+
+- id: sauropoda
+  common_label: Sauropoda
+  scientific_label: Sauropoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: sauropodomorpha
+  start_ma: 201.0
+  end_ma: 66.0
+  range_note: Early Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Large-bodied long-necked herbivores including diplodocoids and titanosaurs.
+  divergence_ma: 201.0
+  branch_priority: 30
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Diplodocus
+    - Brachiosaurus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - Mesozoic
+    - extinction
+
+- id: stegosauria
+  common_label: Stegosauria
+  scientific_label: Stegosauria
+  scientific_rank: clade
+  parent_id: thyreophora
+  start_ma: 171.0
+  end_ma: 145.0
+  range_note: Middle Jurassic to Early Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Plate-backed thyreophorans such as Stegosaurus.
+  divergence_ma: 171.0
+  branch_priority: 31
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Stegosaurus
+  extinction_note: Extinct before the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - thyreophoran
+    - Mesozoic
+    - extinction
+
+- id: ankylosauria
+  common_label: Ankylosauria
+  scientific_label: Ankylosauria
+  scientific_rank: clade
+  parent_id: thyreophora
+  start_ma: 174.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Heavily armoured thyreophorans including club-tailed ankylosaurs.
+  divergence_ma: 174.0
+  branch_priority: 32
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Ankylosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - thyreophoran
+    - Mesozoic
+    - extinction
+
+- id: ceratopsia
+  common_label: Ceratopsia
+  scientific_label: Ceratopsia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: marginocephalia
+  start_ma: 171.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Beaked marginocephalians including protoceratopsians and horned ceratopsids.
+  divergence_ma: 171.0
+  branch_priority: 33
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Protoceratops
+    - Triceratops
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - ceratopsian
+    - Mesozoic
+    - extinction
+
+- id: pachycephalosauria
+  common_label: Pachycephalosauria
+  scientific_label: Pachycephalosauria
+  scientific_rank: clade
+  parent_id: marginocephalia
+  start_ma: 167.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 25
+  min_zoom_level: period
+  short_description: Dome-headed marginocephalians of the Late Cretaceous.
+  divergence_ma: 167.0
+  branch_priority: 34
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Pachycephalosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - marginocephalian
+    - Mesozoic
+    - extinction
+
+- id: tyrannosauroidea
+  common_label: Tyrannosauroidea
+  scientific_label: Tyrannosauroidea
+  scientific_rank: clade
+  parent_id: coelurosauria
+  start_ma: 170.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 26
+  min_zoom_level: period
+  short_description: Coelurosaurs culminating in large apex predators such as Tyrannosaurus.
+  divergence_ma: 170.0
+  branch_priority: 35
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Tyrannosaurus
+    - Albertosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - Mesozoic
+    - extinction
+
+- id: maniraptora
+  common_label: Maniraptora
+  scientific_label: Maniraptora
+  scientific_rank: clade
+  parent_id: coelurosauria
+  start_ma: 167.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary in the non-avian branch
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 27
+  min_zoom_level: period
+  short_description: Coelurosaur theropods including dromaeosaurs, oviraptorosaurs, and avian relatives.
+  divergence_ma: 167.0
+  branch_priority: 36
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Velociraptor
+    - Oviraptor
+    - Deinonychus
+  extinction_note: Non-avian maniraptorans were lost at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - feathered
+    - Mesozoic
+    - extinction
+
+- id: diplodocoidea
+  common_label: Diplodocoidea
+  scientific_label: Diplodocoidea
+  scientific_rank: clade
+  parent_id: sauropoda
+  start_ma: 170.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 28
+  min_zoom_level: period
+  short_description: Sauropods including Diplodocus and Apatosaurus.
+  divergence_ma: 170.0
+  branch_priority: 37
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Diplodocus
+    - Apatosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - Mesozoic
+    - extinction
+
+- id: macronaria
+  common_label: Macronaria
+  scientific_label: Macronaria
+  scientific_rank: clade
+  zoomable: true
+  parent_id: sauropoda
+  start_ma: 170.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 29
+  min_zoom_level: period
+  short_description: Sauropods including brachiosaurids and titanosaurs.
+  divergence_ma: 170.0
+  branch_priority: 38
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Brachiosaurus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - Mesozoic
+    - extinction
+
+- id: titanosauria
+  common_label: Titanosauria
+  scientific_label: Titanosauria
+  scientific_rank: clade
+  parent_id: macronaria
+  start_ma: 126.0
+  end_ma: 66.0
+  range_note: Early Cretaceous to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 30
+  min_zoom_level: period
+  short_description: Derived macronarian sauropods including many giant Late Cretaceous forms.
+  divergence_ma: 126.0
+  branch_priority: 39
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Saltasaurus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - titanosaur
     - Mesozoic
     - extinction
 
