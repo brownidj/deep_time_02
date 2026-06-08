@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/theme/deep_time_palette.dart';
 
-class TimelineHeader extends StatelessWidget {
+class TimelineHeader extends StatefulWidget {
   const TimelineHeader({
     super.key,
     required this.onSettings,
@@ -12,6 +12,8 @@ class TimelineHeader extends StatelessWidget {
     required this.maxScale,
     required this.biologyColumnMode,
     required this.onBiologyColumnModeChanged,
+    required this.cladeSearchQuery,
+    required this.onCladeSearchChanged,
     this.activeCladeRootLabel,
     this.onClearCladeRoot,
   });
@@ -23,13 +25,49 @@ class TimelineHeader extends StatelessWidget {
   final double maxScale;
   final BiologyColumnMode biologyColumnMode;
   final ValueChanged<BiologyColumnMode> onBiologyColumnModeChanged;
+  final String cladeSearchQuery;
+  final ValueChanged<String> onCladeSearchChanged;
   final String? activeCladeRootLabel;
   final VoidCallback? onClearCladeRoot;
 
+  @override
+  State<TimelineHeader> createState() => _TimelineHeaderState();
+}
+
+class _TimelineHeaderState extends State<TimelineHeader> {
+  late final TextEditingController _searchController;
+
   String _scaleLabel() {
-    final offset = minScale - 1.0;
-    final displayScale = (scale - offset).clamp(1.0, maxScale - offset);
+    final offset = widget.minScale - 1.0;
+    final displayScale = (widget.scale - offset).clamp(
+      1.0,
+      widget.maxScale - offset,
+    );
     return displayScale.toStringAsFixed(1);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _searchController = TextEditingController(text: widget.cladeSearchQuery);
+  }
+
+  @override
+  void didUpdateWidget(covariant TimelineHeader oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.cladeSearchQuery != widget.cladeSearchQuery &&
+        _searchController.text != widget.cladeSearchQuery) {
+      _searchController.text = widget.cladeSearchQuery;
+      _searchController.selection = TextSelection.collapsed(
+        offset: widget.cladeSearchQuery.length,
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
   }
 
   @override
@@ -56,50 +94,93 @@ class TimelineHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 12),
-          if (biologyColumnMode == BiologyColumnMode.cladistic &&
-              activeCladeRootLabel != null) ...[
+          if (widget.biologyColumnMode == BiologyColumnMode.cladistic &&
+              widget.activeCladeRootLabel != null) ...[
             IconButton(
               tooltip: 'Previous clade view',
-              onPressed: onClearCladeRoot,
+              onPressed: widget.onClearCladeRoot,
               icon: const Icon(Icons.arrow_back),
               color: DeepTimePalette.panelText,
             ),
             const SizedBox(width: 8),
           ],
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SegmentedButton<BiologyColumnMode>(
-                showSelectedIcon: false,
-                segments: const [
-                  ButtonSegment(
-                    value: BiologyColumnMode.cladistic,
-                    label: Text('Clades'),
-                  ),
-                  ButtonSegment(
-                    value: BiologyColumnMode.taxonomic,
-                    label: Text('Taxonomy'),
-                  ),
-                ],
-                style: ButtonStyle(
-                  foregroundColor: WidgetStateProperty.resolveWith((states) {
-                    if (states.contains(WidgetState.selected)) {
-                      return Colors.black;
-                    }
-                    return Colors.white;
-                  }),
-                ),
-                selected: {biologyColumnMode},
-                onSelectionChanged: (selection) {
-                  final nextMode = selection.first;
-                  if (nextMode != biologyColumnMode) {
-                    onBiologyColumnModeChanged(nextMode);
-                  }
-                },
+          SegmentedButton<BiologyColumnMode>(
+            showSelectedIcon: false,
+            segments: const [
+              ButtonSegment(
+                value: BiologyColumnMode.cladistic,
+                label: Text('Clades'),
+              ),
+              ButtonSegment(
+                value: BiologyColumnMode.taxonomic,
+                label: Text('Taxonomy'),
               ),
             ],
+            style: ButtonStyle(
+              foregroundColor: WidgetStateProperty.resolveWith((states) {
+                if (states.contains(WidgetState.selected)) {
+                  return Colors.black;
+                }
+                return Colors.white;
+              }),
+            ),
+            selected: {widget.biologyColumnMode},
+            onSelectionChanged: (selection) {
+              final nextMode = selection.first;
+              if (nextMode != widget.biologyColumnMode) {
+                widget.onBiologyColumnModeChanged(nextMode);
+              }
+            },
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 20),
+          if (widget.biologyColumnMode == BiologyColumnMode.cladistic)
+            SizedBox(
+              width: 240,
+              child: TextField(
+                controller: _searchController,
+                onChanged: widget.onCladeSearchChanged,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: DeepTimePalette.panelText,
+                ),
+                decoration: InputDecoration(
+                  hintText: 'Search clades',
+                  hintStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: DeepTimePalette.panelText.withValues(alpha: 0.7),
+                  ),
+                  prefixIcon: const Icon(Icons.search, size: 18),
+                  suffixIcon: widget.cladeSearchQuery.trim().isEmpty
+                      ? null
+                      : IconButton(
+                          tooltip: 'Clear search',
+                          onPressed: () => widget.onCladeSearchChanged(''),
+                          icon: const Icon(Icons.close, size: 18),
+                        ),
+                  filled: true,
+                  fillColor: DeepTimePalette.frameBorder,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    borderSide: const BorderSide(
+                      color: DeepTimePalette.periodDivider,
+                    ),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    borderSide: const BorderSide(
+                      color: DeepTimePalette.periodDivider,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    borderSide: const BorderSide(
+                      color: DeepTimePalette.panelText,
+                    ),
+                  ),
+                  isDense: true,
+                ),
+              ),
+            ),
+          if (widget.biologyColumnMode == BiologyColumnMode.cladistic)
+            const SizedBox(width: 20),
           SizedBox(
             width: 220,
             child: Row(
@@ -111,24 +192,24 @@ class TimelineHeader extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 4),
                 Expanded(
                   child: Slider(
-                    min: minScale,
-                    max: maxScale,
+                    min: widget.minScale,
+                    max: widget.maxScale,
                     divisions: 12,
-                    value: scale.clamp(minScale, maxScale),
+                    value: widget.scale.clamp(widget.minScale, widget.maxScale),
                     label: _scaleLabel(),
-                    onChanged: onScaleChanged,
+                    onChanged: widget.onScaleChanged,
                   ),
                 ),
               ],
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 20),
           IconButton(
             tooltip: 'Settings',
-            onPressed: onSettings,
+            onPressed: widget.onSettings,
             icon: const Icon(Icons.settings),
             color: DeepTimePalette.panelText,
           ),

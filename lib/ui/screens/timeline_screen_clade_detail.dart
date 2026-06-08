@@ -102,6 +102,7 @@ extension _TimelineScreenCladeDetail on _TimelineScreenState {
     debugPrint('[CLADE_DEBUG] rootChange requested=${nextRootId ?? 'null'}');
     _updateScreenState(() {
       _activeCladeRootId = nextRootId;
+      _pendingFocusedRootAutoScrollId = nextRootId;
     });
     if (!_isFocusedCladeMode) {
       debugPrint('[CLADE_DEBUG] rootChange cleared');

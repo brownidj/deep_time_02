@@ -1225,7 +1225,7 @@
   scientific_label: Coelurosauria
   scientific_rank: clade
   zoomable: true
-  parent_id: theropoda
+  parent_id: tetanurae
   start_ma: 168.0
   end_ma: 66.0
   range_note: Middle Jurassic to K-Pg boundary in the non-avian branch
@@ -1248,6 +1248,101 @@
     - vertebrate
     - dinosaur
     - theropod
+    - Mesozoic
+    - extinction
+
+- id: tetanurae
+  common_label: Tetanurae
+  scientific_label: Tetanurae
+  scientific_rank: clade
+  zoomable: true
+  parent_id: theropoda
+  start_ma: 174.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary in the non-avian branch
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Stiff-tailed theropods including megalosauroids, allosauroids, and coelurosaurs.
+  divergence_ma: 174.0
+  branch_priority: 29
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Allosaurus
+    - Tyrannosaurus
+    - Spinosaurus
+  extinction_note: Non-avian tetanurans were lost at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - tetanuran
+    - Mesozoic
+    - extinction
+
+- id: allosauroidea
+  common_label: Allosauroidea
+  scientific_label: Allosauroidea
+  scientific_rank: clade
+  zoomable: true
+  parent_id: tetanurae
+  start_ma: 170.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Tetanuran theropods including allosaurids, carcharodontosaurids, and metriacanthosaurids.
+  divergence_ma: 170.0
+  branch_priority: 30
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Allosaurus
+    - Yangchuanosaurus
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - allosauroid
+    - Mesozoic
+    - extinction
+
+- id: megalosauroidea
+  common_label: Megalosauroidea
+  scientific_label: Megalosauroidea
+  scientific_rank: clade
+  zoomable: true
+  parent_id: tetanurae
+  start_ma: 179.0
+  end_ma: 66.0
+  range_note: Early Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Tetanuran theropods including megalosaurids, spinosaurids, and close Jurassic relatives.
+  divergence_ma: 179.0
+  branch_priority: 31
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Megalosaurus
+    - Piatnitzkysaurus
+    - Spinosaurus
+  extinction_note: Extinct before the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - megalosauroid
     - Mesozoic
     - extinction
 
@@ -1485,6 +1580,38 @@
     - Mesozoic
     - extinction
 
+- id: oviraptorosauria
+  common_label: Oviraptorosauria
+  scientific_label: Oviraptorosauria
+  scientific_rank: clade
+  zoomable: true
+  parent_id: maniraptora
+  start_ma: 125.4
+  end_ma: 66.0
+  range_note: Early Cretaceous to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 28
+  min_zoom_level: period
+  short_description: Beaked maniraptoran theropods including Caudipteryx, oviraptorids, and close relatives.
+  divergence_ma: 125.4
+  branch_priority: 37
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Caudipteryx
+    - Oviraptor
+  extinction_note: Non-avian oviraptorosaurs were lost at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - maniraptoran
+    - feathered
+    - Mesozoic
+    - extinction
+
 - id: diplodocoidea
   common_label: Diplodocoidea
   scientific_label: Diplodocoidea
@@ -1544,11 +1671,42 @@
     - Mesozoic
     - extinction
 
+- id: titanosauriformes
+  common_label: Titanosauriformes
+  scientific_label: Titanosauriformes
+  scientific_rank: clade
+  zoomable: true
+  parent_id: macronaria
+  start_ma: 145.0
+  end_ma: 66.0
+  range_note: Early Cretaceous to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 30
+  min_zoom_level: period
+  short_description: Derived macronarian sauropods including brachiosaurids and titanosaurs.
+  divergence_ma: 145.0
+  branch_priority: 39
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Brachiosaurus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - titanosauriform
+    - Mesozoic
+    - extinction
+
 - id: titanosauria
   common_label: Titanosauria
   scientific_label: Titanosauria
   scientific_rank: clade
-  parent_id: macronaria
+  parent_id: titanosauriformes
   start_ma: 126.0
   end_ma: 66.0
   range_note: Early Cretaceous to K-Pg boundary
@@ -1660,6 +1818,160 @@
     - vertebrate
     - dinosaur
     - sauropod
+    - family
+    - Mesozoic
+    - extinction
+
+- id: metriacanthosauridae
+  common_label: Metriacanthosaurids
+  scientific_label: Metriacanthosauridae
+  scientific_rank: family
+  parent_id: allosauroidea
+  start_ma: 163.5
+  end_ma: 66.0
+  range_note: Callovian fossil minimum through the K-Pg boundary
+  confidence: moderate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 35
+  min_zoom_level: period
+  short_description: Jurassic allosauroids including Metriacanthosaurus and its close relatives.
+  divergence_ma: 163.5
+  branch_priority: 44
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Metriacanthosaurus
+    - Yangchuanosaurus
+  extinction_note: Extinct before the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - allosauroid
+    - family
+    - Mesozoic
+    - extinction
+
+- id: piatnitzkysauridae
+  common_label: Piatnitzkysaurids
+  scientific_label: Piatnitzkysauridae
+  scientific_rank: family
+  parent_id: megalosauroidea
+  start_ma: 179.17
+  end_ma: 66.0
+  range_note: Early Middle Jurassic fossil minimum through the K-Pg boundary
+  confidence: moderate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 36
+  min_zoom_level: period
+  short_description: Early megalosauroid theropods including Piatnitzkysaurus and Condorraptor.
+  divergence_ma: 179.17
+  branch_priority: 45
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Piatnitzkysaurus
+    - Condorraptor
+  extinction_note: Extinct before the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - megalosauroid
+    - family
+    - Mesozoic
+    - extinction
+
+- id: caudipterygidae
+  common_label: Caudipterygids
+  scientific_label: Caudipterygidae
+  scientific_rank: family
+  parent_id: oviraptorosauria
+  start_ma: 125.39
+  end_ma: 66.0
+  range_note: Early Cretaceous fossil minimum through the K-Pg boundary
+  confidence: moderate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 37
+  min_zoom_level: period
+  short_description: Feathered oviraptorosaurs including Caudipteryx from the Jehol Biota.
+  divergence_ma: 125.39
+  branch_priority: 46
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Caudipteryx
+    - Similicaudipteryx
+  extinction_note: Extinct before the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - dinosaur
+    - theropod
+    - oviraptorosaur
+    - family
+    - feathered
+    - Mesozoic
+    - extinction
+
+- id: huanghetitanidae
+  common_label: Huanghetitanids
+  scientific_label: Huanghetitanidae
+  scientific_rank: family
+  parent_id: titanosauriformes
+  start_ma: 113.2
+  end_ma: 66.0
+  range_note: Early Cretaceous formation-derived minimum through the K-Pg boundary
+  confidence: low
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 38
+  min_zoom_level: period
+  short_description: Early Cretaceous Chinese sauropods historically grouped around Huanghetitan.
+  divergence_ma: 113.2
+  branch_priority: 47
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Huanghetitan
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - titanosauriform
+    - family
+    - Mesozoic
+    - extinction
+
+- id: pakisauridae
+  common_label: Pakisaurids
+  scientific_label: Pakisauridae
+  scientific_rank: family
+  parent_id: titanosauriformes
+  start_ma: 72.1
+  end_ma: 66.0
+  range_note: Maastrichtian formation-derived minimum to the K-Pg boundary
+  confidence: low
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 39
+  min_zoom_level: period
+  short_description: Latest Cretaceous Pakistani sauropods proposed as a distinct titanosauriform family.
+  divergence_ma: 72.1
+  branch_priority: 48
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Pakisaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - titanosauriform
     - family
     - Mesozoic
     - extinction

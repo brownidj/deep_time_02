@@ -83,3 +83,50 @@ double _resolveTopStripHeight({
   }
   return 0.0;
 }
+
+void _scheduleFocusedRootAutoScroll({
+  required ScrollController scrollController,
+  required String? activeCladeRootId,
+  required String? pendingFocusedRootAutoScrollId,
+  required ValueChanged<String> onFocusedRootAutoScrollHandled,
+  required List<_VerticalCladeBarLayout> barLayouts,
+  required double topStripHeight,
+}) {
+  final rootId = activeCladeRootId?.trim();
+  final pendingRootId = pendingFocusedRootAutoScrollId?.trim();
+  if (rootId == null || rootId.isEmpty || rootId != pendingRootId) {
+    return;
+  }
+  _VerticalCladeBarLayout? rootEntry;
+  for (final entry in barLayouts) {
+    if (entry.clade.id == rootId) {
+      rootEntry = entry;
+      break;
+    }
+  }
+  if (rootEntry == null) {
+    return;
+  }
+  WidgetsBinding.instance.addPostFrameCallback((_) {
+    if (!scrollController.hasClients) {
+      return;
+    }
+    // Focused subtree views do not inherit the LUCA/Hadean top-space used by
+    // the overview. This small offset restores a comparable visual buffer so
+    // the focused root sits just below the pinned strip instead of touching it.
+    final targetOffset = (rootEntry!.top - topStripHeight - 2.0).clamp(
+      0.0,
+      scrollController.position.maxScrollExtent,
+    );
+    final currentOffset = scrollController.position.pixels;
+    onFocusedRootAutoScrollHandled(rootId);
+    if ((currentOffset - targetOffset).abs() <= 2.0) {
+      return;
+    }
+    scrollController.animateTo(
+      targetOffset,
+      duration: const Duration(milliseconds: 220),
+      curve: Curves.easeOutCubic,
+    );
+  });
+}

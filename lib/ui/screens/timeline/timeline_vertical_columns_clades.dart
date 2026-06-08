@@ -25,9 +25,11 @@ class _VerticalCladeColumn extends StatelessWidget {
     required this.searchQuery,
     required this.spotlightId,
     this.activeCladeRootId,
+    this.pendingFocusedRootAutoScrollId,
     this.childrenByParentId = const {},
     required this.onSpotlight,
     required this.onCladeRootChanged,
+    required this.onFocusedRootAutoScrollHandled,
   });
 
   final double width;
@@ -53,9 +55,11 @@ class _VerticalCladeColumn extends StatelessWidget {
   final String searchQuery;
   final String? spotlightId;
   final String? activeCladeRootId;
+  final String? pendingFocusedRootAutoScrollId;
   final Map<String, List<Clade>> childrenByParentId;
   final ValueChanged<Clade> onSpotlight;
   final ValueChanged<String?> onCladeRootChanged;
+  final ValueChanged<String> onFocusedRootAutoScrollHandled;
 
   @override
   Widget build(BuildContext context) {
@@ -102,9 +106,11 @@ class _VerticalCladeColumn extends StatelessWidget {
               searchQuery: searchQuery,
               spotlightId: spotlightId,
               activeCladeRootId: activeCladeRootId,
+              pendingFocusedRootAutoScrollId: pendingFocusedRootAutoScrollId,
               childrenByParentId: childrenByParentId,
               onSpotlight: onSpotlight,
               onCladeRootChanged: onCladeRootChanged,
+              onFocusedRootAutoScrollHandled: onFocusedRootAutoScrollHandled,
             );
           },
         ),

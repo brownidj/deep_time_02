@@ -20,9 +20,11 @@ class TimelineVerticalColumns extends StatelessWidget {
     required this.cladeSearchQuery,
     required this.cladeSpotlightId,
     this.activeCladeRootId,
+    this.pendingFocusedRootAutoScrollId,
     this.childrenByParentId = const {},
     required this.onCladeSpotlight,
     this.onCladeRootChanged,
+    this.onFocusedRootAutoScrollHandled,
     this.activeTaxonomyTaxonId,
     this.onTaxonomyTaxonSelected,
     required this.metrics,
@@ -46,9 +48,11 @@ class TimelineVerticalColumns extends StatelessWidget {
   final String cladeSearchQuery;
   final String? cladeSpotlightId;
   final String? activeCladeRootId;
+  final String? pendingFocusedRootAutoScrollId;
   final Map<String, List<Clade>> childrenByParentId;
   final ValueChanged<Clade> onCladeSpotlight;
   final ValueChanged<String?>? onCladeRootChanged;
+  final ValueChanged<String>? onFocusedRootAutoScrollHandled;
   final String? activeTaxonomyTaxonId;
   final ValueChanged<String?>? onTaxonomyTaxonSelected;
   final TimelineBodyMetrics metrics;
@@ -241,9 +245,12 @@ class TimelineVerticalColumns extends StatelessWidget {
                 cladeSearchQuery: cladeSearchQuery,
                 cladeSpotlightId: cladeSpotlightId,
                 activeCladeRootId: activeCladeRootId,
+                pendingFocusedRootAutoScrollId: pendingFocusedRootAutoScrollId,
                 childrenByParentId: childrenByParentId,
                 onCladeSpotlight: onCladeSpotlight,
                 onCladeRootChanged: onCladeRootChanged ?? (_) {},
+                onFocusedRootAutoScrollHandled:
+                    onFocusedRootAutoScrollHandled ?? (_) {},
                 activeTaxonomyTaxonId: activeTaxonomyTaxonId,
                 onTaxonomyTaxonSelected: onTaxonomyTaxonSelected ?? (_) {},
                 paleoEcology: paleoEcology,

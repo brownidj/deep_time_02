@@ -11,7 +11,6 @@ import 'package:deep_time_2/ui/models/biology_column_mode.dart';
 import 'package:deep_time_2/ui/models/clade_label_mode.dart';
 import 'package:deep_time_2/ui/models/clade_view_mode.dart';
 import 'package:deep_time_2/ui/models/time_label_mode.dart';
-import 'package:deep_time_2/ui/screens/timeline/clade_search_panel.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_body.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_header.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_selection_panel.dart';

@@ -24,9 +24,11 @@ Widget _buildCladeViewport({
   required String searchQuery,
   required String? spotlightId,
   required String? activeCladeRootId,
+  required String? pendingFocusedRootAutoScrollId,
   required Map<String, List<Clade>> childrenByParentId,
   required ValueChanged<Clade> onSpotlight,
   required ValueChanged<String?> onCladeRootChanged,
+  required ValueChanged<String> onFocusedRootAutoScrollHandled,
 }) {
   final mapper = _StageRangeMapper(
     stageSegments: stageSegments,
@@ -129,6 +131,14 @@ Widget _buildCladeViewport({
     maxHeight: height,
     pinnedCapHeight: pinnedCapHeight,
     hasActiveRoot: hasActiveRoot,
+  );
+  _scheduleFocusedRootAutoScroll(
+    scrollController: scrollController,
+    activeCladeRootId: activeCladeRootId,
+    pendingFocusedRootAutoScrollId: pendingFocusedRootAutoScrollId,
+    onFocusedRootAutoScrollHandled: onFocusedRootAutoScrollHandled,
+    barLayouts: barLayouts,
+    topStripHeight: topStripHeight,
   );
   final pinnedTop = scrollOffset
       .clamp(0.0, math.max(0.0, height - topStripHeight))

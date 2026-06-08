@@ -16,9 +16,11 @@ Widget _buildBiologyTrack({
   required String cladeSearchQuery,
   required String? cladeSpotlightId,
   required String? activeCladeRootId,
+  required String? pendingFocusedRootAutoScrollId,
   required Map<String, List<Clade>> childrenByParentId,
   required ValueChanged<Clade> onCladeSpotlight,
   required ValueChanged<String?> onCladeRootChanged,
+  required ValueChanged<String> onFocusedRootAutoScrollHandled,
   required String? activeTaxonomyTaxonId,
   required ValueChanged<String?> onTaxonomyTaxonSelected,
   required List<double> stageHeightsForPaleo,
@@ -65,8 +67,10 @@ Widget _buildBiologyTrack({
     searchQuery: cladeSearchQuery,
     spotlightId: cladeSpotlightId,
     activeCladeRootId: activeCladeRootId,
+    pendingFocusedRootAutoScrollId: pendingFocusedRootAutoScrollId,
     childrenByParentId: childrenByParentId,
     onSpotlight: onCladeSpotlight,
     onCladeRootChanged: onCladeRootChanged,
+    onFocusedRootAutoScrollHandled: onFocusedRootAutoScrollHandled,
   );
 }

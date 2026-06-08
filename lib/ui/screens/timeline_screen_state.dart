@@ -23,6 +23,7 @@ class _TimelineScreenState extends State<TimelineScreen>
   String _cladeSearchQuery = '';
   String? _cladeSpotlightId;
   String? _activeCladeRootId;
+  String? _pendingFocusedRootAutoScrollId;
   String? _activeTaxonomyTaxonId;
   final Map<String, List<Clade>> _sqliteDetailCladeCache = {};
   final Set<String> _sqliteDetailLoadInFlight = <String>{};
@@ -69,6 +70,15 @@ class _TimelineScreenState extends State<TimelineScreen>
       }
     }
     return targetId;
+  }
+
+  void _updateCladeSearch(String value, List<Clade> displayedClades) {
+    final query = value.trim();
+    final matches = query.isEmpty ? const <Clade>[] : searchClades(displayedClades, query);
+    setState(() {
+      _cladeSearchQuery = value;
+      _cladeSpotlightId = matches.isEmpty ? null : matches.first.id;
+    });
   }
 
   @override
@@ -132,10 +142,6 @@ class _TimelineScreenState extends State<TimelineScreen>
           layout.stageSegments,
         );
         final selected = _selectedDivision;
-        final searchMatches = _cladeSearchQuery.trim().isEmpty
-            ? const <Clade>[]
-            : searchClades(displayedClades, _cladeSearchQuery);
-
         return Scaffold(
           body: Container(
             decoration: const BoxDecoration(
@@ -158,6 +164,9 @@ class _TimelineScreenState extends State<TimelineScreen>
                     minScale: AppDebug.minTimelineScale,
                     maxScale: AppDebug.maxTimelineScale,
                     biologyColumnMode: _biologyColumnMode,
+                    cladeSearchQuery: _cladeSearchQuery,
+                    onCladeSearchChanged: (value) =>
+                        _updateCladeSearch(value, displayedClades),
                     activeCladeRootLabel: _biologyColumnMode ==
                                 BiologyColumnMode.cladistic &&
                             _isFocusedCladeMode
@@ -181,33 +190,6 @@ class _TimelineScreenState extends State<TimelineScreen>
                       _saveBiologyColumnMode(mode);
                     },
                   ),
-                  if (_biologyColumnMode == BiologyColumnMode.cladistic &&
-                      _cladeViewMode == CladeViewMode.searchSpotlight)
-                    CladeSearchPanel(
-                      query: _cladeSearchQuery,
-                      matches: searchMatches,
-                      spotlightId: _cladeSpotlightId,
-                      onQueryChanged: (value) {
-                        setState(() {
-                          _cladeSearchQuery = value;
-                          if (_cladeSpotlightId != null &&
-                              value.trim().isNotEmpty) {
-                            final matches = searchClades(clades, value);
-                            if (!matches.any(
-                              (clade) => clade.id == _cladeSpotlightId,
-                            )) {
-                              _cladeSpotlightId = null;
-                            }
-                          }
-                        });
-                      },
-                      onSelect: (clade) {
-                        setState(() {
-                          _cladeSearchQuery = clade.label;
-                          _cladeSpotlightId = clade.id;
-                        });
-                      },
-                    ),
                   if (selected != null)
                     TimelineSelectionPanel(selection: selected),
                   TimelineBody(
@@ -237,12 +219,10 @@ class _TimelineScreenState extends State<TimelineScreen>
                     cladeSearchQuery: _cladeSearchQuery,
                     cladeSpotlightId: _cladeSpotlightId,
                     activeCladeRootId: _focusedCladeRootId,
+                    pendingFocusedRootAutoScrollId: _pendingFocusedRootAutoScrollId,
                     activeCladeRootLabel: activeCladeRootLabel,
                     childrenByParentId: childrenByParentId,
                     onCladeSpotlight: (clade) {
-                      if (_cladeViewMode != CladeViewMode.searchSpotlight) {
-                        return;
-                      }
                       setState(() {
                         _cladeSpotlightId = clade.id;
                         _cladeSearchQuery = clade.label;
@@ -250,6 +230,14 @@ class _TimelineScreenState extends State<TimelineScreen>
                     },
                     onCladeRootChanged: (rootId) =>
                         _handleCladeRootChanged(rootId, clades),
+                    onFocusedRootAutoScrollHandled: (rootId) {
+                      if (_pendingFocusedRootAutoScrollId != rootId) {
+                        return;
+                      }
+                      setState(() {
+                        _pendingFocusedRootAutoScrollId = null;
+                      });
+                    },
                     activeTaxonomyTaxonId: _activeTaxonomyTaxonId,
                     onTaxonomyTaxonSelected: (taxonId) {
                       setState(() {
