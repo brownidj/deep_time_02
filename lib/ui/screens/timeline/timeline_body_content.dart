@@ -74,6 +74,10 @@ class TimelineBodyContent extends StatelessWidget {
   final ValueChanged<String?>? onTaxonomyTaxonSelected;
   final List<PaleoEcologyEntry> paleoEcology;
 
+  bool get _expandCladesTrack =>
+      biologyColumnMode == BiologyColumnMode.cladistic &&
+      activeCladeRootId?.trim().isNotEmpty == true;
+
   @override
   Widget build(BuildContext context) {
     final cladeHeaderLabel = _cladeHeaderText();
@@ -84,6 +88,7 @@ class TimelineBodyContent extends StatelessWidget {
           metrics: metrics,
           labelMode: labelMode,
           cladeHeaderLabel: cladeHeaderLabel,
+          expandCladesTrack: _expandCladesTrack,
         ),
         Expanded(child: _buildVerticalCanvas()),
       ],
@@ -143,6 +148,7 @@ class TimelineBodyContent extends StatelessWidget {
                   metrics: metrics,
                   contentHeight: contentHeight,
                   markers: markers,
+                  expandCladesTrack: _expandCladesTrack,
                 ),
               ),
             ],

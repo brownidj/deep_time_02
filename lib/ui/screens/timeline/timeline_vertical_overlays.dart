@@ -19,11 +19,13 @@ class TimelineVerticalOverlays extends StatelessWidget {
     required this.metrics,
     required this.contentHeight,
     required this.markers,
+    this.expandCladesTrack = false,
   });
 
   final TimelineBodyMetrics metrics;
   final double contentHeight;
   final TimelineMarkerCatalog markers;
+  final bool expandCladesTrack;
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +34,7 @@ class TimelineVerticalOverlays extends StatelessWidget {
         final trackWidths = resolveTimelineTrackWidths(
           metrics: metrics,
           maxWidth: constraints.maxWidth,
+          expandedTrack: expandCladesTrack ? TimelineTrack.clades : null,
         );
         final labelStyle = Theme.of(context).textTheme.bodySmall?.copyWith(
           color: DeepTimePalette.darkLabel,
@@ -104,17 +107,20 @@ class TimelineVerticalOverlays extends StatelessWidget {
         final eraStart = trackStarts[TimelineTrack.era] ?? 0.0;
         final periodStart = trackStarts[TimelineTrack.period] ?? 0.0;
         final eraPeriodBoundaryX = periodStart;
+        final hasEventsTrack = metrics.trackOrder.contains(TimelineTrack.events);
         final eventAnchorX = trackStarts[TimelineTrack.events] ?? 0.0;
         final extinctionAnchorX = trackStarts[TimelineTrack.extinctions] ?? 0.0;
-        final eventLines = buildConnectorLines(
-          ys: eventPointYs(
-            metrics.layout.eventSegments,
-            metrics.periodUnits,
-            contentHeight,
-          ),
-          leftBoundaryX: eraPeriodBoundaryX,
-          anchorX: eventAnchorX,
-        );
+        final eventLines = hasEventsTrack
+            ? buildConnectorLines(
+                ys: eventPointYs(
+                  metrics.layout.eventSegments,
+                  metrics.periodUnits,
+                  contentHeight,
+                ),
+                leftBoundaryX: eraPeriodBoundaryX,
+                anchorX: eventAnchorX,
+              )
+            : const <OverlayConnectorLine>[];
         final extinctionLines = buildConnectorLines(
           ys: extinctionYs(
             markers.extinctions,

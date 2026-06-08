@@ -25,8 +25,23 @@ String _interactiveCladeLabel(
   if (!clade.zoomable) {
     return base;
   }
-  final prefix = activeCladeRootId == clade.id ? '-' : '+';
+  final prefix = _isActiveCladeRoot(clade, activeCladeRootId) ? '-' : '+';
   return '$prefix $base';
+}
+
+bool _isActiveCladeRoot(Clade clade, String? activeCladeRootId) {
+  final rootId = activeCladeRootId?.trim();
+  return rootId != null && rootId.isNotEmpty && rootId == clade.id;
+}
+
+String _cladeActionHint(Clade clade, String? activeCladeRootId) {
+  if (!clade.zoomable) {
+    return 'Tap to spotlight this clade';
+  }
+  if (_isActiveCladeRoot(clade, activeCladeRootId)) {
+    return 'Tap to return to the previous clade view';
+  }
+  return 'Tap to zoom into this clade';
 }
 
 String _cladeTooltip(_VerticalCladeBarLayout entry, CladeLabelMode mode) {

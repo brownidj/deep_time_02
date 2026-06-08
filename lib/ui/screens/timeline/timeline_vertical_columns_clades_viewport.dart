@@ -119,13 +119,17 @@ Widget _buildCladeViewport({
     columnWidth: width,
     columnHeight: height,
   );
-  final lucaTop = _lucaTop(barLayouts, height);
   final pinnedCapHeight = _pinnedRowCapHeight(
     eonSegments: eonSegments,
     eonHeights: eonHeights,
     scale: AppDebug.timelineScale,
   );
-  final topStripHeight = pinnedCapHeight > 0 ? math.min(lucaTop, pinnedCapHeight) : lucaTop;
+  final topStripHeight = _resolveTopStripHeight(
+    barLayouts: barLayouts,
+    maxHeight: height,
+    pinnedCapHeight: pinnedCapHeight,
+    hasActiveRoot: hasActiveRoot,
+  );
   final pinnedTop = scrollOffset
       .clamp(0.0, math.max(0.0, height - topStripHeight))
       .toDouble();
@@ -165,7 +169,8 @@ Widget _buildCladeViewport({
                     left: entry.left,
                     top: math.max(entry.top, clipTop),
                     child: Tooltip(
-                      message: _cladeTooltip(entry, labelMode),
+                      message:
+                          '${_cladeTooltip(entry, labelMode)}\n${_cladeActionHint(entry.clade, activeCladeRootId)}',
                       child: GestureDetector(
                         behavior: HitTestBehavior.translucent,
                         onTap: () => handleCladeTap(entry.clade),

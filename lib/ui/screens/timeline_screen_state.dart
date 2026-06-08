@@ -49,6 +49,15 @@ class _TimelineScreenState extends State<TimelineScreen>
     setState(update);
   }
 
+  Set<TimelineTrack> get _effectiveVisibleTracks {
+    final tracks = Set<TimelineTrack>.from(_visibleTracks);
+    if (_biologyColumnMode == BiologyColumnMode.cladistic && _isFocusedCladeMode) {
+      tracks.remove(TimelineTrack.rlife);
+      tracks.remove(TimelineTrack.events);
+    }
+    return tracks;
+  }
+
   String? _cladeLabelForId(List<Clade> clades, String? cladeId) {
     final targetId = cladeId?.trim();
     if (targetId == null || targetId.isEmpty) {
@@ -247,7 +256,7 @@ class _TimelineScreenState extends State<TimelineScreen>
                         _activeTaxonomyTaxonId = taxonId;
                       });
                     },
-                    visibleTracks: _visibleTracks,
+                    visibleTracks: _effectiveVisibleTracks,
                     paleoEcology: paleoEcology,
                   ),
                 ],

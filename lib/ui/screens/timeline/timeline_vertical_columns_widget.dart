@@ -54,6 +54,10 @@ class TimelineVerticalColumns extends StatelessWidget {
   final TimelineBodyMetrics metrics;
   final List<PaleoEcologyEntry> paleoEcology;
 
+  bool get _expandCladesTrack =>
+      biologyColumnMode == BiologyColumnMode.cladistic &&
+      activeCladeRootId?.trim().isNotEmpty == true;
+
   @override
   Widget build(BuildContext context) {
     final columnHeight = math.max(metrics.minHeight, metrics.scrollHeight);
@@ -77,6 +81,7 @@ class TimelineVerticalColumns extends StatelessWidget {
         final trackWidths = resolveTimelineTrackWidths(
           metrics: metrics,
           maxWidth: constraints.maxWidth,
+          expandedTrack: _expandCladesTrack ? TimelineTrack.clades : null,
         );
         final stageHeightsForPaleo = useFixedHeights
             ? _computeProportionalHeights(

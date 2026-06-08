@@ -11,11 +11,13 @@ class TimelineColumnHeaders extends StatelessWidget {
     required this.metrics,
     required this.labelMode,
     this.cladeHeaderLabel,
+    this.expandCladesTrack = false,
   });
 
   final TimelineBodyMetrics metrics;
   final TimeLabelMode labelMode;
   final String? cladeHeaderLabel;
+  final bool expandCladesTrack;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +30,7 @@ class TimelineColumnHeaders extends StatelessWidget {
         final trackWidths = resolveTimelineTrackWidths(
           metrics: metrics,
           maxWidth: constraints.maxWidth,
+          expandedTrack: expandCladesTrack ? TimelineTrack.clades : null,
         );
         double scaledWidth(TimelineTrack track) =>
             trackWidths[track] ?? metrics.trackWidth(track);

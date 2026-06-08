@@ -64,3 +64,22 @@ double _pinnedRowCapHeight({
   final boundedScale = scale <= 0 ? 1.0 : scale;
   return hadeanHeight * (AppDebug.minTimelineScale / boundedScale);
 }
+
+double _resolveTopStripHeight({
+  required List<_VerticalCladeBarLayout> barLayouts,
+  required double maxHeight,
+  required double pinnedCapHeight,
+  required bool hasActiveRoot,
+}) {
+  final lucaTop = _lucaTop(barLayouts, maxHeight);
+  if (pinnedCapHeight <= 0) {
+    return lucaTop;
+  }
+  if (lucaTop > 0) {
+    return math.min(lucaTop, pinnedCapHeight);
+  }
+  if (hasActiveRoot && barLayouts.isNotEmpty) {
+    return pinnedCapHeight;
+  }
+  return 0.0;
+}

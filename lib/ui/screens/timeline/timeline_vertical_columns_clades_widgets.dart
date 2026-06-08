@@ -206,7 +206,8 @@ class _VisibleCladeTopStrip extends StatelessWidget {
                   child: RotatedBox(
                     quarterTurns: 3,
                     child: Tooltip(
-                      message: entry.tooltip,
+                      message:
+                          '${entry.tooltip}\n${_cladeActionHint(entry.clade, activeCladeRootId)}',
                       child: GestureDetector(
                         behavior: HitTestBehavior.translucent,
                         onTap: () => onTapClade(entry.clade),
