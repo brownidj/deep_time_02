@@ -1499,6 +1499,70 @@
     - Mesozoic
     - extinction
 
+- id: eusauropoda
+  common_label: Eusauropoda
+  scientific_label: Eusauropoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: sauropoda
+  start_ma: 190.0
+  end_ma: 66.0
+  range_note: Early Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Broadly inclusive sauropod branch containing mamenchisaurids and more derived neosauropods.
+  divergence_ma: 190.0
+  branch_priority: 31
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Mamenchisaurus
+    - Diplodocus
+    - Brachiosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - eusauropod
+    - Mesozoic
+    - extinction
+
+- id: neosauropoda
+  common_label: Neosauropoda
+  scientific_label: Neosauropoda
+  scientific_rank: clade
+  zoomable: true
+  parent_id: eusauropoda
+  start_ma: 180.0
+  end_ma: 66.0
+  range_note: Middle Jurassic to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Derived sauropods including diplodocoids and macronarians.
+  divergence_ma: 180.0
+  branch_priority: 32
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Diplodocus
+    - Brachiosaurus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - neosauropod
+    - Mesozoic
+    - extinction
+
 - id: stegosauria
   common_label: Stegosauria
   scientific_label: Stegosauria
@@ -1709,7 +1773,7 @@
   common_label: Diplodocoidea
   scientific_label: Diplodocoidea
   scientific_rank: clade
-  parent_id: sauropoda
+  parent_id: neosauropoda
   start_ma: 170.0
   end_ma: 66.0
   range_note: Middle Jurassic to K-Pg boundary
@@ -1739,7 +1803,7 @@
   scientific_label: Macronaria
   scientific_rank: clade
   zoomable: true
-  parent_id: sauropoda
+  parent_id: neosauropoda
   start_ma: 170.0
   end_ma: 66.0
   range_note: Middle Jurassic to K-Pg boundary
@@ -1764,12 +1828,44 @@
     - Mesozoic
     - extinction
 
+- id: somphospondyli
+  common_label: Somphospondyli
+  scientific_label: Somphospondyli
+  scientific_rank: clade
+  zoomable: true
+  parent_id: macronaria
+  start_ma: 145.0
+  end_ma: 66.0
+  range_note: Early Cretaceous to K-Pg boundary
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 31
+  min_zoom_level: period
+  short_description: Derived macronarians including titanosauriforms, titanosaurs, and allied sauropods.
+  divergence_ma: 145.0
+  branch_priority: 40
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Huanghetitan
+    - Pakisaurus
+    - Argentinosaurus
+  extinction_note: Extinct at the K-Pg boundary.
+  tags:
+    - vertebrate
+    - dinosaur
+    - sauropod
+    - somphospondylan
+    - Mesozoic
+    - extinction
+
 - id: titanosauriformes
   common_label: Titanosauriformes
   scientific_label: Titanosauriformes
   scientific_rank: clade
   zoomable: true
-  parent_id: macronaria
+  parent_id: somphospondyli
   start_ma: 145.0
   end_ma: 66.0
   range_note: Early Cretaceous to K-Pg boundary
@@ -1799,7 +1895,7 @@
   common_label: Titanosauria
   scientific_label: Titanosauria
   scientific_rank: clade
-  parent_id: titanosauriformes
+  parent_id: somphospondyli
   start_ma: 126.0
   end_ma: 66.0
   range_note: Early Cretaceous to K-Pg boundary
@@ -2013,7 +2109,7 @@
   common_label: Huanghetitanids
   scientific_label: Huanghetitanidae
   scientific_rank: family
-  parent_id: titanosauriformes
+  parent_id: somphospondyli
   start_ma: 113.2
   end_ma: 66.0
   range_note: Early Cretaceous formation-derived minimum through the K-Pg boundary
@@ -2043,7 +2139,7 @@
   common_label: Pakisaurids
   scientific_label: Pakisauridae
   scientific_rank: family
-  parent_id: titanosauriformes
+  parent_id: somphospondyli
   start_ma: 72.1
   end_ma: 66.0
   range_note: Maastrichtian formation-derived minimum to the K-Pg boundary
