@@ -4,6 +4,7 @@ Future<void> showTimelineExplanationDialog({
   required BuildContext context,
   required String title,
   required String explanation,
+  String closeLabel = 'Close',
   String? localAssetImage,
   String? imageUrl,
   String? sourcePage,
@@ -47,7 +48,7 @@ Future<void> showTimelineExplanationDialog({
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Close'),
+            child: Text(closeLabel),
           ),
         ],
       );

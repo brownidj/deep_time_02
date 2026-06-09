@@ -1,19 +1,25 @@
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
 
 String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
-  final parts = <String>[
+  final firstLineParts = <String>[
     if (entry.avgTempDeltaC != null)
-      'Temp:\u00A0${_withSign(entry.avgTempDeltaC!)}\u00B0C',
-    if (entry.avgCo2Ppm != null)
-      'CO2\u00A0${_formatUnsigned(entry.avgCo2Ppm!)}ppm',
-    if (entry.avgO2Percent != null)
-      'O2:\u00A0${_formatUnsigned(entry.avgO2Percent!)}%',
+      'T\u00A0${_withSign(entry.avgTempDeltaC!)}\u00B0C',
     if (entry.avgHumidityDeltaPercent != null)
-      'RH:\u00A0${_withSign(entry.avgHumidityDeltaPercent!)}%',
+      'RH\u00A0${_withSign(entry.avgHumidityDeltaPercent!)}%',
     if (entry.seaLevelDeltaM != null)
       'SL\u00A0${_withSign(entry.seaLevelDeltaM!)}m',
   ];
-  return parts.isEmpty ? null : parts.join('; ');
+  final secondLineParts = <String>[
+    if (entry.avgO2Percent != null)
+      'O2:\u00A0${_formatUnsigned(entry.avgO2Percent!)}%',
+    if (entry.avgCo2Ppm != null)
+      'CO2\u00A0${_formatUnsigned(entry.avgCo2Ppm!)}ppm',
+  ];
+  final lines = <String>[
+    if (firstLineParts.isNotEmpty) firstLineParts.join('; '),
+    if (secondLineParts.isNotEmpty) secondLineParts.join('; '),
+  ];
+  return lines.isEmpty ? null : lines.join('\n');
 }
 
 String _formatUnsigned(double value) {

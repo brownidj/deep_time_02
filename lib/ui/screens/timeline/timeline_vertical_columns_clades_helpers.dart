@@ -1,7 +1,8 @@
 part of 'timeline_vertical_columns.dart';
 
 void _debugCladeZoom(String message) {
-  debugPrint('[CLADE_DEBUG] $message');
+  // Intentionally disabled. Keep the call sites available for future
+  // debugging without emitting runtime noise in normal app use.
 }
 
 List<Clade> _filterCladesForMode({

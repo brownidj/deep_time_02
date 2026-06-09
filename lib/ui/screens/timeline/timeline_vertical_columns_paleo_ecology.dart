@@ -61,7 +61,7 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
     );
     final isVisibleBlock = block.sourceKey != null;
     final summary = entry == null ? null : paleoEcologySummaryText(entry);
-    final tooltipMessage = entry == null
+    final explanationMessage = entry == null
         ? null
         : _paleoEcologyTooltipMessage(entry, block);
     if (entry != null &&
@@ -113,10 +113,19 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
         ),
       ),
     );
-    if (tooltipMessage == null || tooltipMessage.trim().isEmpty) {
+    if (explanationMessage == null || explanationMessage.trim().isEmpty) {
       return blockBody;
     }
-    return Tooltip(message: tooltipMessage, child: blockBody);
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onLongPress: () => showTimelineExplanationDialog(
+        context: context,
+        title: entry?.name ?? 'Paleo-ecology',
+        explanation: explanationMessage,
+        closeLabel: 'Got it',
+      ),
+      child: blockBody,
+    );
   }
 }
 
