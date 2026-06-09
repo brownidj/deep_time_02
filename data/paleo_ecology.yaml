@@ -14,6 +14,7 @@ paleo_ecology:
   sources:
   - Early Earth atmosphere and ocean formation synthesis
   - Hadean climate synthesis
+  avg_o2_percent: 0.0
 - rank: eon
   name: Archean
   path:
@@ -29,6 +30,7 @@ paleo_ecology:
   sources:
   - Archean climate synthesis
   - Faint young Sun palaeoclimate synthesis
+  avg_o2_percent: 0.2
 - rank: era
   name: Eoarchean
   path:
@@ -45,6 +47,7 @@ paleo_ecology:
   sources:
   - Archean climate synthesis
   - Early Earth atmosphere and ocean formation synthesis
+  avg_o2_percent: 0.2
 - rank: era
   name: Paleoarchean
   path:
@@ -61,6 +64,7 @@ paleo_ecology:
   sources:
   - Archean climate synthesis
   - Faint young Sun palaeoclimate synthesis
+  avg_o2_percent: 0.2
 - rank: era
   name: Mesoarchean
   path:
@@ -77,6 +81,7 @@ paleo_ecology:
   sources:
   - Archean climate synthesis
   - Faint young Sun palaeoclimate synthesis
+  avg_o2_percent: 0.2
 - rank: era
   name: Neoarchean
   path:
@@ -93,6 +98,7 @@ paleo_ecology:
   sources:
   - Archean climate synthesis
   - Late Archean glaciation synthesis
+  avg_o2_percent: 1.0
 - rank: eon
   name: Proterozoic
   path:
@@ -108,6 +114,7 @@ paleo_ecology:
   sources:
   - Proterozoic climate synthesis
   - Precambrian glaciation synthesis
+  avg_o2_percent: 4.95
 - rank: era
   name: Paleoproterozoic
   path:
@@ -125,6 +132,7 @@ paleo_ecology:
   - Paleoproterozoic climate synthesis
   - Great Oxidation Event synthesis
   - Huronian glaciation synthesis
+  avg_o2_percent: 3.0
 - rank: period
   name: Siderian
   path:
@@ -142,6 +150,7 @@ paleo_ecology:
   sources:
   - Great Oxidation Event synthesis
   - Huronian glaciation synthesis
+  avg_o2_percent: 2.0
 - rank: period
   name: Rhyacian
   path:
@@ -159,6 +168,7 @@ paleo_ecology:
   sources:
   - Great Oxidation Event synthesis
   - Huronian glaciation synthesis
+  avg_o2_percent: 2.0
 - rank: period
   name: Orosirian
   path:
@@ -176,6 +186,7 @@ paleo_ecology:
   sources:
   - Paleoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 6.0
 - rank: period
   name: Statherian
   path:
@@ -193,6 +204,7 @@ paleo_ecology:
   sources:
   - Paleoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 6.0
 - rank: era
   name: Mesoproterozoic
   path:
@@ -209,6 +221,7 @@ paleo_ecology:
   sources:
   - Mesoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 5.5
 - rank: period
   name: Calymmian
   path:
@@ -226,6 +239,7 @@ paleo_ecology:
   sources:
   - Mesoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 5.5
 - rank: period
   name: Ectasian
   path:
@@ -243,6 +257,7 @@ paleo_ecology:
   sources:
   - Mesoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 5.5
 - rank: period
   name: Stenian
   path:
@@ -260,6 +275,7 @@ paleo_ecology:
   sources:
   - Mesoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 5.5
 - rank: era
   name: Neoproterozoic
   path:
@@ -277,6 +293,7 @@ paleo_ecology:
   - Neoproterozoic climate synthesis
   - Snowball Earth synthesis
   - Ediacaran environment synthesis
+  avg_o2_percent: 10.0
 - rank: period
   name: Tonian
   path:
@@ -294,6 +311,7 @@ paleo_ecology:
   sources:
   - Neoproterozoic climate synthesis
   - Proterozoic atmosphere synthesis
+  avg_o2_percent: 8.0
 - rank: period
   name: Cryogenian
   path:
@@ -311,6 +329,7 @@ paleo_ecology:
   sources:
   - Snowball Earth synthesis
   - Neoproterozoic glaciation synthesis
+  avg_o2_percent: 9.0
 - rank: period
   name: Ediacaran
   path:
@@ -328,6 +347,7 @@ paleo_ecology:
   sources:
   - Ediacaran environment synthesis
   - Neoproterozoic climate synthesis
+  avg_o2_percent: 13.0
 - rank: eon
   name: Phanerozoic
   path:
@@ -355,6 +375,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Fortunian
   path:
@@ -376,6 +397,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Stage 2
   path:
@@ -398,6 +420,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Stage 3
   path:
@@ -420,6 +443,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Stage 4
   path:
@@ -442,6 +466,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Wuliuan
   path:
@@ -464,6 +489,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Drumian
   path:
@@ -486,6 +512,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Guzhangian
   path:
@@ -508,6 +535,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Paibian
   path:
@@ -530,6 +558,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Jiangshanian
   path:
@@ -551,6 +580,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: stage
   name: Stage 10
   path:
@@ -573,6 +603,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 12.0
 - rank: period
   name: Ordovician
   path:
@@ -591,6 +622,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Tremadocian
   path:
@@ -613,6 +645,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Floian
   path:
@@ -635,6 +668,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Dapingian
   path:
@@ -657,6 +691,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Darriwilian
   path:
@@ -679,6 +714,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Sandbian
   path:
@@ -701,6 +737,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Katian
   path:
@@ -723,6 +760,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: stage
   name: Hirnantian
   path:
@@ -744,6 +782,7 @@ paleo_ecology:
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 13.0
 - rank: period
   name: Silurian
   path:
@@ -762,6 +801,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Rhuddanian
   path:
@@ -784,6 +824,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Aeronian
   path:
@@ -806,6 +847,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Telychian
   path:
@@ -828,6 +870,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Sheinwoodian
   path:
@@ -850,6 +893,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Homerian
   path:
@@ -872,6 +916,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Gorstian
   path:
@@ -894,6 +939,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Ludfordian
   path:
@@ -916,6 +962,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Kopanina*
   path:
@@ -938,6 +985,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: stage
   name: Přídolí*
   path:
@@ -960,6 +1008,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 14.0
 - rank: period
   name: Devonian
   path:
@@ -978,6 +1027,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Lochkovian
   path:
@@ -1000,6 +1050,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Emsian
   path:
@@ -1022,6 +1073,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Pragian
   path:
@@ -1043,6 +1095,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Eifelian
   path:
@@ -1065,6 +1118,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Givetian
   path:
@@ -1087,6 +1141,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Frasnian
   path:
@@ -1109,6 +1164,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Famennian
   path:
@@ -1131,6 +1187,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: period
   name: Carboniferous
   path:
@@ -1149,6 +1206,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 33.0
 - rank: stage
   name: Tournaisian
   path:
@@ -1170,6 +1228,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 22.0
 - rank: stage
   name: Visean
   path:
@@ -1192,6 +1251,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 27.0
 - rank: stage
   name: Serpukhovian
   path:
@@ -1214,6 +1274,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 27.0
 - rank: stage
   name: Bashkirian
   path:
@@ -1236,6 +1297,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 33.0
 - rank: stage
   name: Moscovian
   path:
@@ -1258,6 +1320,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 33.0
 - rank: stage
   name: Kasimovian
   path:
@@ -1280,6 +1343,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 33.0
 - rank: stage
   name: Gzhelian
   path:
@@ -1302,6 +1366,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 33.0
 - rank: period
   name: Permian
   path:
@@ -1320,6 +1385,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 23.0
 - rank: stage
   name: Asselian
   path:
@@ -1342,6 +1408,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 29.0
 - rank: stage
   name: Sakmarian
   path:
@@ -1364,6 +1431,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 29.0
 - rank: stage
   name: Artinskian
   path:
@@ -1386,6 +1454,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 29.0
 - rank: stage
   name: Kungurian
   path:
@@ -1408,6 +1477,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 29.0
 - rank: stage
   name: Roadian
   path:
@@ -1429,6 +1499,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 26.0
 - rank: stage
   name: Wordian
   path:
@@ -1450,6 +1521,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 26.0
 - rank: stage
   name: Capitanian
   path:
@@ -1471,6 +1543,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 26.0
 - rank: stage
   name: Wuchiapingian
   path:
@@ -1493,6 +1566,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 23.0
 - rank: stage
   name: Changhsingian
   path:
@@ -1515,6 +1589,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - Haq and Schutter 2008 Paleozoic sea-level synthesis
+  avg_o2_percent: 23.0
 - rank: era
   name: Mesozoic
   path:
@@ -1537,6 +1612,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Induan
   path:
@@ -1559,6 +1635,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Olenekian
   path:
@@ -1580,6 +1657,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Anisian
   path:
@@ -1601,6 +1679,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Ladinian
   path:
@@ -1622,6 +1701,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Carnian
   path:
@@ -1643,6 +1723,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Norian
   path:
@@ -1664,6 +1745,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: stage
   name: Rhaetian
   path:
@@ -1685,6 +1767,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 15.0
 - rank: period
   name: Jurassic
   path:
@@ -1703,6 +1786,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Hettangian
   path:
@@ -1725,6 +1809,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Sinemurian
   path:
@@ -1747,6 +1832,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Pliensbachian
   path:
@@ -1769,6 +1855,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Toarcian
   path:
@@ -1791,6 +1878,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Aalenian
   path:
@@ -1813,6 +1901,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Bajocian
   path:
@@ -1835,6 +1924,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Bathonian
   path:
@@ -1857,6 +1947,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Callovian
   path:
@@ -1879,6 +1970,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Oxfordian
   path:
@@ -1901,6 +1993,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Kimmeridgian
   path:
@@ -1923,6 +2016,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: stage
   name: Tithonian
   path:
@@ -1945,6 +2039,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 16.0
 - rank: period
   name: Cretaceous
   path:
@@ -1963,6 +2058,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Berriasian
   path:
@@ -1985,6 +2081,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: stage
   name: Valanginian
   path:
@@ -2007,6 +2104,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: stage
   name: Hauterivian
   path:
@@ -2029,6 +2127,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: stage
   name: Barremian
   path:
@@ -2051,6 +2150,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: stage
   name: Aptian
   path:
@@ -2073,6 +2173,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: stage
   name: Albian
   path:
@@ -2095,6 +2196,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 17.0
 - rank: stage
   name: Cenomanian
   path:
@@ -2117,6 +2219,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Turonian
   path:
@@ -2139,6 +2242,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Coniacian
   path:
@@ -2161,6 +2265,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Santonian
   path:
@@ -2183,6 +2288,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Campanian
   path:
@@ -2205,6 +2311,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: stage
   name: Maastrichtian
   path:
@@ -2227,6 +2334,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.0
 - rank: era
   name: Cenozoic
   path:
@@ -2259,6 +2367,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 18.0
 - rank: stage
   name: Selandian
   path:
@@ -2280,6 +2389,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 18.0
 - rank: stage
   name: Thanetian
   path:
@@ -2301,6 +2411,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 18.0
 - rank: stage
   name: Ypresian
   path:
@@ -2323,6 +2434,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.5
 - rank: stage
   name: Lutetian
   path:
@@ -2345,6 +2457,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.5
 - rank: stage
   name: Bartonian
   path:
@@ -2367,6 +2480,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.5
 - rank: stage
   name: Priabonian
   path:
@@ -2389,6 +2503,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 19.5
 - rank: stage
   name: Rupelian
   path:
@@ -2410,6 +2525,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Chattian
   path:
@@ -2431,6 +2547,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: period
   name: Neogene
   path:
@@ -2459,6 +2576,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Burdigalian
   path:
@@ -2481,6 +2599,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Langhian
   path:
@@ -2503,6 +2622,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Serravallian
   path:
@@ -2524,6 +2644,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Tortonian
   path:
@@ -2545,6 +2666,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Messinian
   path:
@@ -2566,6 +2688,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.5
 - rank: stage
   name: Zanclean
   path:
@@ -2588,6 +2711,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.7
 - rank: stage
   name: Piacenzian
   path:
@@ -2610,6 +2734,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.7
 - rank: period
   name: Quaternary
   path:
@@ -2638,6 +2763,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.0
 - rank: stage
   name: Calabrian
   path:
@@ -2660,6 +2786,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.0
 - rank: stage
   name: Chibanian
   path:
@@ -2682,6 +2809,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.0
 - rank: stage
   name: Upper
   path:
@@ -2704,6 +2832,7 @@ paleo_ecology:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
   - Foster et al. 2017 Phanerozoic CO2 synthesis
   - van der Meer et al. 2022 Phanerozoic sea-level synthesis
+  avg_o2_percent: 20.0
 - rank: stage
   name: Greenlandian
   path:
@@ -2725,6 +2854,7 @@ paleo_ecology:
   sources:
   - Holocene climate and sea-level synthesis
   - Foster et al. 2017 Phanerozoic CO2 synthesis
+  avg_o2_percent: 20.8
 - rank: stage
   name: Northgrippian
   path:
@@ -2746,6 +2876,7 @@ paleo_ecology:
   sources:
   - Holocene climate and sea-level synthesis
   - Foster et al. 2017 Phanerozoic CO2 synthesis
+  avg_o2_percent: 20.8
 - rank: stage
   name: Meghalayan
   path:
@@ -2767,3 +2898,4 @@ paleo_ecology:
   sources:
   - Holocene climate and sea-level synthesis
   - Foster et al. 2017 Phanerozoic CO2 synthesis
+  avg_o2_percent: 20.95

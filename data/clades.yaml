@@ -706,6 +706,7 @@
   common_label: African apes
   scientific_label: Homininae
   scientific_rank: subfamily
+  zoomable: true
   parent_id: hominidae
   start_ma: 14.0
   end_ma: 0.0
@@ -735,10 +736,71 @@
     - human evolution
     - living clade
 
+- id: gorillini
+  common_label: Gorilla lineage
+  scientific_label: Gorillini
+  scientific_rank: tribe
+  parent_id: homininae
+  start_ma: 10.0
+  end_ma: 0.0
+  range_note: Late Miocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 24
+  min_zoom_level: epoch
+  short_description: The gorilla branch of African apes after divergence from the human-chimp lineage.
+  divergence_ma: 10.0
+  branch_priority: 34
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Gorilla
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - ape
+    - gorilla
+    - living clade
+
+- id: panini
+  common_label: Chimpanzee lineage
+  scientific_label: Panini
+  scientific_rank: tribe
+  parent_id: homininae
+  start_ma: 6.0
+  end_ma: 0.0
+  range_note: Late Miocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 24
+  min_zoom_level: epoch
+  short_description: The chimpanzee and bonobo branch after divergence from the human lineage.
+  divergence_ma: 6.0
+  branch_priority: 35
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Pan troglodytes
+    - Pan paniscus
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - ape
+    - chimpanzee
+    - bonobo
+    - living clade
+
 - id: hominini
   common_label: Hominins
   scientific_label: Hominins
   scientific_rank: tribe
+  zoomable: true
   parent_id: homininae
   start_ma: 7.0
   end_ma: 0.0
@@ -766,10 +828,166 @@
     - human evolution
     - living clade
 
+- id: sahelanthropus
+  common_label: Sahelanthropus
+  scientific_label: Sahelanthropus
+  scientific_rank: genus
+  parent_id: hominini
+  start_ma: 7.0
+  end_ma: 6.0
+  range_note: Latest Miocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 25
+  min_zoom_level: epoch
+  short_description: Very early possible hominin from the latest Miocene of Chad.
+  divergence_ma: 7.0
+  branch_priority: 36
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Sahelanthropus tchadensis
+  extinction_note: Extinct in the Miocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - hominin
+    - human evolution
+    - extinct
+
+- id: orrorin
+  common_label: Orrorin
+  scientific_label: Orrorin
+  scientific_rank: genus
+  parent_id: hominini
+  start_ma: 6.1
+  end_ma: 5.7
+  range_note: Latest Miocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 25
+  min_zoom_level: epoch
+  short_description: Very early probable hominin from the late Miocene of Kenya.
+  divergence_ma: 6.1
+  branch_priority: 37
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Orrorin tugenensis
+  extinction_note: Extinct in the Miocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - hominin
+    - human evolution
+    - extinct
+
+- id: ardipithecus
+  common_label: Ardipithecus
+  scientific_label: Ardipithecus
+  scientific_rank: genus
+  parent_id: hominini
+  start_ma: 5.8
+  end_ma: 4.4
+  range_note: Late Miocene to Early Pliocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 25
+  min_zoom_level: epoch
+  short_description: Early hominins from Ethiopia showing a mosaic of ape-like and bipedal traits.
+  divergence_ma: 5.8
+  branch_priority: 38
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Ardipithecus ramidus
+    - Ardipithecus kadabba
+  extinction_note: Extinct in the early Pliocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - hominin
+    - human evolution
+    - extinct
+
+- id: australopithecus
+  common_label: Australopithecus
+  scientific_label: Australopithecus
+  scientific_rank: genus
+  zoomable: true
+  parent_id: hominini
+  start_ma: 4.2
+  end_ma: 1.9
+  range_note: Early Pliocene to Early Pleistocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 26
+  min_zoom_level: epoch
+  short_description: Gracile australopiths representing a key radiation of early bipedal hominins.
+  divergence_ma: 4.2
+  branch_priority: 39
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Australopithecus afarensis
+    - Australopithecus africanus
+    - Australopithecus sediba
+  extinction_note: Extinct in the early Pleistocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - hominin
+    - human evolution
+    - extinct
+
+- id: paranthropus
+  common_label: Paranthropus
+  scientific_label: Paranthropus
+  scientific_rank: genus
+  parent_id: hominini
+  start_ma: 2.7
+  end_ma: 1.2
+  range_note: Late Pliocene to Early Pleistocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 26
+  min_zoom_level: epoch
+  short_description: Robust australopith hominins with heavy chewing adaptations.
+  divergence_ma: 2.7
+  branch_priority: 40
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Paranthropus boisei
+    - Paranthropus robustus
+  extinction_note: Extinct in the early Pleistocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - hominin
+    - human evolution
+    - extinct
+
 - id: homo
   common_label: Homo
   scientific_label: Homo
   scientific_rank: genus
+  zoomable: true
   parent_id: hominini
   start_ma: 2.8
   end_ma: 0.0
@@ -798,6 +1016,90 @@
     - Homo
     - human evolution
     - living clade
+
+- id: homo_habilis
+  common_label: Homo habilis
+  scientific_label: Homo habilis
+  scientific_rank: species
+  parent_id: homo
+  start_ma: 2.4
+  end_ma: 1.4
+  range_note: Early Pleistocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 27
+  min_zoom_level: epoch
+  short_description: Early species of Homo associated with increased brain size and Oldowan tool use.
+  divergence_ma: 2.4
+  branch_priority: 41
+  cladistic_role: detail
+  uncertainty: approximate
+  extinction_note: Extinct in the early Pleistocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - human
+    - human evolution
+    - extinct
+
+- id: homo_erectus
+  common_label: Homo erectus
+  scientific_label: Homo erectus
+  scientific_rank: species
+  parent_id: homo
+  start_ma: 1.9
+  end_ma: 0.1
+  range_note: Early Pleistocene to Late Pleistocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 27
+  min_zoom_level: epoch
+  short_description: Widespread human species often associated with Acheulean tools and expansion beyond Africa.
+  divergence_ma: 1.9
+  branch_priority: 42
+  cladistic_role: detail
+  uncertainty: approximate
+  extinction_note: Extinct in the Late Pleistocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - human
+    - human evolution
+    - extinct
+
+- id: homo_neanderthalensis
+  common_label: Neanderthals
+  scientific_label: Homo neanderthalensis
+  scientific_rank: species
+  parent_id: homo
+  start_ma: 0.4
+  end_ma: 0.04
+  range_note: Middle to Late Pleistocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+    - terrestrial_vertebrates
+  display_priority: 27
+  min_zoom_level: epoch
+  short_description: Eurasian human lineage closely related to modern humans.
+  divergence_ma: 0.4
+  branch_priority: 43
+  cladistic_role: detail
+  uncertainty: approximate
+  extinction_note: Extinct in the Late Pleistocene.
+  tags:
+    - vertebrate
+    - mammal
+    - primate
+    - human
+    - human evolution
+    - extinct
 
 - id: homo_sapiens
   common_label: Homo sapiens
@@ -879,10 +1181,907 @@
     - bird ancestry
     - living clade
 
+- id: lepidosauria
+  common_label: Lepidosaurs
+  scientific_label: Lepidosauria
+  scientific_rank: clade
+  zoomable: true
+  parent_id: diapsida
+  start_ma: 260.0
+  end_ma: 0.0
+  range_note: Late Permian to present
+  confidence: approximate
+  display_groups:
+    - terrestrial_vertebrates
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 19
+  min_zoom_level: era
+  short_description: Diapsids including tuataras, lizards, snakes, and their extinct relatives.
+  divergence_ma: 260.0
+  branch_priority: 19
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Tuatara
+    - Lizards
+    - Snakes
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - living clade
+
+- id: rhynchocephalia
+  common_label: Tuatara-line lepidosaurs
+  scientific_label: Rhynchocephalia
+  scientific_rank: order
+  parent_id: lepidosauria
+  start_ma: 240.0
+  end_ma: 0.0
+  range_note: Middle Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Lepidosaurs including the living tuatara and a wider extinct Mesozoic radiation.
+  divergence_ma: 240.0
+  branch_priority: 20
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Sphenodon
+    - Clevosaurus
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - tuatara
+    - living clade
+
+- id: squamata
+  common_label: Squamates
+  scientific_label: Squamata
+  scientific_rank: order
+  zoomable: true
+  parent_id: lepidosauria
+  start_ma: 240.0
+  end_ma: 0.0
+  range_note: Middle Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Lepidosaurs including lizards, snakes, and amphisbaenians.
+  divergence_ma: 240.0
+  branch_priority: 21
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Lizards
+    - Snakes
+    - Amphisbaenians
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - squamate
+    - living clade
+
+- id: iguania
+  common_label: Iguanians
+  scientific_label: Iguania
+  scientific_rank: clade
+  parent_id: squamata
+  start_ma: 165.0
+  end_ma: 0.0
+  range_note: Middle Jurassic to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Squamates including iguanas, agamas, chameleons, and their extinct relatives.
+  divergence_ma: 165.0
+  branch_priority: 22
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Iguana
+    - Agama
+    - Chameleon
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - squamate
+    - lizard
+    - living clade
+
+- id: gekkota
+  common_label: Geckos
+  scientific_label: Gekkota
+  scientific_rank: clade
+  parent_id: squamata
+  start_ma: 170.0
+  end_ma: 0.0
+  range_note: Middle Jurassic to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Squamates including geckos, pygopodids, and related forms.
+  divergence_ma: 170.0
+  branch_priority: 23
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Gecko
+    - Pygopus
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - squamate
+    - gecko
+    - living clade
+
+- id: scincoidea
+  common_label: Skink-like squamates
+  scientific_label: Scincoidea
+  scientific_rank: clade
+  parent_id: squamata
+  start_ma: 155.0
+  end_ma: 0.0
+  range_note: Late Jurassic to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Squamates including skinks and close relatives.
+  divergence_ma: 155.0
+  branch_priority: 24
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Skinks
+    - Cordylids
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - squamate
+    - lizard
+    - living clade
+
+- id: anguimorpha
+  common_label: Anguimorphs
+  scientific_label: Anguimorpha
+  scientific_rank: clade
+  parent_id: squamata
+  start_ma: 160.0
+  end_ma: 0.0
+  range_note: Late Jurassic to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Squamates including monitor lizards, helodermatids, and several extinct lineages.
+  divergence_ma: 160.0
+  branch_priority: 25
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Varanus
+    - Heloderma
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - squamate
+    - lizard
+    - living clade
+
+- id: amphisbaenia
+  common_label: Worm lizards
+  scientific_label: Amphisbaenia
+  scientific_rank: suborder
+  parent_id: squamata
+  start_ma: 120.0
+  end_ma: 0.0
+  range_note: Early Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Burrowing limbless or reduced-limbed squamates often called worm lizards.
+  divergence_ma: 120.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Blanus
+    - Amphisbaena
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - squamate
+    - amphisbaenian
+    - living clade
+
+- id: serpentes
+  common_label: Snakes
+  scientific_label: Serpentes
+  scientific_rank: suborder
+  zoomable: true
+  parent_id: squamata
+  start_ma: 167.0
+  end_ma: 0.0
+  range_note: Middle Jurassic to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Elongate limbless squamates including all living snakes and their closest extinct relatives.
+  divergence_ma: 167.0
+  branch_priority: 22
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Python
+    - Cobra
+    - Viper
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - living clade
+
+- id: stem_serpentes
+  common_label: Stem snakes
+  scientific_label: Stem Serpentes
+  scientific_rank: clade
+  zoomable: true
+  parent_id: serpentes
+  start_ma: 100.0
+  end_ma: 66.0
+  range_note: Early to Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Extinct early snakes outside the main living snake radiation, preserving key transitional features.
+  divergence_ma: 100.0
+  branch_priority: 23
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Najash
+    - Pachyrhachis
+    - Dinilysia
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - Cretaceous
+
+- id: najashidae
+  common_label: Najashids
+  scientific_label: Najashidae
+  scientific_rank: family
+  parent_id: stem_serpentes
+  start_ma: 95.0
+  end_ma: 66.0
+  range_note: Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Extinct hind-limbed terrestrial snakes represented by Najash and close relatives.
+  divergence_ma: 95.0
+  branch_priority: 24
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Najash
+    - Najash rionegrina
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - Cretaceous
+
+- id: pachyrhachidae
+  common_label: Marine stem snakes
+  scientific_label: Pachyrhachidae
+  scientific_rank: family
+  parent_id: stem_serpentes
+  start_ma: 100.0
+  end_ma: 66.0
+  range_note: Cenomanian to Maastrichtian
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Extinct marine snakes with retained hind limbs, often treated as early stem snakes.
+  divergence_ma: 100.0
+  branch_priority: 25
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Pachyrhachis
+    - Eupodophis
+    - Haasiophis
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - marine
+    - Cretaceous
+
+- id: dinilysiidae
+  common_label: Dinilysiids
+  scientific_label: Dinilysiidae
+  scientific_rank: family
+  parent_id: stem_serpentes
+  start_ma: 90.0
+  end_ma: 66.0
+  range_note: Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Extinct South American fossil snakes often treated as close to the base of crownward snake evolution.
+  divergence_ma: 90.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Dinilysia
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - Cretaceous
+
+- id: simoliophiidae
+  common_label: Simoliophiids
+  scientific_label: Simoliophiidae
+  scientific_rank: family
+  parent_id: stem_serpentes
+  start_ma: 100.0
+  end_ma: 66.0
+  range_note: Cenomanian to Maastrichtian
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Extinct marine Cretaceous snakes often grouped with limb-bearing or near-stem marine snake radiations.
+  divergence_ma: 100.0
+  branch_priority: 27
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Simoliophis
+    - Pachyophis
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - marine
+    - Cretaceous
+
+- id: madtsoiidae
+  common_label: Madtsoiids
+  scientific_label: Madtsoiidae
+  scientific_rank: family
+  parent_id: stem_serpentes
+  start_ma: 100.0
+  end_ma: 12.0
+  range_note: Late Cretaceous to Miocene
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Long-lived extinct snakes generally placed near the stem of alethinophidian evolution.
+  divergence_ma: 100.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Madtsoia
+    - Wonambi
+    - Yurlunggur
+  extinction_note: Persisted into the Cenozoic before going extinct.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - Cretaceous
+    - Cenozoic
+
+- id: palaeophiidae
+  common_label: Palaeophiids
+  scientific_label: Palaeophiidae
+  scientific_rank: family
+  parent_id: alethinophidia
+  start_ma: 56.0
+  end_ma: 33.9
+  range_note: Paleocene to Eocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Extinct mostly marine alethinophidian snakes including some very large Paleogene forms.
+  divergence_ma: 56.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Palaeophis
+    - Archaeophis
+  extinction_note: Extinct by the end of the Eocene.
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - extinct
+    - marine
+    - Paleogene
+
+- id: scolecophidia
+  common_label: Blind snakes
+  scientific_label: Scolecophidia
+  scientific_rank: infraorder
+  parent_id: serpentes
+  start_ma: 105.0
+  end_ma: 0.0
+  range_note: Early Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Small burrowing snakes including blind snakes and thread snakes.
+  divergence_ma: 105.0
+  branch_priority: 23
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Typhlops
+    - Leptotyphlops
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - burrowing
+    - living clade
+
+- id: alethinophidia
+  common_label: Typical snakes
+  scientific_label: Alethinophidia
+  scientific_rank: infraorder
+  zoomable: true
+  parent_id: serpentes
+  start_ma: 100.0
+  end_ma: 0.0
+  range_note: Early Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: The main snake radiation including boas, pythons, and advanced snakes.
+  divergence_ma: 100.0
+  branch_priority: 24
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Boa
+    - Python
+    - Cobra
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - living clade
+
+- id: henophidia
+  common_label: Basal alethinophidian snakes
+  scientific_label: Henophidia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: alethinophidia
+  start_ma: 80.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Early-branching alethinophidian snakes including boas, pythons, and several smaller relict families.
+  divergence_ma: 80.0
+  branch_priority: 25
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Boa
+    - Python
+    - Tropidophis
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - living clade
+
+- id: boidae
+  common_label: Boas
+  scientific_label: Boidae
+  scientific_rank: family
+  parent_id: henophidia
+  start_ma: 70.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Large constricting snakes including boas and anacondas.
+  divergence_ma: 70.0
+  branch_priority: 25
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Boa constrictor
+    - Eunectes
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - boa
+    - living clade
+
+- id: pythonidae
+  common_label: Pythons
+  scientific_label: Pythonidae
+  scientific_rank: family
+  parent_id: henophidia
+  start_ma: 60.0
+  end_ma: 0.0
+  range_note: Paleogene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Old World constricting snakes including pythons.
+  divergence_ma: 60.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Python regius
+    - Malayopython reticulatus
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - python
+    - living clade
+
+- id: tropidophiidae
+  common_label: Dwarf boas
+  scientific_label: Tropidophiidae
+  scientific_rank: family
+  parent_id: henophidia
+  start_ma: 50.0
+  end_ma: 0.0
+  range_note: Eocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Small New World henophidian snakes commonly called dwarf boas.
+  divergence_ma: 50.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Tropidophis
+    - Trachyboa
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - henophidian
+    - living clade
+
+- id: cylindrophiidae
+  common_label: Asian pipe snakes
+  scientific_label: Cylindrophiidae
+  scientific_rank: family
+  parent_id: henophidia
+  start_ma: 45.0
+  end_ma: 0.0
+  range_note: Eocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Small burrowing henophidian snakes of South and Southeast Asia.
+  divergence_ma: 45.0
+  branch_priority: 27
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Cylindrophis
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - henophidian
+    - living clade
+
+- id: caenophidia
+  common_label: Advanced snakes
+  scientific_label: Caenophidia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: alethinophidia
+  start_ma: 65.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Advanced snakes including most living species such as colubrids, vipers, and elapids.
+  divergence_ma: 65.0
+  branch_priority: 27
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Colubrids
+    - Vipers
+    - Cobras
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - living clade
+
+- id: acrochordidae
+  common_label: File snakes
+  scientific_label: Acrochordidae
+  scientific_rank: family
+  parent_id: caenophidia
+  start_ma: 35.0
+  end_ma: 0.0
+  range_note: Oligocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Aquatic caenophidian snakes known as file snakes.
+  divergence_ma: 35.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Acrochordus
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - aquatic
+    - living clade
+
+- id: colubroidea
+  common_label: Colubroid snakes
+  scientific_label: Colubroidea
+  scientific_rank: superfamily
+  zoomable: true
+  parent_id: caenophidia
+  start_ma: 50.0
+  end_ma: 0.0
+  range_note: Eocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 24
+  min_zoom_level: period
+  short_description: The dominant radiation of modern advanced snakes, including colubrids, elapids, and vipers.
+  divergence_ma: 50.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Coluber
+    - Naja
+    - Crotalus
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - living clade
+
+- id: colubridae
+  common_label: Colubrids
+  scientific_label: Colubridae
+  scientific_rank: family
+  parent_id: colubroidea
+  start_ma: 33.0
+  end_ma: 0.0
+  range_note: Oligocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 25
+  min_zoom_level: period
+  short_description: The large and diverse family of mostly non-venomous or mildly venomous colubrid snakes.
+  divergence_ma: 33.0
+  branch_priority: 29
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Coluber
+    - Pantherophis
+    - Natrix
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - colubrid
+    - living clade
+
+- id: lamprophiidae
+  common_label: Lamprophiids
+  scientific_label: Lamprophiidae
+  scientific_rank: family
+  parent_id: colubroidea
+  start_ma: 30.0
+  end_ma: 0.0
+  range_note: Oligocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 25
+  min_zoom_level: period
+  short_description: Colubroid snakes including many African and Madagascan lineages.
+  divergence_ma: 30.0
+  branch_priority: 30
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Atractaspis
+    - Lamprophis
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - colubroid
+    - living clade
+
+- id: viperidae
+  common_label: Vipers
+  scientific_label: Viperidae
+  scientific_rank: family
+  parent_id: colubroidea
+  start_ma: 34.0
+  end_ma: 0.0
+  range_note: Oligocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 25
+  min_zoom_level: period
+  short_description: Venomous snakes including vipers, pit vipers, and rattlesnakes.
+  divergence_ma: 34.0
+  branch_priority: 29
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Crotalus
+    - Vipera
+    - Bothrops
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - viper
+    - living clade
+
+- id: elapidae
+  common_label: Elapids
+  scientific_label: Elapidae
+  scientific_rank: family
+  parent_id: colubroidea
+  start_ma: 30.0
+  end_ma: 0.0
+  range_note: Oligocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 25
+  min_zoom_level: period
+  short_description: Venomous snakes including cobras, mambas, kraits, coral snakes, and sea snakes.
+  divergence_ma: 30.0
+  branch_priority: 30
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Naja
+    - Dendroaspis
+    - Bungarus
+  tags:
+    - vertebrate
+    - reptile
+    - lepidosaur
+    - snake
+    - elapid
+    - living clade
+
 - id: archosauria
   common_label: Archosaurs
   scientific_label: Archosaurs
   scientific_rank: clade
+  zoomable: true
   parent_id: diapsida
   start_ma: 250.0
   end_ma: 0.0
@@ -909,11 +2108,1052 @@
     - dinosaur ancestry
     - living clade
 
+- id: pseudosuchia
+  common_label: Pseudosuchians
+  scientific_label: Pseudosuchia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: archosauria
+  start_ma: 250.0
+  end_ma: 0.0
+  range_note: Early Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 19
+  min_zoom_level: era
+  short_description: The crocodilian-line archosaurs, including extinct pseudosuchians and living crocodilians.
+  divergence_ma: 250.0
+  branch_priority: 20
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Crocodilians
+    - Aetosaurs
+    - Rauisuchians
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian ancestry
+    - living clade
+
+- id: aetosauria
+  common_label: Aetosaurs
+  scientific_label: Aetosauria
+  scientific_rank: clade
+  parent_id: pseudosuchia
+  start_ma: 233.0
+  end_ma: 201.3
+  range_note: Late Triassic
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Heavily armored herbivorous or omnivorous pseudosuchians of the Late Triassic.
+  divergence_ma: 233.0
+  branch_priority: 21
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Desmatosuchus
+    - Stagonolepis
+    - Typothorax
+  extinction_note: Extinct by the end of the Triassic.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - pseudosuchian
+    - Triassic
+    - extinction
+
+- id: loricata
+  common_label: Loricatans
+  scientific_label: Loricata
+  scientific_rank: clade
+  parent_id: pseudosuchia
+  start_ma: 240.0
+  end_ma: 0.0
+  range_note: Middle Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Pseudosuchians including rauisuchian-grade predators and the lineage leading to crocodylomorphs.
+  divergence_ma: 240.0
+  branch_priority: 22
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Postosuchus
+    - Batrachotomus
+    - Crocodylomorphs
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - pseudosuchian
+    - crocodilian ancestry
+    - living clade
+
+- id: rauisuchia
+  common_label: Rauisuchians
+  scientific_label: Rauisuchia
+  scientific_rank: clade
+  parent_id: loricata
+  start_ma: 240.0
+  end_ma: 201.3
+  range_note: Middle to Late Triassic
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Large predatory pseudosuchians traditionally grouped as rauisuchians, broadly representing non-crocodylomorph loricatans.
+  divergence_ma: 240.0
+  branch_priority: 23
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Postosuchus
+    - Saurosuchus
+    - Fasolasuchus
+  extinction_note: Extinct by the end of the Triassic.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - pseudosuchian
+    - Triassic
+    - extinction
+
+- id: poposauroidea
+  common_label: Poposauroids
+  scientific_label: Poposauroidea
+  scientific_rank: clade
+  parent_id: pseudosuchia
+  start_ma: 235.0
+  end_ma: 201.3
+  range_note: Late Triassic
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Diverse Triassic pseudosuchians including sail-backed, beaked, and bipedal forms.
+  divergence_ma: 235.0
+  branch_priority: 24
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Poposaurus
+    - Shuvosaurus
+    - Arizonasaurus
+  extinction_note: Extinct by the end of the Triassic.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - pseudosuchian
+    - Triassic
+    - extinction
+
+- id: crocodylomorpha
+  common_label: Crocodylomorphs
+  scientific_label: Crocodylomorpha
+  scientific_rank: clade
+  zoomable: true
+  parent_id: loricata
+  start_ma: 235.0
+  end_ma: 0.0
+  range_note: Late Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 20
+  min_zoom_level: period
+  short_description: The crocodilian-line archosaurs including extinct crocodylomorphs and living crocodilians.
+  divergence_ma: 235.0
+  branch_priority: 22
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Sphenosuchus
+    - Crocodylus
+    - Alligator
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: sphenosuchia
+  common_label: Early crocodylomorphs
+  scientific_label: Sphenosuchia
+  scientific_rank: clade
+  parent_id: crocodylomorpha
+  start_ma: 235.0
+  end_ma: 190.0
+  range_note: Late Triassic to Early Jurassic
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Slender early crocodylomorphs representing the basal radiation before crocodyliform diversification.
+  divergence_ma: 235.0
+  branch_priority: 22
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Sphenosuchus
+    - Hesperosuchus
+  extinction_note: Extinct in the Early Jurassic.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - Triassic
+    - Jurassic
+    - extinct
+
+- id: crocodyliformes
+  common_label: Crocodyliforms
+  scientific_label: Crocodyliformes
+  scientific_rank: clade
+  zoomable: true
+  parent_id: crocodylomorpha
+  start_ma: 220.0
+  end_ma: 0.0
+  range_note: Late Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 20
+  min_zoom_level: period
+  short_description: Derived crocodylomorphs including extinct crocodyliforms and the living crocodilian crown group.
+  divergence_ma: 220.0
+  branch_priority: 23
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Protosuchus
+    - Sarcosuchus
+    - Crocodylus
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: protosuchia
+  common_label: Protosuchians
+  scientific_label: Protosuchia
+  scientific_rank: clade
+  parent_id: crocodyliformes
+  start_ma: 220.0
+  end_ma: 140.0
+  range_note: Late Triassic to Early Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 21
+  min_zoom_level: period
+  short_description: Early crocodyliforms representing the basal stock before the mesoeucrocodylian radiation.
+  divergence_ma: 220.0
+  branch_priority: 23
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Protosuchus
+    - Orthosuchus
+  extinction_note: Extinct by the Early Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: mesoeucrocodylia
+  common_label: Advanced crocodyliforms
+  scientific_label: Mesoeucrocodylia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: crocodyliformes
+  start_ma: 170.0
+  end_ma: 0.0
+  range_note: Middle Jurassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: More derived crocodyliforms including diverse extinct forms and the line leading to living crocodilians.
+  divergence_ma: 170.0
+  branch_priority: 24
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Notosuchians
+    - Sarcosuchus
+    - Crocodylia
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: notosuchia
+  common_label: Notosuchians
+  scientific_label: Notosuchia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: mesoeucrocodylia
+  start_ma: 145.0
+  end_ma: 11.0
+  range_note: Early Cretaceous to Miocene
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Diverse mostly terrestrial crocodyliforms, especially abundant in Gondwana.
+  divergence_ma: 145.0
+  branch_priority: 25
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Notosuchus
+    - Simosuchus
+    - Baurusuchus
+  extinction_note: Persisted into the Cenozoic before going extinct.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+    - Cretaceous
+    - Cenozoic
+
+- id: ziphosuchia
+  common_label: Ziphosuchians
+  scientific_label: Ziphosuchia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: notosuchia
+  start_ma: 115.0
+  end_ma: 11.0
+  range_note: Early Cretaceous to Miocene
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Derived mostly terrestrial notosuchians including predator-dominated Gondwanan forms.
+  divergence_ma: 115.0
+  branch_priority: 25
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Baurusuchus
+    - Sebecus
+  extinction_note: Survived into the Cenozoic before going extinct.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: uruguaysuchidae
+  common_label: Uruguaysuchids
+  scientific_label: Uruguaysuchidae
+  scientific_rank: family
+  parent_id: notosuchia
+  start_ma: 100.0
+  end_ma: 84.0
+  range_note: Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Small Gondwanan notosuchians representing one of the more basal notosuchian branches.
+  divergence_ma: 100.0
+  branch_priority: 26
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Uruguaysuchus
+    - Araripesuchus
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: peirosauridae
+  common_label: Peirosaurids
+  scientific_label: Peirosauridae
+  scientific_rank: family
+  parent_id: notosuchia
+  start_ma: 100.0
+  end_ma: 66.0
+  range_note: Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Gondwanan crocodyliforms often placed among advanced notosuchians.
+  divergence_ma: 100.0
+  branch_priority: 27
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Peirosaurus
+    - Montealtosuchus
+  extinction_note: Extinct at the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: baurusuchidae
+  common_label: Baurusuchids
+  scientific_label: Baurusuchidae
+  scientific_rank: family
+  parent_id: ziphosuchia
+  start_ma: 90.0
+  end_ma: 66.0
+  range_note: Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Large terrestrial predatory notosuchians from Late Cretaceous Gondwana.
+  divergence_ma: 90.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Baurusuchus
+    - Stratiotosuchus
+  extinction_note: Extinct at the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: sebecosuchia
+  common_label: Sebecosuchians
+  scientific_label: Sebecosuchia
+  scientific_rank: clade
+  parent_id: ziphosuchia
+  start_ma: 70.0
+  end_ma: 11.0
+  range_note: Late Cretaceous to Miocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 24
+  min_zoom_level: period
+  short_description: Long-legged terrestrial crocodyliform predators that survived into the Cenozoic of South America.
+  divergence_ma: 70.0
+  branch_priority: 29
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Sebecus
+    - Barinasuchus
+  extinction_note: Extinct by the Miocene.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: neosuchia
+  common_label: Neosuchians
+  scientific_label: Neosuchia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: mesoeucrocodylia
+  start_ma: 170.0
+  end_ma: 0.0
+  range_note: Middle Jurassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: The branch of advanced crocodyliforms including many semiaquatic forms and the lineage to living crocodilians.
+  divergence_ma: 170.0
+  branch_priority: 26
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Goniopholis
+    - Sarcosuchus
+    - Crocodylia
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: goniopholididae
+  common_label: Goniopholidids
+  scientific_label: Goniopholididae
+  scientific_rank: family
+  parent_id: neosuchia
+  start_ma: 170.0
+  end_ma: 90.0
+  range_note: Middle Jurassic to Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Semiaquatic fossil neosuchians common in Jurassic and Cretaceous freshwater ecosystems.
+  divergence_ma: 170.0
+  branch_priority: 30
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Goniopholis
+    - Sunosuchus
+  extinction_note: Extinct by the Late Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: pholidosauridae
+  common_label: Pholidosaurids
+  scientific_label: Pholidosauridae
+  scientific_rank: family
+  parent_id: neosuchia
+  start_ma: 145.0
+  end_ma: 93.9
+  range_note: Early to early Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Long-snouted neosuchians often compared with later gharial-like crocodilians.
+  divergence_ma: 145.0
+  branch_priority: 31
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Pholidosaurus
+    - Sarcosuchus
+  extinction_note: Extinct in the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: dyrosauridae
+  common_label: Dyrosaurids
+  scientific_label: Dyrosauridae
+  scientific_rank: family
+  parent_id: neosuchia
+  start_ma: 72.0
+  end_ma: 11.0
+  range_note: Late Cretaceous to Miocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Marine and estuarine neosuchians that survived the end-Cretaceous extinction.
+  divergence_ma: 72.0
+  branch_priority: 32
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Dyrosaurus
+    - Phosphatosaurus
+  extinction_note: Extinct by the Miocene.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: eusuchia
+  common_label: Eusuchians
+  scientific_label: Eusuchia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: neosuchia
+  start_ma: 100.0
+  end_ma: 0.0
+  range_note: Early Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Crownward neosuchians including the living crocodilian radiation.
+  divergence_ma: 100.0
+  branch_priority: 27
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Hylaeochampsa
+    - Crocodylia
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: hylaeochampsidae
+  common_label: Hylaeochampsids
+  scientific_label: Hylaeochampsidae
+  scientific_rank: family
+  parent_id: eusuchia
+  start_ma: 130.0
+  end_ma: 66.0
+  range_note: Early to Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Early eusuchians close to the ancestry of the crocodilian crown group.
+  divergence_ma: 130.0
+  branch_priority: 33
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Hylaeochampsa
+  extinction_note: Extinct by the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: allodaposuchidae
+  common_label: Allodaposuchids
+  scientific_label: Allodaposuchidae
+  scientific_rank: family
+  parent_id: eusuchia
+  start_ma: 84.0
+  end_ma: 66.0
+  range_note: Late Cretaceous
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Late Cretaceous eusuchians close to the crocodilian crown radiation.
+  divergence_ma: 84.0
+  branch_priority: 34
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Allodaposuchus
+  extinction_note: Extinct at the end of the Cretaceous.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: crocodylia
+  common_label: Crocodilians
+  scientific_label: Crocodylia
+  scientific_rank: order
+  zoomable: true
+  parent_id: eusuchia
+  start_ma: 85.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 21
+  min_zoom_level: period
+  short_description: The living crocodilian crown group including crocodiles, alligators, caimans, and gharials.
+  divergence_ma: 85.0
+  branch_priority: 24
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Crocodylus
+    - Alligator
+    - Gavialis
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: alligatoroidea
+  common_label: Alligator-line crocodilians
+  scientific_label: Alligatoroidea
+  scientific_rank: superfamily
+  zoomable: true
+  parent_id: crocodylia
+  start_ma: 80.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: The alligator and caiman branch of living crocodilians.
+  divergence_ma: 80.0
+  branch_priority: 28
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Alligator
+    - Caiman
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: alligatoridae
+  common_label: Alligatorids
+  scientific_label: Alligatoridae
+  scientific_rank: family
+  parent_id: alligatoroidea
+  start_ma: 65.0
+  end_ma: 0.0
+  range_note: Paleocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Crown alligatoroids including alligators and caimans.
+  divergence_ma: 65.0
+  branch_priority: 35
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Alligator
+    - Caiman
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: planocraniidae
+  common_label: Planocraniids
+  scientific_label: Planocraniidae
+  scientific_rank: family
+  parent_id: alligatoroidea
+  start_ma: 56.0
+  end_ma: 23.0
+  range_note: Paleocene to Oligocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Unusual mostly terrestrial crocodilian relatives from the early Cenozoic.
+  divergence_ma: 56.0
+  branch_priority: 36
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Planocrania
+    - Boverisuchus
+  extinction_note: Extinct by the Oligocene.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: crocodyloidea
+  common_label: Crocodile-line crocodilians
+  scientific_label: Crocodyloidea
+  scientific_rank: superfamily
+  zoomable: true
+  parent_id: crocodylia
+  start_ma: 80.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: The branch including true crocodiles and close fossil relatives.
+  divergence_ma: 80.0
+  branch_priority: 29
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Crocodylus
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: crocodylidae
+  common_label: True crocodiles
+  scientific_label: Crocodylidae
+  scientific_rank: family
+  parent_id: crocodyloidea
+  start_ma: 55.0
+  end_ma: 0.0
+  range_note: Eocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: The modern crocodile family including Crocodylus and close relatives.
+  divergence_ma: 55.0
+  branch_priority: 37
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Crocodylus
+    - Osteolaemus
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: mekosuchinae
+  common_label: Mekosuchines
+  scientific_label: Mekosuchinae
+  scientific_rank: subfamily
+  parent_id: crocodyloidea
+  start_ma: 30.0
+  end_ma: 0.01
+  range_note: Oligocene to Holocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Australasian island crocodilians including several unusual terrestrial and insular forms.
+  divergence_ma: 30.0
+  branch_priority: 38
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Mekosuchus
+    - Quinkana
+  extinction_note: Survived into the late Quaternary before going extinct.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: pristichampsidae
+  common_label: Pristichampsids
+  scientific_label: Pristichampsidae
+  scientific_rank: family
+  parent_id: crocodyloidea
+  start_ma: 56.0
+  end_ma: 23.0
+  range_note: Paleocene to Oligocene
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Predatory ziphodont crocodilians from the early Cenozoic, often linked with crocodile-line branches.
+  divergence_ma: 56.0
+  branch_priority: 39
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Pristichampsus
+  extinction_note: Extinct by the Oligocene.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: gavialoidea
+  common_label: Gharial-line crocodilians
+  scientific_label: Gavialoidea
+  scientific_rank: superfamily
+  zoomable: true
+  parent_id: crocodylia
+  start_ma: 75.0
+  end_ma: 0.0
+  range_note: Late Cretaceous to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 22
+  min_zoom_level: period
+  short_description: Long-snouted crocodilians including gharials and their relatives.
+  divergence_ma: 75.0
+  branch_priority: 30
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Gavialis
+    - Tomistoma
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: gavialidae
+  common_label: Gharials
+  scientific_label: Gavialidae
+  scientific_rank: family
+  parent_id: gavialoidea
+  start_ma: 55.0
+  end_ma: 0.0
+  range_note: Eocene to present
+  confidence: approximate
+  display_groups:
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Long-snouted crown gavialoids including Gavialis and Tomistoma.
+  divergence_ma: 55.0
+  branch_priority: 40
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Gavialis
+    - Tomistoma
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - living clade
+
+- id: thoracosauridae
+  common_label: Thoracosaurs
+  scientific_label: Thoracosauridae
+  scientific_rank: family
+  parent_id: gavialoidea
+  start_ma: 72.0
+  end_ma: 33.9
+  range_note: Late Cretaceous to Eocene
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 23
+  min_zoom_level: period
+  short_description: Long-snouted fossil crocodylians often placed near the gharial line.
+  divergence_ma: 72.0
+  branch_priority: 41
+  cladistic_role: detail
+  uncertainty: approximate
+  representative_taxa:
+    - Thoracosaurus
+    - Eosuchus
+  extinction_note: Extinct by the Eocene.
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - crocodilian
+    - extinct
+
+- id: avemetatarsalia
+  common_label: Bird-line archosaurs
+  scientific_label: Avemetatarsalia
+  scientific_rank: clade
+  zoomable: true
+  parent_id: archosauria
+  start_ma: 245.0
+  end_ma: 0.0
+  range_note: Middle Triassic to present
+  confidence: approximate
+  display_groups:
+    - dinosaurs_mesozoic_reptiles
+    - mammals_birds
+  display_priority: 19
+  min_zoom_level: era
+  short_description: The bird-line archosaurs, including pterosaurs, dinosaurs, and birds.
+  divergence_ma: 245.0
+  branch_priority: 21
+  cladistic_role: major_branch
+  uncertainty: approximate
+  representative_taxa:
+    - Pterosaurs
+    - Dinosaurs
+    - Birds
+  tags:
+    - vertebrate
+    - reptile
+    - archosaur
+    - ornithodiran
+    - bird ancestry
+    - living clade
+
 - id: pterosauria
   common_label: Pterosaurs
   scientific_label: Pterosaurs
   scientific_rank: order
-  parent_id: archosauria
+  parent_id: avemetatarsalia
   start_ma: 228.0
   end_ma: 66.0
   range_note: Late Triassic to K-Pg boundary
@@ -947,7 +3187,7 @@
   zoomable: true
   detail_source: sqlite
   detail_scope: descendants
-  parent_id: archosauria
+  parent_id: avemetatarsalia
   start_ma: 231.0
   end_ma: 0.0
   range_note: Late Triassic to present, including birds

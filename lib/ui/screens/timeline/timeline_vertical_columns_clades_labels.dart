@@ -16,12 +16,21 @@ String _displayCladeLabel(Clade clade, CladeLabelMode mode) {
   return '$resolvedScientific ($common)';
 }
 
-String _interactiveCladeLabel(
+String _verticalCladeLabel(Clade clade) {
+  final normalized = clade.label.trim();
+  final split = RegExp(r'^\s*(.*?)\s*\((.*?)\)\s*$').firstMatch(normalized);
+  final heuristicScientific = (split?.group(1) ?? normalized).trim();
+  final scientific =
+      (clade.scientificLabel ?? clade.openTreeName ?? heuristicScientific)
+          .trim();
+  return scientific.isEmpty ? normalized : scientific;
+}
+
+String _interactiveVerticalCladeLabel(
   Clade clade,
-  CladeLabelMode mode,
   String? activeCladeRootId,
 ) {
-  final base = _displayCladeLabel(clade, mode);
+  final base = _verticalCladeLabel(clade);
   if (!clade.zoomable) {
     return base;
   }

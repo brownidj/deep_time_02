@@ -6,6 +6,8 @@ String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
       'Temp:\u00A0${_withSign(entry.avgTempDeltaC!)}\u00B0C',
     if (entry.avgCo2Ppm != null)
       'CO2\u00A0${_formatUnsigned(entry.avgCo2Ppm!)}ppm',
+    if (entry.avgO2Percent != null)
+      'O2:\u00A0${_formatUnsigned(entry.avgO2Percent!)}%',
     if (entry.avgHumidityDeltaPercent != null)
       'RH:\u00A0${_withSign(entry.avgHumidityDeltaPercent!)}%',
     if (entry.seaLevelDeltaM != null)

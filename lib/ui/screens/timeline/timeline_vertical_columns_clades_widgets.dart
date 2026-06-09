@@ -254,9 +254,8 @@ class _VisibleCladeTopStrip extends StatelessWidget {
                           explanation: _buildCladeDetailsText(entry),
                         ),
                         child: Text(
-                          _interactiveCladeLabel(
+                          _interactiveVerticalCladeLabel(
                             entry.clade,
-                            labelMode,
                             activeCladeRootId,
                           ),
                           key: ValueKey(

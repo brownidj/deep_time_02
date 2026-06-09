@@ -33,6 +33,7 @@ class YamlPaleoEcologyRepository implements PaleoEcologyRepository {
       avgTempDeltaC: metrics.avgTempDeltaC,
       avgHumidityDeltaPercent: metrics.avgHumidityDeltaPercent,
       avgCo2Ppm: metrics.avgCo2Ppm,
+      avgO2Percent: metrics.avgO2Percent,
       seaLevelDeltaM: metrics.seaLevelDeltaM,
       icehouseGreenhouseState: _readString(map['icehouse_greenhouse_state']),
       dominantEcology: _readString(map['dominant_ecology']),
@@ -82,11 +83,13 @@ class YamlPaleoEcologyRepository implements PaleoEcologyRepository {
     final temp = _readDouble(map['avg_temp_delta_c']);
     final humidity = _readDouble(map['avg_humidity_delta_percent']);
     final co2 = _readDouble(map['avg_co2_ppm']);
+    final o2 = _readDouble(map['avg_o2_percent']);
     final seaLevel = _readDouble(map['sea_level_delta_m']);
     return _PaleoEcologyMetrics(
       avgTempDeltaC: temp,
       avgHumidityDeltaPercent: humidity,
       avgCo2Ppm: co2,
+      avgO2Percent: o2,
       seaLevelDeltaM: seaLevel,
     );
   }
@@ -125,11 +128,13 @@ class _PaleoEcologyMetrics {
     required this.avgTempDeltaC,
     required this.avgHumidityDeltaPercent,
     required this.avgCo2Ppm,
+    required this.avgO2Percent,
     required this.seaLevelDeltaM,
   });
 
   final double? avgTempDeltaC;
   final double? avgHumidityDeltaPercent;
   final double? avgCo2Ppm;
+  final double? avgO2Percent;
   final double? seaLevelDeltaM;
 }

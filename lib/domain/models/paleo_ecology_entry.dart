@@ -8,6 +8,7 @@ class PaleoEcologyEntry {
     this.avgTempDeltaC,
     this.avgHumidityDeltaPercent,
     this.avgCo2Ppm,
+    this.avgO2Percent,
     this.seaLevelDeltaM,
     this.icehouseGreenhouseState,
     this.dominantEcology,
@@ -22,6 +23,7 @@ class PaleoEcologyEntry {
   final double? avgTempDeltaC;
   final double? avgHumidityDeltaPercent;
   final double? avgCo2Ppm;
+  final double? avgO2Percent;
   final double? seaLevelDeltaM;
   final String? icehouseGreenhouseState;
   final String? dominantEcology;
@@ -33,12 +35,14 @@ class PaleoEcologyEntry {
       avgTempDeltaC != null ||
       avgHumidityDeltaPercent != null ||
       avgCo2Ppm != null ||
+      avgO2Percent != null ||
       seaLevelDeltaM != null;
 
   bool get hasCompleteMetricSummary =>
       avgTempDeltaC != null &&
       avgHumidityDeltaPercent != null &&
       avgCo2Ppm != null &&
+      avgO2Percent != null &&
       seaLevelDeltaM != null;
 
   String get lookupKey => lookupKeyFor(rank: rank, path: path);

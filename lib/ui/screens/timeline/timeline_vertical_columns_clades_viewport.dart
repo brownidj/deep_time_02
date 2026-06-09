@@ -214,9 +214,8 @@ Widget _buildCladeViewport({
                         child: _VerticalCladeBar(
                           key: ValueKey('vertical-clade-${entry.clade.id}'),
                           clade: entry.clade,
-                          labelText: _interactiveCladeLabel(
+                          labelText: _interactiveVerticalCladeLabel(
                             entry.clade,
-                            labelMode,
                             activeCladeRootId,
                           ),
                           width: entry.width,

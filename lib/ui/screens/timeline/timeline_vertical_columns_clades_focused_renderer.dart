@@ -253,9 +253,8 @@ class _FocusedCladeLabelOverlay extends StatelessWidget {
     final labelTop = math.max(entry.top + 10.0, clipTop);
     final isDimmed = spotlightId != null && spotlightId != entry.clade.id;
     final isHighlighted = spotlightId == entry.clade.id;
-    final labelText = _interactiveCladeLabel(
+    final labelText = _interactiveVerticalCladeLabel(
       entry.clade,
-      labelMode,
       activeCladeRootId,
     );
     final tooltipMessage =
@@ -367,7 +366,7 @@ class _FocusedHorizontalConnectorPainter extends CustomPainter {
         continue;
       }
 
-      const bridgeHalfWidth = 5.0;
+      const bridgeHalfWidth = 10.0;
       const bridgeHeight = 6.0;
       var cursorX = startX;
       for (final crossingX in dedupedCrossings) {

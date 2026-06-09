@@ -9,10 +9,13 @@ TIME_DIVISIONS_PATH = Path("data/time_divisions.yaml")
 ROOT_KEY = "paleo_ecology"
 GENERATED_RANKS = {"eon", "era", "period", "age", "stage"}
 LOWER_RANKS = {"age", "stage"}
+PRESENT_DAY_O2_PERCENT = 20.95
 
 SOURCES = {
     "temperature": "Scotese et al. 2021 Phanerozoic temperature reconstruction",
     "co2": "Foster et al. 2017 Phanerozoic CO2 synthesis",
+    "oxygen_phanerozoic": "Krause et al. 2018 Phanerozoic atmospheric oxygen synthesis",
+    "oxygen_precambrian": "Precambrian atmospheric oxygenation synthesis",
     "sea_level_paleozoic": "Haq and Schutter 2008 Paleozoic sea-level synthesis",
     "sea_level_phanerozoic": "van der Meer et al. 2022 Phanerozoic sea-level synthesis",
     "holocene": "Holocene climate and sea-level synthesis",
@@ -22,6 +25,7 @@ ENV_KEYS = [
     "avg_temp_delta_c",
     "avg_humidity_delta_percent",
     "avg_co2_ppm",
+    "avg_o2_percent",
     "sea_level_delta_m",
     "icehouse_greenhouse_state",
     "dominant_ecology",
@@ -78,11 +82,152 @@ def common_sources(row):
         sea = SOURCES["sea_level_phanerozoic"]
     else:
         sea = SOURCES["sea_level_paleozoic"]
-    return [SOURCES["temperature"], SOURCES["co2"], sea]
+    return [
+        SOURCES["temperature"],
+        SOURCES["co2"],
+        SOURCES["oxygen_phanerozoic"],
+        sea,
+    ]
 
 
 def row_key(row):
     return (rank(row), tuple(row.get("path") or []))
+
+
+def oxygen_source_for(row):
+    if (
+        path_contains(row, "Cambrian")
+        or path_contains(row, "Paleozoic")
+        or path_contains(row, "Mesozoic")
+        or path_contains(row, "Cenozoic")
+        or path_contains(row, "Phanerozoic")
+    ):
+        return SOURCES["oxygen_phanerozoic"]
+    return SOURCES["oxygen_precambrian"]
+
+
+def oxygen_percent_for(row):
+    s = stage(row)
+
+    if s == "Hadean":
+        return 0.0
+
+    if s in {"Archean", "Eoarchean", "Paleoarchean", "Mesoarchean"}:
+        return 0.2
+
+    if s == "Neoarchean":
+        return 1.0
+
+    if s == "Proterozoic":
+        return 4.95
+
+    if s == "Paleoproterozoic":
+        return 3.0
+
+    if s in {"Siderian", "Rhyacian"}:
+        return 2.0
+
+    if s in {"Orosirian", "Statherian"}:
+        return 6.0
+
+    if s == "Mesoproterozoic":
+        return 5.5
+
+    if s in {"Calymmian", "Ectasian", "Stenian"}:
+        return 5.5
+
+    if s == "Neoproterozoic":
+        return 10.0
+
+    if s == "Tonian":
+        return 8.0
+
+    if s == "Cryogenian":
+        return 9.0
+
+    if s == "Ediacaran":
+        return 13.0
+
+    if path_contains(row, "Cambrian"):
+        return 12.0
+
+    if path_contains(row, "Ordovician"):
+        return 13.0
+
+    if path_contains(row, "Silurian"):
+        return 14.0
+
+    if path_contains(row, "Devonian"):
+        if s == "Famennian":
+            return 17.0
+        return 19.0
+
+    if path_contains(row, "Carboniferous"):
+        if s == "Tournaisian":
+            return 22.0
+        if s in {"Visean", "Serpukhovian"}:
+            return 27.0
+        return 33.0
+
+    if path_contains(row, "Permian"):
+        if s in {"Asselian", "Sakmarian", "Artinskian", "Kungurian"}:
+            return 29.0
+        if s in {"Roadian", "Wordian", "Capitanian"}:
+            return 26.0
+        return 23.0
+
+    if path_contains(row, "Triassic"):
+        return 15.0
+
+    if path_contains(row, "Jurassic"):
+        return 16.0
+
+    if path_contains(row, "Cretaceous"):
+        if path_contains(row, "Lower"):
+            return 17.0
+        return 19.0
+
+    if path_contains(row, "Paleocene"):
+        return 18.0
+
+    if path_contains(row, "Eocene"):
+        return 19.5
+
+    if path_contains(row, "Oligocene"):
+        return 20.5
+
+    if path_contains(row, "Miocene"):
+        return 20.5
+
+    if path_contains(row, "Pliocene"):
+        return 20.7
+
+    if path_contains(row, "Pleistocene"):
+        return 20.0
+
+    if path_contains(row, "Holocene"):
+        if s in {"Greenlandian", "Northgrippian"}:
+            return 20.8
+        return PRESENT_DAY_O2_PERCENT
+
+    return None
+
+
+def enrich_values(row, values):
+    if values is None:
+        return None
+
+    enriched = dict(values)
+    oxygen_percent = oxygen_percent_for(row)
+    if oxygen_percent is not None and "avg_o2_percent" not in enriched:
+        enriched["avg_o2_percent"] = oxygen_percent
+
+    oxygen_source = oxygen_source_for(row)
+    sources = enriched.get("sources")
+    if oxygen_percent is not None and isinstance(sources, list) and oxygen_source not in sources:
+        enriched["sources"] = [*sources, oxygen_source]
+
+    return enriched
 
 
 def load_existing_rows():
@@ -777,15 +922,24 @@ def main():
     unmatched = []
 
     for row in rows:
+        removed_legacy_o2_field = row.pop("avg_o2_delta_percent", None) is not None
         if rank(row) not in LOWER_RANKS and not include_higher_ranks:
-            unchanged += 1
+            if removed_legacy_o2_field:
+                changed += 1
+            else:
+                unchanged += 1
             continue
-        values = values_for(row)
+        values = enrich_values(row, values_for(row))
         if values is None:
             unmatched.append(stage(row) or "UNKNOWN")
-            unchanged += 1
+            if removed_legacy_o2_field:
+                changed += 1
+            else:
+                unchanged += 1
             continue
         if set_if_missing(row, values, overwrite=overwrite):
+            changed += 1
+        elif removed_legacy_o2_field:
             changed += 1
         else:
             unchanged += 1
