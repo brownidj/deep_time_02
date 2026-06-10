@@ -38,6 +38,8 @@ void main() {
       'sauropsida',
       'diapsida',
       'archosauria',
+      'avemetatarsalia',
+      'pseudosuchia',
       'pterosauria',
       'dinosauria',
       'non_avian_dinosaurs',
@@ -52,7 +54,11 @@ void main() {
 
     expect(clades.keys, containsAll(expectedIds));
     expect(clades['dinosauria']?['end_ma'], 0.0);
-    expect(clades['dinosauria']?['parent_id'], 'archosauria');
+    expect(clades['archosauria']?['parent_id'], 'diapsida');
+    expect(clades['avemetatarsalia']?['parent_id'], 'archosauria');
+    expect(clades['pseudosuchia']?['parent_id'], 'archosauria');
+    expect(clades['dinosauria']?['parent_id'], 'avemetatarsalia');
+    expect(clades['pterosauria']?['parent_id'], 'avemetatarsalia');
     expect(clades['non_avian_dinosaurs']?['end_ma'], 66.0);
     expect(clades['aves']?['parent_id'], 'dinosauria');
   });

@@ -190,6 +190,7 @@ void main() {
                   cladeSearchQuery: '',
                   cladeSpotlightId: null,
                   activeCladeRootId: 'dinosauria',
+                  activeCladeRootLabel: 'Dinosauria',
                   childrenByParentId: const {},
                   onCladeSpotlight: (_) {},
                   visibleTracks: {...kDefaultTimelineTrackOrder}

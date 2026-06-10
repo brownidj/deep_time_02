@@ -284,7 +284,7 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.textContaining('Temp:'), findsOneWidget);
+    expect(find.textContaining('T\u00A0+12'), findsOneWidget);
     expect(find.textContaining('CO2'), findsOneWidget);
   });
 }

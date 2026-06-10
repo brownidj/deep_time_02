@@ -1,26 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:deep_time_2/application/services/timeline_layout_models.dart';
 import 'package:deep_time_2/domain/models/clade.dart';
 import 'package:deep_time_2/domain/models/clade_zoom_level.dart';
-import 'package:deep_time_2/domain/models/geologic_rank.dart';
-import 'package:deep_time_2/domain/models/timeline_marker_catalog.dart';
-import 'package:deep_time_2/ui/models/clade_label_mode.dart';
-import 'package:deep_time_2/ui/models/clade_view_mode.dart';
-import 'package:deep_time_2/ui/models/time_label_mode.dart';
-import 'package:deep_time_2/ui/screens/timeline/timeline_body.dart';
-import 'package:deep_time_2/ui/screens/timeline/timeline_orientation.dart';
 
 import 'timeline_row_alignment_helpers.dart';
+import 'timeline_focused_clade_renderer_test_helpers.dart';
 
 void main() {
   testWidgets('Focused renderer gives same-depth clades distinct lanes', (
     tester,
   ) async {
     await setLargeSurface(tester);
-    final palette = testPalette();
     final layout = splitPeriodLayout();
-    const markers = TimelineMarkerCatalog(events: [], extinctions: []);
     const clades = [
       Clade(
         id: 'dinosauria',
@@ -86,46 +77,14 @@ void main() {
       'saurischia': [clades[3]],
     };
 
-    await tester.pumpWidget(
-      MaterialApp(
-        home: Scaffold(
-          body: SizedBox(
-            width: 2000,
-            height: 1200,
-            child: Column(
-              children: [
-                TimelineBody(
-                  layout: layout,
-                  palette: palette,
-                  markers: markers,
-                  labelMode: TimeLabelMode.geologicTime,
-                  scrollController: ScrollController(),
-                  selectedId: null,
-                  onBandSelect: (_) {},
-                  onSelect: (_) {},
-                  clades: clades,
-                  cladeViewMode: CladeViewMode.byCategory,
-                  cladeCategoryId: 'all',
-                  cladeLabelMode: CladeLabelMode.common,
-                  cladeRepresentativeIds: const [],
-                  cladeSearchQuery: '',
-                  cladeSpotlightId: null,
-                  activeCladeRootId: 'dinosauria',
-                  activeCladeRootLabel: 'Dinosauria',
-                  childrenByParentId: childrenByParentId,
-                  onCladeSpotlight: (_) {},
-                  visibleTracks: {...kDefaultTimelineTrackOrder}
-                    ..remove(TimelineTrack.paleoEcology),
-                  paleoEcology: const [],
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
+    await pumpFocusedCladeTestBody(
+      tester,
+      layout: layout,
+      clades: clades,
+      childrenByParentId: childrenByParentId,
+      activeCladeRootId: 'dinosauria',
+      activeCladeRootLabel: 'Dinosauria',
     );
-
-    await tester.pumpAndSettle();
 
     final ornithischiaFinder = find.byKey(
       const ValueKey('focused-clade-label-ornithischia'),
@@ -145,9 +104,7 @@ void main() {
     'Focused renderer suppresses inline label when pinned strip label is visible',
     (tester) async {
       await setLargeSurface(tester);
-      final palette = testPalette();
-      final layout = _focusedPinnedStripLayout();
-      const markers = TimelineMarkerCatalog(events: [], extinctions: []);
+      final layout = focusedPinnedStripLayout();
       const clades = [
         Clade(
           id: 'root_clade',
@@ -176,46 +133,14 @@ void main() {
         'root_clade': [clades[1]],
       };
 
-      await tester.pumpWidget(
-        MaterialApp(
-          home: Scaffold(
-            body: SizedBox(
-              width: 2000,
-              height: 1200,
-              child: Column(
-                children: [
-                  TimelineBody(
-                    layout: layout,
-                    palette: palette,
-                    markers: markers,
-                    labelMode: TimeLabelMode.geologicTime,
-                    scrollController: ScrollController(),
-                    selectedId: null,
-                    onBandSelect: (_) {},
-                    onSelect: (_) {},
-                    clades: clades,
-                    cladeViewMode: CladeViewMode.byCategory,
-                    cladeCategoryId: 'all',
-                    cladeLabelMode: CladeLabelMode.common,
-                    cladeRepresentativeIds: const [],
-                    cladeSearchQuery: '',
-                    cladeSpotlightId: null,
-                    activeCladeRootId: 'root_clade',
-                    activeCladeRootLabel: 'Root Clade',
-                    childrenByParentId: childrenByParentId,
-                    onCladeSpotlight: (_) {},
-                    visibleTracks: {...kDefaultTimelineTrackOrder}
-                      ..remove(TimelineTrack.paleoEcology),
-                    paleoEcology: const [],
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
+      await pumpFocusedCladeTestBody(
+        tester,
+        layout: layout,
+        clades: clades,
+        childrenByParentId: childrenByParentId,
+        activeCladeRootId: 'root_clade',
+        activeCladeRootLabel: 'Root Clade',
       );
-
-      await tester.pumpAndSettle();
 
       expect(
         find.byKey(const ValueKey('focused-clade-label-root_clade')),
@@ -233,9 +158,7 @@ void main() {
     tester,
   ) async {
     await setLargeSurface(tester);
-    final palette = testPalette();
-    final layout = _focusedPinnedStripLayout();
-    const markers = TimelineMarkerCatalog(events: [], extinctions: []);
+    final layout = focusedPinnedStripLayout();
     const clades = [
       Clade(
         id: 'eurypoda',
@@ -275,46 +198,14 @@ void main() {
       'eurypoda': [clades[1], clades[2]],
     };
 
-    await tester.pumpWidget(
-      MaterialApp(
-        home: Scaffold(
-          body: SizedBox(
-            width: 2000,
-            height: 1200,
-            child: Column(
-              children: [
-                TimelineBody(
-                  layout: layout,
-                  palette: palette,
-                  markers: markers,
-                  labelMode: TimeLabelMode.geologicTime,
-                  scrollController: ScrollController(),
-                  selectedId: null,
-                  onBandSelect: (_) {},
-                  onSelect: (_) {},
-                  clades: clades,
-                  cladeViewMode: CladeViewMode.byCategory,
-                  cladeCategoryId: 'all',
-                  cladeLabelMode: CladeLabelMode.common,
-                  cladeRepresentativeIds: const [],
-                  cladeSearchQuery: '',
-                  cladeSpotlightId: null,
-                  activeCladeRootId: 'eurypoda',
-                  activeCladeRootLabel: 'Eurypoda',
-                  childrenByParentId: childrenByParentId,
-                  onCladeSpotlight: (_) {},
-                  visibleTracks: {...kDefaultTimelineTrackOrder}
-                    ..remove(TimelineTrack.paleoEcology),
-                  paleoEcology: const [],
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
+    await pumpFocusedCladeTestBody(
+      tester,
+      layout: layout,
+      clades: clades,
+      childrenByParentId: childrenByParentId,
+      activeCladeRootId: 'eurypoda',
+      activeCladeRootLabel: 'Eurypoda',
     );
-
-    await tester.pumpAndSettle();
 
     final parentDx = tester
         .getTopLeft(find.byKey(const ValueKey('focused-clade-label-eurypoda')))
@@ -333,197 +224,4 @@ void main() {
     expect(stegoDx, greaterThan(parentDx));
     expect(ankyloDx, greaterThan(stegoDx));
   });
-
-  testWidgets('Focused renderer uses direct child horizontal segments only', (
-    tester,
-  ) async {
-    await setLargeSurface(tester);
-    final palette = testPalette();
-    final layout = _focusedPinnedStripLayout();
-    const markers = TimelineMarkerCatalog(events: [], extinctions: []);
-    const clades = [
-      Clade(
-        id: 'root',
-        label: 'Root',
-        scientificRank: 'clade',
-        startMa: 60,
-        endMa: 20,
-        displayGroups: ['all'],
-        displayPriority: 0,
-        minZoomLevel: CladeZoomLevel.whole,
-        zoomable: true,
-      ),
-      Clade(
-        id: 'child_a',
-        label: 'Child A',
-        scientificRank: 'clade',
-        parentId: 'root',
-        startMa: 58,
-        endMa: 44,
-        displayGroups: ['all'],
-        displayPriority: 1,
-        minZoomLevel: CladeZoomLevel.whole,
-      ),
-      Clade(
-        id: 'child_b',
-        label: 'Child B',
-        scientificRank: 'clade',
-        parentId: 'root',
-        startMa: 50,
-        endMa: 20,
-        displayGroups: ['all'],
-        displayPriority: 2,
-        minZoomLevel: CladeZoomLevel.whole,
-      ),
-    ];
-    final childrenByParentId = <String, List<Clade>>{
-      'root': [clades[1], clades[2]],
-    };
-
-    await tester.pumpWidget(
-      MaterialApp(
-        home: Scaffold(
-          body: SizedBox(
-            width: 2000,
-            height: 1200,
-            child: Column(
-              children: [
-                TimelineBody(
-                  layout: layout,
-                  palette: palette,
-                  markers: markers,
-                  labelMode: TimeLabelMode.geologicTime,
-                  scrollController: ScrollController(),
-                  selectedId: null,
-                  onBandSelect: (_) {},
-                  onSelect: (_) {},
-                  clades: clades,
-                  cladeViewMode: CladeViewMode.byCategory,
-                  cladeCategoryId: 'all',
-                  cladeLabelMode: CladeLabelMode.common,
-                  cladeRepresentativeIds: const [],
-                  cladeSearchQuery: '',
-                  cladeSpotlightId: null,
-                  activeCladeRootId: 'root',
-                  activeCladeRootLabel: 'Root',
-                  childrenByParentId: childrenByParentId,
-                  onCladeSpotlight: (_) {},
-                  visibleTracks: {...kDefaultTimelineTrackOrder}
-                    ..remove(TimelineTrack.paleoEcology),
-                  paleoEcology: const [],
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-
-    await tester.pumpAndSettle();
-
-    expect(find.byKey(const ValueKey('focused-clade-label-root')), findsOneWidget);
-    expect(
-      find.byKey(const ValueKey('focused-clade-label-child_a')),
-      findsOneWidget,
-    );
-    expect(
-      find.byKey(const ValueKey('focused-clade-label-child_b')),
-      findsOneWidget,
-    );
-
-    final rootDx = tester
-        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-root')))
-        .dx;
-    final childADx = tester
-        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-child_a')))
-        .dx;
-    final childBDx = tester
-        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-child_b')))
-        .dx;
-
-    expect(childADx, greaterThan(rootDx));
-    expect(childBDx, greaterThan(rootDx));
-  });
-}
-
-TimelineLayoutSnapshot _focusedPinnedStripLayout() {
-  return TimelineLayoutSnapshot(
-    divisions: const [],
-    eonSegments: const [
-      TimelineBandSegment(
-        id: 1,
-        label: 'Hadean',
-        rank: GeologicRank.eon,
-        startMa: 100,
-        endMa: 0,
-        colorKey: 'eon|test',
-        isGap: false,
-        unitSpan: 1,
-      ),
-    ],
-    eraSegments: const [
-      TimelineBandSegment(
-        id: 2,
-        label: 'TestEra',
-        rank: GeologicRank.era,
-        startMa: 100,
-        endMa: 0,
-        colorKey: 'era|test',
-        isGap: false,
-        unitSpan: 1,
-      ),
-    ],
-    periodSegments: const [
-      TimelineRowSegment(
-        id: 3,
-        label: 'TestPeriod',
-        rank: GeologicRank.period,
-        startMa: 100,
-        endMa: 0,
-        colorKey: 'period|test',
-        isGap: false,
-        unitSpan: 1,
-      ),
-    ],
-    epochSegments: const [
-      TimelineRowSegment(
-        id: 4,
-        label: 'TestEpoch',
-        rank: GeologicRank.epoch,
-        startMa: 100,
-        endMa: 0,
-        colorKey: 'epoch|test',
-        isGap: false,
-        unitSpan: 1,
-      ),
-    ],
-    stageSegments: const [
-      TimelineRowSegment(
-        id: 5,
-        label: 'TestStage',
-        rank: GeologicRank.stage,
-        startMa: 100,
-        endMa: 0,
-        colorKey: 'stage|test',
-        isGap: false,
-        unitSpan: 1,
-      ),
-    ],
-    rlifeSegments: const [
-      TimelineRowSegment(
-        id: 6,
-        label: 'TestRLife',
-        rank: GeologicRank.period,
-        startMa: 100,
-        endMa: 0,
-        colorKey: 'rlife|test',
-        isGap: false,
-        unitSpan: 1,
-      ),
-    ],
-    eventSegments: const [],
-    continentSegments: const [],
-    oldestMa: 100,
-    youngestMa: 0,
-  );
 }

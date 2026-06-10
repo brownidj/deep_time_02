@@ -22,6 +22,7 @@ import 'package:deep_time_2/ui/theme/deep_time_palette.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 part 'timeline_screen_state.dart';
+part 'timeline_screen_build.dart';
 part 'timeline_screen_prefs.dart';
 part 'timeline_screen_prefs_storage.dart';
 part 'timeline_screen_clade_detail.dart';

@@ -47,13 +47,17 @@ part 'timeline_vertical_columns_clades_widgets.dart';
 part 'timeline_vertical_columns_clades_scrollbar.dart';
 part 'timeline_vertical_columns_clades_layout_helpers.dart';
 part 'timeline_vertical_columns_clades_focused_layout.dart';
+part 'timeline_vertical_columns_clades_focused_layout_models.dart';
+part 'timeline_vertical_columns_clades_focused_layout_helpers.dart';
 part 'timeline_vertical_columns_clades_focused_renderer.dart';
+part 'timeline_vertical_columns_clades_focused_renderer_painters.dart';
 part 'timeline_vertical_columns_clades_misc.dart';
 part 'timeline_vertical_columns_taxonomy_placeholder.dart';
 part 'timeline_vertical_columns_biology_track.dart';
 part 'timeline_vertical_columns_events_track.dart';
 part 'timeline_vertical_columns_paleo_ecology_helpers.dart';
 part 'timeline_vertical_columns_tracks.dart';
+part 'timeline_vertical_columns_tracks_core.dart';
 part 'timeline_vertical_columns_events_widgets.dart';
 
 Color _darken(Color color, double amount) {
