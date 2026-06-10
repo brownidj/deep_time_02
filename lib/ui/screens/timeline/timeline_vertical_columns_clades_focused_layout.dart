@@ -144,23 +144,34 @@ class _DefaultFocusedCladeLayoutEngine implements _FocusedCladeLayoutEngine {
       for (final child in children) {
         sortChildrenRecursively(child);
       }
-      children.sort((a, b) {
+      int insertionCompare(Clade a, Clade b) {
         final aStats = computeSubtreeOrderStats(a);
         final bStats = computeSubtreeOrderStats(b);
+        final (aStartMa, aEndMa) = _focusedEffectiveBounds(
+          clade: a,
+          allById: request.allById,
+        );
+        final (bStartMa, bEndMa) = _focusedEffectiveBounds(
+          clade: b,
+          allById: request.allById,
+        );
+        final startCompare = aStartMa.compareTo(bStartMa);
+        if (startCompare != 0) {
+          return startCompare;
+        }
+        final aSpan = aStartMa - aEndMa;
+        final bSpan = bStartMa - bEndMa;
+        final spanCompare = aSpan.compareTo(bSpan);
+        if (spanCompare != 0) {
+          return spanCompare;
+        }
         final weightCompare = aStats.weight.compareTo(bStats.weight);
         if (weightCompare != 0) {
           return weightCompare;
         }
-        final centerCompare = aStats.centerY.compareTo(bStats.centerY);
-        if (centerCompare != 0) {
-          return centerCompare;
-        }
-        final topCompare = aStats.minTop.compareTo(bStats.minTop);
-        if (topCompare != 0) {
-          return topCompare;
-        }
         return _compareFocusedClades(a, b);
-      });
+      }
+      children.sort(insertionCompare);
     }
 
     sortChildrenRecursively(root);
@@ -180,17 +191,17 @@ class _DefaultFocusedCladeLayoutEngine implements _FocusedCladeLayoutEngine {
     assignDepths(root);
 
     final lanePositionById = <String, double>{};
-    var nextLane = 0;
 
-    void assignLanePositions(Clade clade) {
-      lanePositionById[clade.id] = nextLane.toDouble();
-      nextLane += 1;
+    int assignLanePositions(Clade clade, int lane) {
+      lanePositionById[clade.id] = lane.toDouble();
+      var nextLane = lane + 1;
       for (final child in childrenByParentId[clade.id] ?? const <Clade>[]) {
-        assignLanePositions(child);
+        nextLane = assignLanePositions(child, nextLane);
       }
+      return nextLane;
     }
 
-    assignLanePositions(root);
+    assignLanePositions(root, 0);
     final maxLanePosition = lanePositionById.values.reduce(math.max);
 
     final usableWidth = math.max(

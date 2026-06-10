@@ -760,92 +760,71 @@ Success criteria:
 
 ## Phase 3: focused cladogram layout engine
 
-Problem to solve:
+Problem solved:
 
-- the current focused subtree renderer still draws each clade as an independent vertical time bar
-- parent-child relationships are then shown with short horizontal connector stubs at the child top
-- once the subtree gains depth, this produces disconnected horizontal line segments such as those now seen around `megalosauroidea` and `tyrannosauroidea`
-- those segments are renderer artifacts, not meaningful cladogram structure
+- the earlier focused renderer produced disconnected child-top stubs, doglegs, and ad hoc junction columns
+- deeper focused views were hard to reason about because sibling routing and lane assignment were not deterministic enough
 
-Design rule:
+Current focused layout contract:
 
-- keep the current overview renderer unchanged
-- replace the focused subtree renderer only
-- do not try to force deeper focused subtrees through the same bar-plus-connector model used by the overview
+1. keep the overview renderer unchanged
+2. use a dedicated focused renderer only in focused clade mode
+3. keep time on the vertical axis
+4. give every visible clade its own horizontal lane
+5. use uniform inter-lane spacing within a focused view
+6. place direct children immediately to the right of the parent
+7. insert younger children inward and shift older child subtrees to the right
+8. draw direct parent-to-child horizontals only
+9. do not use local sibling junction spines or dogleg routing in focused mode
 
-Implementation goals:
+Focused lane model:
 
-- implement subtree-specific layout not tied to the geological axis
-- replace disconnected child-top connector stubs with explicit branch junctions
-- preserve the current top-down orientation
-- left-pack sparse branches rather than stretching them across the full clade column
-- add label collision control
+- parent occupies one lane
+- first child occupies the next lane to the right
+- later children occupy the next available contiguous subtree block
+- each child subtree remains contiguous
+- older sibling subtrees shift right when a younger child is inserted nearer the parent
 
-Focused-mode renderer model:
+Focused ordering model:
 
-- a visible focused root trunk
-- explicit parent branch junctions
-- child branches that emerge from the parent trunk at controlled branch levels
-- horizontal levels allocated by tree structure, not by full-width distribution
-- a deterministic branch-spacing policy with an upper cap
+- children are ordered primarily for insertion-based readability, not by broad global optimization
+- younger child origins are packed closer to the parent
+- narrower / simpler children are preferred inward when dates are similar
+- larger descendant subtrees are pushed farther right
 
-Rendering primitives:
+Rendering model:
 
-- vertical trunk segment
-- horizontal branch segment
-- branch junction node or elbow
-- label rail / rotated label
+- one vertical line per visible clade
+- one direct horizontal from parent line to child line
+- no extra routing column
+- no dogleg handoff
+- pinned-strip behavior remains separate from inline line routing
 
 Do not use in focused mode:
 
-- isolated horizontal connector stubs at child tops
-- full-width fraction-based lane spreading for sparse clades
-- purely time-bar-derived branch appearance
+- sibling junction spines
+- local branch handoff columns
+- multi-step dogleg routing
+- lane reuse between unrelated visible clades
 
-Suggested layout pipeline:
+Implementation boundary:
 
-1. Build the focused subtree from the active root.
-2. Keep only the visible subtree plus required internal support nodes.
-3. Compute a tree depth for each node.
-4. Allocate horizontal lanes by branch structure:
-   - root on the left
-   - descendants to the right
-   - sparse sibling groups left-packed
-   - inter-lane spacing capped
-5. Compute branch junction Y positions:
-   - use a stable node anchor
-   - not necessarily identical to `start_ma`
-6. Draw parent trunks and child elbows from those junctions.
-7. Place labels with priority/collision rules.
-8. Keep the pinned strip and focused-root auto-scroll behavior.
+- overview mode still uses the older global clade-column renderer
+- focused mode uses the dedicated focused layout engine and renderer
 
-Suggested code boundary:
-
-- keep overview logic in the existing vertical clade bar renderer
-- add a dedicated focused renderer and layout service for subtree mode
-
-Suggested files:
+Files:
 
 - [timeline_vertical_columns_clades_viewport.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_viewport.dart)
-- [timeline_vertical_columns_clades_layout_helpers.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_layout_helpers.dart)
-- [timeline_vertical_columns_clades_visibility.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_visibility.dart)
-- new focused-layout model/service file if needed
-
-Recommended internal separation:
-
-- `OverviewCladeLayout`: current time-bar layout
-- `FocusedCladeLayout`: new subtree branch layout
+- [timeline_vertical_columns_clades_focused_layout.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_focused_layout.dart)
+- [timeline_vertical_columns_clades_focused_renderer.dart](../lib/ui/screens/timeline/timeline_vertical_columns_clades_focused_renderer.dart)
 
 Phase 3 success criteria:
 
-- deep dinosaur branches read as one connected cladogram
-- no misleading disconnected horizontal stubs
-- sparse branches stay left-packed
-- adding more descendants improves detail rather than visual confusion
-
-Success criteria:
-
-- deep dinosaur branches are readable without time-axis compression
+- every visible clade has its own lane in focused mode
+- direct children sit immediately to the right of the parent block
+- younger inserted children can shift older sibling subtrees right
+- no dogleg routing remains in focused mode
+- remaining crossings, if any, are due to the topology/time constraints themselves rather than ad hoc routing geometry
 
 ## Phase 4: nested zoom
 

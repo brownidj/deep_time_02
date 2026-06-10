@@ -228,6 +228,222 @@ void main() {
       );
     },
   );
+
+  testWidgets('Focused renderer inserts younger direct child nearer parent', (
+    tester,
+  ) async {
+    await setLargeSurface(tester);
+    final palette = testPalette();
+    final layout = _focusedPinnedStripLayout();
+    const markers = TimelineMarkerCatalog(events: [], extinctions: []);
+    const clades = [
+      Clade(
+        id: 'eurypoda',
+        label: 'Eurypoda',
+        scientificRank: 'clade',
+        startMa: 60,
+        endMa: 20,
+        displayGroups: ['all'],
+        displayPriority: 0,
+        minZoomLevel: CladeZoomLevel.whole,
+        zoomable: true,
+      ),
+      Clade(
+        id: 'stegosauria',
+        label: 'Stegosauria',
+        scientificRank: 'clade',
+        parentId: 'eurypoda',
+        startMa: 58,
+        endMa: 44,
+        displayGroups: ['all'],
+        displayPriority: 1,
+        minZoomLevel: CladeZoomLevel.whole,
+      ),
+      Clade(
+        id: 'ankylosauria',
+        label: 'Ankylosauria',
+        scientificRank: 'clade',
+        parentId: 'eurypoda',
+        startMa: 60,
+        endMa: 20,
+        displayGroups: ['all'],
+        displayPriority: 2,
+        minZoomLevel: CladeZoomLevel.whole,
+      ),
+    ];
+    final childrenByParentId = <String, List<Clade>>{
+      'eurypoda': [clades[1], clades[2]],
+    };
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SizedBox(
+            width: 2000,
+            height: 1200,
+            child: Column(
+              children: [
+                TimelineBody(
+                  layout: layout,
+                  palette: palette,
+                  markers: markers,
+                  labelMode: TimeLabelMode.geologicTime,
+                  scrollController: ScrollController(),
+                  selectedId: null,
+                  onBandSelect: (_) {},
+                  onSelect: (_) {},
+                  clades: clades,
+                  cladeViewMode: CladeViewMode.byCategory,
+                  cladeCategoryId: 'all',
+                  cladeLabelMode: CladeLabelMode.common,
+                  cladeRepresentativeIds: const [],
+                  cladeSearchQuery: '',
+                  cladeSpotlightId: null,
+                  activeCladeRootId: 'eurypoda',
+                  activeCladeRootLabel: 'Eurypoda',
+                  childrenByParentId: childrenByParentId,
+                  onCladeSpotlight: (_) {},
+                  visibleTracks: {...kDefaultTimelineTrackOrder}
+                    ..remove(TimelineTrack.paleoEcology),
+                  paleoEcology: const [],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    final parentDx = tester
+        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-eurypoda')))
+        .dx;
+    final stegoDx = tester
+        .getTopLeft(
+          find.byKey(const ValueKey('focused-clade-label-stegosauria')),
+        )
+        .dx;
+    final ankyloDx = tester
+        .getTopLeft(
+          find.byKey(const ValueKey('focused-clade-label-ankylosauria')),
+        )
+        .dx;
+
+    expect(stegoDx, greaterThan(parentDx));
+    expect(ankyloDx, greaterThan(stegoDx));
+  });
+
+  testWidgets('Focused renderer uses direct child horizontal segments only', (
+    tester,
+  ) async {
+    await setLargeSurface(tester);
+    final palette = testPalette();
+    final layout = _focusedPinnedStripLayout();
+    const markers = TimelineMarkerCatalog(events: [], extinctions: []);
+    const clades = [
+      Clade(
+        id: 'root',
+        label: 'Root',
+        scientificRank: 'clade',
+        startMa: 60,
+        endMa: 20,
+        displayGroups: ['all'],
+        displayPriority: 0,
+        minZoomLevel: CladeZoomLevel.whole,
+        zoomable: true,
+      ),
+      Clade(
+        id: 'child_a',
+        label: 'Child A',
+        scientificRank: 'clade',
+        parentId: 'root',
+        startMa: 58,
+        endMa: 44,
+        displayGroups: ['all'],
+        displayPriority: 1,
+        minZoomLevel: CladeZoomLevel.whole,
+      ),
+      Clade(
+        id: 'child_b',
+        label: 'Child B',
+        scientificRank: 'clade',
+        parentId: 'root',
+        startMa: 50,
+        endMa: 20,
+        displayGroups: ['all'],
+        displayPriority: 2,
+        minZoomLevel: CladeZoomLevel.whole,
+      ),
+    ];
+    final childrenByParentId = <String, List<Clade>>{
+      'root': [clades[1], clades[2]],
+    };
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SizedBox(
+            width: 2000,
+            height: 1200,
+            child: Column(
+              children: [
+                TimelineBody(
+                  layout: layout,
+                  palette: palette,
+                  markers: markers,
+                  labelMode: TimeLabelMode.geologicTime,
+                  scrollController: ScrollController(),
+                  selectedId: null,
+                  onBandSelect: (_) {},
+                  onSelect: (_) {},
+                  clades: clades,
+                  cladeViewMode: CladeViewMode.byCategory,
+                  cladeCategoryId: 'all',
+                  cladeLabelMode: CladeLabelMode.common,
+                  cladeRepresentativeIds: const [],
+                  cladeSearchQuery: '',
+                  cladeSpotlightId: null,
+                  activeCladeRootId: 'root',
+                  activeCladeRootLabel: 'Root',
+                  childrenByParentId: childrenByParentId,
+                  onCladeSpotlight: (_) {},
+                  visibleTracks: {...kDefaultTimelineTrackOrder}
+                    ..remove(TimelineTrack.paleoEcology),
+                  paleoEcology: const [],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const ValueKey('focused-clade-label-root')), findsOneWidget);
+    expect(
+      find.byKey(const ValueKey('focused-clade-label-child_a')),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const ValueKey('focused-clade-label-child_b')),
+      findsOneWidget,
+    );
+
+    final rootDx = tester
+        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-root')))
+        .dx;
+    final childADx = tester
+        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-child_a')))
+        .dx;
+    final childBDx = tester
+        .getTopLeft(find.byKey(const ValueKey('focused-clade-label-child_b')))
+        .dx;
+
+    expect(childADx, greaterThan(rootDx));
+    expect(childBDx, greaterThan(rootDx));
+  });
 }
 
 TimelineLayoutSnapshot _focusedPinnedStripLayout() {
