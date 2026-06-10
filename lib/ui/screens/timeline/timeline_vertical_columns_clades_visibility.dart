@@ -74,11 +74,6 @@ List<Clade> _filterVisibleClades({
     filtered = filteredForZoom(effectiveZoomLevel);
   }
 
-  AppDebug.log(
-    'Clade visibility: width=${availableWidth.toStringAsFixed(1)} cap=$widthCap '
-    'candidates=${filtered.length} zoom=${baseZoomLevel.id} '
-    'effective=${effectiveZoomLevel.id} allZoom=$includeAllZoomLevels',
-  );
   if (filtered.length <= widthCap) {
     _debugCladeZoom(
       'visible=${filtered.length} cap=$widthCap '
@@ -201,7 +196,11 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
   final visibleById = {for (final clade in visible) clade.id: clade};
 
   final layouts = <_VerticalCladeBarLayout>[];
-  final ordered = _orderedTreeClades(visible);
+  final ordered = _orderedTreeClades(
+    visible,
+    mapper: mapper,
+    columnHeight: columnHeight,
+  );
   final usable = math.max(0.0, columnWidth - (padding * 2) - 2);
   final laneSpacing = ordered.length <= 1
       ? 0.0

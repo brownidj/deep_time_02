@@ -17,6 +17,7 @@ String _buildCladeDetailsText(_VerticalCladeBarLayout entry) {
     'ID: ${clade.id}',
     'Parent: ${entry.parentLabel ?? '-'}',
     'Start: ${_formatCladeStartMa(clade.startMa)} Ma',
+    'Start derivation: ${clade.startMaDerivation ?? '-'}',
     'End: ${_formatCladeStartMa(clade.endMa)} Ma',
     'Duration: ${_formatCladeStartMa(clade.durationMa)} Ma',
     'Confidence: ${clade.confidence ?? '-'}',
@@ -33,8 +34,20 @@ String _buildCladeDetailsText(_VerticalCladeBarLayout entry) {
     'Tags: ${(clade.tags == null || clade.tags!.isEmpty) ? '-' : clade.tags!.join(', ')}',
     'Summary: ${clade.shortDescription ?? '-'}',
     'Range note: ${clade.rangeNote ?? '-'}',
+    'Start note: ${clade.startMaNote ?? '-'}',
     'Extinction note: ${clade.extinctionNote ?? '-'}',
   ];
+  if (clade.startMaSources != null && clade.startMaSources!.isNotEmpty) {
+    parts.add('Start sources:');
+    for (final source in clade.startMaSources!) {
+      final url = source.url?.trim();
+      parts.add(
+        url == null || url.isEmpty
+            ? '- ${source.label}'
+            : '- ${source.label} ($url)',
+      );
+    }
+  }
   final openTree = clade.openTree;
   if (openTree != null) {
     parts.addAll([
@@ -49,7 +62,11 @@ String _buildCladeDetailsText(_VerticalCladeBarLayout entry) {
   return parts.join('\n');
 }
 
-List<Clade> _orderedTreeClades(List<Clade> visible) {
+List<Clade> _orderedTreeClades(
+  List<Clade> visible, {
+  required _StageRangeMapper mapper,
+  required double columnHeight,
+}) {
   final byId = {for (final clade in visible) clade.id: clade};
   final childrenByParentId = <String, List<Clade>>{};
   final roots = <Clade>[];
@@ -74,10 +91,106 @@ List<Clade> _orderedTreeClades(List<Clade> visible) {
     return a.label.compareTo(b.label);
   }
 
-  roots.sort(compareClades);
-  for (final children in childrenByParentId.values) {
-    children.sort(compareClades);
+  (double, double) effectiveBounds(Clade clade) {
+    var start = clade.startMa;
+    var end = clade.endMa;
+    if (start > end && (start - end).abs() > 0.0001) {
+      return (start, end);
+    }
+    final visited = <String>{clade.id};
+    var cursor = clade;
+    while (cursor.parentId != null) {
+      final parent = byId[cursor.parentId!];
+      if (parent == null || !visited.add(parent.id)) {
+        break;
+      }
+      if (parent.startMa > parent.endMa &&
+          (parent.startMa - parent.endMa).abs() > 0.0001) {
+        return (parent.startMa, parent.endMa);
+      }
+      cursor = parent;
+    }
+    return (start, end);
   }
+
+  final subtreeOrderStatsById = <String, _OverviewCladeOrderStats>{};
+  _OverviewCladeOrderStats computeSubtreeOrderStats(Clade clade) {
+    final cached = subtreeOrderStatsById[clade.id];
+    if (cached != null) {
+      return cached;
+    }
+    final (startMa, endMa) = effectiveBounds(clade);
+    final selfTop = math.min(
+      (mapper.yForMa(startMa) ?? 0.0).toDouble(),
+      (mapper.yForMa(endMa) ?? columnHeight).toDouble(),
+    );
+    final selfBottom = math.max(
+      (mapper.yForMa(startMa) ?? 0.0).toDouble(),
+      (mapper.yForMa(endMa) ?? columnHeight).toDouble(),
+    );
+    var minTop = selfTop;
+    var maxBottom = selfBottom;
+    var weightedCenterSum = (selfTop + selfBottom) / 2;
+    var weightedCount = 1.0;
+
+    final children = childrenByParentId[clade.id] ?? const <Clade>[];
+    for (final child in children) {
+      final childStats = computeSubtreeOrderStats(child);
+      minTop = math.min(minTop, childStats.minTop);
+      maxBottom = math.max(maxBottom, childStats.maxBottom);
+      weightedCenterSum += childStats.centerY * childStats.weight;
+      weightedCount += childStats.weight;
+    }
+
+    final stats = _OverviewCladeOrderStats(
+      minTop: minTop,
+      maxBottom: maxBottom,
+      centerY: weightedCenterSum / weightedCount,
+      weight: weightedCount,
+    );
+    subtreeOrderStatsById[clade.id] = stats;
+    return stats;
+  }
+
+  void sortChildrenRecursively(Clade parent) {
+    final children = childrenByParentId[parent.id];
+    if (children == null || children.isEmpty) {
+      return;
+    }
+    for (final child in children) {
+      sortChildrenRecursively(child);
+    }
+    children.sort((a, b) {
+      final aStats = computeSubtreeOrderStats(a);
+      final bStats = computeSubtreeOrderStats(b);
+      final centerCompare = aStats.centerY.compareTo(bStats.centerY);
+      if (centerCompare != 0) {
+        return centerCompare;
+      }
+      final topCompare = aStats.minTop.compareTo(bStats.minTop);
+      if (topCompare != 0) {
+        return topCompare;
+      }
+      return compareClades(a, b);
+    });
+  }
+
+  for (final root in roots) {
+    sortChildrenRecursively(root);
+  }
+  roots.sort((a, b) {
+    final aStats = computeSubtreeOrderStats(a);
+    final bStats = computeSubtreeOrderStats(b);
+    final centerCompare = aStats.centerY.compareTo(bStats.centerY);
+    if (centerCompare != 0) {
+      return centerCompare;
+    }
+    final topCompare = aStats.minTop.compareTo(bStats.minTop);
+    if (topCompare != 0) {
+      return topCompare;
+    }
+    return compareClades(a, b);
+  });
 
   final ordered = <Clade>[];
   void visit(Clade clade) {
@@ -91,6 +204,20 @@ List<Clade> _orderedTreeClades(List<Clade> visible) {
     visit(root);
   }
   return ordered;
+}
+
+class _OverviewCladeOrderStats {
+  const _OverviewCladeOrderStats({
+    required this.minTop,
+    required this.maxBottom,
+    required this.centerY,
+    required this.weight,
+  });
+
+  final double minTop;
+  final double maxBottom;
+  final double centerY;
+  final double weight;
 }
 
 List<_VerticalCladeConnectorLayout> _layoutCladeConnectors(

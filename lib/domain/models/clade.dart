@@ -28,6 +28,9 @@ class Clade {
     this.zoomable = false,
     this.detailSource,
     this.detailScope,
+    this.startMaDerivation,
+    this.startMaNote,
+    this.startMaSources,
   });
 
   final String id;
@@ -56,8 +59,18 @@ class Clade {
   final bool zoomable;
   final String? detailSource;
   final String? detailScope;
+  final String? startMaDerivation;
+  final String? startMaNote;
+  final List<CladeDateSource>? startMaSources;
 
   double get durationMa => startMa - endMa;
+}
+
+class CladeDateSource {
+  const CladeDateSource({required this.label, this.url});
+
+  final String label;
+  final String? url;
 }
 
 class CladeOpenTreeMetadata {

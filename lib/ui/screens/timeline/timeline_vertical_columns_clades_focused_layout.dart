@@ -93,9 +93,77 @@ class _DefaultFocusedCladeLayoutEngine implements _FocusedCladeLayoutEngine {
       }
       childrenByParentId.putIfAbsent(parentId, () => []).add(clade);
     }
-    for (final children in childrenByParentId.values) {
-      children.sort(_compareFocusedClades);
+
+    final subtreeOrderStatsById = <String, _FocusedSubtreeOrderStats>{};
+    _FocusedSubtreeOrderStats computeSubtreeOrderStats(Clade clade) {
+      final cached = subtreeOrderStatsById[clade.id];
+      if (cached != null) {
+        return cached;
+      }
+      final (startMa, endMa) = _focusedEffectiveBounds(
+        clade: clade,
+        allById: request.allById,
+      );
+      final selfTop = math.min(
+        (request.mapper.yForMa(startMa) ?? 0.0).toDouble(),
+        (request.mapper.yForMa(endMa) ?? request.columnHeight).toDouble(),
+      );
+      final selfBottom = math.max(
+        (request.mapper.yForMa(startMa) ?? 0.0).toDouble(),
+        (request.mapper.yForMa(endMa) ?? request.columnHeight).toDouble(),
+      );
+      var minTop = selfTop;
+      var maxBottom = selfBottom;
+      var weightedCenterSum = (selfTop + selfBottom) / 2;
+      var weightedCount = 1.0;
+
+      final children = childrenByParentId[clade.id] ?? const <Clade>[];
+      for (final child in children) {
+        final childStats = computeSubtreeOrderStats(child);
+        minTop = math.min(minTop, childStats.minTop);
+        maxBottom = math.max(maxBottom, childStats.maxBottom);
+        weightedCenterSum += childStats.centerY * childStats.weight;
+        weightedCount += childStats.weight;
+      }
+
+      final stats = _FocusedSubtreeOrderStats(
+        minTop: minTop,
+        maxBottom: maxBottom,
+        centerY: weightedCenterSum / weightedCount,
+        weight: weightedCount,
+      );
+      subtreeOrderStatsById[clade.id] = stats;
+      return stats;
     }
+
+    void sortChildrenRecursively(Clade parent) {
+      final children = childrenByParentId[parent.id];
+      if (children == null || children.isEmpty) {
+        return;
+      }
+      for (final child in children) {
+        sortChildrenRecursively(child);
+      }
+      children.sort((a, b) {
+        final aStats = computeSubtreeOrderStats(a);
+        final bStats = computeSubtreeOrderStats(b);
+        final weightCompare = aStats.weight.compareTo(bStats.weight);
+        if (weightCompare != 0) {
+          return weightCompare;
+        }
+        final centerCompare = aStats.centerY.compareTo(bStats.centerY);
+        if (centerCompare != 0) {
+          return centerCompare;
+        }
+        final topCompare = aStats.minTop.compareTo(bStats.minTop);
+        if (topCompare != 0) {
+          return topCompare;
+        }
+        return _compareFocusedClades(a, b);
+      });
+    }
+
+    sortChildrenRecursively(root);
 
     final depthById = <String, int>{root.id: 0};
     var maxDepth = 0;
@@ -111,20 +179,19 @@ class _DefaultFocusedCladeLayoutEngine implements _FocusedCladeLayoutEngine {
 
     assignDepths(root);
 
-    final orderedIds = <String>[];
-    void visitForLaneOrder(Clade clade) {
-      orderedIds.add(clade.id);
+    final lanePositionById = <String, double>{};
+    var nextLane = 0;
+
+    void assignLanePositions(Clade clade) {
+      lanePositionById[clade.id] = nextLane.toDouble();
+      nextLane += 1;
       for (final child in childrenByParentId[clade.id] ?? const <Clade>[]) {
-        visitForLaneOrder(child);
+        assignLanePositions(child);
       }
     }
 
-    visitForLaneOrder(root);
-
-    final laneIndexById = <String, int>{};
-    for (var i = 0; i < orderedIds.length; i += 1) {
-      laneIndexById[orderedIds[i]] = i;
-    }
+    assignLanePositions(root);
+    final maxLanePosition = lanePositionById.values.reduce(math.max);
 
     final usableWidth = math.max(
       0.0,
@@ -133,17 +200,18 @@ class _DefaultFocusedCladeLayoutEngine implements _FocusedCladeLayoutEngine {
           request.rightPadding -
           request.nodeBarWidth,
     );
-    final laneSpacing = orderedIds.length <= 1
+    final laneCount = math.max(1.0, maxLanePosition);
+    final laneSpacing = laneCount <= 0.0
         ? 0.0
         : math.min(
             request.maxLaneSpacing,
-            usableWidth / math.max(1, orderedIds.length - 1),
+            usableWidth / laneCount,
           );
 
     final nodes = <_FocusedCladeLayoutNode>[];
     void addNode(Clade clade, {required int siblingIndex}) {
       final depth = depthById[clade.id] ?? 0;
-      final laneIndex = laneIndexById[clade.id] ?? 0;
+      final lanePosition = lanePositionById[clade.id] ?? 0.0;
       final parentId =
           clade.id == root.id || !visibleById.containsKey(clade.parentId)
           ? null
@@ -173,9 +241,9 @@ class _DefaultFocusedCladeLayoutEngine implements _FocusedCladeLayoutEngine {
           clade: clade,
           parentId: parentId,
           depth: depth,
-          laneIndex: laneIndex,
+          lanePosition: lanePosition,
           siblingIndex: siblingIndex,
-          left: request.leftPadding + (laneSpacing * laneIndex),
+          left: request.leftPadding + (laneSpacing * lanePosition),
           top: top,
           width: request.nodeBarWidth,
           height: height,
@@ -278,7 +346,7 @@ class _FocusedCladeLayoutNode {
     required this.clade,
     required this.parentId,
     required this.depth,
-    required this.laneIndex,
+    required this.lanePosition,
     required this.siblingIndex,
     required this.left,
     required this.top,
@@ -291,7 +359,7 @@ class _FocusedCladeLayoutNode {
   final Clade clade;
   final String? parentId;
   final int depth;
-  final int laneIndex;
+  final double lanePosition;
   final int siblingIndex;
   final double left;
   final double top;
@@ -329,6 +397,20 @@ class _FocusedCladeBranchSegment {
 
   bool get isVertical => (startX - endX).abs() < 0.001;
   bool get isHorizontal => (startY - endY).abs() < 0.001;
+}
+
+class _FocusedSubtreeOrderStats {
+  const _FocusedSubtreeOrderStats({
+    required this.minTop,
+    required this.maxBottom,
+    required this.centerY,
+    required this.weight,
+  });
+
+  final double minTop;
+  final double maxBottom;
+  final double centerY;
+  final double weight;
 }
 
 bool _isDescendantOfRoot({

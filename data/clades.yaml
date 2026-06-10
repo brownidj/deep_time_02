@@ -460,8 +460,18 @@
   scientific_label: Osteichthyes
   scientific_rank: superclass
   parent_id: gnathostomata
-  start_ma: 420.0
+  start_ma: 425.0
   end_ma: 0.0
+  start_ma_derivation: fossil_first_appearance_normalized_to_oldest_child
+  start_ma_sources:
+    - label: Friedman & Brazeau 2010, Journal of Vertebrate Paleontology
+      url: https://www.tandfonline.com/doi/full/10.1080/02724630903409071
+    - label: Near et al. 2012, PNAS
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3682800/
+  start_ma_note: >
+    Raised to match the current sarcopterygian baseline so the parent is not
+    younger than a major child clade. This remains an approximate fossil-first
+    backbone value rather than a strict divergence estimate.
   range_note: Silurian to present
   confidence: approximate
   display_groups:
@@ -487,8 +497,17 @@
   scientific_label: Sarcopterygii
   scientific_rank: class
   parent_id: osteichthyes
-  start_ma: 425.0
+  start_ma: 418.0
   end_ma: 0.0
+  start_ma_derivation: fossil_first_appearance
+  start_ma_sources:
+    - label: Friedman & Brazeau 2010, Journal of Vertebrate Paleontology
+      url: https://www.tandfonline.com/doi/full/10.1080/02724630903409071
+    - label: Sarcopterygii summary
+      url: https://en.wikipedia.org/wiki/Sarcopterygii
+  start_ma_note: >
+    Lowered from 425 Ma to an uppermost Silurian fossil-first approximation so
+    Sarcopterygii no longer predates Osteichthyes in the displayed tree.
   range_note: Silurian to present
   confidence: approximate
   display_groups:
@@ -1455,7 +1474,7 @@
   zoomable: true
   parent_id: serpentes
   start_ma: 100.0
-  end_ma: 66.0
+  end_ma: 12.0
   range_note: Early to Late Cretaceous
   confidence: approximate
   display_groups:
@@ -1471,7 +1490,11 @@
     - Najash
     - Pachyrhachis
     - Dinilysia
-  extinction_note: Extinct by the end of the Cretaceous.
+  extinction_note: End date extended from the K-Pg boundary because Madtsoiidae is currently
+    modeled as a child of stem_serpentes and madtsoiids persisted into the
+    Cenozoic. This is a display-model constraint rather than a firm claim that
+    all stem-snake lineages persisted to the Miocene. Madtsoiid placement is phylogenetically 
+    uncertain and has been treated as basal snake-grade, stem-ophidian, basal alethinophidian, or polyphyletic in different analyses.
   tags:
     - vertebrate
     - reptile
@@ -2721,8 +2744,17 @@
   scientific_rank: clade
   zoomable: true
   parent_id: neosuchia
-  start_ma: 100.0
+  start_ma: 130.0
   end_ma: 0.0
+  start_ma_derivation: oldest_known_eusuchian_fossil
+  start_ma_sources:
+    - label: Rio & Mannion 2021, PeerJ
+      url: https://peerj.com/articles/12094.pdf
+    - label: Narváez et al. 2018, Zoological Journal of the Linnean Society
+      url: https://academic.oup.com/zoolinnean/article/200/1/38/7470209
+  start_ma_note: >
+    Raised to a Barremian fossil-first baseline because Hylaeochampsa-grade
+    eusuchians are the oldest widely cited representatives of Eusuchia.
   range_note: Early Cretaceous to present
   confidence: approximate
   display_groups:
@@ -2752,6 +2784,15 @@
   parent_id: eusuchia
   start_ma: 130.0
   end_ma: 66.0
+  start_ma_derivation: fossil_first_appearance
+  start_ma_sources:
+    - label: Rio & Mannion 2021, PeerJ
+      url: https://peerj.com/articles/12094.pdf
+    - label: Hylaeochampsidae summary
+      url: https://en.wikipedia.org/wiki/Hylaeochampsidae
+  start_ma_note: >
+    Kept at a Barremian fossil-first value based on Hylaeochampsa-grade
+    material; this no longer predates the parent clade Eusuchia.
   range_note: Early to Late Cretaceous
   confidence: approximate
   display_groups:
@@ -3468,6 +3509,14 @@
   parent_id: neornithischia
   start_ma: 171.0
   end_ma: 66.0
+  start_ma_derivation: oldest_definitive_cerapodan_fossil_with_parent_older_than_child
+  start_ma_sources:
+    - label: Ru et al. 2025, Royal Society Open Science
+      url: https://royalsocietypublishing.org/rsos/article/12/3/241624/92898
+  start_ma_note: >
+    Retained as an older Middle Jurassic placeholder so the parent remains no
+    younger than Ornithopoda while still broadly consistent with definitive
+    Middle Jurassic cerapodan evidence.
   range_note: Middle Jurassic to K-Pg boundary
   confidence: approximate
   display_groups:
@@ -3497,8 +3546,15 @@
   scientific_rank: clade
   zoomable: true
   parent_id: cerapoda
-  start_ma: 190.0
+  start_ma: 166.0
   end_ma: 66.0
+  start_ma_derivation: oldest_definitive_ornithopod_body_fossil
+  start_ma_sources:
+    - label: Ru et al. 2025, Royal Society Open Science
+      url: https://royalsocietypublishing.org/rsos/article/12/3/241624/92898
+  start_ma_note: >
+    Lowered from 190 Ma to a conservative Callovian-era fossil-first estimate.
+    The previous value made Ornithopoda older than its parent Cerapoda.
   range_note: Early Jurassic to K-Pg boundary
   confidence: approximate
   display_groups:
@@ -3559,8 +3615,15 @@
   scientific_rank: clade
   zoomable: true
   parent_id: tetanurae
-  start_ma: 168.0
+  start_ma: 170.0
   end_ma: 66.0
+  start_ma_derivation: oldest_unambiguous_coelurosaur_fossil
+  start_ma_sources:
+    - label: Coelurosauria summary
+      url: https://en.wikipedia.org/wiki/Coelurosauria
+  start_ma_note: >
+    Raised slightly so Coelurosauria is not younger than Tyrannosauroidea,
+    which is represented by Middle Jurassic proceratosaurid-grade material.
   range_note: Middle Jurassic to K-Pg boundary in the non-avian branch
   confidence: approximate
   display_groups:
@@ -3590,8 +3653,15 @@
   scientific_rank: clade
   zoomable: true
   parent_id: theropoda
-  start_ma: 174.0
+  start_ma: 170.0
   end_ma: 66.0
+  start_ma_derivation: oldest_definitive_tetanuran_fossil
+  start_ma_sources:
+    - label: Benson 2010, Historical Biology
+      url: https://www.tandfonline.com/doi/full/10.1080/14772011003603515
+  start_ma_note: >
+    Normalized to a conservative Bajocian/Middle Jurassic fossil-first value.
+    This avoids placing derived child clades earlier than the parent.
   range_note: Middle Jurassic to K-Pg boundary in the non-avian branch
   confidence: approximate
   display_groups:
@@ -3653,8 +3723,17 @@
   scientific_rank: clade
   zoomable: true
   parent_id: tetanurae
-  start_ma: 179.0
+  start_ma: 170.0
   end_ma: 66.0
+  start_ma_derivation: conservative_middle_jurassic_fossil_first_placeholder
+  start_ma_sources:
+    - label: Benson 2010, Historical Biology
+      url: https://www.tandfonline.com/doi/full/10.1080/14772011003603515
+    - label: Piatnitzkysauridae review
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10941590/
+  start_ma_note: >
+    Lowered from 179 Ma to a conservative Middle Jurassic fossil-first
+    placeholder. The previous value made Megalosauroidea older than Tetanurae.
   range_note: Early Middle Jurassic to K-Pg boundary
   confidence: approximate
   display_groups:
@@ -3924,6 +4003,13 @@
   parent_id: coelurosauria
   start_ma: 170.0
   end_ma: 66.0
+  start_ma_derivation: oldest_unambiguous_proceratosaurid_grade_record
+  start_ma_sources:
+    - label: Coelurosauria summary
+      url: https://en.wikipedia.org/wiki/Coelurosauria
+  start_ma_note: >
+    Retained as a Middle Jurassic fossil-first approximation. Coelurosauria has
+    been raised to match rather than leaving the child older than the parent.
   range_note: Middle Jurassic to K-Pg boundary
   confidence: approximate
   display_groups:
@@ -4319,8 +4405,16 @@
   scientific_label: Piatnitzkysauridae
   scientific_rank: family
   parent_id: megalosauroidea
-  start_ma: 179.17
+  start_ma: 170.0
   end_ma: 66.0
+  start_ma_derivation: conservative_middle_jurassic_fossil_first_placeholder
+  start_ma_sources:
+    - label: Piatnitzkysauridae review
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10941590/
+  start_ma_note: >
+    Lowered from 179.17 Ma to match the parent clade's conservative Middle
+    Jurassic baseline. The previous value was effectively a rounding and
+    calibration inversion relative to Megalosauroidea.
   range_note: Early Middle Jurassic fossil minimum through the K-Pg boundary
   confidence: moderate
   display_groups:

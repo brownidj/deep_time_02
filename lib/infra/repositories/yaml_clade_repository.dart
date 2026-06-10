@@ -64,6 +64,9 @@ class YamlCladeRepository implements CladeRepository {
       zoomable: _readBool(entry['zoomable']) ?? false,
       detailSource: _readString(entry['detail_source']),
       detailScope: _readString(entry['detail_scope']),
+      startMaDerivation: _readString(entry['start_ma_derivation']),
+      startMaNote: _readString(entry['start_ma_note']),
+      startMaSources: _readDateSourceList(entry['start_ma_sources']),
     );
   }
 
@@ -213,5 +216,20 @@ class YamlCladeRepository implements CladeRepository {
       return const [];
     }
     return value.map(_readInt).whereType<int>().toList();
+  }
+
+  List<CladeDateSource> _readDateSourceList(Object? value) {
+    if (value is! YamlList) {
+      return const [];
+    }
+    final sources = <CladeDateSource>[];
+    for (final item in value.whereType<YamlMap>()) {
+      final label = _readString(item['label']);
+      if (label == null || label.isEmpty) {
+        continue;
+      }
+      sources.add(CladeDateSource(label: label, url: _readString(item['url'])));
+    }
+    return sources;
   }
 }
