@@ -73,4 +73,19 @@ void main() {
       'Ex: Global; Bi: Southern\nAn: Gondwana',
     );
   });
+
+  test('summary marks inherited geography with a small star', () {
+    const entry = PaleoEcologyEntry(
+      rank: GeologicRank.stage,
+      name: 'Test Stage',
+      path: ['Phanerozoic', 'Mesozoic', 'Triassic', 'Upper', 'Test Stage'],
+      spatialExtent: 'global',
+      geographicAnchor: ['Central Atlantic Magmatic Province'],
+    );
+
+    expect(
+      paleoEcologySummaryText(entry, showInheritedMarker: true),
+      'Ex: Global\nAn*: Central Atlantic Magmatic Province',
+    );
+  });
 }

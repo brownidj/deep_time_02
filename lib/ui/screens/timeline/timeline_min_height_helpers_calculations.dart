@@ -118,12 +118,16 @@ double _stageMinHeight(
   final path = _pathForDivision(segment.id, divisionById) ?? [segment.label];
   final key = PaleoEcologyEntry.lookupKeyFor(rank: segment.rank, path: path);
   final entry = entriesByKey[key];
-  final displayEntry = entry == null
+  final displayResolution = entry == null
       ? null
-      : resolvePaleoEcologyDisplayEntry(entry, entriesByKey);
+      : resolvePaleoEcologyDisplay(entry, entriesByKey);
+  final displayEntry = displayResolution?.entry;
   final summary = displayEntry == null
       ? null
-      : paleoEcologySummaryText(displayEntry);
+      : paleoEcologySummaryText(
+          displayEntry,
+          showInheritedMarker: displayResolution?.inheritedFromRank != null,
+        );
   if (summary == null) {
     return labelHeight;
   }

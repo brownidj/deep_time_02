@@ -1,6 +1,9 @@
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
 
-String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
+String? paleoEcologySummaryText(
+  PaleoEcologyEntry entry, {
+  bool showInheritedMarker = false,
+}) {
   final lines = <String>[];
   final firstLineParts = <String>[
     if (entry.avgTempDeltaC != null)
@@ -30,10 +33,14 @@ String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
       'Bi: ${_formatLabelValue(entry.hemisphericBias!)}',
   ];
   if (geographyParts.isNotEmpty) {
+    if (showInheritedMarker && entry.geographicAnchor.isEmpty) {
+      geographyParts[0] = '${geographyParts[0]}*';
+    }
     lines.add(geographyParts.join('; '));
   }
   if (entry.geographicAnchor.isNotEmpty) {
-    lines.add('An: ${entry.geographicAnchor.first}');
+    final prefix = showInheritedMarker ? 'An*:' : 'An:';
+    lines.add('$prefix ${entry.geographicAnchor.first}');
   }
 
   return lines.isEmpty ? null : lines.join('\n');

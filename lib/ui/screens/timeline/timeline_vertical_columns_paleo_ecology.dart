@@ -68,7 +68,10 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
     final isVisibleBlock = block.sourceKey != null;
     final summary = displayEntry == null
         ? null
-        : paleoEcologySummaryText(displayEntry);
+        : paleoEcologySummaryText(
+            displayEntry,
+            showInheritedMarker: displayResolution?.inheritedFromRank != null,
+          );
     final explanationMessage = displayEntry == null
         ? null
         : _paleoEcologyTooltipMessage(
