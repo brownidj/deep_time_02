@@ -32,6 +32,32 @@ void main() {
     expect(resolved.hemisphericBias, 'both');
   });
 
+  test('reports inherited geography source rank', () {
+    const period = PaleoEcologyEntry(
+      rank: GeologicRank.period,
+      name: 'Triassic',
+      path: ['Phanerozoic', 'Mesozoic', 'Triassic'],
+      geographicAnchor: ['Central Atlantic Magmatic Province'],
+      spatialExtent: 'global',
+    );
+    const stage = PaleoEcologyEntry(
+      rank: GeologicRank.stage,
+      name: 'Carnian',
+      path: ['Phanerozoic', 'Mesozoic', 'Triassic', 'Upper', 'Carnian'],
+    );
+
+    final resolution = resolvePaleoEcologyDisplay(stage, {
+      period.lookupKey: period,
+      stage.lookupKey: stage,
+    });
+
+    expect(resolution.entry.spatialExtent, 'global');
+    expect(resolution.entry.geographicAnchor, [
+      'Central Atlantic Magmatic Province',
+    ]);
+    expect(resolution.inheritedFromRank, GeologicRank.period);
+  });
+
   test('summary uses compact geography labels', () {
     const entry = PaleoEcologyEntry(
       rank: GeologicRank.stage,

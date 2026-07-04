@@ -61,16 +61,21 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
       fontWeight: FontWeight.w600,
       height: 1.15,
     );
-    final displayEntry = entry == null
+    final displayResolution = entry == null
         ? null
-        : resolvePaleoEcologyDisplayEntry(entry, entriesByKey);
+        : resolvePaleoEcologyDisplay(entry, entriesByKey);
+    final displayEntry = displayResolution?.entry;
     final isVisibleBlock = block.sourceKey != null;
     final summary = displayEntry == null
         ? null
         : paleoEcologySummaryText(displayEntry);
     final explanationMessage = displayEntry == null
         ? null
-        : _paleoEcologyTooltipMessage(displayEntry, block);
+        : _paleoEcologyTooltipMessage(
+            displayEntry,
+            block,
+            inheritedFromRank: displayResolution?.inheritedFromRank,
+          );
     if (entry != null &&
         const {
           'Greenlandian',

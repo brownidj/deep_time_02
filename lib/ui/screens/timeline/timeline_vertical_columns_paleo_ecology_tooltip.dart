@@ -1,6 +1,10 @@
 part of 'timeline_vertical_columns.dart';
 
-String _paleoEcologyTooltipMessage(PaleoEcologyEntry entry, _PaleoBlock block) {
+String _paleoEcologyTooltipMessage(
+  PaleoEcologyEntry entry,
+  _PaleoBlock block, {
+  GeologicRank? inheritedFromRank,
+}) {
   final lines = <String>[];
 
   final hierarchy = _hierarchyPathForTooltip(entry);
@@ -26,6 +30,9 @@ String _paleoEcologyTooltipMessage(PaleoEcologyEntry entry, _PaleoBlock block) {
   }
   if (entry.confidence != null) {
     lines.add('Confidence: ${entry.confidence}');
+  }
+  if (inheritedFromRank != null) {
+    lines.add('Inherited geography: ${_formatRankLabel(inheritedFromRank)}');
   }
   if (entry.spatialExtent != null) {
     lines.add('Extent: ${_formatTooltipValue(entry.spatialExtent!)}');
@@ -121,4 +128,20 @@ String _formatTooltipValue(String value) {
         return '${lower[0].toUpperCase()}${lower.substring(1)}';
       })
       .join(' ');
+}
+
+String _formatRankLabel(GeologicRank rank) {
+  switch (rank) {
+    case GeologicRank.eon:
+      return 'Eon';
+    case GeologicRank.era:
+      return 'Era';
+    case GeologicRank.period:
+      return 'Period';
+    case GeologicRank.epoch:
+      return 'Epoch';
+    case GeologicRank.stage:
+    case GeologicRank.age:
+      return 'Stage';
+  }
 }

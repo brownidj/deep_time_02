@@ -175,12 +175,31 @@ PaleoEcologyEntry resolvePaleoEcologyDisplayEntry(
   PaleoEcologyEntry entry,
   Map<String, PaleoEcologyEntry> entriesByKey,
 ) {
+  return resolvePaleoEcologyDisplay(entry, entriesByKey).entry;
+}
+
+class PaleoEcologyDisplayResolution {
+  const PaleoEcologyDisplayResolution({
+    required this.entry,
+    required this.inheritedFromRank,
+  });
+
+  final PaleoEcologyEntry entry;
+  final GeologicRank? inheritedFromRank;
+}
+
+PaleoEcologyDisplayResolution resolvePaleoEcologyDisplay(
+  PaleoEcologyEntry entry,
+  Map<String, PaleoEcologyEntry> entriesByKey,
+) {
   var resolved = entry;
+  GeologicRank? inheritedFromRank;
   for (final key in entry.ancestorLookupKeys()) {
     final ancestor = entriesByKey[key];
     if (ancestor == null) {
       continue;
     }
+    final inheritedHere = _inheritsGeographyFrom(resolved, ancestor);
     resolved = resolved.copyWith(
       geographicAnchor: resolved.geographicAnchor.isNotEmpty
           ? resolved.geographicAnchor
@@ -199,6 +218,29 @@ PaleoEcologyEntry resolvePaleoEcologyDisplayEntry(
           ? resolved.regionalExpression
           : ancestor.regionalExpression,
     );
+    if (inheritedFromRank == null && inheritedHere) {
+      inheritedFromRank = ancestor.rank;
+    }
   }
-  return resolved;
+  return PaleoEcologyDisplayResolution(
+    entry: resolved,
+    inheritedFromRank: inheritedFromRank,
+  );
+}
+
+bool _inheritsGeographyFrom(
+  PaleoEcologyEntry entry,
+  PaleoEcologyEntry ancestor,
+) {
+  return (entry.geographicAnchor.isEmpty &&
+          ancestor.geographicAnchor.isNotEmpty) ||
+      (entry.spatialExtent == null && ancestor.spatialExtent != null) ||
+      (entry.spatialConfidence == null && ancestor.spatialConfidence != null) ||
+      (entry.hemisphericBias == null && ancestor.hemisphericBias != null) ||
+      (entry.manifestationType.isEmpty &&
+          ancestor.manifestationType.isNotEmpty) ||
+      (entry.latitudinalExpression.isEmpty &&
+          ancestor.latitudinalExpression.isNotEmpty) ||
+      (entry.regionalExpression.isEmpty &&
+          ancestor.regionalExpression.isNotEmpty);
 }
