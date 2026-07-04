@@ -1770,6 +1770,23 @@ paleo_ecology:
   dominant_ecology: Early Permian icehouse landscapes with seasonally dry interiors and resilient
     marine shelf communities
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: Gondwanan ice sheets remained the dominant high-latitude climate signal
+  regional_expression:
+    Gondwana: southern ice sheets and glacial-interglacial cycles still controlled sea-level change
   note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
     aridity.
   sources:
@@ -1793,6 +1810,23 @@ paleo_ecology:
   dominant_ecology: Cool early Permian ecosystems with coniferous seed plants, synapsids,
     reptiles, and marine faunas
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: Gondwanan ice sheets remained the dominant high-latitude climate signal
+  regional_expression:
+    Gondwana: southern ice sheets and glacial-interglacial cycles still controlled sea-level change
   note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
     aridity.
   sources:
@@ -1816,6 +1850,23 @@ paleo_ecology:
   dominant_ecology: Early Permian terrestrial ecosystems with synapsids, reptiles, conifers,
     and increasingly dry continental interiors
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: Gondwanan ice sheets remained the dominant high-latitude climate signal
+  regional_expression:
+    Gondwana: southern ice sheets and glacial-interglacial cycles still controlled sea-level change
   note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
     aridity.
   sources:
@@ -1839,6 +1890,23 @@ paleo_ecology:
   dominant_ecology: Warming late early Permian habitats with drier continental interiors and
     diverse terrestrial vertebrates
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: waning Gondwanan ice sheets still dominated the strongest high-latitude signal
+  regional_expression:
+    Gondwana: glacial influence persisted even as warming weakened the late Paleozoic icehouse
   note: Early Permian values reflect late Paleozoic icehouse conditions with increasing continental
     aridity.
   sources:
@@ -1862,6 +1930,21 @@ paleo_ecology:
   dominant_ecology: Middle Permian terrestrial ecosystems with therapsids, reptiles, seed
     plants, and arid interior basins
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  regional_expression:
+    Gondwana: residual southern ice sheets and climatic cyclicity still influenced global sea level
   note: Middle Permian estimate during warming and weakening of late Paleozoic icehouse conditions.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -1884,6 +1967,21 @@ paleo_ecology:
   dominant_ecology: Warm middle Permian ecosystems with diverse therapsids, reptiles, conifers,
     and marine carbonate platforms
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  regional_expression:
+    Gondwana: residual southern ice sheets and climatic cyclicity still influenced global sea level
   note: Middle Permian estimate during warming and weakening of late Paleozoic icehouse conditions.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -1906,6 +2004,21 @@ paleo_ecology:
   dominant_ecology: Stressed late Guadalupian ecosystems with reef decline, marine turnover,
     and diverse therapsid faunas
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: low
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  regional_expression:
+    Gondwana: the last phase of southern icehouse influence lingered before late Permian warming dominated
   note: Middle Permian estimate during warming and weakening of late Paleozoic icehouse conditions.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2023,6 +2136,19 @@ paleo_ecology:
   dominant_ecology: Post-extinction Early Triassic ecosystems with low diversity, stressed
     marine faunas, and disaster taxa
   confidence: low
+  geographic_anchor:
+  - Siberian Traps
+  - Global marine and terrestrial records
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - ocean_anoxia
+  - ocean_acidification
+  - carbon_cycle_disruption
+  regional_expression:
+    marine basins: post-extinction anoxia and acidification remained intense in many shallow seas
   note: Induan values reflect severe post-end-Permian greenhouse conditions and ecological
     stress.
   sources:
@@ -2046,6 +2172,18 @@ paleo_ecology:
   dominant_ecology: Recovering Early Triassic ecosystems with marine reptiles, ammonoids,
     and sparse stressed terrestrial communities
   confidence: low
+  geographic_anchor:
+  - Siberian Traps
+  - Global marine and terrestrial records
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - ocean_anoxia
+  - carbon_cycle_disruption
+  regional_expression:
+    marine basins: lingering low-oxygen conditions and carbon-cycle instability shaped recovery
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction

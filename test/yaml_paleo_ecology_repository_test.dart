@@ -200,5 +200,25 @@ paleo_ecology:
       ),
       isTrue,
     );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.stage &&
+            entry.name == 'Asselian' &&
+            entry.hemisphericBias == 'southern' &&
+            entry.manifestationType.contains('glaciation'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.stage &&
+            entry.name == 'Induan' &&
+            entry.geographicAnchor.contains('Siberian Traps') &&
+            entry.manifestationType.contains('ocean_anoxia'),
+      ),
+      isTrue,
+    );
   });
 }
