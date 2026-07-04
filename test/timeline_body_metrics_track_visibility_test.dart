@@ -179,6 +179,33 @@ void main() {
     expect(cladesRect.width, 800 - eventTitleWidth);
   });
 
+  testWidgets('paleo-ecology header shows geography legend', (tester) async {
+    final metrics = TimelineBodyMetrics.fromLayout(
+      layout: layoutWithLongStage(),
+      markers: const TimelineMarkerCatalog(events: [], extinctions: []),
+      constraints: const BoxConstraints.tightFor(width: 1200, height: 600),
+      config: const TimelineOrientationConfig(
+        trackWidths: {TimelineTrack.paleoEcology: 220},
+      ),
+      trackOrder: const [TimelineTrack.paleoEcology],
+    );
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: SizedBox(
+          width: 220,
+          child: TimelineColumnHeaders(
+            metrics: metrics,
+            labelMode: TimeLabelMode.geologicTime,
+          ),
+        ),
+      ),
+    );
+
+    expect(find.text('Paleo-ecology'), findsOneWidget);
+    expect(find.text('Extent | Bias | Anchor'), findsOneWidget);
+  });
+
   test('events width accounts for overlapping bar lanes', () {
     const events = [
       TimelineEventSegment(

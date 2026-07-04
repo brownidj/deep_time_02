@@ -25,6 +25,11 @@ class TimelineColumnHeaders extends StatelessWidget {
       color: DeepTimePalette.panelText,
       fontWeight: FontWeight.w700,
     );
+    final legendStyle = Theme.of(context).textTheme.labelSmall?.copyWith(
+      color: DeepTimePalette.panelText.withValues(alpha: 0.78),
+      fontWeight: FontWeight.w600,
+      height: 1.0,
+    );
     return LayoutBuilder(
       builder: (context, constraints) {
         final trackWidths = resolveTimelineTrackWidths(
@@ -48,12 +53,10 @@ class TimelineColumnHeaders extends StatelessWidget {
                       color: DeepTimePalette.frameBorder,
                       border: Border.all(color: DeepTimePalette.frameBorder),
                     ),
-                    child: Center(
-                      child: Text(
-                        _labelFor(track),
-                        style: labelStyle,
-                        textAlign: TextAlign.center,
-                      ),
+                    child: _buildHeaderContent(
+                      track,
+                      labelStyle: labelStyle,
+                      legendStyle: legendStyle,
                     ),
                   ),
                 ),
@@ -64,6 +67,41 @@ class TimelineColumnHeaders extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+
+  Widget _buildHeaderContent(
+    TimelineTrack track, {
+    required TextStyle? labelStyle,
+    required TextStyle? legendStyle,
+  }) {
+    final label = _labelFor(track);
+    if (track != TimelineTrack.paleoEcology) {
+      return Center(
+        child: Text(label, style: labelStyle, textAlign: TextAlign.center),
+      );
+    }
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 3),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(label, style: labelStyle, textAlign: TextAlign.center),
+            const SizedBox(height: 2),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                'Extent | Bias | Anchor',
+                key: const ValueKey('paleo-ecology-header-legend'),
+                style: legendStyle,
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
