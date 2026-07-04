@@ -39,6 +39,15 @@ class YamlPaleoEcologyRepository implements PaleoEcologyRepository {
       dominantEcology: _readString(map['dominant_ecology']),
       confidence: _readString(map['confidence']),
       note: _readString(map['note']),
+      geographicAnchor: _readOptionalStringList(map['geographic_anchor']),
+      spatialExtent: _readString(map['spatial_extent']),
+      spatialConfidence: _readString(map['spatial_confidence']),
+      hemisphericBias: _readString(map['hemispheric_bias']),
+      manifestationType: _readOptionalStringList(map['manifestation_type']),
+      latitudinalExpression: _readOptionalStringMap(
+        map['latitudinal_expression'],
+      ),
+      regionalExpression: _readOptionalStringMap(map['regional_expression']),
       sources: _readOptionalStringList(map['sources']),
     );
   }
@@ -76,6 +85,27 @@ class YamlPaleoEcologyRepository implements PaleoEcologyRepository {
       for (final item in value)
         if (item is String && item.trim().isNotEmpty) item.trim(),
     ];
+    return out;
+  }
+
+  Map<String, String> _readOptionalStringMap(Object? value) {
+    if (value is! YamlMap) {
+      return const {};
+    }
+    final out = <String, String>{};
+    for (final entry in value.entries) {
+      final key = entry.key;
+      final rawValue = entry.value;
+      if (key is! String || rawValue is! String) {
+        continue;
+      }
+      final trimmedKey = key.trim();
+      final trimmedValue = rawValue.trim();
+      if (trimmedKey.isEmpty || trimmedValue.isEmpty) {
+        continue;
+      }
+      out[trimmedKey] = trimmedValue;
+    }
     return out;
   }
 

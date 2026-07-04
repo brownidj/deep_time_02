@@ -40,6 +40,7 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
               block: block,
               width: width,
               entry: entriesByKey[block.sourceKey],
+              entriesByKey: entriesByKey,
               palette: palette,
             ),
         ],
@@ -52,6 +53,7 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
     required _PaleoBlock block,
     required double width,
     required PaleoEcologyEntry? entry,
+    required Map<String, PaleoEcologyEntry> entriesByKey,
     required DeepTimePalette palette,
   }) {
     final textStyle = Theme.of(context).textTheme.bodySmall?.copyWith(
@@ -59,11 +61,16 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
       fontWeight: FontWeight.w600,
       height: 1.15,
     );
-    final isVisibleBlock = block.sourceKey != null;
-    final summary = entry == null ? null : paleoEcologySummaryText(entry);
-    final explanationMessage = entry == null
+    final displayEntry = entry == null
         ? null
-        : _paleoEcologyTooltipMessage(entry, block);
+        : resolvePaleoEcologyDisplayEntry(entry, entriesByKey);
+    final isVisibleBlock = block.sourceKey != null;
+    final summary = displayEntry == null
+        ? null
+        : paleoEcologySummaryText(displayEntry);
+    final explanationMessage = displayEntry == null
+        ? null
+        : _paleoEcologyTooltipMessage(displayEntry, block);
     if (entry != null &&
         const {
           'Greenlandian',

@@ -103,6 +103,44 @@ paleo_ecology:
     expect(entry.sources, ['Source A', 'Source B']);
   });
 
+  test('parses geography fields and structured expressions', () {
+    final repository = YamlPaleoEcologyRepository(
+      assetPath: 'data/paleo_ecology.yaml',
+    );
+
+    final entries = repository.parseEntries('''
+paleo_ecology:
+  - rank: period
+    name: Ordovician
+    path:
+      - Phanerozoic
+      - Paleozoic
+      - Ordovician
+    geographic_anchor:
+      - Gondwana
+      - North Africa
+    spatial_extent: global
+    spatial_confidence: medium
+    hemispheric_bias: southern
+    manifestation_type:
+      - cooling
+      - glaciation
+    latitudinal_expression:
+      high_latitudes: ice growth
+    regional_expression:
+      Gondwana: major ice sheet growth
+''');
+
+    final entry = entries.single;
+    expect(entry.geographicAnchor, ['Gondwana', 'North Africa']);
+    expect(entry.spatialExtent, 'global');
+    expect(entry.spatialConfidence, 'medium');
+    expect(entry.hemisphericBias, 'southern');
+    expect(entry.manifestationType, ['cooling', 'glaciation']);
+    expect(entry.latitudinalExpression, {'high_latitudes': 'ice growth'});
+    expect(entry.regionalExpression, {'Gondwana': 'major ice sheet growth'});
+  });
+
   test('project paleo ecology file includes higher-rank entries', () {
     final repository = YamlPaleoEcologyRepository(
       assetPath: 'data/paleo_ecology.yaml',

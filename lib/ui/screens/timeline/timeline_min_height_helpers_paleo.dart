@@ -1,6 +1,7 @@
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
 
 String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
+  final lines = <String>[];
   final firstLineParts = <String>[
     if (entry.avgTempDeltaC != null)
       'T\u00A0${_withSign(entry.avgTempDeltaC!)}\u00B0C',
@@ -9,16 +10,32 @@ String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
     if (entry.seaLevelDeltaM != null)
       'SL\u00A0${_withSign(entry.seaLevelDeltaM!)}m',
   ];
+  if (firstLineParts.isNotEmpty) {
+    lines.add(firstLineParts.join('; '));
+  }
   final secondLineParts = <String>[
     if (entry.avgO2Percent != null)
       'O2:\u00A0${_formatUnsigned(entry.avgO2Percent!)}%',
     if (entry.avgCo2Ppm != null)
       'CO2\u00A0${_formatUnsigned(entry.avgCo2Ppm!)}ppm',
   ];
-  final lines = <String>[
-    if (firstLineParts.isNotEmpty) firstLineParts.join('; '),
-    if (secondLineParts.isNotEmpty) secondLineParts.join('; '),
+  if (secondLineParts.isNotEmpty) {
+    lines.add(secondLineParts.join('; '));
+  }
+
+  final geographyParts = <String>[
+    if (entry.spatialExtent != null)
+      'Extent: ${_formatLabelValue(entry.spatialExtent!)}',
+    if (entry.hemisphericBias != null && entry.hemisphericBias != 'both')
+      'Bias: ${_formatLabelValue(entry.hemisphericBias!)}',
   ];
+  if (geographyParts.isNotEmpty) {
+    lines.add(geographyParts.join('; '));
+  }
+  if (entry.geographicAnchor.isNotEmpty) {
+    lines.add('Anchor: ${entry.geographicAnchor.first}');
+  }
+
   return lines.isEmpty ? null : lines.join('\n');
 }
 
@@ -43,4 +60,21 @@ String _withSign(double value) {
             .replaceFirst(RegExp(r'0+$'), '')
             .replaceFirst(RegExp(r'\.$'), '');
   return '$sign$rounded';
+}
+
+String _formatLabelValue(String value) {
+  final normalized = value.trim().replaceAll('_', ' ');
+  if (normalized.isEmpty) {
+    return normalized;
+  }
+  return normalized
+      .split(RegExp(r'\s+'))
+      .map((word) {
+        final lower = word.toLowerCase();
+        if (lower.length <= 1) {
+          return lower.toUpperCase();
+        }
+        return '${lower[0].toUpperCase()}${lower.substring(1)}';
+      })
+      .join(' ');
 }

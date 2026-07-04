@@ -27,6 +27,40 @@ String _paleoEcologyTooltipMessage(PaleoEcologyEntry entry, _PaleoBlock block) {
   if (entry.confidence != null) {
     lines.add('Confidence: ${entry.confidence}');
   }
+  if (entry.spatialExtent != null) {
+    lines.add('Extent: ${_formatTooltipValue(entry.spatialExtent!)}');
+  }
+  if (entry.spatialConfidence != null) {
+    lines.add(
+      'Spatial confidence: ${_formatTooltipValue(entry.spatialConfidence!)}',
+    );
+  }
+  if (entry.hemisphericBias != null) {
+    lines.add('Bias: ${_formatTooltipValue(entry.hemisphericBias!)}');
+  }
+  if (entry.manifestationType.isNotEmpty) {
+    lines.add(
+      'Manifestation: ${entry.manifestationType.map(_formatTooltipValue).join(', ')}',
+    );
+  }
+  if (entry.geographicAnchor.isNotEmpty) {
+    lines.add('Geographic anchor:');
+    for (final anchor in entry.geographicAnchor) {
+      lines.add('• $anchor');
+    }
+  }
+  if (entry.latitudinalExpression.isNotEmpty) {
+    lines.add('Latitudinal expression:');
+    for (final line in entry.latitudinalExpression.entries) {
+      lines.add('• ${_formatTooltipValue(line.key)}: ${line.value}');
+    }
+  }
+  if (entry.regionalExpression.isNotEmpty) {
+    lines.add('Regional expression:');
+    for (final line in entry.regionalExpression.entries) {
+      lines.add('• ${line.key}: ${line.value}');
+    }
+  }
   if (entry.note != null) {
     lines.add('Note: ${entry.note}');
   }
@@ -70,4 +104,21 @@ String _formatMyrForTooltip(double value) {
       .toStringAsFixed(3)
       .replaceFirst(RegExp(r'0+$'), '')
       .replaceFirst(RegExp(r'\.$'), '');
+}
+
+String _formatTooltipValue(String value) {
+  final normalized = value.trim().replaceAll('_', ' ');
+  if (normalized.isEmpty) {
+    return normalized;
+  }
+  return normalized
+      .split(RegExp(r'\s+'))
+      .map((word) {
+        final lower = word.toLowerCase();
+        if (lower.length <= 1) {
+          return lower.toUpperCase();
+        }
+        return '${lower[0].toUpperCase()}${lower.substring(1)}';
+      })
+      .join(' ');
 }

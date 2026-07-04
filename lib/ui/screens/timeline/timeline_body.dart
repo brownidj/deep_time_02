@@ -215,7 +215,7 @@ class TimelineBody extends StatelessWidget {
     );
     final rlifeWidth =
         minimalHorizontalLabelWidth('Representative life', style: style) * 1.5;
-    final paleoEcologyWidth = math.max(40.0, rlifeWidth - 18.0);
+    final paleoEcologyWidth = math.max(40.0, rlifeWidth - 18.0 + 60.0);
     final eventsWidth = math.max(
       minimalHorizontalLabelWidth('Events', style: style),
       eventBarTrackWidth(

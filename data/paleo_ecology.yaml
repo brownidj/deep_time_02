@@ -9,6 +9,16 @@ paleo_ecology:
   sea_level_delta_m: null
   icehouse_greenhouse_state: hothouse
   confidence: very_low
+  geographic_anchor:
+  - Whole Earth
+  - Ancient cratons including Western Australia
+  spatial_extent: global
+  spatial_confidence: low
+  hemispheric_bias: unclear
+  manifestation_type:
+  - warming
+  regional_expression:
+    cratonic fragments: earliest crustal and zircon evidence preserves only local remnants
   note: Hadean environmental values are highly speculative; Earth was forming, cooling, and
     undergoing intense impacts and volcanism.
   sources:
@@ -25,6 +35,17 @@ paleo_ecology:
   sea_level_delta_m: null
   icehouse_greenhouse_state: hothouse
   confidence: very_low
+  geographic_anchor:
+  - Global Earth system
+  - Archean sedimentary basins in ancient cratons
+  spatial_extent: global
+  spatial_confidence: low
+  hemispheric_bias: unclear
+  manifestation_type:
+  - warming
+  - carbon_cycle_disruption
+  regional_expression:
+    cratonic basins: local sedimentary records preserve evidence for greenhouse compensation
   note: Archean estimates are highly uncertain; high greenhouse gas levels probably helped
     compensate for the faint young Sun.
   sources:
@@ -126,6 +147,18 @@ paleo_ecology:
   sea_level_delta_m: null
   icehouse_greenhouse_state: transitional
   confidence: very_low
+  geographic_anchor:
+  - Global atmosphere-ocean system
+  - Laurentia
+  spatial_extent: near_global
+  spatial_confidence: medium
+  hemispheric_bias: unclear
+  manifestation_type:
+  - cooling
+  - glaciation
+  - carbon_cycle_disruption
+  regional_expression:
+    Laurentia: strongest Huronian glacial evidence is preserved on the Canadian Shield
   note: Paleoproterozoic values compress the Great Oxidation interval and major Huronian glaciations
     into one broad estimate.
   sources:
@@ -145,6 +178,17 @@ paleo_ecology:
   sea_level_delta_m: null
   icehouse_greenhouse_state: icehouse
   confidence: very_low
+  geographic_anchor:
+  - Laurentia
+  - Canadian Shield
+  spatial_extent: near_global
+  spatial_confidence: medium
+  hemispheric_bias: unclear
+  manifestation_type:
+  - cooling
+  - glaciation
+  regional_expression:
+    Laurentia: extensive glacial deposits dominate the best-preserved record
   note: Values reflect broad Paleoproterozoic glacial influence during and after atmospheric
     oxygenation.
   sources:
@@ -216,6 +260,13 @@ paleo_ecology:
   sea_level_delta_m: null
   icehouse_greenhouse_state: greenhouse
   confidence: very_low
+  geographic_anchor:
+  - Global Proterozoic sedimentary basins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: unclear
+  regional_expression:
+    sedimentary basins: long interval of relatively muted climatic extremes compared with adjacent eras
   note: Mesoproterozoic values are broad greenhouse estimates for the so-called boring billion
     interval.
   sources:
@@ -324,6 +375,21 @@ paleo_ecology:
   sea_level_delta_m: -100.0
   icehouse_greenhouse_state: icehouse
   confidence: low
+  geographic_anchor:
+  - Australia
+  - Laurentia
+  - China
+  - Namibia
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - cooling
+  - glaciation
+  latitudinal_expression:
+    tropics: low-latitude glacial deposits imply ice reached near-equatorial settings
+  regional_expression:
+    cap carbonate basins: abrupt deglacial carbonate deposition followed severe glaciation
   note: Cryogenian values represent snowball Earth glacial intervals; CO2 may have varied
     greatly between glacial buildup and deglaciation.
   sources:
@@ -342,6 +408,19 @@ paleo_ecology:
   sea_level_delta_m: +30.0
   icehouse_greenhouse_state: greenhouse
   confidence: low
+  geographic_anchor:
+  - Namibia
+  - Australia
+  - China
+  - Newfoundland
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - deglaciation
+  - carbon_cycle_disruption
+  regional_expression:
+    continental shelves: post-Snowball recovery and ecosystem expansion were strongest on shallow margins
   note: Ediacaran values reflect post-Cryogenian greenhouse recovery, rising oxygenation,
     and expansion of early animal ecosystems.
   sources:
@@ -616,6 +695,22 @@ paleo_ecology:
   sea_level_delta_m: +120.0
   icehouse_greenhouse_state: greenhouse
   confidence: low
+  geographic_anchor:
+  - Gondwana
+  - North Africa
+  - South Polar region
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: southern polar ice growth drove cooling and sea-level change
+  regional_expression:
+    Gondwana: major ice sheet growth was centered on the southern supercontinent
+    low_latitude_shelves: sea-level fall removed shallow marine habitat across many basins
   note: Broad Ordovician greenhouse and high-sea-level estimate; values are approximate at
     stage scale.
   sources:
@@ -1158,6 +1253,18 @@ paleo_ecology:
   dominant_ecology: Late Devonian reef seas with diverse fishes, forests expanding on land,
     and growing ecological stress
   confidence: low
+  geographic_anchor:
+  - Euramerica
+  - North Africa
+  - South China
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - ocean_anoxia
+  - carbon_cycle_disruption
+  regional_expression:
+    marine basins: black shales and low-oxygen waters were strongest on shelf seas
   note: Broad late Devonian estimate; reef decline and Kellwasser environmental stress are
     not captured by average values alone.
   sources:
@@ -1181,6 +1288,19 @@ paleo_ecology:
   dominant_ecology: Post-Kellwasser Devonian ecosystems with reduced reefs, diverse fishes,
     early forests, and early tetrapods
   confidence: low
+  geographic_anchor:
+  - Euramerica
+  - North Africa
+  - South China
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - ocean_anoxia
+  - carbon_cycle_disruption
+  - cooling
+  regional_expression:
+    marine basins: repeated anoxia and cooling pulses were strongest in shelf settings
   note: Broad latest Devonian estimate; Hangenberg cooling and extinction stress should be
     represented separately as events.
   sources:
@@ -1200,6 +1320,23 @@ paleo_ecology:
   sea_level_delta_m: +25.0
   icehouse_greenhouse_state: icehouse
   confidence: low
+  geographic_anchor:
+  - South America
+  - Africa
+  - India
+  - Antarctica
+  - Australia
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: Gondwanan ice sheets dominated the strongest climate signal
+  regional_expression:
+    Gondwana: glacial-interglacial cycles repeatedly expanded and contracted ice sheets
   note: Pennsylvanian values reflect late Paleozoic icehouse climate with humid tropical coal
     swamps and strong regional contrasts.
   sources:
@@ -1583,6 +1720,19 @@ paleo_ecology:
   dominant_ecology: Latest Permian ecosystems under severe environmental stress before the
     end-Permian mass extinction
   confidence: low
+  geographic_anchor:
+  - Siberian Traps
+  - Global marine and terrestrial records
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - ocean_anoxia
+  - ocean_acidification
+  - carbon_cycle_disruption
+  regional_expression:
+    marine basins: anoxia and acidification intensified toward the end-Permian crisis
   note: Late Permian values reflect warming, aridity, and environmental instability before
     the end-Permian crisis.
   sources:
@@ -1762,6 +1912,19 @@ paleo_ecology:
   dominant_ecology: Latest Triassic ecosystems with archosaurs, early dinosaurs, marine reptiles,
     and pre-extinction ecological stress
   confidence: low
+  geographic_anchor:
+  - Central Atlantic Magmatic Province
+  - Eastern North America
+  - Northwest Africa
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - ocean_acidification
+  - carbon_cycle_disruption
+  regional_expression:
+    rifted Atlantic margins: strongest volcanic and sedimentary evidence occurs around the opening Atlantic
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -1872,6 +2035,19 @@ paleo_ecology:
   dominant_ecology: warm Early Jurassic greenhouse world with marine anoxia, ammonites, marine
     reptiles, dinosaurs, and conifer forests
   confidence: low
+  geographic_anchor:
+  - Europe
+  - Tethys
+  - Panthalassa margins
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - ocean_anoxia
+  - carbon_cycle_disruption
+  regional_expression:
+    marine basins: black shale deposition and strongest anoxia were basin dependent
   note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
     treated separately.
   sources:
@@ -2052,6 +2228,18 @@ paleo_ecology:
   sea_level_delta_m: +140.0
   icehouse_greenhouse_state: hothouse
   confidence: low
+  geographic_anchor:
+  - Global oceans
+  - Tethys
+  - Western Interior Seaway
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - sea_level_rise
+  latitudinal_expression:
+    high_latitudes: very warm poles and weak equator-to-pole gradients characterized the period
   note: Broad Late Cretaceous hothouse estimate with very high sea levels; stage-scale variation
     is simplified.
   sources:
@@ -2346,6 +2534,16 @@ paleo_ecology:
   - Phanerozoic
   - Cenozoic
   - Paleogene
+  geographic_anchor:
+  - Global marine isotope records
+  - Antarctica
+  - North Atlantic
+  - Arctic Ocean
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  regional_expression:
+    high latitudes: warm greenhouse conditions transitioned into Antarctic-centered cooling
 - rank: stage
   name: Danian
   path:
@@ -2428,6 +2626,19 @@ paleo_ecology:
   dominant_ecology: early Eocene hothouse ecosystems with tropical forests, high-latitude
     warmth, and rapid mammal diversification
   confidence: moderate
+  geographic_anchor:
+  - North Atlantic
+  - Arctic Ocean
+  - Tethys margins
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - ocean_acidification
+  - carbon_cycle_disruption
+  latitudinal_expression:
+    high_latitudes: strong polar amplification accompanied very warm Arctic conditions
   note: Eocene values reflect globally warm greenhouse to hothouse conditions, especially
     in the early Eocene.
   sources:
@@ -2497,6 +2708,17 @@ paleo_ecology:
   dominant_ecology: late Eocene cooling ecosystems with forest contraction, mammal turnover,
     and approach to Antarctic glaciation
   confidence: moderate
+  geographic_anchor:
+  - Antarctica
+  - Southern Ocean
+  - Global marine isotope records
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  regional_expression:
+    Antarctica: cooling and ice-sheet growth dominated the transition into the Oligocene
   note: Late Eocene values reflect cooling toward the Eocene-Oligocene transition and Antarctic
     glaciation.
   sources:
@@ -2520,6 +2742,19 @@ paleo_ecology:
   dominant_ecology: early Oligocene cooler icehouse ecosystems with Antarctic glaciation,
     open habitats, and mammal turnover
   confidence: moderate
+  geographic_anchor:
+  - Antarctica
+  - Southern Ocean
+  - Global marine isotope records
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: southern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  regional_expression:
+    Antarctica: major ice-sheet expansion made the southern high latitudes the climatic focal point
   note: Oligocene values reflect cooler icehouse conditions after Antarctic glaciation began.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2554,6 +2789,15 @@ paleo_ecology:
   - Phanerozoic
   - Cenozoic
   - Neogene
+  geographic_anchor:
+  - Global ocean records
+  - Antarctica
+  - North Atlantic
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  regional_expression:
+    continental interiors: rainfall and aridity patterns shifted strongly by region during cooling
 - rank: stage
   name: Aquitanian
   path:
@@ -2616,6 +2860,17 @@ paleo_ecology:
   dominant_ecology: Miocene climatic optimum ecosystems with warm forests, productive seas,
     and diverse mammals
   confidence: moderate
+  geographic_anchor:
+  - Global ocean records
+  - Antarctica
+  - North Atlantic
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  regional_expression:
+    Antarctica: ice volume was reduced relative to the later Miocene
   note: Early to middle Miocene values include the Miocene climatic optimum and relatively
     warm global conditions.
   sources:
@@ -2728,6 +2983,20 @@ paleo_ecology:
   dominant_ecology: late Pliocene cooling ecosystems with expanding grasslands, northern glaciation,
     and hominin evolution
   confidence: moderate
+  geographic_anchor:
+  - Arctic
+  - North Atlantic
+  - East Africa
+  - Australia
+  - Pacific
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - sea_level_rise
+  latitudinal_expression:
+    high_latitudes: strong warming and reduced ice sheets made the high latitudes unusually mild
   note: Pliocene values reflect warmer-than-present conditions before intensification of Northern
     Hemisphere glaciation.
   sources:
@@ -2741,6 +3010,21 @@ paleo_ecology:
   - Phanerozoic
   - Cenozoic
   - Quaternary
+  geographic_anchor:
+  - Northern Hemisphere ice sheets
+  - Antarctica
+  - Global marine isotope record
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: northern
+  manifestation_type:
+  - cooling
+  - glaciation
+  - sea_level_fall
+  latitudinal_expression:
+    high_latitudes: the strongest ice-sheet growth and cooling occurred in northern high latitudes
+  regional_expression:
+    North America and Eurasia: repeated large continental ice sheets dominated glacial maxima
 - rank: stage
   name: Gelasian
   path:
@@ -2849,6 +3133,18 @@ paleo_ecology:
   dominant_ecology: early Holocene warming ecosystems with retreating ice sheets, forest expansion,
     and early agriculture beginning
   confidence: moderate
+  geographic_anchor:
+  - Global ice cores
+  - Lake records
+  - Speleothems
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - deglaciation
+  - sea_level_rise
+  regional_expression:
+    Northern Hemisphere: retreating ice sheets and continued sea-level rise shaped early Holocene climates
   note: Early Holocene values reflect warming after the last glacial period while sea level
     was still rising toward present.
   sources:
@@ -2871,6 +3167,14 @@ paleo_ecology:
   dominant_ecology: middle Holocene ecosystems with relatively stable climates, expanding
     human land use, forests, grasslands, and wetlands
   confidence: moderate
+  geographic_anchor:
+  - Global interglacial proxy records
+  - Monsoon regions
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  regional_expression:
+    monsoon belts: rainfall systems shifted regionally while the interglacial remained globally stable
   note: Middle Holocene values are close to present but still preindustrial in atmospheric
     CO2 terms.
   sources:
@@ -2893,6 +3197,18 @@ paleo_ecology:
   dominant_ecology: late Holocene ecosystems shaped by agriculture, urbanization, deforestation,
     species movement, and industrial impacts
   confidence: moderate
+  geographic_anchor:
+  - Global instrumental and proxy records
+  - Atmosphere
+  - Oceans
+  spatial_extent: global
+  spatial_confidence: high
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - sea_level_rise
+  regional_expression:
+    polar regions: strongest recent warming and cryosphere loss are concentrated at high latitudes
   note: Late Holocene values are close to the present baseline; recent industrial warming
     is compressed into the latest part of the stage.
   sources:
