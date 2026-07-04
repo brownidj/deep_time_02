@@ -4286,6 +4286,27 @@
   parent_id: ceratopsia
   start_ma: 100.5
   end_ma: 66.0
+  start_ma_derivation: fossil_first_appearance
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Cautious fossil-occurrence minimum
+    anchored to Archaeoceratops from the Xinminpu Group, treated as late Early
+    Cretaceous and probably Albian in age. This is a formation-based minimum,
+    not a divergence estimate.
+  start_ma_sources:
+    - label: Li et al. 2007 Archaeoceratopsidae reference
+      url: https://bioone.org/journals/journal-of-paleontology/volume-84/issue-2/09-086R.1/Redescription-of-Archaeoceratops-oshimai-Dinosauria-Ceratopsia-from-the-Lower/10.1666/09-086R.1.full
+    - label: Archaeoceratops redescription and age discussion
+      url: https://bioone.org/journals/journal-of-paleontology/volume-84/issue-2/09-086R.1/Redescription-of-Archaeoceratops-oshimai-Dinosauria-Ceratopsia-from-the-Lower/10.1666/09-086R.1.full
+    - label: Xinminpu Group stratigraphic framework
+      url: https://www.sciencedirect.com/science/article/pii/S0031018214003292
+    - label: Xiagou-Zhonggou transition radiometric constraints
+      url: https://pubs.geoscienceworld.org/gsa/gsabulletin/article/129/11-12/1765/207549/High-precision-40Ar-39Ar-geochronology-of
+    - label: Zhonggou Formation basalt age constraint
+      url: https://www.sciencedirect.com/science/article/pii/S0195667117302832
+    - label: International Chronostratigraphic Chart
+      url: https://stratigraphy.org/chart
+    - label: Regional Early Cretaceous Gansu correlation review
+      url: https://link.springer.com/article/10.1007/s11430-010-4093-3
   range_note: Early Cretaceous fossil minimum through the K-Pg boundary
   confidence: low
   display_groups:
@@ -4315,6 +4336,25 @@
   parent_id: tyrannosauroidea
   start_ma: 168.3
   end_ma: 166.1
+  start_ma_derivation: fossil_first_appearance
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Earliest securely dated occurrence
+    tied to Proceratosaurus from the Great Oolite Group of Gloucestershire. The
+    minimum is bracketed by Bathonian stage limits and should be treated as a
+    stage- and formation-derived fossil minimum.
+  start_ma_sources:
+    - label: Proceratosaurus reappraisal and Proceratosauridae placement
+      url: https://royalsocietypublishing.org/doi/10.1098/rsbl.2010.0674
+    - label: Great Oolite Group stratigraphic context
+      url: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=GOG
+    - label: White Limestone Formation summary
+      url: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=WHLM
+    - label: Forest Marble Formation summary
+      url: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=FMB
+    - label: Kileskus and Middle Jurassic proceratosaurid evidence
+      url: https://peerj.com/articles/5749/
+    - label: International Chronostratigraphic Chart
+      url: https://stratigraphy.org/chart
   range_note: Bathonian fossil range currently documented for the family
   confidence: moderate
   display_groups:
@@ -4346,6 +4386,27 @@
   parent_id: sauropoda
   start_ma: 166.0
   end_ma: 114.4
+  start_ma_derivation: fossil_range
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Earliest well-constrained
+    mamenchisaurid occurrences come from Middle Jurassic Chinese formations,
+    with the Lower Shaximiao record used as the conservative start and younger
+    Suining Formation occurrences supporting the documented fossil range.
+  start_ma_sources:
+    - label: Shaximiao Formation zircon age constraints
+      url: https://www.sciencedirect.com/science/article/pii/S0195667118302815
+    - label: Yunyang Shaximiao sauropod context
+      url: https://peerj.com/articles/11466/
+    - label: Shishugou Formation radiometric framework
+      url: https://www.researchgate.net/publication/232674205_Radioisotopic_age_of_the_Upper_Shishugou_Formation_in_the_Junggar_Basin_Xinjiang
+    - label: Mamenchisaurus sinocanadorum stratigraphic context
+      url: https://www.tandfonline.com/doi/full/10.1080/02724634.2019.1578782
+    - label: Suining Formation detrital zircon ages
+      url: https://www.sciencedirect.com/science/article/pii/S1367912021001501
+    - label: Thai mamenchisaurid occurrence near Jurassic-Cretaceous boundary
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281902
+    - label: Suining Formation age debate review
+      url: https://www.sciencedirect.com/science/article/pii/S0195667123001787
   range_note: Middle Jurassic to Early Cretaceous fossil range based on currently documented occurrences
   confidence: moderate
   display_groups:
@@ -4376,6 +4437,20 @@
   parent_id: allosauroidea
   start_ma: 163.5
   end_ma: 66.0
+  start_ma_derivation: fossil_first_appearance
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Conservative fossil minimum based on
+    Metriacanthosaurus from the Middle Oxford Clay, explicitly tied to the Upper
+    Callovian Peltoceras athleta ammonite zone.
+  start_ma_sources:
+    - label: Metriacanthosaurus systematic and stratigraphic review
+      url: https://academic.oup.com/zoolinnean/article/158/4/882/2614205
+    - label: Oxford Clay stratigraphic framework
+      url: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=OXCL
+    - label: Peltoceras athleta Zone reference
+      url: https://jurassic.stratigraphy.org/zonation
+    - label: International Chronostratigraphic Chart
+      url: https://stratigraphy.org/chart
   range_note: Callovian fossil minimum through the K-Pg boundary
   confidence: moderate
   display_groups:
@@ -4405,7 +4480,7 @@
   scientific_label: Piatnitzkysauridae
   scientific_rank: family
   parent_id: megalosauroidea
-  start_ma: 170.0
+  start_ma: 179.17
   end_ma: 66.0
   start_ma_derivation: conservative_middle_jurassic_fossil_first_placeholder
   start_ma_sources:
@@ -4446,6 +4521,31 @@
   parent_id: oviraptorosauria
   start_ma: 125.39
   end_ma: 66.0
+  start_ma_derivation: fossil_first_appearance
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Conservative first-appearance minimum
+    based on Caudipteryx from the Jianshangou Unit of the Yixian Formation, using
+    bed-level radioisotopic ages tied to the classic Sihetun-Huangbanjigou fossil
+    horizon.
+  start_ma_sources:
+    - label: Jianshangou bed 6 single-crystal 40Ar/39Ar dates
+      url: https://www.sciencedirect.com/science/article/pii/S0031018214004558
+    - label: High-precision CA-ID-TIMS ages bracketing the Yixian Formation
+      url: https://www.pnas.org/doi/10.1073/pnas.2107105118
+    - label: Caudipteryx Yixian Formation locality context
+      url: https://www.nature.com/articles/37265
+    - label: Similicaudipteryx Jiufotang occurrence
+      url: https://www.sciencedirect.com/science/article/pii/S0195667105001767
+    - label: Jiufotang lowermost tuff 40Ar/39Ar age
+      url: https://www.sciencedirect.com/science/article/pii/S0031018208002796
+    - label: Jiufotang SIMS U-Pb zircon ages
+      url: https://www.sciencedirect.com/science/article/pii/S0031018213005206
+    - label: Jehol Group chronology synthesis
+      url: https://www.annualreviews.org/doi/10.1146/annurev-earth-040809-152519
+    - label: Yixian Formation geochronology review
+      url: https://www.sciencedirect.com/science/article/pii/S1367912016301484
+    - label: Jehol Biota stratigraphic review
+      url: https://www.sciencedirect.com/science/article/pii/S1674987117301731
   range_note: Early Cretaceous fossil minimum through the K-Pg boundary
   confidence: moderate
   display_groups:
@@ -4478,6 +4578,27 @@
   parent_id: somphospondyli
   start_ma: 113.2
   end_ma: 66.0
+  start_ma_derivation: formation_age_inference
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Cautious formation-derived minimum
+    for Huanghetitan-bearing Lower Cretaceous Chinese units, especially the
+    Aptian-Albian Haoling Formation. This is treated as a fossil-occurrence and
+    formation minimum, not a phylogenetic origin estimate.
+  start_ma_sources:
+    - label: Huanghetitanidae family proposal
+      url: https://www.researchgate.net/publication/285940005_A_new_titanosauriform_sauropod_from_the_Upper_Cretaceous_of_Henan_Province_China
+    - label: Ruyang Basin Haoling Formation age discussion
+      url: https://www.sciencedirect.com/science/article/pii/S0195667113002745
+    - label: Haoling Formation Aptian-Albian context
+      url: https://link.springer.com/article/10.1007/s11430-012-4430-0
+    - label: Hekou Group Lower Cretaceous context
+      url: https://www.sciencedirect.com/science/article/pii/S0195667110000878
+    - label: Huanghetitan phylogenetic reassessment
+      url: https://www.nature.com/articles/s41598-020-77660-7
+    - label: International Chronostratigraphic Chart
+      url: https://stratigraphy.org/chart
+    - label: Chinese Early Cretaceous basin correlation review
+      url: https://www.sciencedirect.com/science/article/pii/S1674987115000604
   range_note: Early Cretaceous formation-derived minimum through the K-Pg boundary
   confidence: low
   display_groups:
@@ -4508,6 +4629,23 @@
   parent_id: somphospondyli
   start_ma: 72.1
   end_ma: 66.0
+  start_ma_derivation: formation_age_inference
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Maastrichtian formation-derived minimum
+    for Vitakri Member and Pab Formation sauropod occurrences used for Pakisauridae.
+    The family's validity remains debated, so this is treated as a cautious
+    formation age rather than a phylogenetic origin estimate.
+  start_ma_sources:
+    - label: Pakisauridae and Pakisaurus proposal
+      url: https://www.researchgate.net/publication/285940472_Titanosaurians_Dinosauria_from_the_Vitakri_Lameta_and_Pab_formations_of_Pakistan
+    - label: Vitakri Member Maastrichtian context
+      url: https://www.sciencedirect.com/science/article/pii/S0012825216301963
+    - label: Pab Formation regional stratigraphic summary
+      url: https://pubs.usgs.gov/of/2005/1294/
+    - label: International Chronostratigraphic Chart
+      url: https://stratigraphy.org/chart
+    - label: Review of Pakistani latest Cretaceous sauropods
+      url: https://link.springer.com/article/10.1007/s12549-021-00493-6
   range_note: Maastrichtian formation-derived minimum to the K-Pg boundary
   confidence: low
   display_groups:
@@ -4538,6 +4676,26 @@
   parent_id: titanosauria
   start_ma: 83.5
   end_ma: 66.0
+  start_ma_derivation: fossil_first_appearance
+  start_ma_note: >
+    Imported from ai_date_candidates.yaml. Conservative fossil minimum based on
+    Neuquensaurus from the Anacleto Formation of the Neuquen Basin, constrained
+    by Campanian magnetostratigraphic and depositional age evidence.
+  start_ma_sources:
+    - label: Neuquensaurus and Anacleto Formation saltasaurid context
+      url: https://link.springer.com/article/10.1007/s00114-005-0068-7
+    - label: Anacleto Formation magnetostratigraphy at Auca Mahuevo
+      url: https://www.sciencedirect.com/science/article/pii/S0195667105000828
+    - label: Neuquen Basin chronostratigraphy
+      url: https://www.sciencedirect.com/science/article/pii/S0895981116301646
+    - label: Paso Cordoba detrital zircon age discussion
+      url: https://www.sciencedirect.com/science/article/pii/S0895981116301646
+    - label: Saltasaurid review
+      url: https://www.tandfonline.com/doi/full/10.1080/02724634.2017.1302476
+    - label: International Chronostratigraphic Chart
+      url: https://stratigraphy.org/chart
+    - label: South American saltasaurid record synthesis
+      url: https://www.sciencedirect.com/science/article/pii/S0195667122002877
   range_note: Campanian fossil minimum through the K-Pg boundary
   confidence: low
   display_groups:

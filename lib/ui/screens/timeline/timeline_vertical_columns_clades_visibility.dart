@@ -174,7 +174,7 @@ bool _overlapsVisibleRange(
   double visibleEndMa,
 ) {
   final cladeMin = clade.endMa;
-  final cladeMax = clade.startMa;
+  final cladeMax = clade.branchStartMa;
   final viewMin = visibleEndMa;
   final viewMax = visibleStartMa;
   return !(cladeMax < viewMin || cladeMin > viewMax);
@@ -198,6 +198,7 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
   final layouts = <_VerticalCladeBarLayout>[];
   final ordered = _orderedTreeClades(
     visible,
+    allById: allById,
     mapper: mapper,
     columnHeight: columnHeight,
   );
@@ -212,7 +213,7 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
   var inheritedRangeCount = 0;
 
   (double, double) effectiveBounds(Clade clade) {
-    var start = clade.startMa;
+    var start = clade.branchStartMa;
     var end = clade.endMa;
     if (start > end && (start - end).abs() > 0.0001) {
       return (start, end);
@@ -224,10 +225,10 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
       if (parent == null || !visited.add(parent.id)) {
         break;
       }
-      if (parent.startMa > parent.endMa &&
-          (parent.startMa - parent.endMa).abs() > 0.0001) {
+      if (parent.branchStartMa > parent.endMa &&
+          (parent.branchStartMa - parent.endMa).abs() > 0.0001) {
         inheritedRangeCount += 1;
-        return (parent.startMa, parent.endMa);
+        return (parent.branchStartMa, parent.endMa);
       }
       cursor = parent;
     }
@@ -236,6 +237,11 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
 
   for (var i = 0; i < ordered.length; i += 1) {
     final clade = ordered[i];
+    final nearestVisibleAncestorId = _nearestVisibleAncestorId(
+      clade: clade,
+      visibleById: visibleById,
+      allById: allById,
+    );
     final (effectiveStartMa, effectiveEndMa) = effectiveBounds(clade);
     final start = (mapper.yForMa(effectiveStartMa) ?? 0.0).clamp(
       0.0,
@@ -268,10 +274,12 @@ List<_VerticalCladeBarLayout> _layoutCladeBars({
         top: top,
         width: hitWidth,
         height: barHeight,
-        parent: clade.parentId == null ? null : visibleById[clade.parentId],
-        parentLabel: clade.parentId == null
+        parent: nearestVisibleAncestorId == null
             ? null
-            : allById[clade.parentId]?.label,
+            : visibleById[nearestVisibleAncestorId],
+        parentLabel: nearestVisibleAncestorId == null
+            ? null
+            : allById[nearestVisibleAncestorId]?.label,
       ),
     );
   }

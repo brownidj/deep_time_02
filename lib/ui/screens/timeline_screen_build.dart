@@ -1,8 +1,7 @@
 part of 'timeline_screen.dart';
 
 extension _TimelineScreenBuild on _TimelineScreenState {
-  @override
-  Widget build(BuildContext context) {
+  Widget _buildScreen(BuildContext context) {
     return FutureBuilder<TimelineSnapshot>(
       future: _snapshotFuture,
       builder: (context, snapshot) {
@@ -84,13 +83,13 @@ extension _TimelineScreenBuild on _TimelineScreenState {
                         ? () => _handleCladeRootChanged(null, clades)
                         : null,
                     onScaleChanged: (value) {
-                      setState(() {
+                      _updateScreenState(() {
                         AppDebug.timelineScale = value;
                       });
                       _saveTimelineScale(value);
                     },
                     onBiologyColumnModeChanged: (mode) {
-                      setState(() {
+                      _updateScreenState(() {
                         _biologyColumnMode = mode;
                       });
                       _saveBiologyColumnMode(mode);
@@ -106,12 +105,12 @@ extension _TimelineScreenBuild on _TimelineScreenState {
                     scrollController: _timelineScrollController,
                     selectedId: selected?.id,
                     onBandSelect: (segment) {
-                      setState(() {
+                      _updateScreenState(() {
                         _selectedDivision = SelectedDivision.fromBand(segment);
                       });
                     },
                     onSelect: (segment) {
-                      setState(() {
+                      _updateScreenState(() {
                         _selectedDivision = SelectedDivision.fromRow(segment);
                       });
                     },
@@ -129,7 +128,7 @@ extension _TimelineScreenBuild on _TimelineScreenState {
                     activeCladeRootLabel: activeCladeRootLabel,
                     childrenByParentId: childrenByParentId,
                     onCladeSpotlight: (clade) {
-                      setState(() {
+                      _updateScreenState(() {
                         _cladeSpotlightId = clade.id;
                         _cladeSearchQuery = clade.label;
                       });
@@ -140,13 +139,13 @@ extension _TimelineScreenBuild on _TimelineScreenState {
                       if (_pendingFocusedRootAutoScrollId != rootId) {
                         return;
                       }
-                      setState(() {
+                      _updateScreenState(() {
                         _pendingFocusedRootAutoScrollId = null;
                       });
                     },
                     activeTaxonomyTaxonId: _activeTaxonomyTaxonId,
                     onTaxonomyTaxonSelected: (taxonId) {
-                      setState(() {
+                      _updateScreenState(() {
                         _activeTaxonomyTaxonId = taxonId;
                       });
                     },
@@ -176,7 +175,7 @@ extension _TimelineScreenBuild on _TimelineScreenState {
       if (!mounted) {
         return;
       }
-      setState(() {
+      _updateScreenState(() {
         _selectedDivision = SelectedDivision.fromRow(firstSegment);
       });
     });

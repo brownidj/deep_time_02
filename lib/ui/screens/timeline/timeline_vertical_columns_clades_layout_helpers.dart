@@ -17,6 +17,7 @@ String _buildCladeDetailsText(_VerticalCladeBarLayout entry) {
     'ID: ${clade.id}',
     'Parent: ${entry.parentLabel ?? '-'}',
     'Start: ${_formatCladeStartMa(clade.startMa)} Ma',
+    'Divergence: ${clade.divergenceMa == null ? '-' : '${_formatCladeStartMa(clade.divergenceMa!)} Ma'}',
     'Start derivation: ${clade.startMaDerivation ?? '-'}',
     'End: ${_formatCladeStartMa(clade.endMa)} Ma',
     'Duration: ${_formatCladeStartMa(clade.durationMa)} Ma',
@@ -64,15 +65,20 @@ String _buildCladeDetailsText(_VerticalCladeBarLayout entry) {
 
 List<Clade> _orderedTreeClades(
   List<Clade> visible, {
+  required Map<String, Clade> allById,
   required _StageRangeMapper mapper,
   required double columnHeight,
 }) {
-  final byId = {for (final clade in visible) clade.id: clade};
+  final visibleById = {for (final clade in visible) clade.id: clade};
   final childrenByParentId = <String, List<Clade>>{};
   final roots = <Clade>[];
   for (final clade in visible) {
-    final parentId = clade.parentId;
-    if (parentId == null || !byId.containsKey(parentId)) {
+    final parentId = _nearestVisibleAncestorId(
+      clade: clade,
+      visibleById: visibleById,
+      allById: allById,
+    );
+    if (parentId == null) {
       roots.add(clade);
       continue;
     }
@@ -80,7 +86,7 @@ List<Clade> _orderedTreeClades(
   }
 
   int compareClades(Clade a, Clade b) {
-    final startCompare = b.startMa.compareTo(a.startMa);
+    final startCompare = b.branchStartMa.compareTo(a.branchStartMa);
     if (startCompare != 0) {
       return startCompare;
     }
@@ -92,7 +98,7 @@ List<Clade> _orderedTreeClades(
   }
 
   (double, double) effectiveBounds(Clade clade) {
-    var start = clade.startMa;
+    var start = clade.branchStartMa;
     var end = clade.endMa;
     if (start > end && (start - end).abs() > 0.0001) {
       return (start, end);
@@ -100,13 +106,13 @@ List<Clade> _orderedTreeClades(
     final visited = <String>{clade.id};
     var cursor = clade;
     while (cursor.parentId != null) {
-      final parent = byId[cursor.parentId!];
+      final parent = allById[cursor.parentId!];
       if (parent == null || !visited.add(parent.id)) {
         break;
       }
-      if (parent.startMa > parent.endMa &&
-          (parent.startMa - parent.endMa).abs() > 0.0001) {
-        return (parent.startMa, parent.endMa);
+      if (parent.branchStartMa > parent.endMa &&
+          (parent.branchStartMa - parent.endMa).abs() > 0.0001) {
+        return (parent.branchStartMa, parent.endMa);
       }
       cursor = parent;
     }
@@ -163,13 +169,21 @@ List<Clade> _orderedTreeClades(
     children.sort((a, b) {
       final aStats = computeSubtreeOrderStats(a);
       final bStats = computeSubtreeOrderStats(b);
-      final centerCompare = aStats.centerY.compareTo(bStats.centerY);
-      if (centerCompare != 0) {
-        return centerCompare;
+      final (aStartMa, aEndMa) = effectiveBounds(a);
+      final (bStartMa, bEndMa) = effectiveBounds(b);
+      final startCompare = aStartMa.compareTo(bStartMa);
+      if (startCompare != 0) {
+        return startCompare;
       }
-      final topCompare = aStats.minTop.compareTo(bStats.minTop);
-      if (topCompare != 0) {
-        return topCompare;
+      final aSpan = aStartMa - aEndMa;
+      final bSpan = bStartMa - bEndMa;
+      final spanCompare = aSpan.compareTo(bSpan);
+      if (spanCompare != 0) {
+        return spanCompare;
+      }
+      final weightCompare = aStats.weight.compareTo(bStats.weight);
+      if (weightCompare != 0) {
+        return weightCompare;
       }
       return compareClades(a, b);
     });
@@ -181,13 +195,21 @@ List<Clade> _orderedTreeClades(
   roots.sort((a, b) {
     final aStats = computeSubtreeOrderStats(a);
     final bStats = computeSubtreeOrderStats(b);
-    final centerCompare = aStats.centerY.compareTo(bStats.centerY);
-    if (centerCompare != 0) {
-      return centerCompare;
+    final (aStartMa, aEndMa) = effectiveBounds(a);
+    final (bStartMa, bEndMa) = effectiveBounds(b);
+    final startCompare = aStartMa.compareTo(bStartMa);
+    if (startCompare != 0) {
+      return startCompare;
     }
-    final topCompare = aStats.minTop.compareTo(bStats.minTop);
-    if (topCompare != 0) {
-      return topCompare;
+    final aSpan = aStartMa - aEndMa;
+    final bSpan = bStartMa - bEndMa;
+    final spanCompare = aSpan.compareTo(bSpan);
+    if (spanCompare != 0) {
+      return spanCompare;
+    }
+    final weightCompare = aStats.weight.compareTo(bStats.weight);
+    if (weightCompare != 0) {
+      return weightCompare;
     }
     return compareClades(a, b);
   });
@@ -204,6 +226,25 @@ List<Clade> _orderedTreeClades(
     visit(root);
   }
   return ordered;
+}
+
+String? _nearestVisibleAncestorId({
+  required Clade clade,
+  required Map<String, Clade> visibleById,
+  required Map<String, Clade> allById,
+}) {
+  final visited = <String>{clade.id};
+  var parentId = clade.parentId;
+  while (parentId != null && parentId.isNotEmpty) {
+    if (!visited.add(parentId)) {
+      return null;
+    }
+    if (visibleById.containsKey(parentId)) {
+      return parentId;
+    }
+    parentId = allById[parentId]?.parentId;
+  }
+  return null;
 }
 
 class _OverviewCladeOrderStats {
@@ -226,8 +267,8 @@ List<_VerticalCladeConnectorLayout> _layoutCladeConnectors(
   final byId = {for (final bar in bars) bar.clade.id: bar};
   final connectors = <_VerticalCladeConnectorLayout>[];
   for (final child in bars) {
-    final parentId = child.clade.parentId;
-    if (parentId == null) {
+    final parentId = child.parent?.id;
+    if (parentId == null || parentId.isEmpty) {
       continue;
     }
     final parent = byId[parentId];

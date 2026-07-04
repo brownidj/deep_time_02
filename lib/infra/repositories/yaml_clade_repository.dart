@@ -56,6 +56,7 @@ class YamlCladeRepository implements CladeRepository {
       scientificLabel: _readString(entry['scientific_label']),
       openTreeName: _readString(entry['opentree_name']),
       ottId: _readInt(entry['ott_id']),
+      divergenceMa: _readDouble(entry['divergence_ma']),
       branchPriority: _readInt(entry['branch_priority']),
       cladisticRole: _readString(entry['cladistic_role']),
       includeInMainTree: _readBool(entry['include_in_main_tree']),

@@ -20,6 +20,7 @@ class Clade {
     this.scientificLabel,
     this.openTreeName,
     this.ottId,
+    this.divergenceMa,
     this.branchPriority,
     this.cladisticRole,
     this.includeInMainTree,
@@ -51,6 +52,7 @@ class Clade {
   final String? scientificLabel;
   final String? openTreeName;
   final int? ottId;
+  final double? divergenceMa;
   final int? branchPriority;
   final String? cladisticRole;
   final bool? includeInMainTree;
@@ -64,6 +66,7 @@ class Clade {
   final List<CladeDateSource>? startMaSources;
 
   double get durationMa => startMa - endMa;
+  double get branchStartMa => divergenceMa ?? startMa;
 }
 
 class CladeDateSource {

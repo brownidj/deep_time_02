@@ -73,6 +73,7 @@ class SqliteCladeDetailRepository {
       scientificLabel: row['scientific_label'] as String?,
       openTreeName: row['opentree_name'] as String?,
       ottId: (row['ott_id'] as num?)?.toInt(),
+      divergenceMa: (row['divergence_ma'] as num?)?.toDouble(),
       branchPriority: (row['branch_priority'] as num?)?.toInt(),
       cladisticRole: row['cladistic_role'] as String?,
       includeInMainTree: _readSqlBool(row['include_in_main_tree']),

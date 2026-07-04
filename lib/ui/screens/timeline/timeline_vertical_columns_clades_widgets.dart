@@ -108,7 +108,8 @@ class _VerticalCladeBar extends StatelessWidget {
                 top: 10,
                 labelText: labelText,
                 textColor: Colors.white,
-                tooltipMessage: 'Crown age: ${_formatStartMa(clade.startMa)} Ma',
+                tooltipMessage:
+                    'Crown age: ${_formatStartMa(clade.branchStartMa)} Ma',
                 onTap: null,
                 onLongPress: onLongPress,
               ),

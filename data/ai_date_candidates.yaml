@@ -2315,9 +2315,7 @@ piatnitzkysauridae:
       reported younger (Bajocian–Callovian) ages for parts of the formation in other depocenters,
       but the late Toarcian dates cited here directly constrain the fossiliferous Las Chacritas
       interval that yields piatnitzkysaurids. This is a fossil-occurrence/formation-based
-      minimum and not an evolutionary origin estimate for the clade.
-
-      '
+      minimum and not an evolutionary origin estimate for the clade.'
     date_resolution_method: formation_age_inference
     date_sources:
     - source_label: Carrano, Benson & Sampson 2012, The phylogeny of Tetanurae (Journal of
@@ -2973,9 +2971,7 @@ sauropodidae:
       Formation suggest a potentially older record, but both the age of the relevant Nam Phong
       strata and the taxon’s placement have been considered uncertain; therefore, they are
       not used to fix the minimum here. This is a fossil-occurrence/formation-based minimum
-      only and should not be interpreted as a true molecular or crown origin for Sauropodidae/Sauropoda.
-
-      '
+      only and should not be interpreted as a true molecular or crown origin for Sauropodidae/Sauropoda.'
     date_resolution_method: formation_age_inference
     date_sources:
     - source_label: Viglietti et al. 2018, J. African Earth Sciences 137:149–156
@@ -2989,7 +2985,7 @@ sauropodidae:
       note: Chronostratigraphic framework for the upper Stormberg Group; Clarens Formation
         mainly Pliensbachian based on U–Pb detrital zircon MDAs.
     - source_label: International Commission on Stratigraphy, International Chronostratigraphic
-        Chart (2023/09)
+        Chart (2023/09)F
       source_type: geochronology_reference
       url: http://www.stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf
       note: Numerical stage boundaries; Pliensbachian base at 190.8 Ma used to anchor a conservative
@@ -3016,9 +3012,7 @@ sauropodidae:
     decision_note: 'Accept a conservative start_ma of 190.8 Ma as a low-confidence, formation-correlated
       minimum based on the Vulcanodon horizon’s linkage to the mainly Pliensbachian Clarens-equivalent
       upper Forest Sandstone. The Isanosaurus/Nam Phong record is acknowledged but not used
-      to set the minimum due to unresolved age and taxonomic issues.
-
-      '
+      to set the minimum due to unresolved age and taxonomic issues.'
     reviewed_at: null
     reviewer: null
     status: pending

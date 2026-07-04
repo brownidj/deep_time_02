@@ -117,4 +117,7 @@ class _TimelineScreenState extends State<TimelineScreen>
     _timelineScrollController.dispose();
     super.dispose();
   }
+
+  @override
+  Widget build(BuildContext context) => _buildScreen(context);
 }

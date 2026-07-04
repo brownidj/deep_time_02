@@ -24,7 +24,7 @@ int _compareFocusedClades(Clade a, Clade b) {
   if (branchPriorityCompare != 0) {
     return branchPriorityCompare;
   }
-  final startCompare = b.startMa.compareTo(a.startMa);
+  final startCompare = b.branchStartMa.compareTo(a.branchStartMa);
   if (startCompare != 0) {
     return startCompare;
   }
@@ -39,7 +39,7 @@ int _compareFocusedClades(Clade a, Clade b) {
   required Clade clade,
   required Map<String, Clade> allById,
 }) {
-  var start = clade.startMa;
+  var start = clade.branchStartMa;
   var end = clade.endMa;
   if (start > end && (start - end).abs() > 0.0001) {
     return (start, end);
@@ -51,9 +51,9 @@ int _compareFocusedClades(Clade a, Clade b) {
     if (parent == null || !visited.add(parent.id)) {
       break;
     }
-    if (parent.startMa > parent.endMa &&
-        (parent.startMa - parent.endMa).abs() > 0.0001) {
-      return (parent.startMa, parent.endMa);
+    if (parent.branchStartMa > parent.endMa &&
+        (parent.branchStartMa - parent.endMa).abs() > 0.0001) {
+      return (parent.branchStartMa, parent.endMa);
     }
     cursor = parent;
   }

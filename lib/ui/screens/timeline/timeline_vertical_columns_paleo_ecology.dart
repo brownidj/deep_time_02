@@ -122,7 +122,6 @@ class _VerticalPaleoEcologyColumn extends StatelessWidget {
         context: context,
         title: entry?.name ?? 'Paleo-ecology',
         explanation: explanationMessage,
-        closeLabel: 'Got it',
       ),
       child: blockBody,
     );
