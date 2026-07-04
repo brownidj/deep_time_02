@@ -168,5 +168,37 @@ paleo_ecology:
       ),
       isTrue,
     );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.stage &&
+            entry.name == 'Tremadocian' &&
+            entry.spatialExtent == 'global' &&
+            entry.hemisphericBias == 'southern' &&
+            entry.geographicAnchor.contains('Gondwana'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.stage &&
+            entry.name == 'Wuchiapingian' &&
+            entry.spatialExtent == 'global' &&
+            entry.manifestationType.contains('ocean_anoxia'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.stage &&
+            entry.name == 'Hettangian' &&
+            entry.geographicAnchor.contains(
+              'Central Atlantic Magmatic Province',
+            ),
+      ),
+      isTrue,
+    );
   });
 }

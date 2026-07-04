@@ -1,5 +1,6 @@
 import 'package:deep_time_2/domain/models/geologic_rank.dart';
 import 'package:deep_time_2/domain/models/paleo_ecology_entry.dart';
+import 'package:deep_time_2/ui/screens/timeline/timeline_min_height_helpers_paleo.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -29,5 +30,21 @@ void main() {
     expect(resolved.manifestationType, ['ocean_anoxia']);
     expect(resolved.geographicAnchor, ['Tethys', 'Panthalassa margins']);
     expect(resolved.hemisphericBias, 'both');
+  });
+
+  test('summary uses compact geography labels', () {
+    const entry = PaleoEcologyEntry(
+      rank: GeologicRank.stage,
+      name: 'Test Stage',
+      path: ['Phanerozoic', 'Cenozoic', 'Quaternary', 'Holocene', 'Test Stage'],
+      spatialExtent: 'global',
+      hemisphericBias: 'southern',
+      geographicAnchor: ['Gondwana'],
+    );
+
+    expect(
+      paleoEcologySummaryText(entry),
+      'Ex: Global; Bi: Southern\nAn: Gondwana',
+    );
   });
 }

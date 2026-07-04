@@ -25,15 +25,15 @@ String? paleoEcologySummaryText(PaleoEcologyEntry entry) {
 
   final geographyParts = <String>[
     if (entry.spatialExtent != null)
-      'Extent: ${_formatLabelValue(entry.spatialExtent!)}',
+      'Ex: ${_formatLabelValue(entry.spatialExtent!)}',
     if (entry.hemisphericBias != null && entry.hemisphericBias != 'both')
-      'Bias: ${_formatLabelValue(entry.hemisphericBias!)}',
+      'Bi: ${_formatLabelValue(entry.hemisphericBias!)}',
   ];
   if (geographyParts.isNotEmpty) {
     lines.add(geographyParts.join('; '));
   }
   if (entry.geographicAnchor.isNotEmpty) {
-    lines.add('Anchor: ${entry.geographicAnchor.first}');
+    lines.add('An: ${entry.geographicAnchor.first}');
   }
 
   return lines.isEmpty ? null : lines.join('\n');
