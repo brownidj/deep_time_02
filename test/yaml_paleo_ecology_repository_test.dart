@@ -162,6 +162,67 @@ paleo_ecology:
     expect(
       entries.any(
         (entry) =>
+            entry.rank == GeologicRank.period &&
+            entry.name == 'Cambrian' &&
+            entry.spatialExtent == 'global' &&
+            entry.hemisphericBias == 'both' &&
+            entry.geographicAnchor.contains('Low-latitude epicontinental seas'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.period &&
+            entry.name == 'Silurian' &&
+            entry.spatialExtent == 'global' &&
+            entry.geographicAnchor.contains('Laurentia'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.period &&
+            entry.name == 'Devonian' &&
+            entry.spatialExtent == 'global' &&
+            entry.geographicAnchor.contains('Euramerica'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.period &&
+            entry.name == 'Triassic' &&
+            entry.spatialExtent == 'global' &&
+            entry.geographicAnchor.contains('Pangaea'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.period &&
+            entry.name == 'Jurassic' &&
+            entry.spatialExtent == 'global' &&
+            entry.geographicAnchor.contains('Tethys'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.stage &&
+            entry.name == 'Anisian' &&
+            entry.spatialExtent == 'global' &&
+            entry.geographicAnchor.contains('Pangaea'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
             entry.rank == GeologicRank.stage &&
             entry.name == 'Fortunian' &&
             entry.hasMetricSummary,

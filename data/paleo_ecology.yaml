@@ -448,6 +448,19 @@ paleo_ecology:
   sea_level_delta_m: +80.0
   icehouse_greenhouse_state: greenhouse
   confidence: low
+  geographic_anchor:
+  - Low-latitude epicontinental seas
+  - Laurentia
+  - South China
+  - Siberia
+  - Gondwana margins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  regional_expression:
+    low_latitude_seas: widespread shallow seas supported rapid animal diversification
   note: Broad Cambrian greenhouse estimate; stage-level values are approximate and should
     be refined from specialist datasets.
   sources:
@@ -1002,6 +1015,19 @@ paleo_ecology:
   sea_level_delta_m: +90.0
   icehouse_greenhouse_state: greenhouse
   confidence: low
+  geographic_anchor:
+  - Laurentia
+  - Baltica
+  - Avalonia
+  - Peri-Gondwanan shelves
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - sea_level_rise
+  regional_expression:
+    shallow_shelves: widespread epicontinental seas supported reefs and shelly faunas across many basins
   note: Broad Silurian warm greenhouse estimate; short-term glacio-eustatic changes are not
     represented here.
   sources:
@@ -1228,6 +1254,19 @@ paleo_ecology:
   sea_level_delta_m: +80.0
   icehouse_greenhouse_state: greenhouse
   confidence: low
+  geographic_anchor:
+  - Euramerica
+  - Gondwana margins
+  - Siberia
+  - South China
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  regional_expression:
+    reef_seas: warm shallow marine settings supported extensive reef systems and diverse fishes
+    terrestrial_basins: vascular plants and early forests expanded across continental lowlands
   note: Broad Devonian greenhouse estimate; regional humidity and sea-level conditions varied
     substantially.
   sources:
@@ -2114,6 +2153,19 @@ paleo_ecology:
   sea_level_delta_m: +40.0
   icehouse_greenhouse_state: hothouse
   confidence: low
+  geographic_anchor:
+  - Pangaea
+  - Central Atlantic Magmatic Province
+  - Tethys margins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - aridification
+  regional_expression:
+    continental_interiors: arid to seasonally dry climates dominated much of inland Pangaea
+    tethyan_margins: marine basins and shelves preserved the strongest warm-water record
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2206,6 +2258,18 @@ paleo_ecology:
   dominant_ecology: Middle Triassic recovery ecosystems with expanding marine reptiles, ammonoids,
     archosaurs, and seed plants
   confidence: low
+  geographic_anchor:
+  - Pangaea
+  - Tethys margins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - aridification
+  regional_expression:
+    continental_interiors: arid to seasonally dry climates dominated much of inland Pangaea
+    tethyan_margins: marine basins and shelves preserved the strongest warm-water record
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2228,6 +2292,18 @@ paleo_ecology:
   dominant_ecology: Diverse Middle Triassic seas and terrestrial archosaur communities during
     post-extinction recovery
   confidence: low
+  geographic_anchor:
+  - Pangaea
+  - Tethys margins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - aridification
+  regional_expression:
+    continental_interiors: arid to seasonally dry climates dominated much of inland Pangaea
+    tethyan_margins: marine basins and shelves preserved the strongest warm-water record
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2250,6 +2326,18 @@ paleo_ecology:
   dominant_ecology: Late Triassic ecosystems with archosaurs, early dinosaurs, conifers, and
     humid Carnian interval habitats
   confidence: low
+  geographic_anchor:
+  - Pangaea
+  - Tethys margins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - aridification
+  regional_expression:
+    continental_interiors: arid to seasonally dry climates dominated much of inland Pangaea
+    tethyan_margins: marine basins and shelves preserved the strongest warm-water record
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2272,6 +2360,18 @@ paleo_ecology:
   dominant_ecology: Late Triassic terrestrial ecosystems dominated by archosaurs with early
     dinosaurs and diverse marine reptiles
   confidence: low
+  geographic_anchor:
+  - Pangaea
+  - Tethys margins
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - aridification
+  regional_expression:
+    continental_interiors: arid to seasonally dry climates dominated much of inland Pangaea
+    tethyan_margins: marine basins and shelves preserved the strongest warm-water record
   note: Broad Triassic hothouse estimate; aridity was strong across many continental interiors.
   sources:
   - Scotese et al. 2021 Phanerozoic temperature reconstruction
@@ -2325,6 +2425,20 @@ paleo_ecology:
   sea_level_delta_m: +80.0
   icehouse_greenhouse_state: greenhouse
   confidence: low
+  geographic_anchor:
+  - Tethys
+  - Europe
+  - Panthalassa margins
+  - Western Interior seaways and shelves
+  spatial_extent: global
+  spatial_confidence: medium
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  - sea_level_rise
+  regional_expression:
+    shallow_seas: widespread marine shelves and epicontinental waters supported carbonate platforms and marine reptiles
+    continental_lowlands: humid to seasonally wet settings supported dinosaur-dominated ecosystems and gymnosperm forests
   note: Broad Jurassic greenhouse estimate; short events such as the Toarcian OAE should be
     treated separately.
   sources:
