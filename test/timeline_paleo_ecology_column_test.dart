@@ -287,4 +287,181 @@ void main() {
     expect(find.textContaining('T\u00A0+12'), findsOneWidget);
     expect(find.textContaining('CO2'), findsOneWidget);
   });
+
+  testWidgets('Paleo-ecology long press shows expanded note labels', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(1400, 800));
+    addTearDown(() async {
+      await tester.binding.setSurfaceSize(null);
+    });
+
+    final layout = TimelineLayoutSnapshot(
+      divisions: const [],
+      eonSegments: const [
+        TimelineBandSegment(
+          id: 1,
+          label: 'TestEon',
+          rank: GeologicRank.eon,
+          startMa: 260,
+          endMa: 0,
+          colorKey: 'eon|test',
+          isGap: false,
+          unitSpan: 1,
+        ),
+      ],
+      eraSegments: const [
+        TimelineBandSegment(
+          id: 2,
+          label: 'TestEra',
+          rank: GeologicRank.era,
+          startMa: 260,
+          endMa: 0,
+          colorKey: 'era|test',
+          isGap: false,
+          unitSpan: 1,
+        ),
+      ],
+      periodSegments: const [
+        TimelineRowSegment(
+          id: 3,
+          label: 'TestPeriod',
+          rank: GeologicRank.period,
+          startMa: 260,
+          endMa: 0,
+          colorKey: 'period|test',
+          isGap: false,
+          unitSpan: 1,
+        ),
+      ],
+      epochSegments: const [
+        TimelineRowSegment(
+          id: 4,
+          label: 'TestEpoch',
+          rank: GeologicRank.epoch,
+          startMa: 260,
+          endMa: 0,
+          colorKey: 'epoch|test',
+          isGap: false,
+          unitSpan: 1,
+        ),
+      ],
+      stageSegments: const [
+        TimelineRowSegment(
+          id: 5,
+          label: 'Wuchiapingian',
+          rank: GeologicRank.stage,
+          startMa: 260,
+          endMa: 0,
+          colorKey: 'stage|test',
+          isGap: false,
+          unitSpan: 1,
+        ),
+      ],
+      rlifeSegments: const [],
+      eventSegments: const [],
+      continentSegments: const [],
+      oldestMa: 260,
+      youngestMa: 0,
+    );
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SizedBox(
+            width: 1400,
+            height: 800,
+            child: Column(
+              children: [
+                TimelineBody(
+                  layout: layout,
+                  palette: DeepTimePalette(
+                    const TimelinePalette(
+                      divisionColors: {
+                        'eon|test': 0xFFEDE7C8,
+                        'era|test': 0xFFEDE7C8,
+                        'period|test': 0xFFEDE7C8,
+                        'epoch|test': 0xFFEDE7C8,
+                        'stage|test': 0xFFEDE7C8,
+                      },
+                    ),
+                  ),
+                  markers: const TimelineMarkerCatalog(
+                    events: [],
+                    extinctions: [],
+                  ),
+                  labelMode: TimeLabelMode.geologicTime,
+                  scrollController: ScrollController(),
+                  selectedId: null,
+                  onBandSelect: (_) {},
+                  onSelect: (_) {},
+                  clades: const [],
+                  cladeViewMode: CladeViewMode.representativeOnly,
+                  cladeCategoryId: 'all',
+                  cladeRepresentativeIds: const [],
+                  cladeSearchQuery: '',
+                  cladeSpotlightId: null,
+                  onCladeSpotlight: (_) {},
+                  visibleTracks: const {
+                    TimelineTrack.ma,
+                    TimelineTrack.eon,
+                    TimelineTrack.era,
+                    TimelineTrack.period,
+                    TimelineTrack.epoch,
+                    TimelineTrack.stage,
+                    TimelineTrack.paleoEcology,
+                  },
+                  paleoEcology: const [
+                    PaleoEcologyEntry(
+                      rank: GeologicRank.stage,
+                      name: 'Wuchiapingian',
+                      path: ['Wuchiapingian'],
+                      avgTempDeltaC: 5,
+                      avgHumidityDeltaPercent: -4,
+                      avgO2Percent: 17,
+                      avgCo2Ppm: 1400,
+                      seaLevelDeltaM: 15,
+                      spatialExtent: 'global',
+                      hemisphericBias: 'both',
+                      geographicAnchor: ['Pangaea'],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    final paleoBox = tester.renderObject<RenderBox>(
+      find.byKey(const ValueKey('paleo-ecology-block-stage:wuchiapingian')),
+    );
+    await tester.longPressAt(paleoBox.localToGlobal(const Offset(24, 24)));
+    await tester.pumpAndSettle();
+
+    final dialogExplanation = find.byWidgetPredicate(
+      (widget) =>
+          widget is SelectableText &&
+          (widget.data?.contains('Temperature delta: +5°C') ?? false),
+    );
+
+    expect(find.text('Wuchiapingian'), findsWidgets);
+    expect(dialogExplanation, findsOneWidget);
+
+    final explanationWidget = tester.widget<SelectableText>(dialogExplanation);
+    final explanation = explanationWidget.data!;
+
+    expect(explanation, contains('Temperature delta: +5°C'));
+    expect(explanation, contains('Humidity delta: -4%'));
+    expect(explanation, contains('Sea level delta: +15 m'));
+    expect(explanation, contains('Oxygen: 17%'));
+    expect(explanation, contains('CO2: 1400 ppm'));
+    expect(explanation, contains('Spatial extent: Global'));
+    expect(explanation, contains('Hemispheric bias: Both hemispheres'));
+    expect(explanation, contains('Geographic anchor:'));
+    expect(explanation, isNot(contains('Ex: Global')));
+    expect(explanation, isNot(contains('Bias: Both')));
+  });
 }

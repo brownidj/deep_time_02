@@ -17,9 +17,26 @@ String _paleoEcologyTooltipMessage(
     'Start: ${_formatMaForTooltip(block.startMa)} Ma; Duration: ${_formatMyrForTooltip(durationMyr)} Myr',
   );
 
-  final metrics = paleoEcologySummaryText(entry);
-  if (metrics != null && metrics.trim().isNotEmpty) {
-    lines.add(metrics);
+  if (entry.avgTempDeltaC != null) {
+    lines.add(
+      'Temperature delta: ${_formatSignedNumber(entry.avgTempDeltaC!)}°C',
+    );
+  }
+  if (entry.avgHumidityDeltaPercent != null) {
+    lines.add(
+      'Humidity delta: ${_formatSignedNumber(entry.avgHumidityDeltaPercent!)}%',
+    );
+  }
+  if (entry.seaLevelDeltaM != null) {
+    lines.add(
+      'Sea level delta: ${_formatSignedNumber(entry.seaLevelDeltaM!)} m',
+    );
+  }
+  if (entry.avgO2Percent != null) {
+    lines.add('Oxygen: ${_formatUnsignedNumber(entry.avgO2Percent!)}%');
+  }
+  if (entry.avgCo2Ppm != null) {
+    lines.add('CO2: ${_formatUnsignedNumber(entry.avgCo2Ppm!)} ppm');
   }
 
   if (entry.icehouseGreenhouseState != null) {
@@ -35,7 +52,7 @@ String _paleoEcologyTooltipMessage(
     lines.add('Inherited geography: ${_formatRankLabel(inheritedFromRank)}');
   }
   if (entry.spatialExtent != null) {
-    lines.add('Extent: ${_formatTooltipValue(entry.spatialExtent!)}');
+    lines.add('Spatial extent: ${_formatTooltipValue(entry.spatialExtent!)}');
   }
   if (entry.spatialConfidence != null) {
     lines.add(
@@ -43,7 +60,9 @@ String _paleoEcologyTooltipMessage(
     );
   }
   if (entry.hemisphericBias != null) {
-    lines.add('Bias: ${_formatTooltipValue(entry.hemisphericBias!)}');
+    lines.add(
+      'Hemispheric bias: ${_formatHemisphericBiasForTooltip(entry.hemisphericBias!)}',
+    );
   }
   if (entry.manifestationType.isNotEmpty) {
     lines.add(
@@ -128,6 +147,34 @@ String _formatTooltipValue(String value) {
         return '${lower[0].toUpperCase()}${lower.substring(1)}';
       })
       .join(' ');
+}
+
+String _formatSignedNumber(double value) {
+  final sign = value >= 0 ? '+' : '-';
+  return '$sign${_formatUnsignedNumber(value.abs())}';
+}
+
+String _formatUnsignedNumber(double value) {
+  if (value == value.roundToDouble()) {
+    return value.toStringAsFixed(0);
+  }
+  return value
+      .toStringAsFixed(2)
+      .replaceFirst(RegExp(r'0+$'), '')
+      .replaceFirst(RegExp(r'\.$'), '');
+}
+
+String _formatHemisphericBiasForTooltip(String value) {
+  switch (value.trim().toLowerCase()) {
+    case 'northern':
+      return 'Northern Hemisphere';
+    case 'southern':
+      return 'Southern Hemisphere';
+    case 'both':
+      return 'Both hemispheres';
+    default:
+      return _formatTooltipValue(value);
+  }
 }
 
 String _formatRankLabel(GeologicRank rank) {

@@ -357,6 +357,18 @@ paleo_ecology:
   sea_level_delta_m: null
   icehouse_greenhouse_state: greenhouse
   confidence: very_low
+  geographic_anchor:
+  - Rodinia
+  - Laurentia
+  - Australia
+  - South China
+  spatial_extent: global
+  spatial_confidence: low
+  hemispheric_bias: both
+  manifestation_type:
+  - warming
+  regional_expression:
+    rodinia_margins: pre-Cryogenian greenhouse conditions and basin development are recorded across Rodinia fragments
   note: Tonian values represent broad pre-Cryogenian greenhouse conditions before major snowball
     Earth glaciations.
   sources:

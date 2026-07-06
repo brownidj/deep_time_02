@@ -163,6 +163,16 @@ paleo_ecology:
       entries.any(
         (entry) =>
             entry.rank == GeologicRank.period &&
+            entry.name == 'Tonian' &&
+            entry.spatialExtent == 'global' &&
+            entry.geographicAnchor.contains('Rodinia'),
+      ),
+      isTrue,
+    );
+    expect(
+      entries.any(
+        (entry) =>
+            entry.rank == GeologicRank.period &&
             entry.name == 'Cambrian' &&
             entry.spatialExtent == 'global' &&
             entry.hemisphericBias == 'both' &&
