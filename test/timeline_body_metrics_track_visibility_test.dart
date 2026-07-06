@@ -5,6 +5,7 @@ import 'package:deep_time_2/ui/models/time_label_mode.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_body_helpers.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_column_headers.dart';
 import 'package:deep_time_2/ui/screens/timeline/timeline_orientation.dart';
+import 'package:deep_time_2/ui/screens/timeline/timeline_track_widths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -205,6 +206,50 @@ void main() {
     expect(find.text('Paleo-ecology'), findsOneWidget);
     expect(find.text('Extent | Bias | Anchor'), findsOneWidget);
   });
+
+  test(
+    'track width resolver shrinks tracks when total width exceeds viewport',
+    () {
+      final metrics = TimelineBodyMetrics.fromLayout(
+        layout: layoutWithLongStage(),
+        markers: const TimelineMarkerCatalog(events: [], extinctions: []),
+        constraints: const BoxConstraints.tightFor(width: 1000, height: 600),
+        config: const TimelineOrientationConfig(
+          trackWidths: {
+            TimelineTrack.ma: 220,
+            TimelineTrack.eon: 220,
+            TimelineTrack.era: 220,
+            TimelineTrack.period: 220,
+            TimelineTrack.epoch: 220,
+          },
+        ),
+        trackOrder: const [
+          TimelineTrack.ma,
+          TimelineTrack.eon,
+          TimelineTrack.era,
+          TimelineTrack.period,
+          TimelineTrack.epoch,
+        ],
+      );
+
+      final resolved = resolveTimelineTrackWidths(
+        metrics: metrics,
+        maxWidth: 1000,
+      );
+      final totalWidth = metrics.trackOrder.fold<double>(0.0, (sum, track) {
+        return sum +
+            metrics.gapBefore(track) +
+            resolved[track]! +
+            metrics.gapAfter(track);
+      });
+
+      expect(totalWidth, closeTo(1000, 0.01));
+      expect(
+        resolved[TimelineTrack.ma]!,
+        lessThan(metrics.trackWidth(TimelineTrack.ma)),
+      );
+    },
+  );
 
   test('events width accounts for overlapping bar lanes', () {
     const events = [

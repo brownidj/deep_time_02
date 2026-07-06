@@ -31,13 +31,30 @@ Map<TimelineTrack, double> resolveTimelineTrackWidths({
 
   var fixedWidth = 0.0;
   var flexibleBaseWidth = 0.0;
+  var gapWidth = 0.0;
+  var totalBaseTrackWidth = 0.0;
   for (final track in metrics.trackOrder) {
-    fixedWidth += metrics.gapBefore(track) + metrics.gapAfter(track);
+    final trackBaseWidth = metrics.trackWidth(track);
+    final trackGapWidth = metrics.gapBefore(track) + metrics.gapAfter(track);
+    gapWidth += trackGapWidth;
+    totalBaseTrackWidth += trackBaseWidth;
+    fixedWidth += trackGapWidth;
     if (kFixedTimelineTracks.contains(track)) {
-      fixedWidth += metrics.trackWidth(track);
+      fixedWidth += trackBaseWidth;
       continue;
     }
-    flexibleBaseWidth += metrics.trackWidth(track);
+    flexibleBaseWidth += trackBaseWidth;
+  }
+
+  if (gapWidth + totalBaseTrackWidth > maxWidth) {
+    final availableTrackWidth = math.max(0.0, maxWidth - gapWidth);
+    final shrinkScale = totalBaseTrackWidth <= 0
+        ? 1.0
+        : availableTrackWidth / totalBaseTrackWidth;
+    return {
+      for (final track in metrics.trackOrder)
+        track: metrics.trackWidth(track) * shrinkScale,
+    };
   }
 
   final remainingForFlexible = math.max(0.0, maxWidth - fixedWidth);
